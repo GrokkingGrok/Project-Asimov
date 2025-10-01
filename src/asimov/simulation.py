@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from mesa import Agent, Model
 import multilevel_mesa as mlm
 # Asimov Imports
-from agents.network import BidNet, Bondholder, Daneel, Enterprise, Giskard, Isaac, RoboFund
+from .agents.network import BidNet, Bondholder, Daneel, Enterprise, Giskard, Isaac, RoboFund
 
 class simulation(Model):
     def __init__(self, num_agents, seed=None)  -> None:  # expects integer num_agents and float seed

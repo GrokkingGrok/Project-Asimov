@@ -1,0 +1,89 @@
+World Setup:
+We are going to set up a whole fantasy world together.
+
+Bondholders, RoboFund, and Enterprises
+
+Bondholders can invest RLC in proposed Projects at RoboFund.
+Enterprises can use RoboFund to finance a proposed Project.
+Enterprises can use RoboFund to plan and finance the purchase of a Good or Service produced by another Enterprise's Project.
+Bondholders can only purchase Goods or Services directly from Enterprises; they can't use RoboFund to finance a purchase.
+All projects funded by RoboFund will use robotic labor.
+Robotic labor is used to make many Goods and Services.
+BondNetwork, Robots, and Bondholders
+
+The BondNetwork operates all Robots.
+Every Bondholder owns an equal share of every Robot.
+When a Robot completes a Good or Service,
+The production cost and retail value of the Good or Service are tracked in the Oracle associated with the Robot
+BidNet is a place where Enterprises can bid on robotic labor for their Projects. 
+
+BidNet and Projects
+
+BidNet decides whether or not to accept Bids for robotic labor.
+BidNet uses information about the corresponding Project from RoboFund to decide whether to accept a Bid.
+BidNet also uses other information to decide whether to accept a Bid.
+One of those pieces of information is what other people are bidding.
+BidNet also needs to know information about the robotic fleet from Daneel, the AI who manages the robotic fleet.
+BidNet needs to know if there are enough Robots in Daneel's reserve fleet for the Project.
+BondNetwork, Robots, and Bondholders
+
+When a Robot completes a Good or Service, the Oracle is marked as fulfilled.
+When an Oracle is Marked as fulfilled, it is sent to the BondNetwork.
+When the BondNetwork receives a fulfilled Oracle, it begins minting the difference between the retail value of the Oracle and the production cost in a unit called RLC.
+When the RLC is minted, it goes into the BondNetwork's DistributionBuffer.
+
+Bondholders, RoboFund, and Enterprises
+
+At RoboFund, Bondholders can send their RLC to either MakerFunnels or BuyerFunnels.
+If Bondholders don't invest enough in BuyerFunnels, Bids can still be accepted by BidNet.
+Bondholders and Banks
+
+When Bondholders decide to save, they send RLC to Banks.
+When Banks decide to extend loans, the loans must be fully backed by reserves.
+Bank loans can not be used to purchase robotic labor.
+Bondholders and Enterprises
+
+When Bondholders decide to spend, they send money to Enterprises and receive Goods and Services.
+Daneel and Enterprises
+
+Daneel deploys, repairs, and ships robots to Enterprise JobSites.
+Robots make Goods and Services at JobSites.
+
+
+
+prompt: 
+
+Assuming:
+
+A closed economy where no RLC leaves or enters due to foreign trade.
+The instant RLC leaves the DistributionBuffer, it is considered part of the Circulating Money Supply.
+Answer the following questions:
+
+If a product is not sold as soon as it is made, when is the optimal time to release the minted RLC into the economy in exactly one sentence?
+If the retail price of a Good or Service is the cost of a Project plus what the Enterprise is willing to sell it for, and the Enterprise pays for the cost of production(including all human labor), and the buyer pays the full retail price, what happens to the price of Goods and Services as more are produced if there is no BondNetwork and how does it relate to the Circulating Money Supply in exactly 3 words?
+If the Bond Network mints money too long after the optimal time, what happens in exactly one sentence?
+If the Bond Network mints money too soon before the optimal time, what happens in exactly 3 words?
+If the Bond Network is, on average, good at distribution timing, what happens as more robots are bonded into the network?
+What determines the average cost of robotic labor as a percentage of retail price?
+
+Assuming:
+
+A closed economy where no RLC leaves or enters due to foreign trade.
+The instant RLC leaves the DistributionBuffer, it is considered part of the Circulating Money Supply.
+Answer the following questions:
+
+If a product is not sold as soon as it is made, when is the optimal time to release the minted RLC into the economy in exactly one sentence?
+If the retail price of a Good or Service is the cost of a Project plus what the Enterprise is willing to sell it for, and the Enterprise pays for the cost of production(including all human labor), and the buyer pays the full retail price, what happens to the price of Goods and Services as more are produced if there is no BondNetwork and how does it relate to the Circulating Money Supply in exactly 3 words?
+If the Bond Network mints money too long after the optimal time, what happens in exactly one sentence?
+If the Bond Network mints money too soon before the optimal time, what happens in exactly 3 words?
+If the Bond Network is, on average, good at distribution timing, what happens as more robots are bonded into the network?
+
+The average robotic-labor cost share of retail price is determined by:
+
+BidNet’s clearing of robot-hour demand from Enterprises against Daneel’s available fleet (including reserve availability and uptime), which sets the robot-hour rate.
+Robot productivity (robot-hours per unit) that converts the robot-hour rate into unit robotic cost.
+Product-market competition and Bondholder demand for goods (driven by circulating RLC: BondNetwork distributions minus savings parked in Banks) that determine feasible markups and retail prices.
+Bondholders’ allocations to MakerFunnels vs BuyerFunnels, which shift the balance between project supply and funded purchases, moving robot-hour demand relative to final demand.
+Banks’ full-reserve intermediation (no money creation; loans can’t fund robot labor): higher saving reduces circulating RLC, compressing markups and bids for robot-hours.
+Relative costs and substitutability of other inputs (human labor, materials, energy), which govern how much of total cost can be paid to robots.
+Oracle-driven minting feedback (retail minus cost → distributions): higher markups raise distributions, boost demand, and support higher robot bids until constrained by fleet capacity, and vice versa.
