@@ -1,11 +1,12 @@
-from mesa import Model, Agent
+from mesa import Agent
+from typing import Optional, List
 
 class Isaac(Agent):
-    """An agent with fixed initial wealth."""
+    """
+    When he receives a fulfilled Oracle, Isaac mints RLC when he receives a completed 
+    """
 
-    def __init__(self, model):
+    def __init__(self, model) -> None:  # expects mesa.Model
         # Pass the parameters to the parent class.
         super().__init__(model)
-        self.model: Model = model
-        self.unique_id: int = next(self._ids[model])
-        #self.model.register_agent(self)
+        
