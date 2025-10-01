@@ -8,4 +8,4 @@ class Isaac(Agent):
         super().__init__(model)
         self.model: Model = model
         self.unique_id: int = next(self._ids[model])
-        self.model.register_agent(self)
+        #self.model.register_agent(self)
