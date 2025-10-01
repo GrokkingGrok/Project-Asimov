@@ -1,7 +1,7 @@
 import pytest
 from mesa import Model, Agent
 import multilevel_mesa as mlm
-from agents.network.Isaac import Isaac
+from asimov.agents.network.Isaac import Isaac
 
 def test_isaac_initialization() -> None:
     """Test the initialization of the Isaac agent."""
@@ -19,4 +19,5 @@ def test_isaac_initialization() -> None:
     # assertions to verify correct initialization
     assert agent.unique_id is not None  # Should be auto-assigned (e.g., 1)
     assert agent.model is model # Should reference the model
+    
     
