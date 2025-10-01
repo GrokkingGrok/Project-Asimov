@@ -5,7 +5,8 @@ description = "Simulating Asimovian Economics and Monetary Policy"
 authors = [
     {name = "Jonathan Clark (@ChrncPainRewird on X)"}
 ]
-license = {text = "GPL-3.0"}
+license = "GPL-3.0-only"  # SPDX identifier for specific GPL version
+license-files = ["LICENSE"]  # Array-style definition for license files
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -13,6 +14,9 @@ dependencies = [
     "seaborn (>=0.13.2,<0.14.0)",
     "jupyter (>=1.1.1,<2.0.0)"
 ]
+
+[tool.poetry]
+# Removed license here to avoid duplication; use [project.license] instead
 
 [[tool.poetry.packages]]
 include = "asimov"
@@ -22,10 +26,8 @@ from = "src"
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[dependency-groups]
-dev = [
-    "pytest (>=8.4.2,<9.0.0)",
-    "pytest-cov (>=7.0.0,<8.0.0)",
-    "black (>=25.9.0,<26.0.0)",
-    "flake8 (>=7.3.0,<8.0.0)"
-]
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.4.2,<9.0.0"
+pytest-cov = ">=7.0.0,<8.0.0"
+black = ">=25.9.0,<26.0.0"
+flake8 = ">=7.3.0,<8.0.0"
