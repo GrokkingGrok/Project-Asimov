@@ -18,7 +18,7 @@ def test_simulation_initialization() -> None:
     seed = 42.0
     x = 25
     y = 25
-    sim_model = simulation(num_agents, x, y, seed, rng=None)
+    sim_model = simulation(num_agents, x, y, seed)
     
     # assertions to verify correct basic initialization
     assert sim_model.num_agents == num_agents

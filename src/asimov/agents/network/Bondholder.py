@@ -13,6 +13,6 @@ class Bondholder(Agent):
         super().__init__(model)
         self.USD = 10000.0  # Initial USD holdings
         self.RLC = 0.0  # Initial RLC holdings
-    
+        
 
     

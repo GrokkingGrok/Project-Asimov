@@ -29,34 +29,29 @@ def process_for_group(model: Model, items: Iterable[Agent], group_label: str) ->
 class simulation(Model):
     def __init__(self, num_agents=10, width=25, height=25, seed=None, rng=None) -> None:
         """Initialize the simulation model with customizable agent counts and grid dimensions."""
-        super().__init__(seed=seed, rng=rng)
+        super().__init__(seed=seed)
         self.scheduler = mlm.MultiLevel_Mesa(self)
         self.num_agents = num_agents # Number of Bondholders and Robots
         self.width = width
         self.height = height
         self.seed = seed # Seed for reproducibility
-        self.rng = self.random if rng is None else rng # Use provided rng or model's rng
-
+        
+        self.pos = []
         # Set up the grid and agents
         self.grid = SingleGrid(width, height, torus=True)  
         # self.positions = self.rng.random(size=(self.num_agents, 2)) * self.grid.width # Random positions on the grid
-        # Iterable Bondholders and Enterprises
+        # Create agents
         self.bondholders = Bondholder.create_agents(self, self.num_agents)
         self.robots  = Robot.create_agents(self, self.num_agents)
-        
-        # Add agents to the scheduler and place them on the grid
-        """for agent in self.bondholders:
+        #add agents to grid
+        #TODO add test case for this
+        for agent in self.bondholders:
+            self.grid.place_agent(agent, (self.random.randrange(self.grid.width), self.random.randrange(self.grid.height)))
             self.scheduler.add(agent)  # Add agents to the scheduler
-            w = self.random.uniform(0.0, self.width)
-            h = self.random.uniform(0.0, self.height)
-            self.grid.place_agent(agent, [w, h])  # Place agents on the grid
-            self.scheduler.shuffle_do()  # Shuffle the scheduler to randomize agent order
         for agent in self.robots:
+            self.grid.place_agent(agent, (self.random.randrange(self.grid.width), self.random.randrange(self.grid.height)))
             self.scheduler.add(agent)  # Add agents to the scheduler
-            w = self.random.uniform(0.0, self.width)
-            h = self.random.uniform(0.0, self.height)
-            self.grid.place_agent(agent, [w, h])  # Place agents on the grid
-"""
+        
 
 
 if __name__ == "__main__":
