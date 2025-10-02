@@ -9,5 +9,6 @@ class Isaac(Agent):
     def __init__(self, model) -> None:  # expects mesa.Model
         # Pass the parameters to the parent class.
         super().__init__(model)
+        self.distoBuffer = 0.0  # RLC waiting to be distributed
+        self.mintBuffer = 0.0  # RLC waiting to be minted
         
-

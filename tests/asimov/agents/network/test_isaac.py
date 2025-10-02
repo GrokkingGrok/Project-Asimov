@@ -9,6 +9,7 @@ def test_isaac_initialization() -> None:
         def __init__(self):
             super().__init__()
             self.scheduler = mlm.MultiLevel_Mesa(self) # Initialize MultiLevel_Mesa scheduler for testing
+            # Check the mlm is set up correctly
             assert hasattr(self, 'scheduler')
             assert isinstance(self.scheduler, mlm.MultiLevel_Mesa)
     # Create model and add Isaac to it.

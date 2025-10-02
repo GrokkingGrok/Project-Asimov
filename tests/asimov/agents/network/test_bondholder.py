@@ -19,3 +19,5 @@ def test_bondholder_initialization() -> None:
     # assertions to verify correct initialization
     assert agent.unique_id is not None  # Should be auto-assigned (e.g., 1)
     assert agent.model is model # Should reference the model
+    assert hasattr(agent, 'USD')  # Should have USD attribute
+    assert hasattr(agent, 'RLC')  # Should have RLC attribute
