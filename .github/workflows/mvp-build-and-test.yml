@@ -30,8 +30,5 @@ jobs:
       - name: Install asimov package
         run: poetry run pip install -e .
 
-      - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=$PWD/src" >> $GITHUB_ENV
-
-      - name: Run tests
-        run: poetry run pytest
+      - name: Run tests  # <-- UPDATED: Explicit PYTHONPATH here
+        run: PYTHONPATH=$PWD/src poetry run pytest
