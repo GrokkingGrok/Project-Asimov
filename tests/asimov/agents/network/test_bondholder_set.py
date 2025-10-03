@@ -1,6 +1,5 @@
 import pytest
 from mesa import Model
-from mesa_frames import AgentsDF
 from asimov import BondholderSet
 
 class ModelForTest(Model):  # Renamed to avoid pytest warning

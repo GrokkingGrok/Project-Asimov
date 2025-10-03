@@ -12,8 +12,7 @@
 10. Delete these instructions from the file once setup is complete."""
 import pytest
 from mesa import Model, Agent
-import multilevel_mesa as mlm
-# from asimov.agents.network.Template import Template
+# from asimov import Template
 
 def test_Template_initialization() -> None:
     pass

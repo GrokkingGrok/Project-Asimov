@@ -1,7 +1,6 @@
 from mesa import Model
 import polars as pl
-from .agents.network.isaac import Isaac
-from .agents.network.bondholder_set import BondholderSet
+from asimov import Isaac, BondholderSet
 from mesa.space import SingleGrid
 
 class Simulation(Model):

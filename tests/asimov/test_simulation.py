@@ -1,7 +1,7 @@
 import pytest
 from mesa.space import SingleGrid
-from asimov.agents.network.bondholder_set import BondholderSet
-from asimov import Simulation, Isaac, BondholderSet
+from asimov.simulation import Simulation
+from asimov import Isaac, BondholderSet
 def test_simulation_initialization():
     num_bondholders = 10
     width = 10

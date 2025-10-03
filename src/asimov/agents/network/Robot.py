@@ -2,7 +2,6 @@
 # Standard library imports
 from typing import Optional, List
 from numpy import random
-from numpy import random
 from mesa import Agent
 
 

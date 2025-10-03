@@ -1,7 +1,7 @@
 import pytest
 from mesa import Model, Agent
 import multilevel_mesa as mlm
-from asimov.agents.requests.MintRequest import MintRequest
+from asimov import MintRequest
 
 def test_MintRequest_initialization() -> None:
     """Test the initialization of the MintRequest agent."""
