@@ -1,4 +1,4 @@
-name: Test Project Asimov
+name: CI
 
 on: [push, pull_request]
 
@@ -6,14 +6,21 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.13'
-    - name: Install Poetry
-      run: curl -sSL https://install.python-poetry.org | python3 -
-    - name: Install dependencies
-      run: poetry install
-    - name: Run tests
-      run: poetry run pytest
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: '1.8.0'
+      - name: Install dependencies
+        run: |
+          poetry install --with dev
+      - name: Install project in editable mode
+        run: |
+          poetry install
+      - name: Run tests
+        run: |
+          poetry run pytest tests/ -v
