@@ -2,7 +2,7 @@
 name = "asimov"
 version = "0.1.0"
 description = "Simulating Asimovian Economics and Monetary Policy"
-authors = ["Jonathan Clark (@ChrncPainRewird on X)"]
+authors = ["Jonathan Clark <@ChrncPainRewird on X>"]
 license = "GPL-3.0-only"
 readme = "README.md"
 packages = [{include = "asimov", from = "src"}]
