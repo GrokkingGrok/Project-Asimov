@@ -1,6 +1,6 @@
 import pytest
 from mesa import Model
-from asimov.agents.network.isaac import Isaac
+from asimov import Isaac
 
 
 class ModelForTest(Model):  # Renamed to avoid pytest warning

@@ -1,7 +1,7 @@
 import pytest
 from mesa import Model
 from mesa_frames import AgentsDF
-from asimov.agents.network.bondholder_set import BondholderSet
+from asimov import BondholderSet
 
 class ModelForTest(Model):  # Renamed to avoid pytest warning
     def __init__(self):
