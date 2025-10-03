@@ -1,36 +1,27 @@
-[project]
+[tool.poetry]
 name = "asimov"
 version = "0.1.0"
 description = "Simulating Asimovian Economics and Monetary Policy"
-authors = [
-    {name = "Jonathan Clark (@ChrncPainRewird on X)"}
-]
-license = "GPL-3.0-only"  # SPDX identifier for specific GPL version
-license-files = ["LICENSE"]  # Array-style definition for license files
+authors = ["Jonathan Clark (@ChrncPainRewird on X)"]
+license = "GPL-3.0-only"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "mesa (>=3.3.0,<4.0.0)",
-    "seaborn (>=0.13.2,<0.14.0)",
-    "jupyter (>=1.1.1,<2.0.0)",
-    "multilevel-mesa @ git+https://github.com/tpike3/multilevel_mesa.git",
-    "mesa-frames (>=0.1.0a0,<0.2.0)",
-    "polars (>=1.34.0,<2.0.0)"
-]
+packages = [{include = "asimov", from = "src"}]
 
-[tool.poetry]
-# Removed license here to avoid duplication; use [project.license] instead
-
-[[tool.poetry.packages]]
-include = "asimov"
-from = "src"
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.dependencies]
+python = ">=3.13"
+mesa = ">=3.3.0,<4.0.0"
+seaborn = ">=0.13.2,<0.14.0"
+jupyter = ">=1.1.1,<2.0.0"
+multilevel-mesa = { git = "https://github.com/tpike3/multilevel_mesa.git" }
+mesa-frames = "0.1.0a0"  # Pin to specific pre-release version
+polars = ">=1.34.0,<2.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.4.2,<9.0.0"
 pytest-cov = ">=7.0.0,<8.0.0"
 black = ">=25.9.0,<26.0.0"
 flake8 = ">=7.3.0,<8.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
