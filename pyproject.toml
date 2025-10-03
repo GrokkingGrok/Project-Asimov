@@ -13,7 +13,9 @@ dependencies = [
     "mesa (>=3.3.0,<4.0.0)",
     "seaborn (>=0.13.2,<0.14.0)",
     "jupyter (>=1.1.1,<2.0.0)",
-    "multilevel-mesa @ git+https://github.com/tpike3/multilevel_mesa.git"
+    "multilevel-mesa @ git+https://github.com/tpike3/multilevel_mesa.git",
+    "mesa-frames (>=0.1.0a0,<0.2.0)",
+    "polars (>=1.34.0,<2.0.0)"
 ]
 
 [tool.poetry]
