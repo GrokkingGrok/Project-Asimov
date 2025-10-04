@@ -12,24 +12,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Set up Python 3.13
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-
       - name: Install Poetry
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
           echo "$HOME/.local/bin" >> $GITHUB_PATH
-
       - name: Install dependencies
         run: |
           poetry install --no-interaction --no-root
-
       - name: Install asimov package
         run: poetry run pip install -e .
-
       - name: Debug path
         run: |
           poetry run python -c "import sys; print('\n'.join(sys.path))"
@@ -38,18 +33,15 @@ jobs:
           ls -la tests/asimov/agents/network/pytest --cov --cov-branch --cov-report=xml
           ls -la tests/asimov/agents/requests/
           ls -la tests/asimov/
-
       - name: Run tests
         env:
           PYTHONPATH: ${{ github.workspace }}/src
         run: |
-          mkdir -p coverage-reports  # Creates dir if needed
-          poetry run pytest --cov=src/asimov --cov-report=xml:coverage-reports/coverage.xml
-      
-        #  - name: Run tests  # <-- UPDATED: Explicit PYTHONPATH here
-        #run: PYTHONPATH=$PWD/src poetry run pytest
-
+          mkdir -p coverage-reports
+          poetry run pytest --cov=src/asimov --cov-report=xml:coverage-reports/coverage.xml --cov-config=pyproject.toml
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}  
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage-reports/coverage.xml
+          fail_ci_if_error: true
