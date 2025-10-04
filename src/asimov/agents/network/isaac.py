@@ -1,3 +1,4 @@
+from typing import Optional
 from mesa_frames import AgentSetPolars
 import polars as pl
 
@@ -23,7 +24,7 @@ class BufferItem(AgentSetPolars):
 class Isaac(AgentSetPolars):
     """An agent managing buffer items and distributing RLC to bondholders."""
     
-    def __init__(self, n_buffers: int, model, bondholders: AgentSetPolars = None):
+    def __init__(self, n_buffers: int, model, bondholders: Optional[AgentSetPolars] = None):
         super().__init__(model)
         self.wealth = 100.0
         self.bondholders = bondholders

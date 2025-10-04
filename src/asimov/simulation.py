@@ -16,7 +16,7 @@ class Simulation(Model):
         positions = [(i % width, i // width) for i in range(num_bondholders)]
         self.bondholders = BondholderSet(num_bondholders, self, positions)
         
-        # Create Isaac as AgentSetPolars (single instance)
+        # Create Isaac 
         self.isaac = Isaac(1, self, self.bondholders)  # Pass n_buffers=1
 
     def step(self):
@@ -27,7 +27,11 @@ class Simulation(Model):
             self.bondholders.receive_rlc(10.0)  # Distribute 10 RLC to each bondholder
 
 if __name__ == "__main__":
-    # Run the simulation for 5 steps
-    sim = Simulation(num_bondholders=10, width=10, height=10)
-    for _ in range(5):
-        sim.step()
+    from asimov.agents.network.bondholder_set import BondholderSet
+    from mesa_frames import AgentSetPolars  # For model mock
+    class MockModel: pass  # Dummy for init
+    model = MockModel()
+    bondholders = BondholderSet(3, model)  # 3 agents
+    print("Before:", bondholders.agents.select(["RLC", "USD"]))
+    bondholders.receive_rlc(10.0)
+    print("After:", bondholders.agents.select(["RLC", "USD"]))

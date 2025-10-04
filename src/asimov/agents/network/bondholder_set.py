@@ -1,4 +1,4 @@
-from mesa_frames import AgentSetPolars, AgentsDF
+from mesa_frames import AgentSetPolars
 import polars as pl
 
 class BondholderSet(AgentSetPolars):
@@ -23,4 +23,13 @@ class BondholderSet(AgentSetPolars):
 
     def receive_rlc(self, amount: float):
         """Vectorized method to receive RLC from Isaac."""
-        self.update({"RLC": self["RLC"] + amount, "USD": self["USD"] - amount})
+        # self.df: Accesses the underlying Polars DataFrame (standard in AgentSetPolars).
+        self.agents = self.agents.with_columns([
+        # pl.col("RLC") + amount: Adds amount to every row's "RLC" (broadcasts scalar).
+        # .alias("RLC"): Renames back to original column.
+        (pl.col("RLC") + amount).alias("RLC"),
+        # Same for USD (subtract amount).
+        (pl.col("USD") - amount).alias("USD")
+        ])
+        # Assigns to self.df: Updates the agent's data (mesa-frames tracks this).
+        # Performance: Zero-copy—Polars optimizes (no data duplication, fast vectorized ops).
