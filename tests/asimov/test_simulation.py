@@ -1,14 +1,16 @@
 import pytest
 from mesa.space import SingleGrid
-from asimov.agents.network.robot import RobotSet
 from asimov.simulation import Simulation
-from asimov import Isaac, BondholderSet
+from asimov import Isaac, BondholderSet, EnterpriseSet, RobotSet
 def test_simulation_initialization():
-    num_bondholders = 10
-    num_robots = 1
+    
     width = 10
     height = 10
-    sim_model = Simulation(width, height, num_bondholders, num_robots)
+    num_bondholders = 10
+    num_robots = 1
+    num_enterprises = 1
+    
+    sim_model = Simulation(width, height, num_bondholders, num_robots, num_enterprises)
     
     # Verify grid setup
     assert isinstance(sim_model.grid, SingleGrid)
@@ -28,5 +30,9 @@ def test_simulation_initialization():
     # Verify Robots are created
     assert len(sim_model.robots) == num_robots
     assert isinstance(sim_model.robots, RobotSet)
+
+    # Verify Enterprises are created
+    assert len(sim_model.enterprises) == num_enterprises
+    assert isinstance(sim_model.enterprises, EnterpriseSet)
 
     
