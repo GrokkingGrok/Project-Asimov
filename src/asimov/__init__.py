@@ -9,7 +9,6 @@ from .agents.network.enterprise import Enterprise
 from .agents.network.giskard import Giskard
 from .agents.network.robofund import RoboFund
 from .agents.requests.mint_request import MintRequest
-from .agents.requests.oracle import Oracle
 
 
 __version__ = "0.1.0"
