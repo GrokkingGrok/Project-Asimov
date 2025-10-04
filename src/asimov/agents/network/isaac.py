@@ -5,7 +5,9 @@ import polars as pl
 class BufferItem(AgentSetPolars):
     """A collection of buffer items managed with Polars DataFrames."""
     
-    def __init__(self, n: int, model, positions: list[tuple[int, int]] | None = None):
+    def __init__(self, n: int, 
+                 model, 
+                 positions: list[tuple[int, int]] | None=None):
         super().__init__(model)
         data = {
             "unique_id": pl.Series("unique_id", pl.arange(n, eager=True)),
