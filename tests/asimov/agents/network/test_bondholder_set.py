@@ -9,7 +9,7 @@ class ModelForTest(Model):  # Renamed to avoid pytest warning
 
 def test_bondholder_initialization():
     model = ModelForTest()
-    bondholder = BondholderSet(5, model)  # Specify n=5 to match assertion
-    assert len(bondholder) == 5
-    assert isinstance(bondholder, BondholderSet)
+    bondholders = BondholderSet(5, model)  # Specify n=5 to match assertion
+    assert len(bondholders) == 5
+    assert isinstance(bondholders, BondholderSet)
 

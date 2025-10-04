@@ -15,7 +15,7 @@ class Simulation(Model):
         # Create Bondholders as AgentSetPolars
         positions = [(i % width, i // width) for i in range(num_bondholders)]
         self.bondholders = BondholderSet(num_bondholders, self, positions)
-        
+        #TODO create robots and add to grid
         # Create Isaac 
         self.isaac = Isaac(1, self, self.bondholders)  # Pass n_buffers=1
 
