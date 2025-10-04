@@ -25,14 +25,6 @@ jobs:
           poetry install --no-interaction --no-root
       - name: Install asimov package
         run: poetry run pip install -e .
-      - name: Debug path
-        run: |
-          poetry run python -c "import sys; print('\n'.join(sys.path))"
-          ls -la src/asimov/agents/network/
-          ls -la src/asimov/agents/requests/
-          ls -la tests/asimov/agents/network/pytest --cov --cov-branch --cov-report=xml
-          ls -la tests/asimov/agents/requests/
-          ls -la tests/asimov/
       - name: Run tests
         env:
           PYTHONPATH: ${{ github.workspace }}/src
