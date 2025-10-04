@@ -11,5 +11,6 @@ from .agents.network.robofund import RoboFund
 from .agents.requests.mint_request import MintRequest
 
 
+
 __version__ = "0.1.0"
 

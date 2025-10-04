@@ -2,7 +2,8 @@
 from typing import Optional
 
 from mesa import Model
-from mesa.space import SingleGrid
+from mesa.space import MultiGrid
+
 
 from asimov.agents.network.bondholder_set import BondholderSet
 from asimov.agents.network.isaac import Isaac
@@ -21,7 +22,7 @@ class Simulation(Model):
                  num_enterprises: int=2,
                  seed: Optional[int] | None=None):
         super().__init__(seed=seed)
-        self.grid = SingleGrid(width, height, torus=True)  # Grid for spatial placement
+        self.grid = MultiGrid(width, height, torus=True)  # Grid for spatial placement
         self.num_bondholders = num_bondholders
         self.num_robots = num_robots
         self.num_enterprises = num_enterprises
