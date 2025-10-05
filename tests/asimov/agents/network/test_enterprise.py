@@ -1,5 +1,5 @@
 import pytest
-from mesa import Model, Agent
+from mesa_frames import Model
 from asimov import EnterpriseSet
 
 class ModelForTest(Model):  # Renamed to avoid pytest warning
@@ -10,6 +10,6 @@ class ModelForTest(Model):  # Renamed to avoid pytest warning
 def test_enterprise_initialization() -> None:
     """Test the initialization of the Enterprise agent."""
     model = ModelForTest()
-    #enterprises = EnterpriseSet(5, model)  # Specify n=5 to match assertion
-    #assert len(enterprises) == 5
-    #assert isinstance(enterprises, EnterpriseSet)
+    enterprises = EnterpriseSet(5, model)  # Specify n=5 to match assertion
+    assert model.sets.contains(enterprises)
+    assert isinstance(enterprises, EnterpriseSet)

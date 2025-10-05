@@ -1,27 +1,25 @@
-import random
 import polars as pl
-from mesa_frames import AgentSetPolars
-#from asimov.mixins.agent_helpers import generate_verts
+from mesa_frames import AgentSet
 
-class EnterpriseSet(AgentSetPolars):
+class EnterpriseSet(AgentSet):
     """An agent with fixed initial wealth."""
 
-    def __init__(self, n: int, 
-                 model, 
-                 positions: list[tuple[int, int]] | None=None):
+    def __init__(self, 
+                 n: int, 
+                 model):
         super().__init__(model)
-        #self.verts = generate_verts() TODO fix this so it will import correctly
-        data = {
-            "unique_id": pl.Series("unique_id", pl.arange(n, eager=True)),
-            "USD": pl.Series("USD", [10000.0] * n),  
-            "RLC": pl.Series("RLC", [0.0] * n),
-            #"Sector": pl.Series("Sector", [random.choice(self.verts) for _ in range(n)])  
-        }
-        if positions and len(positions) == n:
-            data["pos"] = pl.Series("pos", positions)
-        else:
-            data["pos"] = pl.Series("pos", [None] * n)
-        self += pl.DataFrame(data)
+        # Initialize attributes
+        initial_USD = self.random.normal(50000,7000,n)
+        initial_RT = 0
+        # Create a Polars DataFrame to hold data
+        self += pl.DataFrame(
+            {
+                "USD": initial_USD,
+                "RT": initial_RT,
+            })
+        # Add this agent set to the model's sets
+        self.model.sets += self
+       
 
     def step(self):
         """Vectorized step method for bondholder agents."""

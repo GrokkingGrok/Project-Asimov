@@ -1,38 +1,24 @@
 from typing import Optional
-from mesa_frames import AgentSetPolars
+from mesa_frames import AgentSet
 import polars as pl
 
-class BufferItem(AgentSetPolars):
-    """A collection of buffer items managed with Polars DataFrames."""
-    
-    def __init__(self, n: int, 
-                 model, 
-                 positions: list[tuple[int, int]] | None=None):
-        super().__init__(model)
-        data = {
-            "unique_id": pl.Series("unique_id", pl.arange(n, eager=True)),
-            "value": pl.Series("value", [10.0] * n),  # Evaluate to list
-        }
-        if positions and len(positions) == n:
-            data["pos"] = pl.Series("pos", positions)
-        else:
-            data["pos"] = pl.Series("pos", [None] * n)
-        self += pl.DataFrame(data)
-    
-    def step(self):
-        """Placeholder step method to satisfy AgentSetPolars."""
-        pass  # No-op, as BufferItem is not used in simulation steps
-
-class Isaac(AgentSetPolars):
+class Isaac(AgentSet):
     """An agent managing buffer items and distributing RLC to bondholders."""
     
-    def __init__(self, n_buffers: int, model, bondholders: Optional[AgentSetPolars] = None):
+    def __init__(self, 
+                model, 
+                initial_USD: float | None=None):
         super().__init__(model)
-        self.wealth = 100.0
-        self.bondholders = bondholders
-        # Initialize buffer items
-        self.buffers = BufferItem(n_buffers, model)
-        # Add Isaac itself to the model
-        self += pl.DataFrame({"unique_id": [0], "wealth": [self.wealth]})
+        # Initialize attributes
+        initial_USD = 1000000000.0 if initial_USD is None else initial_USD
+        initial_RT = 0.0
+        # Create a Polars DataFrame to hold data
+        self += pl.DataFrame(
+            {
+                "USD": initial_USD,
+                "RT": initial_RT,
+            })
+        # Add this agent set to the model's sets
+        self.model.sets += self
     def step(self):
         pass

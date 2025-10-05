@@ -1,6 +1,6 @@
 """Asimov: A package for simulating Asimovian Economic Theory using agent-based modeling."""
 
-from .agents.network.isaac import Isaac, BufferItem
+from .agents.network.isaac import Isaac
 from .agents.network.bondholder_set import BondholderSet
 from .agents.network.bidnet import BidNet
 from .agents.network.daneel import Daneel

@@ -1,5 +1,5 @@
 import pytest
-from mesa import Model
+from mesa_frames import Model
 from asimov import Isaac
 
 
@@ -10,5 +10,6 @@ class ModelForTest(Model):  # Renamed to avoid pytest warning
 
 def test_isaac_initialization():
     model = ModelForTest()
-    isaac = Isaac(1, model)  # Provide n_buffers=1
+    isaac = Isaac(model)  # Specify n=5 to match assertion
+    assert model.sets.contains(isaac)
     assert isinstance(isaac, Isaac)

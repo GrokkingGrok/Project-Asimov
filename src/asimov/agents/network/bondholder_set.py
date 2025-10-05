@@ -1,35 +1,33 @@
-from mesa_frames import AgentSetPolars
+"""Bondholder agent set using Polars DataFrames for efficient management."""
+from mesa_frames import AgentSet
+
 import polars as pl
 
-class BondholderSet(AgentSetPolars):
-    """A collection of bondholder agents managed with Polars DataFrames."""
-    
-    def __init__(self, n: int, model, positions: list[tuple[int, int]] | None = None):
-        super().__init__(model)
-        data = {
-            "unique_id": pl.Series("unique_id", pl.arange(n, eager=True)),
-            "USD": pl.Series("USD", [10000.0] * n),  # Evaluate to list
-            "RLC": pl.Series("RLC", [0.0] * n),      # Evaluate to list
-        }
-        if positions and len(positions) == n:
-            data["pos"] = pl.Series("pos", positions)
-        else:
-            data["pos"] = pl.Series("pos", [None] * n)
-        self += pl.DataFrame(data)
 
-    def step(self):
+class BondholderSet(AgentSet):
+    """A collection of bondholder agents managed with Polars DataFrames.
+        
+        
+    """
+    def __init__(self, 
+                 n: int, 
+                 model,
+                 ):
+        super().__init__(model)
+        # Initialize attributes
+        initial_USD = self.random.uniform(2000.0,10000.0,n)
+        initial_RT = 0.0
+        # Create a Polars DataFrame to hold data
+        self += pl.DataFrame(
+            {
+                "USD": initial_USD,
+                "RT": initial_RT,
+            })
+        # Add this agent set to the model's sets
+        self.model.sets += self
+        
+        
+
+    def step(self) -> None:
         """Vectorized step method for bondholder agents."""
         pass
-
-    def receive_rlc(self, amount: float):
-        """Vectorized method to receive RLC from Isaac."""
-        # self.df: Accesses the underlying Polars DataFrame (standard in AgentSetPolars).
-        self.agents = self.agents.with_columns([
-        # pl.col("RLC") + amount: Adds amount to every row's "RLC" (broadcasts scalar).
-        # .alias("RLC"): Renames back to original column.
-        (pl.col("RLC") + amount).alias("RLC"),
-        # Same for USD (subtract amount).
-        (pl.col("USD") - amount).alias("USD")
-        ])
-        # Assigns to self.df: Updates the agent's data (mesa-frames tracks this).
-        # Performance: Zero-copy—Polars optimizes (no data duplication, fast vectorized ops).
