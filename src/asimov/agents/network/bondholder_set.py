@@ -21,13 +21,19 @@ class BondholderSet(AgentSet):
         self += pl.DataFrame(
             {
                 "USD": initial_USD,
-                "RT": initial_RT,
             })
-        # Add this agent set to the model's sets
-        self.model.sets += self
+        print(f"Initialized {n} bondholders.")
         
-        
+
 
     def step(self) -> None:
         """Vectorized step method for bondholder agents."""
+        print("Bondholders stepping...")
+        self.do("work")
+        pass
+
+    def work(self) -> None:
+        """Bondholders get paid for their labor."""
+        print("Bondholders working...")
+        self.df = self.df.with_columns(pl.col("USD") + 100)
         pass

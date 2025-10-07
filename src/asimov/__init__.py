@@ -8,8 +8,9 @@ from .agents.network.robot import RobotSet
 from .agents.network.enterprise import EnterpriseSet
 from .agents.network.giskard import Giskard
 from .agents.network.robofund import RoboFund
-from .agents.requests.mint_request import MintRequest
-
+#from .agents.edges.mint_request import MintRequest
+from .agents.edges.edge_set import EdgeSet
+from .agents.edges.customer_edges import CustomerEdges
 
 
 __version__ = "0.1.0"

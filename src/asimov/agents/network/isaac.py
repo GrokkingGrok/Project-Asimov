@@ -19,6 +19,6 @@ class Isaac(AgentSet):
                 "RT": initial_RT,
             })
         # Add this agent set to the model's sets
-        self.model.sets += self
+        #self.model.sets += self
     def step(self):
         pass
