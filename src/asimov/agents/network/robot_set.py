@@ -8,7 +8,7 @@ import polars as pl
 
 
 class RobotSet(AgentSet):
-    """Robot make Products and sell them go Bondholders."""
+    """Robots make Products and sell them to Bondholders."""
 
     def __init__(self, n: int, 
                  model, 
