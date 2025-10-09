@@ -59,7 +59,7 @@ class Asimovian(Model):
             self.step()
 
     def step(self) -> None:
-        self.current_step
+        self.current_step += 1
         for agent_set in self.sets:
             agent_set.step()
             self.customer_edges.step()
