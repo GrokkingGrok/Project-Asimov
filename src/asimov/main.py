@@ -1,4 +1,4 @@
-from .models.asimovian import Asimovian 
+from .models.asimovian import Asimovian
 
 if __name__ == "__main__":
     # Example run

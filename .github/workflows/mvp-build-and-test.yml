@@ -22,12 +22,11 @@ jobs:
           echo "$HOME/.local/bin" >> $GITHUB_PATH
       - name: Install dependencies
         run: |
-          poetry install --no-interaction --no-root
+          poetry install --no-interaction
       - name: Install asimov package
         run: poetry run pip install -e .
       - name: Run tests
-        env:
-          PYTHONPATH: ${{ github.workspace }}/src
+        working-directory: .  # Run from root
         run: |
           mkdir -p coverage-reports
           poetry run pytest --cov=src/asimov --cov-report=xml:coverage-reports/coverage.xml --cov-config=pyproject.toml

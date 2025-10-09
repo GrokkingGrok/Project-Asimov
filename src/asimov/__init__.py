@@ -11,6 +11,7 @@ from .agents.network.robofund import RoboFund
 #from .agents.edges.mint_request import MintRequest
 from .agents.edges.edge_set import EdgeSet
 from .agents.edges.customer_edges import CustomerEdges
+from .models.asimovian import Asimovian
 
 
 __version__ = "0.1.0"
