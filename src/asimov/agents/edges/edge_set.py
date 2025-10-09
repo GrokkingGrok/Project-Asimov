@@ -15,8 +15,6 @@ class EdgeSet(AgentSet):
     "rate": pl.Float64,  # Add this
     "step_rate_changed": pl.UInt64,  # Add this
     "throughput": pl.Float64,  # Add this
-    "payment_terms": pl.Utf8,  # Add this
-
     }
     def __init__(self, model, initial_edges: list[dict] | None= None) -> None:
         """Initialize EdgeSet with optional initial edges."""
