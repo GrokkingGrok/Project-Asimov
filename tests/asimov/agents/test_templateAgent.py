@@ -10,8 +10,7 @@
 8. Add additional tests as needed to cover agent functionality.
 9. Ensure all tests pass before finalizing your changes.
 10. Delete these instructions from the file once setup is complete."""
-import pytest
-from mesa import Model, Agent
+
 # from asimov import Template
 
 def test_Template_initialization() -> None:

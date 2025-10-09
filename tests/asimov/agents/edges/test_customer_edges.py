@@ -1,8 +1,8 @@
 import numpy as np
 import polars as pl
 
-from asimov.main import Asimovian
-from asimov import CustomerEdges
+from asimov.models.asimovian import Asimovian
+from asimov.agents.edges.customer_edges import CustomerEdges
 
 def test_customer_edge_set():
     """Test EdgeSet via subclass (init/add/query/schema)."""

@@ -1,7 +1,7 @@
-import pytest
+"""Tests for EnterpriseSet agent."""
 import polars as pl
 from unittest.mock import Mock
-from asimov import EnterpriseSet  # Adjust path as needed
+from asimov.agents.network.enterprise_set import EnterpriseSet  # Adjust path as needed
 
 def test_enterprise_initialization():
     """Test EnterpriseSet init and step with prints visible."""

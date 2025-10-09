@@ -1,6 +1,6 @@
 from unittest.mock import Mock
 from mesa_frames import Model
-from asimov import BondholderSet
+from asimov.agents.network.bondholder_set import BondholderSet
 
 class ModelForTest(Model):  # Renamed to avoid pytest warning
     def __init__(self):

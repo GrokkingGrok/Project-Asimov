@@ -1,4 +1,5 @@
-from .models.asimovian import Asimovian
+"""Main module for running the Asimov simulation."""
+from asimov import Asimovian
 
 if __name__ == "__main__":
     # Example run

@@ -1,6 +1,5 @@
-import pytest
-from mesa import Model, Agent
-from asimov import RoboFund
+"""Tests for RoboFund agent."""
+from asimov.agents.network.robofund import RoboFund
 
 def test_robofund_initialization() -> None:
     """Test the initialization of the RoboFund agent."""

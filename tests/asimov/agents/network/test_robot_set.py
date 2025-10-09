@@ -3,7 +3,7 @@ import polars as pl
 import numpy as np
 from unittest.mock import Mock
 from mesa_frames import Model
-from asimov import RobotSet
+from asimov.agents.network.robot_set import RobotSet
 class ModelForTest(Model):  # Renamed to avoid pytest warning
     def __init__(self):
         super().__init__()

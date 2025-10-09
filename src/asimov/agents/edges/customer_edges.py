@@ -1,5 +1,5 @@
 
-from asimov import EdgeSet
+from asimov.agents.edges.edge_set import EdgeSet
 import polars as pl
 import numpy as np
 class CustomerEdges(EdgeSet):
