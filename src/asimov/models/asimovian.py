@@ -61,7 +61,7 @@ class Asimovian(Model):
     def step(self) -> None:
         self.current_step
         for agent_set in self.sets:
-            self.sets.step()
+            agent_set.step()
             self.customer_edges.step()
         #self.enterprises.step()
         # do this for every type of agent, adding changes to self.previous_step for analysis
