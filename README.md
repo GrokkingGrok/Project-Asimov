@@ -4,7 +4,7 @@ What if robots don't just produce things? What if every time a robot makes somet
 
 What if you just found the repo simulating such an economy?
 
-## What’s It About?
+## What are we working on now?
 
 In the Minimally Viable Product (v0.2.0 MVP), the remarkably ethical Conglomocorp signs a Bonded Robot Labor Agreement (BRLA), securing a lump sum of RoboTorq from Isaac, the AI mint. The robots get to work making widgets that the bondholders can't resist.
 
@@ -33,11 +33,14 @@ We welcome code, code reviews, tests, or docs! See our [code of conduct](CODE_OF
 1. **Clone** your fork: `git clone https://github.com/YOUR-USERNAME/Project-Asimov.git`.
 2. Install dependencies: `poetry install`
 3. Run tests: `poetry run pytest -s -v`
-4. Tackle you issue.
+4. Write a test for the feature you want to build.
+5. Build it.
+6. Test it.
+7. Submit a Pull Request.
 
 ## Roadmap
 
-- **v0.2.0 (MVP)**: Conglomocorp funds BRLA, bondholders activate, disto streams flow.
-- **Future**: Parameter File Driven initialization, Multiple System Level Actors, Multiple enterprises, AI-driven Torq valuation, Monte Carlo experiments, distributed execution with 350+ million bondholders, etc.
+- **v0.2.0 (MVP)**: Conglomocorp funds BRLA, Robots work, Isaac mints, disto streams flow, bondholders spend, Conglomocorp pays more robots, Isaac mints more money, etc etc etc...
+- **Future**: Parameter File Driven initialization, UI, Live Parameter Updates via UI, Multiple System Level Actors, Multiple enterprises, AI-driven Torq valuation, Monte Carlo experiments, distributed execution with 350+ million bondholders, etc.
 
 Join us on GitHub to shape the RoboTorq economy!
