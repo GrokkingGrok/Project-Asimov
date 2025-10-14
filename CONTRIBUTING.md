@@ -25,8 +25,8 @@ The `economy` is a complex data structure known as a `graph`, `actors` are `node
   * `flow` describes the act of moving something from one `actor` to another.
     * Each `flow` only goes one way.
     * If that same something needs to move back where it came from, it needs to travel along a different `flow`.
-  * `actors` are, in the most general sense, what store the things `flow` into, through, and out of.
-  * `actors` also store a large `schema` of attributes that help decide:
+  * `actors` are, in the most general sense, busy storing the things that `flow` into and out of their possession, and not much else.
+  * `actors` store a large `schema` of attributes that help decide:
     * What is allowed to `flow` into and out of them,
     * At what rates the `flow` may occur, and
     * Under which market conditions the `flow` and rate may occur, etc.
@@ -272,24 +272,26 @@ When creating and calling `flow` methods, this object is set it and forget it. Y
 
 However, there are **many** different types of `flow`, since each `flow` does exactly one thing.
 
-This set of simple, yet exact constraints provides 
-  - Prioritizes simplicity and modularity, with flows handling interactions, and because they're self-dissolving they keep the graph clean and lean
-  - Encourages scalability
-  - Encourages Community input, designing for future AI-driven features (e.g., Giskard) and Monte Carlo runs. Here's how.
+This set of simple, yet exact constraints: 
+  - Prioritizes simplicity and modularity, with flows handling interactions and spawning new `flows` to ignite the next interaction, and because they're self-dissolving they keep the graph clean and lean
+  - Encourages scalability because memory does not bloat with used `flows`.
+  - Encourages community input, designing for future features (e.g., Giskard and Daneel). Here's how.
 
-Once the core simulation logic is defined, adding new features largely becomes a matter of designing new flow loop logic. See this example flow loop logic below. Looking at the handling of *SecureBRLA* `flow` in v0.2.1, you'll see that the creation of the *SecureBRLA* `flow` spawns a flurry of activity that loops between three different `actors`:
+Once the core simulation logic is defined, adding new features largely becomes a matter of designing new flow loop logic. 
+
+See this example flow loop logic below. Looking at the handling of *SecureBRLA* `flow` in v0.2.1, you'll see that the creation of the *SecureBRLA* `flow` spawns a flurry of activity that loops between three different `actors`:
 
 **v0.2.1 *SecureBRLA* Handling**
-  - Created during the ``Robonomics.run_model()``, adding a one-tick *SecureBRLA* request from the `BRLA` to `Conglomocorp`.
+  - Created during the initial call to ``Robonomics.run_model()``, adding a one-tick *SecureBRLA* request from the `BRLA` to `Conglomocorp`.
   - When `Conglomocorp` does not have enough RoboTorq, this *SecureBRLA* creates a *SeedNeeded* request to `Isaac` from `Conglomocorp`.
-  - The *SeedNeeded* request spawns a *SeedXfer* credit flow in the amount of 5*brla_retainer_fee (default=5*100,000) from `Isaac` to `Conglomocorp`.
+  - The *SeedNeeded* request spawns a *SeedXfer* credit flow in the amount of 5 x brla_retainer_fee (default=5 x 100,000) from `Isaac` to `Conglomocorp`.
   - The *SeedXfer* credit spawns a *RetainerXfer* credit from `Conglomocorp` to the `BRLA`.
   - The *RetainerXfer* credit pays the brla_retainer_fee to the `BRLA`.
   - This *SecureBRLA* request is marked as completed when the *RetainerXfer* is disbursed successfully.
 
 This is why I talk about RoboTorq "infecting" the host economy. We'll be using several tools to guide this infection as efficiently as possible.
 
-## Tools & Dependencies
+## Tech Stack
   - **Polars**:
     - **Description**: A fast DataFrame library for in-memory data processing.
     - **Pros**: Blazing speed for large datasets, perfect for bondholder/enterprise registries.
@@ -327,3 +329,4 @@ This is a living document. Expect it to change often for now. When a change occu
 Thank you for your hard work and dedication to Project-Asimov.
 
 Jon
+
