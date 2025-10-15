@@ -326,16 +326,24 @@ This set of simple, yet exact constraints:
 
 Once the core simulation logic is defined, adding new features largely becomes a matter of designing new *flow* loop logic. 
 
-See this example *flow* loop logic below. Looking at the handling of *SecureBRLA* *flow* in v0.2.1, you'll see that the creation of the *SecureBRLA* *flow* spawns a flurry of activity that loops between three different `actors`:
+See this example *flow* loop logic below. Looking at the handling of *SecureBRLA* *flow* in v0.2.1, you'll see that the creation of the *SecureBRLA* *flow* spawns a flurry of activity that loops between three different `actors`.
 
-**v0.2.1 Flow Loop for Jumpstarting Economy with SecureBRLA**
+Ready to go deep? How do you jumpstart a whole RoboTorq economy when no RoboTorq exists? Bit of a catch-22.
+
+**v0.2.1 Flow Loop Logic for Jumpstarting Economy with SecureBRLA**
+  - Created during the initial call to Robonomics.run_model(), adding a one-tick *SecureBRLA* request from the `BRLA` to `Conglomocorp`.
+    - Initializes with `BRLA` as source and Conglomocorp as target, passing model=robonomics for graph access.
+  - When `Conglomocorp` does not have enough RoboTorq (none exists yet), this *SecureBRLA* creates a *SeedNeeded* request to `Isaac` from `Conglomocorp`.
+    - Calls self.create_flow("conglomocorp_001", "Isaac", *SeedNeeded* , {}) to spawn *SeedNeeded*. 
+    - Logs to src/asimov/output/flow_logs.txt (e.g., “Spawned *SeedNeeded*: conglomocorp_001 → Isaac” on success, “Failed to spawn *SeedNeeded*: [error]” on exception) via a try-except block.
+    - Proceeds regardless of success, per your no-waiting rule.
   - This *SecureBRLA* request is marked as completed and flags itself for removal when the *SeedNeeded* is created.
-  - After create_flow() returns (successful or not), sets self.is_completed = True
-    - and attempts try: self.model.graph.dissolve(self)
-    - with logging (“Dissolved *SecureBRLA*: brla_001 → conglomocorp_001” on success, error on fail).
-    - *SecureBRLA* will be gone from memory before **any** of the following actions take place.
+      - After create_flow() returns (successful or not), sets self.is_completed = True
+      - and attempts try: self.model.graph.dissolve(self)
+      - with logging (“Dissolved *SecureBRLA*: brla_001 → conglomocorp_001” on success, error on fail).
+  - *SecureBRLA* will be gone from memory, like it never existed before **any** of the following actions take place the following tick.
   - The *SeedNeeded* request spawns a *SeedXfer* credit *flow* in the amount of 5 x brla_retainer_fee (default=5 x 100,000) from Isaac to Conglomocorp.
-  - *SeedNeeded*'s tick() (next cycle) calls self.create_flow("isaac", "conglomocorp_001", "", {"amount": 500000}), logging success/failure.
+  - *SeedNeeded*'s tick() (next cycle) calls self.create_flow("Isaac", "conglomocorp_001", "", {"amount": 500000}), logging success/failure.
   - The *SeedXfer* credit spawns a *RetainerXfer* credit from Conglomocorp to the BRLA.
   - *SeedXfer*’s tick() (next cycle) calls self.create_flow("conglomocorp_001", "brla_001", "*RetainerXfer*", {"amount": 100000}), logging accordingly.
   - The *RetainerXfer* credit pays the brla_retainer_fee to the BRLA.
@@ -395,5 +403,6 @@ This is a living document. Expect it to change often for now. When a change occu
 Thank you for your hard work and dedication to Project-Asimov.
 
 Jon
+
 
 
