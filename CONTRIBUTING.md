@@ -1,22 +1,28 @@
 # Why Contribute?
-
-What economic system enables a Kardashev Type 1 civilization? Do you really think it's what we've got now? 
+What economic system enables a Kardashev Type 1 civilization? Do you really think it's what we've got now?
 
 What happens when AI and robots swallow jobs wholesale? Print money for UBI and hope you don't need a wheelbarrow full of cash to buy a loaf of bread next year?
 
-What if we can turn job replacement into an economic system's strength, its main growth factor even, rather than a death sentence?
+What if we can turn job replacement into an economic system's strength, even its primary growth factor, rather than a death sentence?
 
-Does anyone saying "The future is abundance" with starry-eyed feverpitch have any clue what that acutally means, or is it just hype?
+Does anyone saying "The future is abundance" with starry-eyed fever pitch have any clue what that actually means, or is it baseless hype?
 
 **Project-Asimov isn't selling dreams: it's old-fashioned hard work today applied to the problems of tomorrow.**
 
-And this document is where your work begins.
+Maybe Robonomics is a terrible idea. Then again, maybe it's Kardashev 1+ economics. Project Asimov is the place for people who want to make tangible progress toward making that call.
+
+If you so choose, this is where your contribution begins.
 
 If you're thinking of contributing or if you already are contributing and need a refresher, this is where you can get the nitty-gritty details on the Asimov system architecture.
 
+## Let's Get Housekeeping Out of the Way
 As the official design document, this is the One Source of Truth. If it's not here, it's not yet Project-Asimov canon. If you think something in this document contradicts itself, please raise a docs issue on our [Issues Board](https://github.com/GrokkingGrok/Project-Asimov/issues) before you do anything else and forget. When writing new documentation or code, check here first so you understand how your feature fits into the grand scheme of things. 
 
 Before you can merge any feature or fix to main, it will need to be fully documented, too. If that documentation means this or anything else needs to change, submit an issue for tracking.
+
+What I'm getting at is this document needs to be up to date and correct, or bad things happen.
+
+I'm Jon, by the way, the current Owner and Manager of Project Asimov, until someone smarter and better comes along, at least.
 
 ## Quick Point of Clarification
 "Asimov" refers to the Python Package. "Project-Asimov" is the open source effort to create "Asimov". `Robonomics.py` is the Python class that contains an entire Robonomic/RoboTorq Economy. We'll be doing lots of defining in this document.
@@ -57,6 +63,23 @@ Once again: Each *flow* is designed to move a single type of thing, for one part
 
 Once you really internalize this key mechanism of moving data through the economy, the rest is easy.
 
+## The Perfect *Flow* Analogy?
+Imagine you have a blow gun that shoots one dart at a time. In this example, each dart would be a *flow* moving from one `actor`, you, the source, to another `actor`, the target.
+
+You have three kinds of darts. 
+  * One is a normal dart. You shoot it, it either hits its target or misses.
+  * Another has a string attached to it.
+    * If you hit your target, you can pull the string tight and transfer messages along it like with two cups and a string as long as its stuck in the target.
+    * This is a persistent *flow*.
+  * The final kind of dart is very special.
+    * If this dart hits its target, it can shoot more darts and hit other targets automatically.
+    * And some of those are special darts as well, they shoot their own darts if they hit their targets.
+    * But you, the `actor` who shot it, are responsible for making sure you hit the initial target.
+    * And if you're expecting something in return, and don't get it, you're also responsible for shooting another dart.
+  * We, the programmers, are responsible for making sure misses don't happen, and that if they do, the program doesn't crash.
+   
+Keep this in mind as you read through the following sections, and the RoboTorq economy will take shape in your mind soon enough.
+
 ## Other Key Terms & Data Structures
 
 From here, we can start defining key terms more readily.
@@ -77,11 +100,20 @@ This section will go into extreme detail. You should be able to reference this d
   * `Bondholders` receive a constant trickle of RoboTorq from `Isaac`, 24/7/365.
   * This constant trickle is called a *DistoStream* *flow* (specific instances of *flows*, like *DistoStream*, will also be italicized to separate the two ideas)
   
-  **How RoboTorq moves through the Economy: Spending & Investing (Saving Covered Later)**
+  **How RoboTorq moves through the Economy: Spending & Investing**
   * `Enterprises` sell goods and services to `Bondholders` with a *SellsToBondholder* *flow*.
   * `Bondholders` invest in `Enterprises` at `RoboFund` in lieu of a stock market.
   * `RoboFund` is how `Bondholders` invest in individual `Projects` that `Enterprises` need funding for.
   * `Bondholders` choose which `BuyerFunnels` and `MakerFunnels` to invest in, which are tied to `Projects`.
+
+  **Consumer Savings & Banks**
+  * `Bondholders` can divert *DistoStreams* to `Banks` or invest it to avoid hoarding taxes.
+  * Interest accumulates on savings based on bank performance.
+  * `Banks` operate on 1:1 reserve ratio.
+  * `Bondholders` and `Enterprises` can take out loans.
+  * `Banks` can invest savings to hedge loans.
+  * `Bondholders` have a waiting period to withdraw from `Banks`
+  * Returns from investments are always deposited in `SavingAccounts`.
 
   **Investing & Commercial Financing**
   * When a `Project` is funded, it is converted to a `Bid`, to be vetted by `BidNet`.
@@ -403,6 +435,7 @@ This is a living document. Expect it to change often for now. When a change occu
 Thank you for your hard work and dedication to Project-Asimov.
 
 Jon
+
 
 
 
