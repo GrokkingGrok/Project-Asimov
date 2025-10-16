@@ -1,42 +1,59 @@
-# Project-Asimov: Post-Scarcity Robonomics Simulation
-
-What if robots don't just produce things? What if everytime a robot makes something, an AI crypto-mint spins up and you get a tiny bit of that value in your digital wallet as a new cyrptocurrency, RoboTorq?
+# Project Asimov: Robotic Economics (Robonomics) Simulation
+What if robots don't just produce things? What if every time a robot makes something, an AI crypto-mint spins up and you get a tiny bit of that value in your digital wallet as a new cryptocurrency, RoboTorq?
 
 What if you just found the repo simulating such an economy?
 
-## What’s It About?
+## What are we working on now?
+With two prototypes of mistakes out of the way, we're defining the entire Minimally Viable Product (MVP) in English as we adapt to the new system architecture.
 
-In the Minimally Viable Product (v0.2.0 MVP), the remarkably ethical Conglomocorp signs a Bonded Robot Labor Agreement (BRLA), securing a lump sum of RoboTorq from Isaac, the AI mint. The robots get to work making widgets the bondholders can't resist.
+# Why Contribute?
+What economic system enables a Kardashev Type 1 civilization? Do you really think it's what we've got now?
 
-Bondholders receive newly minted RoboTorq disto streams, and spend it on Conglomocorp’s products. Conglomocorp spends that RoboTorq on more robotic labor, which causes more RoboTorq to be minted, and so on.
+What happens when AI and robots swallow jobs wholesale? Print money for UBI and hope you don't need a wheelbarrow full of cash to buy a loaf of bread next year?
 
-Building on a Polars backend for fast DataFrames and GRAPE for scalable graphs, flows (edges like `SecureBRLA`, `SeedXfer`) self-dissolve after one tick, keeping the system efficient.
+What if we can turn job replacement into an economic system's strength, even its primary growth factor, rather than a death sentence?
 
-## Why Contribute?
+Does anyone saying "The future is abundance" with starry-eyed fever pitch have any clue what that actually means, or is it baseless hype?
 
-- Explore robotic economics with real-world potential.
-- Scalable design with Polars and GRAPE for thousands of nodes and Monte Carlo runs - real academic grade data engine.
-- Shape the project: add flows, enhance AI valuation (e.g., Giskard’s token audits), or design a UI.
-- Join an open-source effort to rethink economic systems.
+Project Asimov isn't selling dreams: it's old-fashioned hard work today applied to the problems of tomorrow.
 
-## Contributing
+Maybe Robonomics is a terrible idea. Maybe it's Kardashev 1+ economics. Project Asimov is the place for people who want to make tangible progress toward making that call.
 
-Before starting:
+If you so choose, this is where your contribution begins.
 
-1. Visit [Project-Asimov Issues](https://github.com/GrokkingGrok/Project-Asimov/issues) and comment to claim a task.
-2. **Fork** the repo to create your own copy on GitHub.
+## Specific Needs
+While anyone interested is encouraged to engage in any capacity they feel comfortable with, we do have specific needs in some key areas that could significantly accelerate the project. Another way to look at this list is that it is the kind of stuff you'll have the opportunity to learn if you want to help.
 
-We welcome code, code reviews, tests, or docs! See our [code of conduct](CODE_OF_CONDUCT.md).
+**Developer Skillsets**
+  - Python
+  - Polars library
+  - QuantEcon library
+  - GRAPE graph management
+  - Dask distributed computing
+  - Ray AI/cluster integration
+  - UI/UX
 
-## Get Started
+**Other Needs**
+  - Project Managers who enjoy overseeing a feature from planning through production
+  - Economists for consulting on model execution (help us model it, write a paper about the results and publish it)
+  - PR people to create and spread press releases
+  - Social media management
+  - Lawyers with experience in cryptocurrency, finance, or open-source transition to enterprise if that ever becomes an issue
 
-1. **Clone** your fork: `git clone https://github.com/YOUR-USERNAME/Project-Asimov.git`.
-2. Install dependencies: `poetry install`
-3. Run tests: `poetry run pytest -s -v`
+If you think you're a good fit for a non-technical role, post a comment on the discussion board, [send Jon a DM on X](https://x.com/ProjectAsimov), or claim an issue on the issue board if you already have clarity on your path.
+
+## Getting Started for Technical Roles
+For now, familiarize yourself with [Asimov's system architecture](CONTRIBUTING.md).
+
+Coding won't begin until the entire MVP's *flow* logic has been defined in English, naming conventions have been fully defined, and every MVP `actor's` schema attributes are known.
+
+Jon is hard at work defining new *flow* loop logics.
+
+We welcome all good-faith contributions in accordance with our [code of conduct](CODE_OF_CONDUCT.md). (TL;DR, don't be a dou*&^ make sure every feature has a unit test)
 
 ## Roadmap
+We're starting small.
+- **v0.3.0 (MVP)**: Conglomocorp funds BRLA, Robots work, Isaac mints, disto streams flow, bondholders spend, Conglomocorp pays more robots, Isaac mints more money, etc etc etc...
+- **Future**: Parameter File Driven initialization, UI, Live Parameter Updates via UI, Multiple System Level Actors, Multiple enterprises, AI-driven Torq valuation, Monte Carlo experiments, distributed execution with thousands+ bondholders, etc.
 
-- **v0.2.0 (MVP)**: Conglomocorp funds BRLA, bondholders activate, disto streams flow.
-- **Future**: Parameter File Driven initialization, Multiple System Level Actors, Multiple enterprises, AI-driven Torq valuation, Monte Carlo experiments, distributed execution with 350+ million bondholders, etc.
-
-Join us on GitHub to shape the RoboTorq economy!
+Join Project Asimov to shape the RoboTorq economy! If this page whetted your appetite, check out[Asimov's system architecture](CONTRIBUTING.md).
