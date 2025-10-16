@@ -102,18 +102,36 @@ This section will go into extreme detail. You should be able to reference this d
   
   **How RoboTorq moves through the Economy: Spending & Investing**
   * `Enterprises` sell goods and services to `Bondholders` with a *SellsToBondholder* *flow*.
-  * `Bondholders` invest in `Enterprises` at `RoboFund` in lieu of a stock market.
+  * `Bondholders` invest in `Enterprises` at `RoboFund` in lieu of the stock market.
   * `RoboFund` is how `Bondholders` invest in individual `Projects` that `Enterprises` need funding for.
   * `Bondholders` choose which `BuyerFunnels` and `MakerFunnels` to invest in, which are tied to `Projects`.
 
-  **Consumer Savings & Banks**
-  * `Bondholders` can divert *DistoStreams* to `Banks` or invest it to avoid hoarding taxes.
-  * Interest accumulates on savings based on bank performance.
-  * `Banks` operate on 1:1 reserve ratio.
-  * `Bondholders` and `Enterprises` can take out loans.
-  * `Banks` can invest savings to hedge loans.
-  * `Bondholders` have a waiting period to withdraw from `Banks`
-  * Returns from investments are always deposited in `SavingAccounts`.
+  **Consumer Savings in `TorqVaults` (if you were expecting a bank, you haven't been paying attention)**
+  * `Bondholders` can divert *DistoStreams* to `TorqVaults` using flows such as *StashVaultPledge* or *TorqedPledges* to avoid having their wallet's idle hoard swept up by Isaac during demurrage.
+  * `TorqVaults` operate on AI math, not banker vibes.
+    * Not all `TorqVaults` are created equal.
+    * They offer various ways for `Enterprises` and `Bondholders` to both finance purchases and save.
+    * A `Bondholder` can choose how much of a stash to stake for loans.
+    * Staked RoboTorq can't be accessed at will.
+    * Stakings can earn more, but can also be lost if the loan isn't repaid.
+  * If a `Bondholder` wants the safest savings, they'll send it to a `StashVault` using a *StashVaultPledge*.
+    * Stash vaults have low returns, but fast access to savings.
+    * Demurraged RoboTorq from `Bondholders` not managing their *flows* properly goes to `StashVaults` equally.
+    * `Bondholders` saving for a new furniture set might use a `StashVault`.
+  * If a `Bondholder` is saving for a big purchase, like building a house, they'll send it to a `TorqedVault` using a *TorqedPledges*.
+    * `TorqedVaults` are where you save for a down payment on a purchase you know you're going to make.
+    * It's an automatic pledge to divert future portions of a *DistoStream* to the `TorqedVault`.
+    * Lump sums can be deposited at any time.
+    * Withdrawals are not as fast or easy as `StashVaults`, and are impossible once the planned purchase has been made.
+    * When the minimum needed collateral for your purchase, combining current and future pledges, is attained, work starts on your house.
+  * This is a completely different way of financing things like houses.
+    * Instead of creating money for the loan to pay the developer up front to build the house, the system is looking at what's already planned to be minted off realized value in Isaac's `DistoBuffer`, and how much of that is planned to go to the `Bondholder` in question.
+    * It's also looking at the BRLA tied to the Developer building houses with robotic labor, to estimate what would likely be scheduled to be minted due to the future work.
+    * And it's looking at the already saved collateral.
+    * And it's looking at the `Bondholder's` future liabilities already on the blockchain.
+    * And their past reputation for meeting pledges.
+    * All to determine this `Bondholder's` ability to pay for the house.
+    * If the `Bondholder` misses a pledge, no worries, they buy buffer insurance for large purchases like this, and borrow against that pool if they miss a pledge.
 
   **Investing & Commercial Financing**
   * When a `Project` is funded, it is converted to a `Bid`, to be vetted by `BidNet`.
@@ -435,6 +453,7 @@ This is a living document. Expect it to change often for now. When a change occu
 Thank you for your hard work and dedication to Project-Asimov.
 
 Jon
+
 
 
 
