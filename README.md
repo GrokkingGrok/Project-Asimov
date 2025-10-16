@@ -1,12 +1,12 @@
-# Project Asimov: Post-Scarcity Economics Simulation
+# Project Asimov: Robotic Economics (Robonomics) Simulation
 What if robots don't just produce things? What if every time a robot makes something, an AI crypto-mint spins up and you get a tiny bit of that value in your digital wallet as a new cryptocurrency, RoboTorq?
 
 What if you just found the repo simulating such an economy?
 
 ## What are we working on now?
-With two prototypes of mistakes out of the way, we're defining the entire Minimally Viable Product (MVP) in English.
+With two prototypes of mistakes out of the way, we're defining the entire Minimally Viable Product (MVP) in English as we adapt to the new system architecture.
 
-## Why Contribute?
+# Why Contribute?
 What economic system enables a Kardashev Type 1 civilization? Do you really think it's what we've got now?
 
 What happens when AI and robots swallow jobs wholesale? Print money for UBI and hope you don't need a wheelbarrow full of cash to buy a loaf of bread next year?
@@ -40,7 +40,7 @@ While anyone interested is encouraged to engage in any capacity they feel comfor
   - Social media management
   - Lawyers with experience in cryptocurrency, finance, or open-source transition to enterprise if that ever becomes an issue
 
-If you think you're a good fit for a non-technical role, post a comment on the discussion board, [send Jon a DM on X](https://x.com/ChrncPainRewird), or claim an issue on the issue board if you already have clarity on your path.
+If you think you're a good fit for a non-technical role, post a comment on the discussion board, [send Jon a DM on X](https://x.com/ProjectAsimov), or claim an issue on the issue board if you already have clarity on your path.
 
 ## Getting Started for Technical Roles
 For now, familiarize yourself with [Asimov's system architecture](CONTRIBUTING.md).
