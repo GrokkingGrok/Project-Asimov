@@ -15,13 +15,13 @@ flowchart TD
         direction TB
         unseededCorp["<b>Enterprise</b><br/>is_seeded=False"]
         Isaac["<b>Isaac</b>"]
-        seededCorp["<b>Enterprise</b><br/>is_seeded=True"]
+
     end
     
     %% Path 2: Direct Flow (Right Column)  
     subgraph "Path 2: Already Seeded" ["<b>Enterprise.is_seeded = True</b>"]
         direction TB
-        2seededCorp["<b>Enterprise</b><br/>is_seeded=True"]
+        seededCorp["<b>Enterprise</b><br/>is_seeded=True"]
     end
     
     %% Path 1 SUCCESS Flows (Green Solid Lines)
@@ -32,8 +32,8 @@ flowchart TD
     seededBRLA -->|ProductionStartFlag<br/><b>Tick 4</b>| activeOracle
     
     %% Path 2 SUCCESS Flows (Blue Solid Lines)
-    unseededBRLA -->|SecureBRLA<br/><b>Tick 1</b>| 2seededCorp
-    2seededCorp -->|RetainerXfer<br/><b>Tick 2</b>| seededBRLA
+    unseededBRLA -->|SecureBRLA<br/><b>Tick 1</b>| seededCorp
+    seededCorp -->|RetainerXfer<br/><b>Tick 2</b>| seededBRLA
     seededBRLA -->|ProductionStartFlag<br/><b>Tick 3</b>| activeOracle
     
     %% Path 1 FAILURE Flows (Red Dotted Lines)
@@ -43,8 +43,8 @@ flowchart TD
     seededBRLA -.->|TransactionFailed<br/>Seed Error<br/><b>Tick 4</b>| Isaac
     
     %% Path 2 FAILURE Flows (Red Dotted Lines)
-    2seededCorp -.->|RequestFailed<br/>Schema Error<br/><b>Tick 2</b>| unseededBRLA
-    seededBRLA -.->|TransactionFailed<br/>Update Error<br/><b>Tick 3</b>| 2seededCorp
+    seededCorp -.->|RequestFailed<br/>Schema Error<br/><b>Tick 2</b>| unseededBRLA
+    seededBRLA -.->|TransactionFailed<br/>Update Error<br/><b>Tick 3</b>| seededCorp
     
     %% PRODUCTION FAILURE (Red Dotted Line)
     activeOracle -.->|RequestFailed<br/>Schema Error<br/><b>Tick 5</b>| seededBRLA
@@ -333,4 +333,5 @@ flowchart TD
   - Enterprise seeded with RoboTorq.
   - BRLA receives retainer fee.
   - All temporary flows dissolved.
+
 
