@@ -5,39 +5,68 @@ SecureBRLA.py is the first cascading flow in the simulation, and can be used whe
 Later: Seeds require USD as collateral at going exchange rate.
 ```mermaid
 flowchart TD
-    START["Robonomics.tick()"]
-    S1["SecureBRLA<br/>Tick 1"]
-    SN["SeedNeeded<br/>Tick 2"]
-    SX["SeedXfer<br/>Tick 3"]
-    RX1["RetainerXfer P1<br/>Tick 3"]
-    RX2["RetainerXfer P2<br/>Tick 2"]
-    PSF["ProductionStartFlag<br/>Tick 4"]
-    PL["Production Loop"]
-    RF1["RequestFailed"]
-    TF1["TransactionFailed"]
-    D1{"Ent.is_seeded==False?"}
-    D2{"Isaac.is_seeding?"}
-    D3{"BRLA.is_seeded==False?"}
+    %% Actors (Top Row - Professional Layout)
+    unseededBRLA["BRLA<br/><b>is_seeded=False</b>"]
+    activeOracle["BRLA.Oracle<br/><b>is_active=True</b>"]
+    seededBRLA["BRLA<br/><b>is_seeded=True</b>"]
     
-    START --> S1
-    S1 --> D1
-    D1 -->|Yes| SN
-    D1 -->|No| RX2
-    SN --> D2
-    D2 -->|Yes| SX
-    D2 -->|No| RF1
-    SX --> RX1
-    RX1 --> D3
-    D3 -->|Yes| PSF
-    D3 -->|No| TF1
-    RX2 --> D3
-    PSF --> PL
+    %% Path 1: Seeding Flow (Left Column)
+    subgraph "Path 1: Needs Seed" ["<b>Enterprise.is_seeded = False</b>"]
+        direction TB
+        unseededCorp["<b>Enterprise</b><br/>is_seeded=False"]
+        Isaac["<b>Isaac</b>"]
+        seededCorp["<b>Enterprise</b><br/>is_seeded=True"]
+    end
     
-    S1 -.-> RF1
-    SN -.-> RF1
-    SX -.-> TF1
-    RX1 -.-> TF1
-    RX2 -.-> TF1
+    %% Path 2: Direct Flow (Right Column)  
+    subgraph "Path 2: Already Seeded" ["<b>Enterprise.is_seeded = True</b>"]
+        direction TB
+        2seededCorp["<b>Enterprise</b><br/>is_seeded=True"]
+    end
+    
+    %% Path 1 SUCCESS Flows (Green Solid Lines)
+    unseededBRLA -->|SecureBRLA<br/><b>Tick 1</b>| unseededCorp
+    unseededCorp -->|SeedNeeded<br/><b>Tick 2</b>| Isaac
+    Isaac -->|SeedXfer<br/><b>Tick 3</b>| seededCorp
+    Isaac -->|RetainerXfer<br/><b>Tick 3</b>| seededBRLA
+    seededBRLA -->|ProductionStartFlag<br/><b>Tick 4</b>| activeOracle
+    
+    %% Path 2 SUCCESS Flows (Blue Solid Lines)
+    unseededBRLA -->|SecureBRLA<br/><b>Tick 1</b>| 2seededCorp
+    2seededCorp -->|RetainerXfer<br/><b>Tick 2</b>| seededBRLA
+    seededBRLA -->|ProductionStartFlag<br/><b>Tick 3</b>| activeOracle
+    
+    %% Path 1 FAILURE Flows (Red Dotted Lines)
+    unseededCorp -.->|RequestFailed<br/>Schema Error<br/><b>Tick 2</b>| unseededBRLA
+    Isaac -.->|RequestFailed<br/>Isaac not seeding<br/><b>Tick 3</b>| unseededCorp
+    Isaac -.->|TransactionFailed<br/>Update Error<br/><b>Tick 4</b>| seededCorp
+    seededBRLA -.->|TransactionFailed<br/>Seed Error<br/><b>Tick 4</b>| Isaac
+    
+    %% Path 2 FAILURE Flows (Red Dotted Lines)
+    2seededCorp -.->|RequestFailed<br/>Schema Error<br/><b>Tick 2</b>| unseededBRLA
+    seededBRLA -.->|TransactionFailed<br/>Update Error<br/><b>Tick 3</b>| 2seededCorp
+    
+    %% PRODUCTION FAILURE (Red Dotted Line)
+    activeOracle -.->|RequestFailed<br/>Schema Error<br/><b>Tick 5</b>| seededBRLA
+    
+    %% PROFESSIONAL STYLING
+    classDef actor fill:#e3f2fd,stroke:#1976d2,stroke-width:4px,stroke-dasharray: 5 5
+    classDef unseeded fill:#fff3e0,stroke:#ff9800,stroke-width:3px
+    classDef seeded fill:#e8f5e8,stroke:#4caf50,stroke-width:3px  
+    classDef isaac fill:#f3e5f5,stroke:#9c27b0,stroke-width:3px
+    classDef oracle fill:#fce4ec,stroke:#e91e63,stroke-width:4px
+    
+    %% Apply Classes
+    class unseededBRLA,unseededCorp,2seededCorp unseeded
+    class seededCorp,seededBRLA seeded
+    class Isaac isaac
+    class activeOracle oracle
+    class unseededBRLA,activeOracle,seededBRLA actor
+    
+    %% ARROW STYLING
+    linkStyle 0,1,2,3,4 stroke:#4caf50,stroke-width:3px
+    linkStyle 5,6 stroke:#2196f3,stroke-width:3px
+    linkStyle 7,8,9,10,11,12,13 stroke:#f44336,stroke-width:2px,stroke-dasharray: 5 5
 ```
 ## Actors Involved
 
@@ -304,3 +333,4 @@ flowchart TD
   - Enterprise seeded with RoboTorq.
   - BRLA receives retainer fee.
   - All temporary flows dissolved.
+
