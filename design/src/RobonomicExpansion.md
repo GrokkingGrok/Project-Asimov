@@ -50,7 +50,7 @@ In our sim, we'll assume Option 1 passes about 75% of the time by default (norma
 
 Let's look at Option 1 first.
 
-## Option 1: More Simulations and Calculations
+## Option 1: More Simulations, Voting, and Funding
 Let's say he makes the request. Giskard and Daneel will consider his request, but they need more data. 
 
 The next phase involves Calvin simulating what would have to go wrong for the investment to cause problems. How much of a drop in production would cause a shortfall? How likely is it? etc. 
@@ -61,9 +61,15 @@ What Asimov should do someday, when an LLM is integrated, is train that LLM to a
 
 But the AIs don't have the only say: Calvin is the human window into the network. And they're the ones who have to fund the upgrade.
 
-Calvin launches a campaign educating every Bondholder of the situation, which has to be annoyingly cleared every time they open their wallet, and eventually they vote, one way or another, by deciding to send RoboTorq into Calvin's UpgradeFunnel for the expansion.
+Calvin launches a campaign educating every Bondholder of the situation. 
 
-Again, the possibilities for study here are nearly endless. Should RoboTorq voting be capped to prevent Elon from funding every UpgradeFunnel that involves a Starship? Should this vote be augmented with some other kind of voting? Should the system mint an AltCoin of some type for these votes, that people can only earn through following the system's incentives? What would those incentives be? Does Elon bribe Bondholders to pledge AltCoin with free Grok access if whaling is outlawed? Is the truth that we'd need the whales to expand, given the anti-fiat nature of RoboTorq?The questions just keep flowing, and they're all impossible to answer as of right now!
+Imagine it: Popups, which have to be annoyingly cleared every time you open your wallet. Uncanny, AI-generated images and videos, asking for your Upgrade Pledge, are on blast on every screen, and you start to feel the propagandAI fatigue. 
+
+Maybe you don't vote out of resentment for the annoyance. Maybe, Isaac withholds your Disto until you do.
+
+Eventually, the public votes, by deciding to send RoboTorq into Calvin's UpgradeFunnel for the expansion—or not.
+
+Again, the possibilities for study here are nearly endless. Should RoboTorq voting be capped to prevent Elon from funding every UpgradeFunnel that involves a Starship? Should this vote be augmented with some other kind of voting? Should the system mint an AltCoin of some type for these votes, that people can only earn through following the system's incentives? What would those incentives be? Does Elon bribe Bondholders to pledge AltCoin with free Grok access if whaling is outlawed? Is the truth that we'd need the whales to expand, given the anti-fiat nature of RoboTorq? The questions just keep flowing, and they're all impossible to answer as of right now!
 
 So, we'll keep it simple (and extendable for those economists) in Asimov. If an UpgradeFunnel gets filled, Calvin's vote is a yes. And Giskard and Daneel vote as well based on some kind of schema check, or straight probability. 
 
@@ -97,19 +103,21 @@ Let's assume for the simulation's sake that the probabilities have been tuned to
 
 The key factor of this upgrade process that needs to be modeled is that people must ultimately decide to fund the expansions themselves and then carry through with that funding. The AIs are there to help guide the process to better outcomes, even if they take a little longer to make that better decision, but not hinder progress toward resolution with red tape.
 
-So Calvin sets up the UpgradeFunnels and launches the well-intended propaganda campaign, and Bondholder pledges start funneling in. Enterprises Bid on the Projects. You should know the general drill by now, but this one has some Upgrade bling:
-  - The Upgrades become UpgradeBRLAs,
+So Calvin sets up the UpgradeFunnels and launches the well-intended propaganda campaign, and Bondholder UpgradePledges start funneling in—Enterprises Bid on the UpgradeProjects. 
+
+You should know the general drill by now, but this one has some Upgrade bling:
+  - The UpgradeProjects become UpgradeBRLAs,
   - Giskard allocates TokenTorq
   - Daneel deploys bots
   - Giskard opens TokenTorqDrains
   - Robots process Oracles to build and launch a new Starship Data Center.
-  - Robots open TorqFountains when Oracles are fulfilled.
-  - The UpgradeBRLA fires off UpgradeMintRequest darts to Issac
+  - Robots open TorqFountains as Oracles are fulfilled along the way.
+  - The UpgradeBRLA fires off UpgradeMintRequest darts to Issac.
   - Isaac mints RoboTorq according to the torq_timeline in the UpgradeMintRequest
   - Bondholders receive their DistoStreams
   - DistoStreams get diverted to Calvin's UpgradeFunnels as UpgradePledges
-  - Funnels fund the UpgradeBRLA
-  - The Oracles used to continue processing the upgrade, spawning more RoboTorq, etc.
+  - UpgradeFunnels continue to fund the UpgradeBRLA
+  - The Oracles are used to continue processing the upgrade, spawning more RoboTorq, etc.
 
 This will need to be studied carefully to understand how much Torq should be applied to Oracles in this process. Oracles processed under this scheme may need to have special wage_share rates to avoid inflationary pressure. Again, another opportunity for many papers from Economists. I suspect upgrades will be one of the most studied aspects of this monetary system.
 
