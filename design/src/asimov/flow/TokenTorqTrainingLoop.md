@@ -17,8 +17,8 @@ Oracles hold all the information relevant to a production task, like:
   - Which robot or robots are assigned to work on that task.
 
 Robots complete the work associated with an Oracle. 
-  - Robots both send and receive AI tokens from the Oracle
-  - The interaction between these flow rates helps calculate the overall Oracle.torq
+  - Robots consume a maximum TokenTorq of Giskard.tick_rate per tick
+  - How much less they consume depends on how efficiently they mine TokenTorq into Torq.
 
 BRLA oversees Oracle processing. 
   - RetainerXfer spawns ProductionStartFlag from BRLA to Oracle with payload: BRLA-generated tta_request_data (TokenTorqAuth data to start production)
@@ -63,6 +63,7 @@ Once the TorqFountain has been spawned, the TokenTorq Training Loop is complete.
       - Complex tasks draw TokenTorq from Giskard at a higher rate, but mine slowly when production starts, and then produce lots of torq by the end.
       - Simple tasks draw less TokenTorq, but have flatter Torq curves.
     - The lower Giskard.tick_rate, the harder the robot has to work to mine Torq, the more Torq it produces per unit TokenTorq, but less Torq overall.
+    - There are more, but you'll have to [learn about those in TorqMining.md](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/asimov/flow/TorqMiningLoop.md).
 
 ## Massive Implications of Torq Mining
 Economic growth requires buying more robots (because fleet utilization is high).
@@ -73,7 +74,7 @@ So, who gets to decide to when to upgrade Giskard? Not Giskard, he can only ask.
 
 Likewise, when it's time to buy new bots, Daneel does not make that decision. Giskard and Isaac must agree to proceed, but again, not sufficient. Show me the money!
 
-See the Calvin design doc for more information about how these decisions will ultimately be made and funded.
+See the [Robonomic Expansion, Human Interaction, and Calvin Design Doc](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md) for more information about how these decisions will ultimately be made and funded.
 
 ## TokenTork Training Actors
 | Actor | Initial State (if relevant) | Role | Final State (if relevant) |
