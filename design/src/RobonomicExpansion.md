@@ -2,21 +2,61 @@
 
 RoboTorq economies grow and shrink in direct proportion to the value of the robotic labor occurring at any given time, because that determines how much RoboTorq is minted. Simple enough.
 
-But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity and demand (current and/or future) is not met. 
+But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity because demand (current and/or future) is not met. 
 
-So, more robots are not always going to cut it. For starters,  Daneel's fleet needs to maintain a reserve of robots to smooth out spikes in current utilization via production and future demand through BidNet. This means large purchase agreements need to be planned to include batched shipments over extended periods of time. This allows the reserve pool to grow organically under each successive agreement, ensuring the price of robotic labor at BidNet doesn't plummet because 500k bots got dumped into the reserve pool overnight.
+**Demand Shortage --> Torq Shortage --> RoboTorq Shortage**
 
-Robots need TokenTorq from Giskard to mine Torq while producing. If Giskard is short on TokenTorq Capacity, data centers need to be upgraded, which means upgrading a Deep Underground Military Bunker, or even building a new one!
+It usually means BidNet priced robotic labor too low, and now there are too many goods available. There's going to be pain until balance has been restored.
 
-But that's not all. Isaac needs minting backup capacity upgrades: no point in upgrading Giskard or Daneel if you can't store the damn RoboTorq. That means sending Starship Data Centers to orbit.
+Strategies to make that pain quicker include: 
+- Ensure Daneel is making good recommendations to BidNet when estimating robotic labor for new Bids
+- Ensure Giskard is making good decisions on TokenTorq estimation when advising on Bids
+- Ensure Daneel is doing a good job at rebalancing fleet utilization
+- Ensure Giskard is allocating TokenTorq properly
+- amp up the wage share at BidNet.
+- Be more selective about what kinds of Projects BidNet accepts
+- [lower StashVault returns by loosening hoarding restrictions](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md#:~:text=How%20RoboTorq%20moves,miss%20a%20pledge.), allowing excess supply to get bought up--but be mindful of the inflation that will ensue if this is done too quickly.
+- Consider using the Nuclear Isaac Factor to slow down disto streams at the same time, encouraging withdrawals from StashVaults or Staking within them, hedging inflation by slowing DistoStream velocity.
+
+This portion of the simulator will be a research gold mine. Fiat systems typically have to rely on people wanting debt to clear out bad investments, one way or another. It's too soon to tell how exactly a RoboTorq Economy might match up. Maybe someone should build a simulator to try to answer things like that?
+
+So, have fun with all that, econ nerds. But if demand is healthy, and this is your growth failure mode:
+
+**Fleet Capacity Shortage --> Torq Shortage --> RoboTorq Shortage**
+
+Add bots, and you're good to go. Right?
+
+## Not so fast
+
+You can't just add more robots and expect the economy to jumpstart perfectly. Indeed, doing so without careful thought could be like throwing fuel on a fire when what you really need is charcoal. The rough RoboTorq equivalent of quantitative easing would be buying more bots without stopping to wonder why capacity is short.
+
+Daneel's fleet needs to maintain a reserve of robots to smooth out spikes in current utilization via production and future demand through BidNet. This means large purchase agreements need to be planned to include batched shipments over extended periods of time. This allows the reserve pool to grow organically under each successive agreement, ensuring the price of robotic labor at BidNet doesn't plummet because 500k bots got dumped into the reserve pool overnight. These agreements are worth millions each, farmed from a variety of suppliers to drive innovation. Daneel isn't buying bots without a bulk discount. And these purchase agreements are made *long before* the current reserve is empty. 
+
+What is the optimal reserve_fleet_ratio? Sounds like a good question for economists when they are running Asimov.
+
+So, assuming raw material availability, it's unlikely to see a scenario where Daneel doesn't have any robots in reserve. Even still, you might run across the following growth failure mode, regardless of how many robots he pulls from reserves:
+
+**Fleet Capacity Shortage --> Torq Shortage --> RoboTorq Shortage**
+
+And that's because what's *really* happening is this growth failure mode:
+
+**TokenTorq Shortage --> Torq Shortage --> RoboTorq Shortage**
+
+In fact, what you'd see is that the more robots you put on the production line, the worse each robot would perform! That's because there's not enough TokenTorq to go around.
+
+If Giskard is short on TokenTorq Capacity, data centers need to be upgraded, which means upgrading a Deep Underground Military Bunker, or even building a new one!
+
+But that's not all. Isaac needs minting backup capacity upgrades: no point in upgrading Giskard or Daneel if you can't store the damn RoboTorq. Yet another growth failure mode. That means sending Starship Data Centers to orbit.
 
 And it takes time to get Robots, data center bunkers, and Starships funded, built, and deployed.
 
 And everybody needs Starlink upgrades.
 
-The bond network is engineered so that no one person or AI should have the power to expand unilaterally except as a measure of absolute last resort. 
+The bond network is engineered so that no single person or AI should have the power to expand unilaterally, except as a measure of absolute last resort to bypass a gridlock failure. 
 
-Likewise, no single actor can hold back expansion on a whim. But how is this achieved, much less funded? 
+Likewise, no single actor can hold back expansion on a whim. And some would argue that butting up against gridlocks is often where truly innovative progress is made. Taking that argument into consideration, eliminating the possibility of at least temporary gridlock isn't even desirable: it also prunes paths of innovation. 
+
+But how is this achieved, much less funded? 
 
 Well, first off, we're mainly dealing with machines running programs, so that makes coordination easier.
 
@@ -24,7 +64,7 @@ Well, first off, we're mainly dealing with machines running programs, so that ma
 
 It's not just humans with skin in the game.
 
-Isaac will , by default, front up to half the cost of any approved UpgradeProject, or up to a default of 3% of his reserves in any given fiscal year, whichever is lower. Isaac has large currency reserves from Seed Exchanges. But he can not devote too much, as he requires a large reserve of non-RoboTorq currencies to conduct international trade without sending RT overseas. But this isn't the International Trade Loop Design Doc, and Isaac's not the only AI to ante up.
+Isaac will, by default, front up to half the cost of any approved UpgradeProject, or up to a default of 3% of his reserves in any given fiscal year, whichever is lower. Isaac has large currency reserves from Seed Exchanges. But he can not devote too much, as he requires a large reserve of non-RoboTorq currencies to conduct international trade and interact with governments without sending RT overseas or into a bottomless bureaucratic abyss, respectively. But this isn't the International Trade Loop or the Government Oversight and Interactions Design Doc, and Isaac's not the only AI to ante up.
 
 Additionally, Daneel gets a cut of every BRLA for Robotic Fleet Deployment. Daneel also portions a default of 3% of his budget for UpgradeProjects.
 
@@ -46,7 +86,8 @@ Calvin is how humans interact with the system, yes, but she has a lot of work to
 
 - Forecasting: She will be key in determining expansion decisions by evaluating massive sets of simulation data.
   - She maintains a master network simulation framework for making economic decisions.
-    - The model uses historical averages for most data, but any parameter or parameter set can be overridden.
+    - The model uses historical averages for most data,
+    - but any parameter or parameter set can be overridden.
 - Debugging: Her GhostNodes attach to any node and monitor all traffic in and out, collecting data.
   - Activating Calvin's debug mode: If --debug is passed to the simulator, Calvin's Parameter File is read, and individual nodes can be easily targeted for verbose logging output as specified within the file schema.
 - Voting: She acts as the system's own version of RoboFund, maintaining Funnels and acting as escrow for system upgrades as funds are collected that will be leveraged for these projects.
@@ -107,7 +148,9 @@ Once the debugging is done, and Calvin has new simulations or other data that ex
 
 What if this process never ends, Isaac runs out of minting capacity, and the economy stalls? Obviously, a bug in some software can't be allowed to crash a whole economy.
 
-The nuclear option in this case is allowing a governmental official limited control of the system to authorize the upgrade. What should this control look like? Who should get it? How long should it last? Again, design the sim, write the paper, start the conversation, and maybe we'll find out someday.
+The nuclear option in this case is allowing a Calvin-authorized official limited control of the system to authorize the upgrade. This situation will be avoided in default simulations. 
+
+However, extending experimental functionality would be as simple as defining a new actor, defining its Flow Loops, and adding an if statement to whichever flow or node's tick/step function you want to spawn the flow. What should this control look like? Who should get it? How long should it last? Maybe you're the one to design the sim, write the paper, start the conversation. Maybe we'll find out someday.
 
 Society must not treat the Bond Network like a God. It is designed to serve humans, recognizing that we don't always know what's best for us, but neither do AIs.
 
@@ -119,7 +162,7 @@ The key factor of this upgrade process that needs to be modeled is that people m
 
 So Calvin sets up the UpgradeFunnels and launches the well-intended propaganda campaign, and Bondholder UpgradePledges start funneling in—Enterprises Bid on the UpgradeProjects. 
 
-You should know the general drill by now, but this one has some Upgrade bling:
+You should know the [general drill by now](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md#systemic-actors-and-their-interactions-in-detail-ideal-simulation-behavior), but this one has some Upgrade bling:
   - The UpgradeProjects become UpgradeBRLAs,
   - Giskard allocates TokenTorq
   - Daneel deploys bots
