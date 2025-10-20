@@ -1,12 +1,12 @@
 # Robonomic Expansion, Human Interaction, and Calvin
 
-RoboTorq economies expand and contract in direct proportion to the value of the robotic labor occurring at any given time, because that determines how much RoboTorq is minted. Simple enough.
+RoboTorq economies grow and shrink in direct proportion to the value of the robotic labor occurring at any given time, because that determines how much RoboTorq is minted. Simple enough.
 
 But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity and demand is not met. 
 
-But more robots are not always going to cut it. For starters,  Daneels's fleet needs to maintain a reserve of robots to smooth out spikes in utilization. So purchases need to be planned.
+But more robots are not always going to cut it. For starters,  Daneel's fleet needs to maintain a reserve of robots to smooth out spikes in utilization. So purchases need to be planned.
 
-Robots need TokenTorq from Giskard in order to mine Torq while producing. If Giskard is short on TokenTorq Capacity, data centers need to be upgraded, which means a new Deep Underground Military Bunker. 
+Robots need TokenTorq from Giskard to mine Torq while producing. If Giskard is short on TokenTorq Capacity, data centers need to be upgraded, which means upgrading a Deep Underground Military Bunker, or even building a new one!
 
 But that's not all. Isaac needs minting backup capacity upgrades: no point in upgrading Giskard or Daneel if you can't store the damn RoboTorq. That means sending Starship Data Centers to orbit.
 
@@ -14,23 +14,23 @@ And it takes time to get Robots, data center bunkers, and Starships funded, buil
 
 And Calvin? She needs Starlink upgrades.  Oh, that's right, we haven't talked about Calvin yet. 
 
-Calvin is named after Susan Calvin, the human psychologist for robots from Asimov's work. Here, Calvin is the human representative mechanism of the bond network. And humans vote with their RoboTorq on things like economic expansion efforts.
+Calvin is named after Susan Calvin, the human psychologist for robots from Asimov's work. Here, Calvin is the human representative mechanism of the bond network, among other roles. And humans vote with their RoboTorq on things like economic expansion efforts.
 
-The bond network is engineered so that no one person or AI has the power to expand unilaterally. 
+The bond network is engineered so that no one person or AI should have the power to expand unilaterally except as a measure of absolute last resort. 
 
-Likewise, no actor can hold back expansion on a whim. But how is this achieved, much less funded? 
+Likewise, no single actor can hold back expansion on a whim. But how is this achieved, much less funded? 
 
-Well, first off, we're dealing with machines, so that makes it easier.
+Well, first off, we're mainly dealing with machines running programs, so that makes it easier.
 
 # What does Calvin do?
 
-Before we go any further, let's be clear that the following is **not** presented as an ideal solution, merely a functional one. Remember, the whole point of building this simulator in the first place is to generate as large a set of as close to empirical data as possible for the explicit purpose of studying and answering such optimization questions!
+Before we go any further, let's be clear that the following is **not** presented as an ideal solution, merely a functional one. Remember, the whole point of building this simulator in the first place is to generate as big a set of as close to empirical data as possible for the explicit purpose of studying and answering such optimization questions!
 
 The following is also not how *this* simulation will work. It's the process this simulation will *model*. So with that out of the way...
 
 Calvin is how humans interact with the system, yes, but she has a lot of work to do to get to that point. She (and her digital army of GhostNodes) is the network's forecaster, debugger, voting system, and, for lack of a better term, propaganda wing.
 
-- Forecasting: She will be key in determining expansion decisions by evaluating huge sets of simulation data.
+- Forecasting: She will be key in determining expansion decisions by evaluating massive sets of simulation data.
   - She maintains a master network simulation framework for making economic decisions.
     - The model uses historical averages for most data, but any parameter or parameter set can be overridden.
 - Debugging: Her GhostNodes attach to any node and monitor all traffic in and out, collecting data.
@@ -46,7 +46,7 @@ The first thing he does is alert Calvin. Calvin will check Daneel's and Giskard'
 
 If the Option 1 voting fails, Option 2 goes into effect, described later.
 
-In our sim, we'll assume Option 1 passes about 75% of the time by default (normal distribution), with 25% going to Option 2. This value will of course be tunable in the appropriate parameter file.
+In our sim, we'll assume Option 1 passes about 75% of the time by default (normal distribution), with 25% going to Option 2. This value will, of course, be tunable in the appropriate parameter file.
 
 Let's look at Option 1 first.
 
@@ -93,16 +93,16 @@ Society must not treat the Bond Network like a God. It is designed to serve huma
 
 # Financing Approved Expansions
 
-Let's assume for the simulation's sake that the probabilities have been tuned to work smoothly, and after a few rounds of studies, nearly every upgrade gets fueled, with only a few taking more than 60 steps, and if the economy collapses, well, there's your data. This is a reasonable general requirement for the MVP.
+Let's assume for the simulation's sake that the probabilities have been tuned to work smoothly: After a few rounds of studies, nearly every upgrade gets fueled, with only a few taking more than 60 steps, and if the economy collapses, well, there's your data. This is a reasonable general requirement for the MVP.
 
-The key factor of this upgrade process is that people must ultimately decide to fund the expansions themselves. The AIs are there to help guide the process to better outcomes, even if they take a little longer to make that better decision, but not hinder progress toward resolution with red tape.
+The key factor of this upgrade process that needs to be modeled is that people must ultimately decide to fund the expansions themselves and then carry through with that funding. The AIs are there to help guide the process to better outcomes, even if they take a little longer to make that better decision, but not hinder progress toward resolution with red tape.
 
-So Calvin sets up the UpgradeFunnels and launches the well-intended propagande campaign, and Bondholder pledges start funneling in. Enterprises Bid on the Projects. You should know the general drill by now, but this one has some Upgrade bling:
+So Calvin sets up the UpgradeFunnels and launches the well-intended propaganda campaign, and Bondholder pledges start funneling in. Enterprises Bid on the Projects. You should know the general drill by now, but this one has some Upgrade bling:
   - The Upgrades become UpgradeBRLAs,
   - Giskard allocates TokenTorq
   - Daneel deploys bots
   - Giskard opens TokenTorqDrains
-  - Robots process Oracles to build a launch a new Starship Data Center.
+  - Robots process Oracles to build and launch a new Starship Data Center.
   - Robots open TorqFountains when Oracles are fulfilled.
   - The UpgradeBRLA fires off UpgradeMintRequest darts to Issac
   - Isaac mints RoboTorq according to the torq_timeline in the UpgradeMintRequest
@@ -117,7 +117,9 @@ A straightforward possibility for hedging inflation in this sim is to allocate a
 
 ## Robonomic Expansion Parameters
 
-This table compiles all parameters explicitly or implicitly referenced in this document. Definitions are in plain English, pseudocode shows basic implementation (e.g., as variables or functions), sample values are reasonable defaults based on context, and explanations describe what the sample implies for simulation behavior. Parameters are grouped by section for clarity.
+This table compiles all parameters explicitly or implicitly referenced in this document, considered likely subjects of future study, if not future Asimov Parameters. 
+
+Definitions are in plain English, pseudocode shows basic implementation (e.g., as variables or functions), sample values are reasonable defaults based on context, and explanations describe what the sample implies for simulation behavior. Parameters are grouped by section for clarity.
 
 | Parameter | Definition (English) | Pseudocode | Sample Value | Explanation of Sample Value |
 |-----------|----------------------|------------|--------------|-----------------------------|
