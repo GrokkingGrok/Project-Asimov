@@ -86,7 +86,7 @@ flowchart TD
 | RetainerXfer | Credit Dart | SecureBRLA, SeedNeeded | ProductionStartFlag |
 | RequestFailed | Failure Dart | SecureBRLA, SeedNeeded, SeedXfer, RetainerXfer | failure_retry_node Handles |
 | TransactionFailed | Failure Dart | SeedXfer, RetainerXfer | failure_retry_node Handles |
-| ProductionStartFlag | Request Dart | RetainerXfer | Production Loop |
+| ProductionStartFlag | Request Dart | RetainerXfer | TokenTorqTraining Loop |
 
 ## Dependencies, Assumptions, and Outputs
 [Bulleted list of prerequisites, external factors, or configs.]
@@ -333,5 +333,7 @@ flowchart TD
   - Enterprise seeded with RoboTorq.
   - BRLA receives retainer fee.
   - All temporary flows dissolved.
+  - [TokenTorqTraining Loop begins next tick.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/asimov/flow/TokenTorqTrainingLoop.md)
+
 
 
