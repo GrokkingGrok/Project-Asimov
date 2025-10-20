@@ -1,10 +1,10 @@
-# Robonomic Expansion, Human Interaction, and Calvin
+# Robonomic Expansion, Human Interaction, and Calvin Design Doc
 
 RoboTorq economies grow and shrink in direct proportion to the value of the robotic labor occurring at any given time, because that determines how much RoboTorq is minted. Simple enough.
 
-But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity and demand is not met. 
+But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity and demand (current and/or future) is not met. 
 
-But more robots are not always going to cut it. For starters,  Daneel's fleet needs to maintain a reserve of robots to smooth out spikes in utilization. So purchases need to be planned.
+So, more robots are not always going to cut it. For starters,  Daneel's fleet needs to maintain a reserve of robots to smooth out spikes in current utilization via production and future demand through BidNet. This means large purchase agreements need to be planned to include batched shipments over extended periods of time. This allows the reserve pool to grow organically under each successive agreement, ensuring the price of robotic labor at BidNet doesn't plummet because 500k bots got dumped into the reserve pool overnight.
 
 Robots need TokenTorq from Giskard to mine Torq while producing. If Giskard is short on TokenTorq Capacity, data centers need to be upgraded, which means upgrading a Deep Underground Military Bunker, or even building a new one!
 
@@ -12,17 +12,31 @@ But that's not all. Isaac needs minting backup capacity upgrades: no point in up
 
 And it takes time to get Robots, data center bunkers, and Starships funded, built, and deployed.
 
-And Calvin? She needs Starlink upgrades.  Oh, that's right, we haven't talked about Calvin yet. 
-
-Calvin is named after Susan Calvin, the human psychologist for robots from Asimov's work. Here, Calvin is the human representative mechanism of the bond network, among other roles. And humans vote with their RoboTorq on things like economic expansion efforts.
+And everybody needs Starlink upgrades.
 
 The bond network is engineered so that no one person or AI should have the power to expand unilaterally except as a measure of absolute last resort. 
 
 Likewise, no single actor can hold back expansion on a whim. But how is this achieved, much less funded? 
 
-Well, first off, we're mainly dealing with machines running programs, so that makes it easier.
+Well, first off, we're mainly dealing with machines running programs, so that makes coordination easier.
 
-# What does Calvin do?
+# Skins in the Game
+
+It's not just humans with skin in the game.
+
+Isaac will , by default, front up to half the cost of any approved UpgradeProject, or up to a default of 3% of his reserves in any given fiscal year, whichever is lower. Isaac has large currency reserves from Seed Exchanges. But he can not devote too much, as he requires a large reserve of non-RoboTorq currencies to conduct international trade without sending RT overseas. But this isn't the International Trade Loop Design Doc, and Isaac's not the only AI to ante up.
+
+Additionally, Daneel gets a cut of every BRLA for Robotic Fleet Deployment. Daneel also portions a default of 3% of his budget for UpgradeProjects.
+
+Giskard can choose to prioritize UpgradeTokenTorqDrains during production, speeding up delivery.
+
+And Calvin has a parked reserve, built up over time due to overminting from past upgrades, that can be used to fund simulations and debug studies.
+
+Oh, that's right, we haven't talked about Calvin yet. 
+
+Calvin is named after Susan Calvin, the human psychologist for robots from Asimov's work. Here, Calvin is the human representative mechanism of the bond network, among other roles. And humans vote with their RoboTorq on things like economic expansion efforts.
+
+# What exactly does Calvin do?
 
 Before we go any further, let's be clear that the following is **not** presented as an ideal solution, merely a functional one. Remember, the whole point of building this simulator in the first place is to generate as big a set of as close to empirical data as possible for the explicit purpose of studying and answering such optimization questions!
 
@@ -110,16 +124,16 @@ You should know the general drill by now, but this one has some Upgrade bling:
   - Giskard allocates TokenTorq
   - Daneel deploys bots
   - Giskard opens TokenTorqDrains
-  - Robots process Oracles to build and launch a new Starship Data Center.
+  - Robots mine Torq from TokenTorq
+  - Robots process UpgradeOracles to build and launch a new Starship Data Center.
   - Robots open TorqFountains as Oracles are fulfilled along the way.
   - The UpgradeBRLA fires off UpgradeMintRequest darts to Issac.
   - Isaac mints RoboTorq according to the torq_timeline in the UpgradeMintRequest
   - Bondholders receive their DistoStreams
   - DistoStreams get diverted to Calvin's UpgradeFunnels as UpgradePledges
-  - UpgradeFunnels continue to fund the UpgradeBRLA
-  - The Oracles are used to continue processing the upgrade, spawning more RoboTorq, etc.
+  - UpgradeFunnels continue to fund the UpgradeBRLA, spawning more RoboTorq, etc.
 
-This will need to be studied carefully to understand how much Torq should be applied to Oracles in this process. Oracles processed under this scheme may need to have special wage_share rates to avoid inflationary pressure. Again, another opportunity for many papers from Economists. I suspect upgrades will be one of the most studied aspects of this monetary system.
+This will need to be studied carefully to understand how much Torq should be applied to UpgradeOracles in this process. Oracles processed under this scheme may need to have special wage_share rates to avoid inflationary pressure. Again, another opportunity for many papers from Economists. I suspect upgrades will be one of the most studied aspects of this monetary system.
 
 A straightforward possibility for hedging inflation in this sim is to allocate a portion of every UpgradeMintRequest to Calvin, and those funds are fully parked until the next time Calvin is called upon, which is likely how Isaac will handle such an occurrence if undue inflation is observed in early runs. 
 
