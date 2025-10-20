@@ -2,11 +2,11 @@
 
 RoboTorq economies grow and shrink in direct proportion to the value of the robotic labor occurring at any given time, because that determines how much RoboTorq is minted. Simple enough.
 
-But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity because demand (current and/or future) is not met. 
+But facilitating that growth may not be so straightforward. Obviously, it requires more Robots, but only if the ones you have are working at capacity because demand (current and/or future) is not met. It leads to this growth failure mode:
 
 **Demand Shortage --> Torq Shortage --> RoboTorq Shortage**
 
-It usually means BidNet priced robotic labor too low, and now there are too many goods available. There's going to be pain until balance has been restored.
+It usually means that BidNet somehow priced robotic labor too low, and now there are too many goods available. There's going to be some kind of pain until balance has been restored.
 
 Strategies to make that pain quicker include: 
 - Ensure Daneel is making good recommendations to BidNet when estimating robotic labor for new Bids
@@ -34,7 +34,7 @@ Daneel's fleet needs to maintain a reserve of robots to smooth out spikes in cur
 
 What is the optimal reserve_fleet_ratio? Sounds like a good question for economists when they are running Asimov.
 
-So, assuming raw material availability, it's unlikely to see a scenario where Daneel doesn't have any robots in reserve. Even still, you might run across the following growth failure mode, regardless of how many robots he pulls from reserves:
+So, assuming raw material availability, it's unlikely to see a scenario where Daneel doesn't have any robots in reserve. Even still, you might run across what appears to be the following growth failure mode, regardless of how many robots he pulls from reserves:
 
 **Fleet Capacity Shortage --> Torq Shortage --> RoboTorq Shortage**
 
