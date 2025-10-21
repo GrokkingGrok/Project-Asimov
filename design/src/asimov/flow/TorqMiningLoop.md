@@ -43,7 +43,7 @@ In order to calculate Torq, we need to know what torq_factor is because:
 
 But we can't know what that is until we know what torq_gamble is, because:
 
-`torq_factor = (1/(1-e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble`
+`torq_factor = (1/(1+e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble` (variable placement needs checking)
 
 Well, you probably don't understand where that just came from. But that's ok, all you need to know for now is that it's a standard Sigmoid machine learning function, and that you need to know torq_gamble to calculate torq_factor. 
 
@@ -59,7 +59,7 @@ But here's how Bidnet will be looking at it.
 
 For reasons not relevant to this discussion, ideal_torq_factor for a given task would be the integral of torq_factor, which is:
 
-ideal_torq_factor = 1/Daneel.target.util*ln(1 + e^(ticks * Daneel.target_util)) - torq_gamble
+ideal_torq_factor = 1/(torq_gamble* Daneel.target_util)*(ln(1 + e^(ticks * Daneel.target_util)) - ln2) (variable placement needs checking)
 
 If you solve the integral for how many ticks it should take for the integral of idea_torq_factor to equal torq_gamble, you'll arrive at the ideal_tick_count. That is how quickly Giskard will expect this Oracle type to be produced, on average.
 
