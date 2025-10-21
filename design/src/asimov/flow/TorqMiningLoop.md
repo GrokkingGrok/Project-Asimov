@@ -2,15 +2,15 @@
 
 The Torq Mining Flow Loop is where production happens and value is created.
 
-Let's start out with our definitions of TokenTorq, torq_mining_rate, and Torq:
-	- TokenTorq: A standardized constraint of how much compute a given robot can wield at any given time, 
-		- relative to the total compute consumption of the Bond Network, 
-		- as measured in kWh/token.
-	- torq_factor: The rate at which a robot can use TokenTorq to create economic value, 
-		- as measured in tokens/kWh, 
-		- based on Enterprise.torq_gamble. 
-		- Intriguing, right? Patience.
-	- Torq: A unitless scalar achieved by multiplying TokenTorq * torq_factor (kWh/token * tokens/kWh = no units)
+Let's start out with our definitions of TokenTorq, torq_factor, and Torq:
+- TokenTorq: A standardized constraint of how much compute a given robot can wield at any given time, 
+	- relative to the total compute consumption of the Bond Network, 
+	- as measured in kWh/token.
+- torq_factor: The rate at which a robot can use TokenTorq to create economic value, 
+	- as measured in tokens/kWh, 
+	- based on Enterprise.torq_gamble. 
+	- Intriguing, right? Patience.
+- Torq: A unitless scalar achieved by integrating torq_factor, or by multiplying TokenTorq * torq_factor (kWh/token * tokens/kWh = no units) 
 
 And picking up [where we left off in TokenTorqTrainingLoop.md](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/asimov/flow/TokenTorqTrainingLoop.md):
 - Every TorqFountain.tick():
@@ -37,13 +37,13 @@ And furthermore, let's assume that Robot.mine_torq() has been called. What needs
 
 ## Wrench in the Works
 
-In order to calculate Torq, we need to know what torq_factor is because: 
+In order to calculate Torq during production, we need to know what torq_factor is because: 
 
-`Torq = TokenTorq * torq_factor`
+	- `Torq = TokenTorq * torq_factor`
 
-But we can't know what that is until we know what torq_gamble is, because:
+But we can't know what Torq is until we know what torq_gamble is:
 
-`torq_factor = (1/(1+e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble` (variable placement needs checking)
+`torq_factor = (1/(1+e^(-ticks)) - 0.5) * torq_gamble * Daneel.expected_util` (variable placement needs checking)
 
 Well, you probably don't understand where that just came from. But that's ok, all you need to know for now is that it's a standard Sigmoid machine learning function, and that you need to know torq_gamble to calculate torq_factor. 
 
@@ -51,15 +51,19 @@ torq_gamble is a value agreed upon by the Enterprise and BidNet at the time of a
 
 It represents the value added due to production. It is how the Enterprise makes its wager on how much it will be able to sell the final item for. An Enterprise looking to model their Bid might calculate theirs as such:
 
-`torq_gamble = (brla_retainer_fee / Oracle.robot_pool_size + other production costs + overhead) * markup 
+- `torq_gamble = (brla_retainer_fee / Oracle.robot_pool_size + other production costs + overhead) * markup * Daneel.expected_util + fudge_factor
 
 But here's how Bidnet will be looking at it.
 
 ## Ideal torq_factor Calculation
 
-For reasons not relevant to this discussion, ideal_torq_factor for a given task would be the integral of torq_factor, which is:
+For reasons not relevant to this discussion, ideal_torq for a given task would be the mathematical integral of torq_factor.
 
-ideal_torq_factor = 1/(torq_gamble* Daneel.target_util)*(ln(1 + e^(ticks * Daneel.target_util)) - ln2) (variable placement needs checking)
+If the general sigmoid form is:  `sigmoid = 1 / (1 + e^-x)`, the general form of the sigmoid integral is: `ln(1*e^(x)) + C`
+
+Adapting that to our form, we get: 
+
+	- `ideal_torq_factor = (ln(1 + e^(ticks )) - .5* ticks - ln2) * torq_gamble * Daneel.expected_util`
 
 If you solve the integral for how many ticks it should take for the integral of idea_torq_factor to equal torq_gamble, you'll arrive at the ideal_tick_count. That is how quickly Giskard will expect this Oracle type to be produced, on average.
 
@@ -75,9 +79,9 @@ The basic Equation of AI Exchange formula is simple:
 	- `torq_mined = token_torq_consumed * torq_factor`, 
 
 where:
-	- `torq_factor = (1/(1-e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble`
+	- `torq_factor = (1/(1-e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble + fudge_factor`
 
-Simple, right? Ok maybe not, that's a whole lotta torq flying around. 
+Simple, right? Ok, maybe not, that's a whole lotta torque flying around. 
 
 And, where:
 	- `token_torq_consumed = TokenTork_available * efficiencies * Robot.current_util`
