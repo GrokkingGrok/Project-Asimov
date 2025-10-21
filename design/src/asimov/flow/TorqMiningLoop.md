@@ -1,4 +1,4 @@
-# The Equation of AI Exchange and the TorqMining Flow Loop Design Doc
+# The Equation of AI Exchange/TorqMining Flow Loop Design Doc
 
 The Torq Mining Flow Loop is where production happens and value is created.
 
@@ -8,7 +8,7 @@ Let's start out with our definitions of TokenTorq, torq_mining_rate, and Torq:
 		- as measured in kWh/token.
 	- torq_factor: The rate at which a robot can use TokenTorq to create economic value, 
 		- as measured in tokens/kWh, 
-		- based largely on Enterprise.torq_gamble. 
+		- based on Enterprise.torq_gamble. 
 		- Intriguing, right? Patience.
 	- Torq: A unitless scalar achieved by multiplying TokenTorq * torq_factor (kWh/token * tokens/kWh = no units)
 
@@ -96,7 +96,7 @@ So that's how we calculate Torq.
 
 Now I know what you might thinking: "But, that means that companies get to ask for how much money they want to be created!" Well, yeah.
 
-What do you think happens when a business takes out a loan now?
+And what exactly do you think happens when a business (or you) takes out a loan now?
 
 ## But why wouldn't Enterprises just bid low torq_gambles, and price high?
 
@@ -104,9 +104,9 @@ Of course! I hadn't thought of that... Except, come to think of it, what exactly
 
 While we haven't quite got there yet, the cost of a BRLA isn't a function of the torq_factor. Sure, it's considered, but it's more of a negotiating point than a function.
 
-And think about what it *really* means... Like we discussed, the torq_factor is going to largely determine how much actual RoboTorq is printed.
+And think about what it *really* means... Like we discussed, the torq_factor is going to largely determine how much actual RoboTorq is minted.
 
-**This is the money that the Enterprise's customers need minted for there to be enough RoboTorq to fund the purchase without disturbing the overall circulating money supply.**
+**This is the money that the Enterprise's customers need minted for there to be enough RoboTorq to go around, without disturbing the overall money supply.**
 
 Really, we should be more worried about companies bidding high and pricing low so that there is more RoboTorq to chase their goods, making it easier to sell. If Isaac undermints, there will be too few RoboTorq to chase the Enterprise's goods.
 
@@ -116,7 +116,17 @@ If an Enterprise is either bad at estimating torq_factor, or they are insistent 
 
 So it's that Enterprise's ability to scheme against a network of AI financial overlords. Should be interesting.
 
+What would be most interesting is if they're both meta-aware of their Nash equilibrium and prisoner's dilemma: Realize that they're making a co-wager on the success of this project, and cooperate to achieve a mutually better outcome.
 
+## Tying Torq into... Quantum Game Theory?
+
+Interestingly, the state Enterprise and Bidnet (and by extension, the customer who buys the product) could be modeled using set superpositioning, like those used in quantum computing algorithms. I wonder where that might lead?
+
+Some wild places. That's where. Metaphorically, when looking at the system from the outside, torq_gamble "entangles" the two. How?
+
+Well, it's impossible to know what the price of the item is going to be until the sale is made. So, like a qubit, measuring the probability cloud collapses the wave function.
+
+This leads to the ability for BidNet to ask Calvin to run Game Theory forecasts from past data when negotiating BRLAs.
 
 
 
