@@ -41,11 +41,11 @@ In order to calculate Torq during production, we need to know what torq_factor i
 
 	- `Torq = TokenTorq * torq_factor`
 
-But we can't know what Torq is until we know what torq_gamble is:
+But we can't know what torq_factor is until we know what torq_gamble is:
 
-`torq_factor = (1/(1+e^(-ticks)) - 0.5) * torq_gamble * Daneel.expected_util` (variable placement needs checking)
+`torq_factor = (1/(1+e^(-ticks)) - 0.5) * torq_gamble * Daneel.expected_util`
 
-Well, you probably don't understand where that just came from. But that's ok, all you need to know for now is that it's a standard Sigmoid machine learning function, and that you need to know torq_gamble to calculate torq_factor. 
+Well, you probably don't understand where that just came from. But that's ok, all you need to know for now is that it's a standard Sigmoid machine learning function, and that you need torq_gamble to calculate torq_factor. 
 
 torq_gamble is a value agreed upon by the Enterprise and BidNet at the time of accepting the Bid for this BRLA.
 
@@ -79,7 +79,7 @@ The basic Equation of AI Exchange formula is simple:
 	- `torq_mined = token_torq_consumed * torq_factor`, 
 
 where:
-	- `torq_factor = (1/(1-e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble + fudge_factor`
+	- `torq_factor = (1/(1-e^(-ticks)) - 0.5) * torq_gamble + fudge_factor`
 
 Simple, right? Ok, maybe not, that's a whole lotta torque flying around. 
 
