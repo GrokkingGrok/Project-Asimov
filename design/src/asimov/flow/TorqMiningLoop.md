@@ -43,15 +43,25 @@ In order to calculate Torq, we need to know what torq_factor is because:
 
 But we can't know what that is until we know what torq_gamble is, because:
 
-`torq_factor = (1/(1-e^(-r * Robot.current.util)) - 0.5) * torq_gamble`
+`torq_factor = (1/(1-e^(-ticks * Robot.current.util)) - 0.5) * torq_gamble`
 
 Well, you probably don't understand where that just came from. But that's ok, all you need to know for now is that it's a standard Sigmoid machine learning function, and that you need to know torq_gamble to calculate torq_factor. 
 
 torq_gamble is a value agreed upon by the Enterprise and BidNet at the time of accepting the Bid for this BRLA.
 
-It represents the value added due to production. It is how the Enterprise makes its wager on how much it will be able to sell the final item for.
+It represents the value added due to production. It is how the Enterprise makes its wager on how much it will be able to sell the final item for. An Enterprise looking to model their Bid might calculate theirs as such:
 
 `torq_gamble = (brla_retainer_fee / Oracle.robot_pool_size + other production costs + overhead) * markup 
+
+But here's how Bidnet will be looking at it.
+
+## Ideal torq_factor Calculation
+
+For reasons not relevant to this discussion, ideal_torq_factor for a given task would be the integral of torq_factor, which is:
+
+ideal_torq_factor = 1/Daneel.target.util*ln(1 + e^(ticks * Daneel.target_util)) - torq_gamble
+
+If you solve the integral for how many ticks it should take for the integral of idea_torq_factor to equal torq_gamble, you'll arrive at the ideal_tick_count. That is how quickly Giskard will expect this Oracle type to be produced, on average.
 
 Now that we have torq_factor and torq_gamble, we can calculate torq_mined... Once we have a formula for it, at least.
 
