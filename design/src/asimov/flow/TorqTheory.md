@@ -15,70 +15,70 @@ This is the direct mathematical tie between AI tokens and minting, calculus and 
 ## Let's start out with our definitions
 
 token_torq_potential: How much compute Giskard can manage to give, and at what cost 
-	- if it works at maximum thermodynamic efficiency (never happens)
-	- relative to the total compute consumption of the Bond Network, 
-	- TokenTorq is measured in RoboTorq/token/kW =  RoboTorq / (token * kW)
-	- TokenTorq (get it now?) is the cost paid to Isaac for processing energized tokens through Giskard
+- if it works at maximum thermodynamic efficiency (never happens)
+- relative to the total compute consumption of the Bond Network, 
+- TokenTorq is measured in RoboTorq/token/kW =  RoboTorq / (token * kW)
+- TokenTorq (get it now?) is the cost paid to Isaac for processing energized tokens through Giskard
 
 Energized tokens are tokens that are causing real physical work to happen via a robot, as opposed to when you ask an AI a question and it gives you useful information. So Giskard and Isaac care about:
-	- token throughput, 
-	- and how much energy is attached to processing that token throughput due to AIntropy (pronounced "ane-tropy," entropy was already taken)
-	- and how much RoboTorq it's costing him to make it happen.
+- token throughput, 
+- and how much energy is attached to processing that token throughput due to AIntropy (pronounced "ane-tropy," entropy was already taken)
+- and how much RoboTorq it's costing him to make it happen.
 
 Let's take a second to discuss AIntropy as a variable: -0.1 <= AIntropy <= 0.1 (could have slightly higher amplitude)
-	- for tuning the convergence of the productivity curve.
-	- Units are (token * kWh), so it's always implied at 
-	- Negative values of AIntropy are for Oracles with only one task/item/product where the Torq gains are diminishing as the Oracle is closer to being fulfilled
-	- Positive values are for Oracles with multiple items, where the Torq gains will increase with each product produced.
+- for tuning the convergence of the productivity curve.
+- Units are (token * kWh), so it's always implied at 
+- Negative values of AIntropy are for Oracles with only one task/item/product where the Torq gains are diminishing as the Oracle is closer to being fulfilled
+- Positive values are for Oracles with multiple items, where the Torq gains will increase with each product produced.
 
 He cares about this because he has 
-	- `Giskard.token_torq_potential = (Giskard.max_token_throughput * Giskard.max_energy_consumption) / Giskard.tick_operating_cost`
-	- and gives to robots at some TokenTorkDrain.tick_rate assigned to the drain by Giskard
+- `Giskard.token_torq_potential = (Giskard.max_token_throughput * Giskard.max_energy_consumption) / Giskard.tick_operating_cost`
+- and gives to robots at some TokenTorkDrain.tick_rate assigned to the drain by Giskard
 
 TokenTorqDrain.tick_rate = This is a rate-limited measure of AI energy potential: how much of the system's resources are available to devote to each robot's tokens on average?
 	- Another way to think of it: More complex tasks, or more important ones (as Giskard sees it), like welding starship components for Network Upgrades, will get more token_torq_potential, while a robot running a banana stand might not get as much.
- 	- can be grabbed at any given time:
-  	- `TokenTorqDrain.tick_rate = -token_torq_potential`,
-	- negative by convention to represent TokenTorq leaving the {Robot, Product} system.
-  	- may or may not vary from tick to tick, depending on Giskard's other responsibilities.
-	- The token_torq_potential_range data set is provided by Giskard when an Enterprise is forming its bid.
+- can be grabbed at any given time:
+- `TokenTorqDrain.tick_rate = -token_torq_potential`,
+- negative by convention to represent TokenTorq leaving the {Robot, Product} system.
+- may or may not vary from tick to tick, depending on Giskard's other responsibilities.
+- The token_torq_potential_range data set is provided by Giskard when an Enterprise is forming its bid.
 
 Because Giskard has more than one robot to worry about, a maximum and a minimum TokenTorqDrain.tick_rate are guaranteed for every BRLA. An average is not guaranteed. This allows several advantages:
- 	- gives Giskard wiggle room for other needs.
-	- gives the Enterprise wiggle room on timeline, supply chain disruptions, final price, etc
-	- gives Daneel wiggle room on scheduling and robot allocation, allowing for load rebalancing
-	- Allows for forecasting considering all these factors.
+ - gives Giskard wiggle room for other needs.
+- gives the Enterprise wiggle room on timeline, supply chain disruptions, final price, etc
+- gives Daneel wiggle room on scheduling and robot allocation, allowing for load rebalancing
+- Allows for forecasting considering all these factors.
 
 Example, BRLAs that can tolerate high variance in TokenTorqDrain.tick_rate, because they have learned how to master their learning curves and production timelines, will get better prices on BRLAs for being lower on the priority list for a steady rate.
 
 token_productivity_curve: This learning curve is how quickly a robot gets better at a given task as a function of time.
-	- This is a measure of productivity in TokenTorkUsed/tick/TokenTorkPotential = 1/tick units
- 	- Think of this like "how good is the robot at crafting the prompts it sends to its AI each tick?"
- 		- The robot has to learn how to prompt each task efficiently as it's doing it, as the operating conditions are always slightly different for every Oracle.
-  	- At the beginning, the robot is sending bad prompts, but over time, the AI adds more and more value by using tokens more efficiently.
-  		- This means the robot gets more efficient with time, to a degree, it levels off after the robot gets as good as it can at that task.
-	- The learning curve of a robot working at 100% utilization is reasonably modeled using a basic Sigmoid Neural Net Activation Time function.
+- This is a measure of productivity in TokenTorkUsed/tick/TokenTorkPotential = 1/tick units
+- Think of this like "how good is the robot at crafting the prompts it sends to its AI each tick?"
+	- The robot has to learn how to prompt each task efficiently as it's doing it, as the operating conditions are always slightly different for every Oracle.
+- At the beginning, the robot is sending bad prompts, but over time, the AI adds more and more value by using tokens more efficiently.
+	- This means the robot gets more efficient with time, to a degree, it levels off after the robot gets as good as it can at that task.
+- The learning curve of a robot working at 100% utilization is reasonably modeled using a basic Sigmoid Neural Net Activation Time function.
 
 Remember, AIntropy is the throughput of energized tokens, it'll come into play here.
 `token_productivity_curve = -(1/(1+e^(-ticks * AIntropy)))`, where ticks > 0 and 0.0 <= token_learning_curve < 1, and target_torq is the maximum desired torq
-	- token_productivity_curve is negative by convention, to represent TokenTorq and RoboTorq leaving the {Enterprise, Robot} system.
-  	- In practice, this formula must be modified because no robot will ever function at 100% utilization:
-  		- Example modificaiton:
-		- `expected_token_productivity_curve = -(1/(1+e^(-ticks Robot.util * target_torq * AIntropy)))`, 
-		- and target torq scales the maximum value added
+- token_productivity_curve is negative by convention, to represent TokenTorq and RoboTorq leaving the {Enterprise, Robot} system.
+- In practice, this formula must be modified because no robot will ever function at 100% utilization:
+	- Example modificaiton:
+	- `expected_token_productivity_curve = -(1/(1+e^(-ticks Robot.util * target_torq * AIntropy)))`, 
+	- and target torq scales the maximum value added
   	- Enterprises can either conduct studies to learn what their token_productivity_curve might look like, or roll the dice with mathematical modeling.
 	- They can have a token_productivity_curve (production plan) for times of high availability and low
 	- token_mining_curve is fully integrable and fully differentiable for all values of ticks < 0
 
 Ideal torq_mining_curve: How much Torq is generated as a function of time?
-	- Is the mathematical integral of token_productivity_curve 
-	- Unitless: tick/tick = no units
-	- For a robot working at 100% utilization:
+- Is the mathematical integral of token_productivity_curve 
+- Unitless: tick/tick = no units
+- For a robot working at 100% utilization:
 	- `torq_mining_curve = integral(token_productivity_curve)
 	- `torq_mining_curve = -(ln(1+e^ticks) + ticks) 
-	- as TokenTorq and RoboTorq leave the {Enterprise, Robot} system, value is added to the {Bondholder, Product} system.
-	- Torq accumulates each tick as TokenTorq is mined into value.
-	- eventually, the Oracle will be done, and the final Torq will be calculated and divided by the number of items produced.
+- As TokenTorq and RoboTorq leave the {Enterprise, Robot} system, value is added to the {Bondholder, Product} system.
+- Torq accumulates each tick as TokenTorq is mined into value.
+- Eventually, the Oracle will be done, and the final Torq will be calculated and divided by the number of items produced.
 
 The BRLA will wrap up the up Oracle and send the MintRequest to Isaac with a payload of the total Torq accumulated and Oracle.cost. So how will Isaac know how much to mint?
 
@@ -90,9 +90,12 @@ The Aintropy used is known from production. So RoboTorqPaid = TokenTorkPotential
 
 So RoboTorqOut as a function of time: RoboTorq = TokenTorkPotential * Aintropy * Torq
 
-So let's say we had an Oracle run with  TokenTorkPotential=1/100,000 * Aintropy=(10,000 tokens * 10 kWh) * 1.7 Torq * 10 RoboTorqPaid = 17 RoboTorqOut in total value.
+So let's say we had an Oracle run with 
+- TokenTorkPotential=1/100,000 * Aintropy=(10,000 tokens * 10 kWh) * 1.7 Torq * 10 RoboTorqPaid = 17 RoboTorqOut in total value.
 
-So Isaac will mint 17 - 10 = 7 RoboTorq to account for the markup, and distribute it to bondholders. He'lluse the 10 RoboTorq to pay for the costs of running the Bond Network, and that will go back into circulation.
+So Isaac will mint 17 - 10 = 7 RoboTorq to account for the markup, and distribute it to bondholders. 
+
+He'll use the 10 RoboTorq to pay for the costs of running the Bond Network, and that will go back into circulation.
 
 The Money Supply is in balance.
 
