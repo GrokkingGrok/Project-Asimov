@@ -1,4 +1,4 @@
-# The Derivation of the RoboTorq from Physical Units: Robonomic Torq Theory  
+# The Derivation of the RoboTorq from SI Units: Robonomic Torq Theory  
 _A Foundational Model of Robotic Economics_
 
 Jonathan Clark, Copyright 2025
@@ -207,7 +207,7 @@ torq_mining_curve(t) = ∫ token_torq_curve(t) dt
 
 At full utilization:
 
-torq_mining_curve ≈ ln( AIntropy × (1 + e^(t × AIntropy)) ) − t × AIntropy
+torq_mining_curve ≈ ln( AIntropy × (1 + e^(t × AIntropy)))
 
 When production ends, the total Torq is submitted to Isaac as a MintRequest for RoboTorq issuance.
 
@@ -257,7 +257,7 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 ## 14. Closing Thoughts
 
-RoboTorq is not abstraction — it’s a measurable bridge between *information*, *energy*, and *value*.  
+RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*.  
 
 It formalizes the economic cost of compute and robotic labor into a **physically defined monetary unit**, where each minted token is tied to real productive work.
 
