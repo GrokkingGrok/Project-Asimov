@@ -1,415 +1,310 @@
-# The Derivation of The RoboTorq from Physical Units: Robonomic Torq Theory
+# The Derivation of the RoboTorq from Physical Units: Robonomic Torq Theory
+*A Foundational Model of Energy-Information Economics*
 
-What is Torq? Let's not keep you in suspense: it's the physical unit of markup Robonomic Lingo. That's it. But it's also *so* much more.
+---
 
-Wait, did I say "physical unit of markup?" Wouldn't that imply that money also has a physical unit? Why yes, yes it does.
+## Table of Contents
+1. [What Is Torq?](#1-what-is-torq)
+2. [Deriving the RoboTorq](#2-deriving-the-robotorq)
+   - [Novel Units](#21-the-novel-units)
+   - [Relationship Between Units](#22-relationship-between-units)
+3. [Physical Backing and Stability](#3-physical-backing-and-stability)
+4. [The TorqMining Loop](#4-the-torqmining-loop)
+5. [Core Definitions](#5-core-definitions)
+6. [The Equation of AI-Value Exchange](#6-the-equation-of-ai-value-exchange)
+   - [Dimensional Consistency Check](#61-dimensional-consistency-check)
+   - [Macro-Economic Analogy](#62-macro-economic-analogy)
+7. [The Torq Gamble: Markup as Wager](#7-the-torq_gamble-markup-as-wager)
+8. [Complexity and AIntropy](#8-complexity-and-aintropy)
+9. [The TokenTorq Curve](#9-the-tokentorq-curve)
+10. [Mining TokenTorq into Torq](#10-mining-tokentorq-into-torq)
+11. [Sample Calculation](#11-sample-calculation)
+12. [Incentives and Strategy](#12-incentives-and-strategy)
+13. [Quantum Game-Theoretic Interpretation](#13-quantum-game-theoretic-interpretation)
+14. [Closing Thoughts](#14-closing-thoughts)
 
-Imagine you had a thermodynamically perfect 1 kW Humanoid Robot. They don't exist and never will. But assume you have one for now. 
+---
 
-What would be the physical value of that ideal Robot's ideal task for 1 hour?
+## 1. What Is Torq?
 
-`1 RoboTorq / 1 RoboHour = 1 token * 1kW`, 
-- because one thermodynamically perfect 1 kW Robot working for 1 hour processes 1 token with 1 Joule of energy every 1 second for 1 hour, and by definition would earn 1 RoboTorq.
+**Torq** is the *physical unit of markup* in Robonomic Lingo — and the physical anchor of value in AI-driven production systems.  
 
-`1 RoboTorq = 1 token * 1KW * 1 RoboHour`, 
+It links **information processing**, **energy expenditure**, and **economic output**.
 
-`1 kW * 1 RoboHour = 3.6 million RoboJoules`, 
-- The TokenTorq and the RoboJoule are novel unit definitions:
-	- TokenTorq: the AI/Robotic equivalent of physical torque.
-	- RoboJoule: the collection of energy types present in robotic labor (
-- It is how the information in a token is leveraged into value by roboticized energy.
-- This is not unprecedented. Standard torque has the same physical unit as Joules (Newtons * meters), but is consensually agreed upon to represent a different concept.
+---
 
-`1 RoboTorq = 1 token * 3.6 million RoboJoules`, 
+## 2. Deriving the RoboTorq
 
-`1 micro TokenTorq = 1 token * 1 RoboJoule` 
+Imagine a thermodynamically perfect **1 kW humanoid robot**.  
+It doesn’t exist (and never will), but assume you have one.
 
+**What is the physical value of that robot’s ideal task for one hour?**
 
-TokenTorq (get it now?) is not metaphorical.
-- If you've ever seen a big robotic arm build something of value, like a car frame, you've already seen real TokenTorq in action in real life.
-- We didn't have a definition for it yet, so you didn't know what to call it.
+$$
+1\ \text{RoboTorq} / 1\ \text{RoboHour} = 1\ \text{token} \times 1\ \text{kW}
+$$
 
-`1 RoboTorq = 3.6 TokenTorq = 3.6 (token * kWh)`
-- This is the value basis for the RoboTorq. It will never change so long as the laws of physics remain.
+Because one ideal 1 kW robot working for one hour processes one token with 1 J/s of energy for 3600 s.
 
-Likewise, `1 TokenTorq = 1/3.6 RoboTorq = 0.277778 RoboTorq`
+Hence:
 
-That is the natural derivation of the value of 1 RoboTorq: 
-- The value produced by 1 "thermodynamically perfect Robot" processing 1 token with 1 Joule of energy every 1 second for 1 hour.
+$$
+1\ \text{RoboTorq} = 1\ \text{token} \times 1\ \text{kW} \times 1\ \text{RoboHour}
+$$
 
-In practice, no bot will ever achieve that feat, and it wouldn't be handy because it's not that much work.
+And:
 
-But a perfect Newton * Meter is impossible to achieve too. Kelvins are based on a temperature that's impossible to achieve! We still measure work in Joules and measure temperature in Kelvin.
+$$
+1\ \text{kW} \times 1\ \text{RoboHour} = 3.6 \times 10^6\ \text{RoboJoules}
+$$
 
-A commodity like the Gold Standard doesn't technically back the RoboTorq, though we can treat it similarly. 
+---
 
-The RoboTorq is based on the laws of physics themselves and backed by the value produced by robotic labor. While the subjective value may change over time, the physical units may not.
+### 2.1 The Novel Units
 
-And this is the design doc where I'll prove it to you. Get ready for a whopper.
+| Symbol | Definition | Meaning |
+|:-------|:------------|:--------|
+| **RoboTorq** | token × kWh | Base physical unit of robotic labor value |
+| **TokenTorq** | token × RoboJoule | Energy-information coupling at micro scale |
+| **RoboJoule** | Joule (contextualized) | Energy used by robotic labor |
+| **TTP** | TokenTorq / hour | Robot’s capacity to process tokens |
 
-# The TorqMining Loop
+---
 
-The Torq Mining Flow Loop is where production happens and value is created.
+### 2.2 Relationship Between Units
 
-But how much value is created? And we have to tie in the value being added not just by the robot, but by the AI driving the robot!
+$$
+1\ \text{RoboTorq} = 1\ \text{token} \times 3.6 \times 10^6\ \text{RoboJoules}
+$$
 
-By the end of this document, you'll discover the direct links between system AI energy consumption and token throughput, aka capacity, how much of that capacity goes to a given Robot, how much of it the robot actually uses, the exact amount of Torq generated by that production, how that Torq scales to market value, and when exactly that value gets transferred to Isaac for minting.
+or equivalently:
 
-Torq Theory is the direct mathematical tie between AI tokens and minting, calculus and all, that makes Robonomics a revolutionary theory of economics.
+$$
+1\ \text{RoboTorq} = 3.6\ \text{TokenTorq} = 3.6\ (\text{token} \times \text{kWh})
+$$
 
-## Let's start out with our definitions
+and
 
-TokenTorqPotential: A given Robot's TokenTorq rating, per hour implied (i.e. "This is a 2 TTP bot)
-- TokenTorqPotential is always sold at a rate of 3.6 TokenTorq/RoboTorq/hour
-- This directly ties the value of energized tokens to the value of the RoboTorq.
-- TokenTorq (get it now?) is the throughput of energized tokens processed by a robot.
-- It doesn't matter if I use that 3.6 TokenTorq in one hour or one year, I'll pay 1 RoboTorq for it.
-- Torq is the scalar representation of extra value created by the robot while processing TokenTorq.
-	- `Torq = TokenTorqOut/TokenTorqIn`
- 	- and, by convention, `Torq = RoboTorqOut/RoboTorqIn`
-	- and, by convention, `Torq = TokensOut/TokensIn` 
+$$
+1\ \text{TokenTorq} = \frac{1}{3.6}\ \text{RoboTorq} = 0.277778\ \text{RoboTorq}
+$$
 
-# The Equation of AI-Value Exchange: `RoboTorqOut/RoboTorqIn = TokenTorqOut/TokenTorqIn`
+Thus, **1 RoboTorq** represents the value produced by an ideal 1 kW robot processing one token with 1 J/s of energy for one hour.
 
-So, `RoboTorqOut/RoboTorqIn = TokenTorqOut/TokenTorqIn`
+---
 
-And: `RoboTorqOut * TokenTorqIn = TokenTorqOut * RoboTorqIn`
+## 3. Physical Backing and Stability
 
-This is the differential equation that governs the entire RoboTorq Economy. It can be reformulated to:
+Unlike the **gold standard**, the **RoboTorq** is not commodity-backed.  
+It is **physically defined**, rooted in thermodynamics and tied directly to robotic labor.
 
-`RoboTorqOut = TokenTorqOut * RoboTorqIn / TokenTorqIn`
+Subjective market value may change, but its *physical definition cannot*.  
+It is the first **physics-anchored unit of economic value**.
 
-`RoboTorqOut = Torq *  RoboTorqIn`
+---
 
-Just as `RoboTorqOut * TokenTorqIn = TokenTorqOut * RoboTorqIn` holds for each individual act of robotic production, it holds for the Money Supply as a whole.
-- R is the Robonomic equivalent of MV = PQ in the fiat monetary system.
-- When taken on a time basis, V is the velocity at which people need to spend money, such that other people need to borrow money from the central bank to meet demand and prevent deflation, assuming the economy is not shrinking.
+## 4. The TorqMining Loop
 
-In a Robonomic Economy, there is no central bank. So the same concept of velocity of money doesn't exist. 
-- When taken on a time basis, TokenTorqIn is the rate at which society must invest in Robotic Labor to keep the money supply either static or growing.
-- A Robonomic Economy can't grow without savings, but that's just one growth failure mode.
-- If people aren't saving enough, demurrage will ramp up, sweeping idle RoboTorq from wallets to TorqVaults until people are back down below the systems current Idle Threshold.
-- This can kick-start a round of investment in Robotic Labor.
+The **Torq Mining Flow Loop** is where production happens and value is created.  
+It unites:
 
-# How to Apply The Equation of AI-Value Exchange
+- AI energy consumption  
+- Token throughput (capacity)  
+- Robotic utilization  
+- Minting of RoboTorq  
 
-Whenever Robot.is_producing = True, the company to which the robot is commissioned is charged 1/3.6 RoboTorq for every TokenTorq processed. Even if it's just standing there. So you can bet that Enterprises are careful about when those flags are True.
+This forms the **mathematical bridge** between AI token flow and minted value — the essence of **Torq Theory**.
 
-While Robot.is_producing,
-- TokensIn come from Robot's sensors and the program form the task at hand and go to the Robot's neural net.
-- TokensOut come from the Robot's neural net and go to the robot's sensors.
-- EnergyIn comes from the Robot's battery, and 
-- EnergyOut goes out of the system through heat, kinetic energy, etc.
-- TokenTorqIn is Robot.token_tork_potential
-- TokenTorkOut is a previously agreed upon value: Torq_gamble * Robot.token_tork_potential
-- RoboTorqIn is drawn at a maximum rate of 1/3.6 * Robot.token_tork_potential
-- RoboTorqOut is achieved by multiplying the RoboTorqIn * torq_gamble.
+---
 
-I'll explain torq_gamble, in the next section. For now, just accept that it's a wager of how much Torq will be generated.
+## 5. Core Definitions
 
-From RoboTorqOut - RoboTorqIn, it's easy to discover how much Isaac needs to mint:
-MintingNeeded = RoboTorqOut - RoboTorqIn = RoboTorqIn * torq_gamble - RoboTorqIn 
+### TokenTorqPotential (TTP)
 
-MintingNeeded = RoboTorqIn * (torq_gamble - 1)
+A robot’s **TokenTorqPotential** is its rated throughput (TokenTorq per hour).  
+Example: “This is a 2 TTP bot.”
 
-MintingNeeded = 1/3.6 * Robot.token_tork_potential * (torq_gamble - 1)
+- Sold at **3.6 TokenTorq / RoboTorq / hour**
+- Defines how energized tokens translate into physical value
 
-Keep in mind, this is all for the imaginary ideal robot.
+If \( TTP = 2 \), then the robot consumes 2 TokenTorq per hour and costs \( 2 / 3.6 \) RoboTorq / hr.
 
-# What exactly is this torq_gamble?
+---
 
-Torq_gamble and markup are two sides of the same coin.
+## 6. The Equation of AI-Value Exchange
 
-At a bare minimum, if I hope to make a profit, I must make:
-`RoboTorqOut > (brla_retainer_fee + RoboTorqIn + other production costs + overhead) 
+At equilibrium:
 
-My torq_gamble is what I bet I can sell the item for, covering my production cost and allowing profit. But here's the thing: Isaac will mint dough once the work happens. The Bond Network is making the exact same bet as me.
-`torq_gamble * RoboTorqIn = (brla_retainer_fee + RoboTorqIn + other production costs + overhead) * markup
+$$
+\frac{RoboTorq_{out}}{RoboTorq_{in}} = \frac{TokenTorq_{out}}{TokenTorq_{in}}
+$$
 
-So once I know the TTP of my robot, I can
-- multiply 1/3.6 * TTP to get RoboTorqIn
-- multiply Torq_gamble * RoboTorqIn to get RoboTorqOut
-- multiply Torq_gamble * TTP to get TokenTorkOut
+Therefore:
 
-# So How can I make sure I don't I lose on my torq_gamble?
+$$
+RoboTorq_{out} = \frac{TokenTorq_{out}}{TokenTorq_{in}} \times RoboTorq_{in}
+$$
 
-That's a great question. For starters, rate-limit TokenTorqOut.
+Let \( Torq = \frac{TokenTorq_{out}}{TokenTorq_{in}} \), then:
 
-Different robots have different TokenTorkPotential
-- essentially processing power, but measured in something more useful than Hertz = bits / second
-- A 2 TTP Robot can't consume any more or any less than 2 TokenTorq per hour, and would cost exactly 2/3.6 RoboTorq to run every hour.
-- The TTP rating spread of a BRLA's bot pool is secured by the BRLA terms, and at the time of paying the brla_retainer_fee.
-- Bots with higher TTP ratings can handle more complex jobs more quickly.
-- So if I plan for a final torq of 2 TTP/hr, my bot's TTP rating better be way higher to land at 2 after all the efficiency drops, as you'll see soon.
+$$
+RoboTorq_{out} = Torq \times RoboTorq_{in}
+$$
 
-This wiggle room is necessary.
-- gives the Enterprise wiggle room on timeline, supply chain disruptions, final price, etc
-- gives Daneel wiggle room on scheduling and robot allocation, allowing for load rebalancing
-- Different robots also have different work histories and skill levels. They are not directly transferable
-- Robots can learn from one another faster than learning something by themselves.
-- All these factors allow for forecasting production timelines under various conditions.
+---
 
-For example, Enterprises that can tolerate high variance in TokenTorkPotential or number bots, having learned to master their TokenTorq Curves and production timelines, will get better prices on BRLAs for being less selective about which bots they need, how many they need, and when they need them. If I need 100 bots exactly 2.5 TTP, that's a tougher order than taking whatever Daneel's got to spare without reblancing.
+### 6.1 Dimensional Consistency Check
 
-# ## Just like today, sometimes Enterprises have to guess how much they can sell something for at market
+| Quantity | Units |
+|-----------|--------|
+| RoboTorq | token × kWh |
+| Torq | dimensionless |
+| Equation | ✅ dimensionally valid |
 
-There's more to determining how a robot creates value than just the throughput of the tokens. It's also about what information it has to crunch.
+---
 
-And like I said, we're not dealing with anywhere near ideal robots. Here's a sample of what a company planning robotic labor would need to think about.
+### 6.2 Macro-Economic Analogy
 
-Let's take a second to discuss Oracle.complexity as a variable, which is theoretically, any real number where complexity != 0
-- complexity is used for tuning the timeline and convergence value of TokenTorkOut as time flows.
-- This is measured in 1/(ticks * TokenTork) 
-- this hands the token_torq_curve (you'll see soon) a unitless input.
-- Negative values of complexity are for Oracles with only one task/item/product,
-	- and hence Torq production approaches the value of the item as productivity approaches zero.
-	- Torq gains are diminishing as the Oracle is closer to being fulfilled and that item's max torq is fulfilled.
-	- This prevents overminting on single item tasks.
-- Positive values of complexity are for Oracles with multiple items,
-	- where the Torq gains will increase with each product produced.
- 	- max torq = torq * items produced.
+This mirrors **MV = PQ** from classical fiat systems.
 
-And from complexity, we can now discuss another mind-boggling concept: AI entropy, or AIntropy:
-- AIntropy = complexity * TTP * Robot.util * supply_efficiency * equipment_utilization * ...
-- The AIntropy_curve is how the difficulty of the task shapes the robot's ability to complete it over time.
-- All production efficiencies can be multiplied into the token_torq_curve for modeling, such as supply_efficiency, equipment_utilization, etc.
-- This means my bot's effective TTP is much lower due to production inefficiencies.
-- This lowers TokensOut/hour, which lowers TokenTorqOut/hour, which lowers RoboTorqOut/hour.
-- This means more hours have to be worked than the ideal bot.
+- In Robonomics, **TokenTorqIn** represents society’s *investment rate* in robotic labor.  
+- No central bank is required — circulation self-balances through **demurrage**.  
+- Idle RoboTorq is swept into **TorqVaults**, prompting reinvestment.
 
-This is how we account for the fact that we don't have a perfect robot, and never will. We will have to pay more than 1 RoboTorq to create the same amount of value as that ideal robot, but we can still use that robot's math to understand the problem. And that's what we'll do because the calculus is atrocious once you start tuning it.
+---
 
-And we still purchase TokenTorq on the basis of 1 RoboTorq = 3.6 TokenTorq, because that is the physical unit of RoboTorq.
+## 7. The Torq_Gamble: Markup as Wager
 
-Each inefficiency added takes us further away from that "perfect" robot and closer to reality, while the markup is the expected value creation that the Enterprise and the Bond network are both betting the product can be sold for (aka the torq_gamble).
+The **torq_gamble** is the Enterprise’s *bet* on how much Torq will be generated (markup).
 
-It's getting harder to win this wager, right?
+$$
+Minting_{needed} = RoboTorq_{in} \times (torq_{gamble} - 1)
+$$
 
-Don't worry, there are tools to help.
+or equivalently:
 
-# TokenTorq Curve
+$$
+Minting_{needed} = \frac{1}{3.6} \times Robot.TTP \times (torq_{gamble} - 1)
+$$
 
-token_torq_curve: This learning curve is how quickly a robot gets better at a given task as a function of time.
-- This is a measure of the rate at which torq is being generated at time tick.
-- Think of this like "how good is the robot at crafting the prompts it sends to its AI each tick?"
-	- The robot has to learn how to prompt each task efficiently as it's doing it, as the operating conditions are always slightly different for every Oracle.
-- At the beginning, the robot is sending bad prompts, but over time, the AI adds more and more value by using tokens more efficiently.
-	- This means the robot gets more efficient with time, to a degree, it levels off after the robot gets as good as it can at that task.
-- The learning curve as a function of time of a robot's neural net is reasonably modeled using a basic Sigmoid Neural Net Activation Time function.
+Both **Enterprise** and **Isaac (the Minting AI)** co-wager on productivity.
 
-Remember, TokenTorq is the throughput of energized tokens; it'll come into play here.
-`token_torq_curve = 1/(1+e^(-ticks * AIntropy)) * torq_gamble`, where ticks > 0 and 0.0 < token_torq_curve < 1
-- token_torq_curve represents TokenTorq and RoboTorq leaving the {Enterprise, Robot} system.
-- Enterprises can either conduct studies to learn what their token_torq_curve might look like, or roll the dice with mathematical modeling.
-- They can have a token_torq_curve (production plan) for times of high availability and low
-- token_mining_curve is fully integrable and fully differentiable for all values of ticks < 0
+---
 
-# Sample Token Torq Curve
+## 8. Complexity and AIntropy
 
-A real TokenTokeCurve would look something like this: 
-- `token_torq_curve = 1/(1+e^(-ticks * AIntropy)) * torq_gamble - 0.5`
-- AIntropy and torq gamble are as we discussed earlier.
-- torq gamble is the maximum amplitude of TokenTorq
-- AIntropy ramps up/down the time it takes to converge with TTP, and flips the convergence to zero if negative.
+No robot is perfect; production efficiency depends on **complexity** and **AIntropy**.
 
-Enterprises can use TokenTorq Curves to estimate production timelines by anticipating when their robots will reach full productivity and begin churning out value.
+### Complexity
+- \( complexity \neq 0 \)
+- Negative → diminishing returns (single-item tasks)
+- Positive → compounding returns (multi-item Oracles)
 
-# Mining TokenTorq into Torq
+### AIntropy
 
-Mathematically, you can take the integral of the TokenTorq Curve and calculate the torq that builds up each step.
+$$
+AIntropy = complexity \times TTP \times Robot_{util} \times supply_{efficiency} \times equipment_{utilization} \times ...
+$$
 
-Ideal torq_mining_curve: How much Torq is generated at time T?
-- Is the mathematical integral of token_productivity_curve 
-- Unit produced is Torq accumulating at time tick increases
-- For a robot working at 100% utilization:
-	- `torq_mining_curve = integral(token_torq_curve)
-	- `torq_mining_curve = (ln(AIntropy(1+e^(ticks * AIntropy))) - ticks * AIntropy)
-- As TokenTorq and RoboTorq leave the {Enterprise, Robot} system, the corresponding value is literally integrated into the {Product} system.
-- Torq accumulates each tick as TokenTorq is mined into value.
-- Eventually, the Oracle will be done, and the final Torq will be calculated and divided by the number of items produced.
+Lower AIntropy → slower learning, lower token efficiency.  
+Higher AIntropy → faster convergence, higher Torq output.
 
-  Programmatically, this will initially be calculated using Reimann Sums: AIntropy * torq_mining_curve(tick).
+---
 
-The BRLA will wrap up the Oracle and send the MintRequest to Isaac with a payload of the total Torq accumulated and Oracle.cost. So how will Isaac know how much to mint?
+## 9. The TokenTorq Curve
 
-# A sample problem.
+A sigmoid function models robotic learning efficiency:
 
-Easy enough. Let's say we're working with a 5 TTP bot, a torq_gamble of 3, and production inefficiencies result in an AIntropy =.5 * TTP = 2.5.
+$$
+token\_torq\_curve(t) = \frac{1}{1 + e^{-t \times AIntropy}} \times torq_{gamble}
+$$
 
-Even though the robot will only provide 2.5 TTP per tick, the robot will be paid 5/3.6 = 1.389 RoboTorq per tick for 100 ticks.
+where \( 0 < token\_torq\_curve < 1 \).
 
-MintingNeeded = 1/3.6 * Robot.token_tork_potential * (torq_gamble - 1)
+It describes how efficiently the robot transforms AI tokens into productive output over time.
 
-MintingNeeded = 5/3.6 * 100 (3 - 1) = 277.778 RoboTorq
+---
 
-This means the Enterprise had bet that they can sell this item for 138.889 + 277.778 = 416.667 Robotorq.
+## 10. Mining TokenTorq into Torq
 
-So Isaac will mint 277.778 RoboTorq to cover the markup, then distribute them to bondholders. 
+Integrate the TokenTorq curve to yield the **Torq Mining Curve**:
 
-He'll use the 138.889 RoboTorq to pay for the costs of running the Bond Network, and that will go back into circulation, along with brla_retainer_fee.
+$$
+torq\_mining\_curve(t) = \int token\_torq\_curve(t)\ dt
+$$
 
-The Money Supply is in balance.
+At full utilization:
 
-This ties the cost of AI consumption to the value created by robotic labor through physical laws.
+$$
+torq\_mining\_curve = \ln(AIntropy(1 + e^{t \times AIntropy})) - t \times AIntropy
+$$
 
-Now I know what you might thinking: "But, that means that companies get to ask for how much money they want to be created!" Well, yeah.
+When production ends, total Torq is submitted to **Isaac** as a *MintRequest* for RoboTorq issuance.
 
-And what exactly do you think happens when a business (or you) takes out a loan now?
+---
 
-## But why wouldn't Enterprises just bid for one torq_gamble/timeline, and price for another?
+## 11. Sample Calculation
 
-Of course! I hadn't thought of that... Except, come to think of it, what exactly would they gain from such a thing?
+Given:
 
-Think about what it *really* means... Like we discussed, the torq_gamble is going to largely determine how much actual RoboTorq is minted.
+| Variable | Value |
+|-----------|--------|
+| \( TTP \) | 5 |
+| \( torq_{gamble} \) | 3 |
+| \( AIntropy \) | 0.5 × TTP = 2.5 |
+| Duration | 100 ticks |
 
-**This is the money that the Enterprise's customers need minted for there to be enough RoboTorq to go around, without disturbing the overall money supply.**
+Then:
 
-If they bid low and price high, there won't be enough RoboTorq to go around to chase their goods!
+$$
+RoboTorq_{in} = \frac{5}{3.6} = 1.389\ \text{per tick}
+$$
 
-Really, we should be more worried about companies bidding high and pricing low so that there is more RoboTorq to chase their goods, making it easier to sell. 
+$$
+Minting_{needed} = 1.389 \times 100 \times (3 - 1) = 277.778\ \text{RoboTorq}
+$$
 
-Either way, they're not going to be unduly penalized, like being made to pay restitution of some kind. But the system will be keeping track.
+Total projected sale value:
 
-If an Enterprise is either bad at estimating torq_gamble, or they are insistent on trying to game their torq_factor in some way, they'll face much stiffer negotiating tactics at BidNet, and their RoboFund Funnels will alert bondholders. Repeated infractions could result in being kicked off RoboFund and being required to rely on more expensive financing from TorqVaults.
+$$
+138.889 + 277.778 = 416.667\ \text{RoboTorq}
+$$
 
-So yes, it is within that Enterprise's ability, even right, to scheme against a network of AI financial overlords. But it's a network of financial AI overlords. Should be interesting.
+Isaac mints 277.778 RoboTorq (profit/markup) and redistributes it to bondholders.  
+Operating costs recycle through the Bond Network — maintaining **monetary equilibrium**.
 
-What would be most interesting is if they're both meta-aware of their Nash equilibrium and the prisoner's dilemma: realize that they're co-betting on the success of this project and cooperate to achieve a better outcome for both.
+---
 
-## Tying Torq into... Quantum Game Theory?
+## 12. Incentives and Strategy
 
-Interestingly, the state Enterprise and Bidnet (and by extension, the customer who buys the product) could be modeled using set superpositioning, like those used in quantum computing algorithms. I wonder where that might lead?
+Could Enterprises game the system by mis-bidding torq_gamble?  
 
-Some wild places. That's where. Metaphorically, when looking at the system from the outside, torq_gamble "entangles" the two. How?
+- **Under-bidding:** not enough RoboTorq in circulation → liquidity shortage.  
+- **Over-bidding:** detected by BidNet → stiffer BRLA terms, higher future costs.
 
-Well, it's impossible to know what the price of the item is going to be until the sale is made. So, like a qubit, measuring the probability cloud collapses the wave function.
+Chronic manipulators are downgraded to **TorqVault financing**, where credit is expensive.  
 
-This leads to the ability for BidNet to ask Calvin to run Game Theory forecasts from past data when negotiating BRLAs.
+Thus, Enterprises compete *against* and *cooperate with* AI financial overseers —  
+a self-optimizing market through **algorithmic game equilibrium**.
 
+---
 
-# Revisions stop here
+## 13. Quantum Game-Theoretic Interpretation
 
+The **torq_gamble** *entangles* Enterprise and BidNet in a shared probabilistic state.  
+Until sale, both exist in a **superposition** of profit and loss — a qubit-like duality.
 
+When the product sells, the wave collapses — the market “measures” value.
 
+This allows **BidNet** to leverage **quantum-inspired game theory**, querying historical BRLA outcomes through **Calvin**, the predictive AI forecaster.
 
+---
 
+## 14. Closing Thoughts
 
+**RoboTorq** formalizes the relationship between **information**, **energy**, and **value**.  
 
+It converts the abstract “cost of compute” into a **physically defined monetary unit**, where each minted token is tied to measurable work.
 
-
-
-# Revision Stopping Point: Don't trust info below here
-
-The lazy Enterprise, and maybe smarter, will modify their torq_mining_curve instead of token_mining_curve, because
-	- the calculus is atrocious for complex learning curves, with ambiguous payoff, because
-	- This form is easy to work with, and by the rules of calculus, you're modifying the learning curve whether you want to or not.
-	- but cleans up, at least close enough for practical use. 
-	- Let utc = Robot.util * target_torq * AIntropy
-	- `Torq_mining_curve = utc * -(ln(1+e^(ticks * utc)) -  utc * ticks)`
-
-But, this is all assuming things go perfectly. Real life is messy.
-
-## Just like today, sometimes Enterprises have to guess how much they can sell something for at market
-
-- torq_gamble: How much value does the company think it can add?
-	- unitless scalar
- 	- From a standard economics perspective, torq_gamble is the same thing as markup = selling price / production cost
-  	- markup is also a unitless scalar, so in order to profit, torq_gamble has to be greater than the entire cost of production:
-	- `torq_gamble > (brla_retainer_fee / (Oracle.robot_pool_size * item_count) + Oracle.cost + other production costs + overhead)
-	- In robonomics, Isaac will mint exactly expected_selling_price = actual_torq_wielded * Oracle.cost - Oracle.cost
- - But they also have to take into account how many ticks it will take to generate that much raw Torq.
-- Robot.util: How efficiently is a robot being utilized?
-	- a unitless percentage.
- 	- can be calculated/estimated by multiplying the individual efficiencies of the process
-  	- `efficiencies = energy_efficiency * supply_efficiency * x_efficiency * y_efficiency ...`
-  	- can and will vary from tick to tick.
-
-- actual_torq_wielded: How much of token_torq_available is a robot using as a percentage?
-	- can be calculated by multiplying:
- 	- token_torq_wielded = token_torq_potential
-
-
-
-  - based on Enterprise.torq_gamble. 
-	- Intriguing, right? Patience.
-- Torq: A unitless scalar achieved by integrating torq_factor, or by multiplying token_torq_consumed * torq_factor (kWh/token * tokens/kWh = no units) 
-
-And picking up [where we left off in TokenTorqTrainingLoop.md](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/asimov/flow/TokenTorqTrainingLoop.md):
-- Every TorqFountain.tick():
-  - The Robot mines its TokenTorq into Torq with varying efficiency (representing production taking place).
-    - The more efficiently it mines TokenTorq, the faster Robot.torq increases.
-  - Several factors influence TokenTorq --> Torq conversion.
-    - The more a robot has done the same task, the more efficiently it mines TokenTorq.
-    - The type of task also influences how Torq is mined.
-      - Complex tasks draw TokenTorq from Giskard at a higher rate, but mine slowly when production starts, and then produce lots of torq by the end.
-      - Simple tasks draw less TokenTorq, but have flatter Torq curves.
-    - The lower Giskard.tick_rate, the harder the robot has to work to mine Torq, the more Torq it produces per unit TokenTorq, but less Torq overall.
-
-And then we hammered out the implications of TokenTorq --> Torq conversion: How it affects [Robonomic Expansion, Calvin, and the rest of the system](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md).
-
-Let's break down the Torq itself.
-
-
-
-## Wrench in the Works
-
-In order to calculate Torq during production, we need to know what torq_factor is because as mentioned in the intro: 
-
-	- `Torq = TokenTorqConsumed * torq_factor * Daneel.expected_util`
-
-But we can't know what torq_factor is until we know what torq_gamble is. We'll call it target_torq_factor for now since it's the torq_factor the Enterprise *hopes* to achieve:
-
-`target_torq_factor = (1/(1+e^(-ticks)) - 0.5) / torq_gamble`
-
-Well, you probably don't understand where that just came from. But that's ok, all you need to know for now is that it's a Sigmoid machine learning function, we're using it track time, and that you need torq_gamble to calculate target_torq_factor. 
-
-torq_gamble is a value agreed upon by the Enterprise and BidNet at the time of accepting the Bid for this BRLA.
-
-It represents the value added due to production. It is how the Enterprise makes its wager on the retail price it will sell the item for, hedged by how long they think it will take to make that item or items.
-
-An Enterprise looking to submit their Bid might calculate their torq_gamble as such:
-
-- `torq_gamble = (brla_retainer_fee / (Oracle.robot_pool_size * item_count) + Oracle.cost + other production costs + overhead) * markup 
-
-The Enterprise is using the torq_gamble to bet on the **final realized retail price of the Oracle**. 
-
-But here's how Bidnet will be looking at it.
-
-## Ideal torq_factor Calculation
-
-For reasons not relevant to this discussion, ideal_torq for a given task would be the mathematical integral of torq_factor.
-
-If the general sigmoid form is:  `sigmoid = 1 / (1 + e^-x)`, the general form of the sigmoid integral is: `ln(1*e^(x)) + C`
-
-Adapting that to our form, we get: 
-
-	- `ideal_torq = (ln(1 + e^(ticks)) - .5* ticks - ln2) * torq_gamble +- fudge_factor`
-
-If you solve the integral for how much continuous time it will take for actual_torq_mined to equal torq_gamble, you'll arrive at the ideal_tick_count. That is how quickly Giskard will expect this Oracle type to be produced, on average.
-
-This means that Enterprises are not just bidding on how much they'll pay for the job, but also bidding on how long they think it'll take.
-
-If the company takes too long, they'll overtorq. Too short, they'll undertorq. When the company doesn't have the sale planned in advance, it's wise to mass-produce many items under one Oracle, spreading the risk of over or under torqing across many sales.
-
-Now that we have torq_factor and torq_gamble, we can calculate torq_mined... Once we have a formula for it, at least.
-
-
-
-So that's how we calculate Torq. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Rooted in physics, expanded by AI, and governed by clear equations —  
+**Torq Theory** transforms economics into an exact science of energy-value exchange.
