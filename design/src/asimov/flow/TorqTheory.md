@@ -41,7 +41,7 @@ It doesn’t exist (and never will), but assume you have one.
 **What is the physical value of that robot’s ideal task for one hour?**
 
 
-$$1\ \text{RoboTorq} / 1\ \text{RoboHour} = 1\ \text{token} \times 1\ \text{kW}$$
+$1\ \text{RoboTorq} / 1\ \text{RoboHour} = 1\ \text{token} \times 1\ \text{kW}$
 
 
 Because one ideal 1 kW robot working for one hour processes one token with 1 J/s of energy for 3600 s.
