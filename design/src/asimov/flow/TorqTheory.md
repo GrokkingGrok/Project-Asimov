@@ -129,14 +129,12 @@ Definitions of Torq:
 
 ## 6. The Equation of AI-Value Exchange
 
-At equilibrium:  
-RoboTorq_out / RoboTorq_in = TokenTorq_out / TokenTorq_in
-
-Therefore:  
-RoboTorq_out = (TokenTorq_out / TokenTorq_in) × RoboTorq_in
-
-Let Torq = TokenTorq_out / TokenTorq_in. Then:  
-RoboTorq_out = Torq × RoboTorq_in
+| Symbol     | Definition            | Meaning                                  |
+|------------|------------------------|------------------------------------------|
+| equilibrium  | RoboTorq_out / RoboTorq_in = TokenTorq_out / TokenTorq_in   | Functions similarly to MV = PQ |
+| Therefore  | RoboTorq_out = (TokenTorq_out / TokenTorq_in) × RoboTorq_in   | = Oracle.cost + newly_minted |
+| Let  | Torq = TokenTorq_out / TokenTorq_in | = RoboTorq_out / RoboTorq_in   |
+| Conclude  | RoboTorq_out = Torq × RoboTorq_in| = reduced form AI-Value Exchange   |
 
 ---
 
