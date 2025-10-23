@@ -1,6 +1,7 @@
 # The Derivation of the RoboTorq from Physical Units: Robonomic Torq Theory  
 _A Foundational Model of Robotic Economics_
 
+Jonathan Clark, Copyright 2025
 ---
 
 ## Table of Contents  
