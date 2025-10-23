@@ -1,5 +1,6 @@
-# Deriving the RoboTorq from SI Units: Robonomic Torq Theory  
+# Deriving the RoboTorq from SI and Other Physical Units: Robonomic Torq Theory  
 _A Foundational Model of Robotic Economics_
+
 Jonathan Clark, Copyright 2025
 
 ---
@@ -28,9 +29,11 @@ Jonathan Clark, Copyright 2025
 
 ## 1. What Is Torq?
 
-Torq is the physical unit of markup in Robonomic Lingo — and the physical anchor of value in AI-driven production systems.
+Torq is the physical unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems.
 
 It links **information processing**, **energy expenditure**, and **economic output**.
+
+The RoboTorq is a unit of currency derived from the physical units of energized AI token throughput.
 
 ---
 
@@ -43,7 +46,9 @@ What is the physical value of that robot’s ideal task for one hour?
 
 1 RoboTorq / 1 RoboHour = 1 token × 1 kW
 
-Because one ideal 1 kW robot working for one hour processes one token with one joule/second of energy for 3600 seconds.
+Why? One ideal 1 kW robot processing one token with one joule/second of energy for 3600 seconds.
+
+A token is a small, usable piece of digital information that can be processed by a robot or an AI's neural network.
 
 Hence:
 
@@ -82,11 +87,11 @@ In practice, no bot will achieve this ideal — and that’s fine. We still meas
 
 ## 3. Physical Backing and Stability
 
-Unlike the gold standard, the RoboTorq is not commodity-backed.  
-It is **physically defined**, rooted in thermodynamics and tied directly to robotic labor.
+Unlike the gold standard, the RoboTorq is not stictly commodity-backed. Yet it can still be treated similarly.  
+It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
 
-Subjective market value may change with time, but the *physical definition* may not.  
-The RoboTorq is the first **physics-anchored unit of economic value**.
+Subjective market value that humans place on it may change with time, but the *physical definition* of the RoboTorq may not.  
+The RoboTorq is the first **physics-based unit of economic value**.
 
 ---
 
@@ -112,7 +117,7 @@ A robot’s “TokenTorqPotential” is its rated throughput in TokenTorq per ho
 Example: “This is a 2 TTP bot.”
 
 - Sold at 3.6 TokenTorq / RoboTorq / hour  
-- Defines the value-basis for energized tokens translating into physical value  
+- Defines the exchange basis for energized tokens transforming into physical value  
 - Throughput-based, not time-based — 1 RoboTorq buys 3.6 TokenTorq of processing, whether used in an hour or a year
 
 Definitions of Torq:
@@ -145,14 +150,14 @@ RoboTorq_out = Torq × RoboTorq_in
 
 ---
 
-### 6.2 Macro-Economic Analogy
+### 6.2 Relation to Current Macro-Economic Theory
 
-This equation mirrors the classical [MV = PQ](https://en.wikipedia.org/wiki/Equation_of_exchange) identity from fiat economics.
+This equation mirrors the classical [MV = PQ](https://public.econ.duke.edu/~kdh9/Courses/Graduate%20Macro%20History/Readings-1/Fisher%20Purchasing%20Power%20of%20Money.pdf) identity from fiat economics.
 
 In Robonomics:
 - TokenTorq_in is the rate at which society invests in robotic labor.  
 - No central bank is required — circulation is maintained via production cycles.  
-- If idle RoboTorq accumulates, **demurrage** sweeps value into **TorqVaults**, prompting reinvestment.
+- If idle RoboTorq accumulates, [**demurrage** sweeps value into **TorqVaults**, prompting reinvestment.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md#systemic-actors-and-their-interactions-in-detail-ideal-simulation-behavior)
 
 ---
 
@@ -164,7 +169,9 @@ MintingNeeded = RoboTorq_in × (torq_gamble − 1)
 Alternatively:  
 MintingNeeded = (1/3.6) × Robot.TTP × (torq_gamble − 1)
 
-Both the Enterprise and Isaac (the minting AI) co-wager on productivity.
+Both the Enterprise and Isaac (the minting AI) [co-wager on productivity.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md#skins-in-the-game)
+
+The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI robotic labor auctionhouse), at the time of paying the retainer fee from a Bonded Robotic Labor Agreement (BRLA).
 
 ---
 
@@ -196,6 +203,8 @@ token_torq_curve(t) = 1 / (1 + e^(−t × AIntropy)) × torq_gamble
 where 0 < token_torq_curve(t) < 1.
 
 Describes how efficiently a robot transforms AI-tokens into productive output over time.
+
+This function is a [standard Sigmoid Neural Net Activation time-function.](https://hal.science/hal-02635089v1/file/Sigmoid_Function_HAL.pdf)
 
 ---
 
@@ -240,7 +249,7 @@ Could Enterprises game the system by mis-bidding the torq_gamble or manipulating
 - **Over-bidding** → visible in BidNet’s analytics → future BRLA terms tighten.
 
 Persistent manipulators are downgraded to **TorqVault financing**, which is more expensive.  
-Thus Enterprises compete *against* and *cooperate with* AI financial overseers — producing a self-optimizing economy.
+Thus, Enterprises compete *against* and *cooperate with* AI financial overseers — producing a self-optimizing economy.
 
 ---
 
@@ -263,3 +272,5 @@ It formalizes the economic cost of compute and robotic labor into a **physically
 
 Rooted in physics, expanded by AI, governed by sharp equations —  
 **Torq Theory** turns economics into an exact science of energy-value exchange.
+
+[Project Asimov on Github is designing a simulator](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md) to provide an economic research sandbox. Project Asimov is open source and contributors are welcome.
