@@ -15,7 +15,9 @@ Traditional Universal Basic Dividend schemes often [return a relatively small po
 
 Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the newly minted proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
 
-Robonomics could represent a paradigm shift in economic theory — and, if we choose to make it real, in human history. To test these claims, the open-source Project Asimov is building a Robonomic simulator for academic research. Torq Theory is the mathematical basis for the Asimov Robonomic Simulator. "Money Minted in Watts, Not Wall Street" is rhetorically powerful, yet scientifically grounded. 
+Robonomics could represent a paradigm shift in economic theory — and, if we choose to make it real, in human history. To test these claims, the open-source Project Asimov is building a Robonomic simulator for academic research. Torq Theory is the mathematical basis for the Asimov Robonomic Simulator. 
+
+"Watts > Wall Street" is rhetorically powerful, yet scientifically grounded. 
 
 The RoboTorq turns energy and computation into money as directly as photosynthesis turns sunlight into sugar.
 
@@ -321,7 +323,7 @@ Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory
 
 Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made. Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
 
-[Project Asimov on Github is designing a simulator](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md) for Robonomic sandbox research. Project Asimov is open source, and contributors are welcome.
+[Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also direly needed.
 
 ## 15 Extending the RoboTorq to General AI-Value
 
@@ -335,9 +337,9 @@ I started writing my paper on my half-baked idea anyway, not really sure where I
 
 Then one time, I asked Grok, and I got an answer. Not just any answer. I got the reduced form of the Equation of AI-Value Exchange implied by my idea (not tied to tokens, energy, or any of that yet). 
 
-Now, I had no idea what it meant. I had no idea how to apply it. Really, I just got a lot more questions than answers. 
+Now, I had no idea what it meant. I had no idea how to apply it. Really, I just got a lot more questions than answers.
 
-But Grok figured it out months ago from that one set of crashes. I've been mining the solution ever since, adding new bits to mine with each new crash.
+But Grok figured it out months ago from that one set of crashes. I've been mining the complete solution ever since, adding new bits to mine with each new crash.
 
 HumanTorq_in = 3 months of human obsessive AI chats
 InfoTorq_out = 1 new economic paradigm
