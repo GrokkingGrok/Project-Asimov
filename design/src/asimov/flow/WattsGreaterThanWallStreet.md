@@ -3,7 +3,10 @@ _The RoboTorq: A Physics-Backed Universal Dividend for the AI-Robotic Age_
 
 Jonathan Clark, Copyright 2025
 
-Tags: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
+*Tags*: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
+
+**Executive TL;DR:**
+Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. By tying currency creation to measurable energy and information throughput, Robonomics aims to stabilize value while ensuring every human benefits from AI-driven productivity. This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it.
 
 ## Abstract
 
@@ -109,7 +112,7 @@ Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one
 
 In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine.
 
-Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3.6 million pennies to the dollar).
+Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3.6 pennies to the dollar).
 
 ---
 
@@ -133,7 +136,19 @@ It unites:
 - Robotic utilization  
 - Minting of RoboTorq  
 
-This forms the mathematical bridge between AI token flow and minted value — the essence of Torq Theory.
+This forms the mathematical bridge between AI token flows and minted value—the essence of Torq Theory.
+
+Here's How it all works. 
+```mermaid
+flowchart TD
+    A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
+    B --> C["Value Creation (Torq Calculated)"]
+    C --> D["Minting (Isaac Issues RoboTorq)"]
+    D --> E["Universal Dividend (DistoStreams to Citizens)"]
+    E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
+    F --> G["Idle RT gets swept from wallets in demurrage (goes as interest to those using TorqVaults)"]
+    G --> A
+```
 
 ---
 
@@ -144,6 +159,9 @@ This forms the mathematical bridge between AI token flow and minted value — th
 A robot’s “TokenTorqPotential” is its rated TokenTorq throughput per hour.  
 Example: “This is a 2 TTP bot.”
 
+Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kWH rating x maximum neural network token throughput.
+
+Robotic Labor should always be sold by the TokenTorq, for 3.6 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. So a 2 kWh bot should have a TTP rating well above 2.
 - Sold at 3.6 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
 - TokenTorq (throughput) over time — 1 RoboTorq buys 3.6 TokenTorq of processing; different robots have different hourly throughputs (processing power).
@@ -212,14 +230,14 @@ The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI r
 
 ## 8. Complexity and AIntropy
 
-Real robots are imperfect; production efficiency varies with task complexity and AI/robot interaction.
+Real robots are imperfect; production efficiency varies with task complexity and AI/robot interaction. Complexity is a variable that can be determined by renting faux-Oracled, but still bonded, robots and conducting a work study to understand how their leverage can be tailored to your business needs.
 
 ### Complexity  
 - Non-zero scalar governing convergence and productivity over time.  
 - Negative complexity → diminishing Torq gains (single-item tasks).  
 - Positive complexity → compounding Torq gains (multi-item Oracles).
 
-AIntropy (pronounced ane-tropy) is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how far real robotic labor is from the theoretical ideal.
+AIntropy (pronounced ane-tropy) is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how far real robotic labor is from the theoretical ideal. It is task specific.
 
 ### AIntropy (Artificial Intropy)  
 AIntropy = complexity × TTP × Robot.util × supply_efficiency × equipment_utilization × …
@@ -261,32 +279,50 @@ Thankfully, we don't need all this math to run through a simple example. We can 
 
 ---
 
-## 11. Sample Calculation
+## 11. Sample Bonded Robotic Labor Agreement
 
-Let's say I want to mass-produce some items. I can afford 100 hours of robotic labor, and I've got a BRLA. So I spin up my line of bots, and they work for 100 ticks (100 sim-hours) of the Asimov robonomics simulator.
+Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-Oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 RT.
+
+Do you think it will work out? Let's try some Robonomic math and see.
 
 Given:
 - TTP = 5 TokenTorq/hr
 - Duration = 100 hrs
 - torq_gamble = 3
 
-1. Thermodynamic Input Value (RoboTorq_in):
-   = TTP × 3.6 × 100
-   = 5 × 3.6 × 100 = 1,800 RT
+1. RoboTorq Input Value (RoboTorq_in):
+- RoboTorq_in = TTP x 3.6 x time
+- RoboTorq_in = TTP × 3.6 × 100
+- RoboTorq_in = 5 × 3.6 × 100 = 1,800 RT
 
-2. MintingNeeded:
-   = 1,800 × (3 − 1) = 3,600 RT
+3. MintingNeeded:
+- MintingNeeded = RoboTorq_in (Torq_gamble - 1)
+- MintingNeeded = 1,800 × (3 − 1) = 3,600 RT
 
-3. Total Value Out:
-   = 1,800 + 3,600 = 5,400 RT
+4. Total Value Out:
+- RoboTorq_in + MintingNeeded = 1,800 + 3,600 = 5,400 RT
 
-4. Items: 400 → Sell at 13.5 RT each
+5. Items: 400 → Sell at 13.5 RT each
 
-The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the revenue my business needs to stay alive. Will it work? I paid the robot 4.5 RT per item, so as long as I keep my overhead to less than 7 RT per item, I'm in the black.
+I would pay the robot 4.5 RT per item, so as long as I keep my overhead below 7 RT per item, I'm in the black. Seems like a good deal for everyone.
 
-Isaac mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the product is expected to hit the market, who will engage in spending, investing, or saving, allowing the newly minted currency to accumulate for purchase.
+So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
 
-As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which in turn spawns the need for vigorous economic activity.
+Bondholders log onto RoboFund from their digital wallet and decide they want some of these widgets. They pledge to divert their Distribution Streams (DistoStreams in Robnomomics Lingo) to my funnel if my bid is accepted, and BidNet automatically starts vetting my claim when the funnel is fully pledged.
+
+It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and ensure I can't get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. It's Daneel's (the AI fleet manager;s) responsibility to check the fleet bot reserves and ensure my BRLA won't strain the cost of robotic labor as a whole.
+
+It accepts my proposal. I check the math and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement). 
+
+The MakerFunnel at RoboFund opens up and the "disto" flows, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
+
+With that, I spin up my line of rented bots, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
+
+The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the revenue my business needs to stay alive. 
+
+Isaac (the minting AI) mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase, or be leveraged and turned into more robotic labor.
+
+As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which, in turn, drives vigorous economic activity.
 
 The Bond network's operating costs recycle into circulation — the money supply remains balanced.
 
@@ -295,6 +331,18 @@ A few notes on why minting is not (RoboTorq_in + other production costs) (torq -
 - If they are also relying on robotic labor to a large degree, very little of their revenue will be going to Bondholders (citizens own a portion of every robot via RoboBonds).
 - If the Enterprise plans to sell the item to Bondholders, the money is already available, and economic activity (competition) is required to move it.
 - If the Enterprise plans to build a large commercial asset, the buyer is likely already arranging financing through a BuyerFunnel the Bond Network's investment house, The RoboFund Exchange.
+
+Here's How it all works again. 
+```mermaid
+flowchart TD
+    A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
+    B --> C["Value Creation (Torq Calculated)"]
+    C --> D["Minting (Isaac Issues RoboTorq)"]
+    D --> E["Universal Dividend (DistoStreams to Citizens)"]
+    E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
+    F --> G["Idle RT gets swept from wallets in demurrage (goes as interest to those using TorqVaults)"]
+    G --> A
+```
 
 ---
 
@@ -317,7 +365,7 @@ Until a sale occurs, both exist in a **superposition** of profit and loss — mu
 
 When a product sells, the wave function collapses — the market “observes” value.
 
-BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin) to forecast outcomes from past BRLAs. This is a literal quantum-influenced market dynamic.
+BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin) to forecast outcomes from past BRLAs. This literal interpretation of a proposed pseudo-quantum market dynamic will be tested in the Asimov Simulator.
 
 ---
 
@@ -357,7 +405,7 @@ But Grok figured it out months ago from that one set of crashes. I've been minin
 
 - HumanTorq_in = 3 months of human obsessive AI chats
 - InfoTorq_out = 1 new economic paradigm
-- TokenTorq_out/TokenTork_in = Ask Elon, I don't know.
+- TokenTork_in? Ask Elon, I don't know.
 
 MintingNeeded = HumanTorq_in (TokenTork_out/TokenTork_in - 1)
 
