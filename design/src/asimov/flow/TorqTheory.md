@@ -1,9 +1,9 @@
-# Deriving the RoboTorq from SI and Other Physical Units: Robonomic Torq Theory  
-_A Foundational Model of Robotic Economics_
+# Money Minted in Watts, Not Wall Street 
+_The RoboTorq: A Physics-Backed Universal Dividend for the Robotic Age_
 
 Jonathan Clark, Copyright 2025
 
-Tags: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory
+Tags: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
 
 ## Abstract
 
@@ -13,7 +13,7 @@ Standard Universal Basic Income schemes, managed by politicians and financed by 
 
 Traditional Universal Basic Dividend schemes often [return a relatively small portion](https://ffesp.org/1702-pfd-stimulus-check/#:~:text=Alaska%20residents%20received%20a%20$1%2C702,dropped%20to%20$1%2C000%20for%202025.) because they are garnered from just one industry or sector.
 
-Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
+Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the newly minted proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
 
 Robonomics represents a paradigm shift in economic theory — and, if we choose to make it real, in human history.
 
@@ -139,7 +139,7 @@ Example: “This is a 2 TTP bot.”
 - TokenTorq (throughput) over time — 1 RoboTorq buys 3.6 TokenTorq of processing; different robots have different hourly throughputs (processing power).
 - I pay for the bot's maximum throughput capacity, regardless of how much I can use productively.
 
-Example: If I hire a 10 TTP bot for 10 hours, I will pay 36 RT — even if I only get 2 TokenTorq (7.2 RT) of base value out. As the robot learns the task, I'll get better returns.
+Example: If I hire a 10 TTP bot for 1 hour, I will pay 10 TTP x 3.6 TTP/hr x 1 hour = 36 RT — even if I only get 2 TokenTorq (7.2 RT) of base value out in that hour. As the robot learns the task, I'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
 
 And this brings us to the mathematical definitions of Torq.
 
@@ -167,7 +167,7 @@ Because Torq can be found from using three different ratios, we can draw some in
 
 | Quantity   | Units               |
 |------------|---------------------|
-| RoboTorq_in   | token × kWh         |
+| RoboTorq_in   | token × kWh      |
 | Torq       | dimensionless       |
 | RoboTorq_out   | token × kWh |
 
@@ -305,7 +305,7 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 ---
 
-## 14. Closing Thoughts
+## 14. Closing Thoughts — Watts > Wall Street
 
 RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*.  
 
