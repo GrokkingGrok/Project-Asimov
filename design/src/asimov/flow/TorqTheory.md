@@ -3,9 +3,19 @@ _A Foundational Model of Robotic Economics_
 
 Jonathan Clark, Copyright 2025
 
+Tags: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory
+
 ## Abstract
 
+As the innovation of Robotic Labor and the job replacement it threatens sit quietly on the horizon, it's hard to know whether to be excited or concerned. The potential problem is clear, but the solution is not.
 
+Standard Universal Basic Income schemes, managed by politicians and financed by bankers, have no value basis. What happens if the "basic" amount puts the money supply out of balance? Rampant inflation or deflation.
+
+Traditional Universal Basic Dividend schemes often [return a relatively small portion](https://ffesp.org/1702-pfd-stimulus-check/#:~:text=Alaska%20residents%20received%20a%20$1%2C702,dropped%20to%20$1%2C000%20for%202025.) because they are garnered from just one industry or sector.
+
+Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
+
+Robonomics represents a paradigm shift in economic theory.
 
 ---
 
