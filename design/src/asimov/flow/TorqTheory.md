@@ -15,7 +15,7 @@ Traditional Universal Basic Dividend schemes often [return a relatively small po
 
 Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
 
-Robonomics represents a paradigm shift in economic theory.
+Robonomics represents a paradigm shift in economic theory — and, if we choose to make it real, in human history.
 
 ---
 
@@ -47,7 +47,7 @@ Torq is the physical unit of markup in Robonomic Lingo — and the scalar of val
 
 It links **information processing**, **energy expenditure**, and **economic output**.
 
-The RoboTorq is a unit of currency derived from the physical units of energized AI token throughput.
+Torq Theory is the mathematical method for deriving the value of the energized AI token throughput used by a robot while performing labor.
 
 ---
 
@@ -66,7 +66,7 @@ What is the physical value of that robot’s ideal task for one hour?
 
 Why? One ideal 1 kW robot processing one token with one joule/second of energy for 3600 seconds.
 
-A token is a small, usable piece of digital information that can be processed by a robot or an AI's neural network.
+A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
 
 Hence:
 
@@ -94,7 +94,7 @@ A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to
 ### 2.2 Relationship Between Units
 
 1 RoboTorq = 1 token × 3.6 × 10⁶ RoboJoules 
-1 RoboTorq = 3.6 TokenTorq = 3.6 (token × kWh) = 3.6 (token·kg·m²/s³·h)
+1 RoboTorq = 3.6 TokenTorq = 3.6 (token × kWh) = 3.6 (token·kg·m²)/(s²·h)
 Hence 1 TokenTorq = 1/3.6 RoboTorq ≈ 0.277778 RoboTorq
 
 Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token with one joule/second of energy for an hour.
@@ -137,9 +137,13 @@ Example: “This is a 2 TTP bot.”
 - Sold at 3.6 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
 - TokenTorq (throughput) over time — 1 RoboTorq buys 3.6 TokenTorq of processing; different robots have different hourly throughputs (processing power).
-- I pay for the bot's maximum throughput, regardless of how much I can use productively.
+- I pay for the bot's maximum throughput capacity, regardless of how much I can use productively.
 
-Definitions of Torq:
+Example: If I hire a 10 TTP bot for 10 hours, I will pay 36 RT — even if I only get 2 TokenTorq (7.2 RT) of base value out. As the robot learns the task, I'll get better returns.
+
+And this brings us to the mathematical definitions of Torq.
+
+Three definitions of Torq:
 - Torq = TokenTorq_out / TokenTorq_in  
 - Torq = RoboTorq_out / RoboTorq_in  
 - Torq = Tokens_out / Tokens_in
@@ -175,7 +179,7 @@ This equation mirrors the classical [MV = PQ](https://public.econ.duke.edu/~kdh9
 
 In Robonomics:
 - TokenTorq_in is the rate at which society invests in robotic labor.  
-- No central bank is required — circulation is maintained via production cycles.  
+- No central bank is required — circulation is maintained via production/minting cycles.  
 - If idle RoboTorq accumulates, [**demurrage** sweeps value into **TorqVaults**, prompting reinvestment.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md#systemic-actors-and-their-interactions-in-detail-ideal-simulation-behavior)
 
 ---
@@ -190,7 +194,7 @@ MintingNeeded = 3.6 × Robot.TTP × (torq_gamble − 1)
 
 Both the Enterprise and Isaac (the minting AI) [co-wager on productivity.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md#skins-in-the-game)
 
-The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI robotic labor auctionhouse), at the time of paying the retainer fee for a Bonded Robotic Labor Agreement (BRLA).
+The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI robotic labor auctionhouse) at the time of paying the retainer fee for a Bonded Robotic Labor Agreement (BRLA).
 
 ---
 
@@ -245,19 +249,24 @@ Thankfully, we don't need all this math to run through a simple example. We can 
 
 ## 11. Sample Calculation
 
-Let's say I want to mass-produce some items. I can afford 100 hours of robotic labor, and I've got a BRLA. So I spin up my line of bots, and they work for 100 ticks of the Asimov robonomics simulator.
+Let's say I want to mass-produce some items. I can afford 100 hours of robotic labor, and I've got a BRLA. So I spin up my line of bots, and they work for 100 ticks (100 sim-hours) of the Asimov robonomics simulator.
 
-Given:  
-- TTP = 5 (this bot can process a max of 5 TokenTorq per hour, and I'll be charged for all) 
-- torq_gamble = 3  
-- AIntropy = 0.5 × TTP = 2.5  
-- Duration = 100 ticks
+Given:
+- TTP = 5 TokenTorq/hr
+- Duration = 100 hrs
+- torq_gamble = 3
 
-Then:  
-RoboTorq_in = 3.6 ≈ 18 RT per tick  
-MintingNeeded = 18 × 100 × (3 − 1) = 3600 RoboTorq  
+1. Thermodynamic Input Value (RoboTorq_in):
+   = TTP × 3.6 × 100
+   = 5 × 3.6 × 100 = 1,800 RT
 
-Total projected sale value = 1800 + 3600 = 5400 RoboTorq
+2. MintingNeeded:
+   = 1,800 × (3 − 1) = 3,600 RT
+
+3. Total Value Out:
+   = 1,800 + 3,600 = 5,400 RT
+
+4. Items: 400 → Sell at 13.5 RT each
 
 The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the profit my business needs to stay alive.
 
