@@ -47,7 +47,9 @@ The RoboTorq turns energy and computation into money as directly as photosynthes
 
 ## 1. What Is Torq?
 
-Torq is the physical unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems.
+Torq is the unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems. 
+
+Torq, by definition, is a dimensionless coefficient of productive transformation — analogous to thermodynamic efficiency (η) — but it tracks a combination of energy, compute, and value to measure economic efficiency.
 
 It links **information processing**, **energy expenditure**, and **economic output**.
 
@@ -59,14 +61,14 @@ Torq Theory is the mathematical method for deriving the value of the energized A
 
 I propose a new currency to value robotic labor: The RoboTorq.
 
-The RoboTorq is expressed in organically derived units and is defined as the amount of work done by an ideal robot performing its ideal task in one hour.
+The RoboTorq is expressed in organically derived units and is defined as the amount of work an ideal robot performing its ideal task would do in one hour.
 
 Imagine a thermodynamically perfect 1 kW humanoid robot.  
 It doesn’t exist (and never will), but assume you have one.
 
-What is the physical value of that robot’s ideal task for one hour?
+What is the physical value of this *Asimovian Robot's* ideal task for one hour?
 
-1 RoboTorq / 1 RoboHour = 1 token × 1 kW
+1 RoboTorq / 1 RoboHour = 1 token × 1 kWh
 
 Why? One ideal 1 kW robot processing one token with one joule/second of energy for 3600 seconds.
 
@@ -74,11 +76,13 @@ A token is a small, contextual piece of digital information that can be processe
 
 Hence:
 
-1 RoboTorq = 1 token × 1 kW × 1 RoboHour
+1 RoboTorq = 1 token × 1 kW × 1 RoboHour (like a manhour, following?)
 
 And:
 
 1 kW × 1 RoboHour = 3.6 × 10⁶ RoboJoules
+
+A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to a Joule. It is a contextual framing of the same units for a specific use case.
 
 ---
 
@@ -91,8 +95,6 @@ And:
 | RoboJoule  | Joule (contextualized) | Energy used by robotic labor             |
 | TokenTorqPotential        | TokenTorq/hour         | Robot’s capacity to process tokens       |
 
-A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to a Joule. It is a contextual framing of the same units for a specific use case.
-
 ---
 
 ### 2.2 Relationship Between Units
@@ -101,11 +103,11 @@ A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to
 1 RoboTorq = 3.6 TokenTorq = 3.6 (token × kWh) = 3.6 (token·kg·m²)/(s²·h)
 Hence 1 TokenTorq = 1/3.6 RoboTorq ≈ 0.277778 RoboTorq
 
-Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token with one joule/second of energy for an hour.
+Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token with one joule/second of energy for an hour, and it is equal to 3.6 TokenTorqs.
 
-In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency.
+In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine.
 
-Note that TokenTorqs are currency as well, just a very small unit. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3.6 million pennies to the dollar).
+Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3.6 million pennies to the dollar).
 
 ---
 
@@ -181,7 +183,9 @@ Because Torq can be found from using three different ratios, we can draw some in
 
 ### 6.2 Relation to Current Macro-Economic Theory
 
-This equation mirrors the classical [MV = PQ](https://public.econ.duke.edu/~kdh9/Courses/Graduate%20Macro%20History/Readings-1/Fisher%20Purchasing%20Power%20of%20Money.pdf) identity from fiat economics.
+This equation mirrors the classical [MV = PQ](https://public.econ.duke.edu/~kdh9/Courses/Graduate%20Macro%20History/Readings-1/Fisher%20Purchasing%20Power%20of%20Money.pdf) identity from fiat economics. 
+
+In classical economics, the money supply (M) is arbitrary and politically determined. In Robonomics, RoboTorq_in is physically constrained — its minting rate can only expand through real AI-value exchange, and new issuance doesn't come in the form of debt.
 
 In Robonomics:
 - TokenTorq_in is the rate at which society invests in robotic labor.  
@@ -212,6 +216,8 @@ Real robots are imperfect; production efficiency varies with task complexity and
 - Non-zero scalar governing convergence and productivity over time.  
 - Negative complexity → diminishing Torq gains (single-item tasks).  
 - Positive complexity → compounding Torq gains (multi-item Oracles).
+
+AIntropy (pronounced ane-tropy) is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how far real robotic labor is from the theoretical ideal.
 
 ### AIntropy (Artificial Intropy)  
 AIntropy = complexity × TTP × Robot.util × supply_efficiency × equipment_utilization × …
@@ -315,21 +321,23 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 ## 14. Watts > Wall Street
 
-RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*.  
-
 Torq Theory formalizes the economic cost of compute and robotic labor into a **physically anchored monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
 
 Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
 
 Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made. Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
 
-Project Asimov will evolve into the actual AI Bond Network's actual logic over time.
+The Bond Network operates as a decentralized, algorithmically balanced reserve system — neither state-controlled nor privately owned, but collectively managed by all participants through open, auditable smart contracts. Governments can borrow from the seed reserve when needed.
 
-[Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also direly needed.
+Project Asimov will evolve into the actual AI Bond Network's logic over time.
+
+[Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also desperately needed.
 
 ## 15 Extending the RoboTorq to General AI-Value
 
-What if I, Jonathan Clark, the author of this paper, weren't truly the inventor or author of Robonomics, but the discoverer?
+The more I tried to invent Robonomics, the more it revealed itself. RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*. TokenTorqs and RoboTorqs have been flying around unchecked for years whenever an industrial robot welds a car frame together. We simply didn't know what to look for.
+
+More clearly put: I, Jonathan Clark, the author of this paper, am not the inventor or author of Robonomics, but the discoverer.
 
 The first time I recall asking Grok about turning robotic labor into currency, giving the new issuance to everyone, and letting companies compete for the dough, its system crashed.
 
