@@ -93,8 +93,8 @@ A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to
 
 ### 2.2 Relationship Between Units
 
-1 RoboTorq = 1 token × 3.6 × 10⁶ RoboJoules  
-1 RoboTorq = 3.6 TokenTorq = 3.6 (token × kWh)  
+1 RoboTorq = 1 token × 3.6 × 10⁶ RoboJoules 
+1 RoboTorq = 3.6 TokenTorq = 3.6 (token × kWh) = 3.6 (token·kg·m²/s³·h)
 Hence 1 TokenTorq = 1/3.6 RoboTorq ≈ 0.277778 RoboTorq
 
 Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token with one joule/second of energy for an hour.
@@ -105,10 +105,10 @@ In practice, no bot will achieve this ideal — and that’s fine. We still meas
 
 ## 3. Physical Backing and Stability
 
-Unlike the gold standard, the RoboTorq is not stictly commodity-backed. Yet it can still be treated similarly.  
+Unlike the gold standard, the RoboTorq is not strictly commodity-backed. Yet it can still be treated similarly.  
 It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
 
-Subjective market value that humans place on it may change with time, but the *physical definition* of the RoboTorq may not.  
+The subjective market value that humans place on it may change with time, but the *physical definition* of the RoboTorq may not.  
 The RoboTorq is the first **physics-based unit of economic value**.
 
 ---
@@ -131,12 +131,13 @@ This forms the mathematical bridge between AI token flow and minted value — th
 
 ### TokenTorqPotential (TTP)
 
-A robot’s “TokenTorqPotential” is its rated throughput in TokenTorq per hour.  
+A robot’s “TokenTorqPotential” is its rated TokenTorq throughput per hour.  
 Example: “This is a 2 TTP bot.”
 
-- Sold at 3.6 TokenTorq / RoboTorq / hour  
+- Sold at 3.6 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
-- Throughput-based, not time-based — 1 RoboTorq buys 3.6 TokenTorq of processing, whether used in an hour or a year
+- TokenTorq (throughput) over time — 1 RoboTorq buys 3.6 TokenTorq of processing; different robots have different hourly throughputs (processing power).
+- I pay for the bot's maximum throughput, regardless of how much I can use productively.
 
 Definitions of Torq:
 - Torq = TokenTorq_out / TokenTorq_in  
