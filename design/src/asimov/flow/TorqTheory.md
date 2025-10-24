@@ -3,6 +3,10 @@ _A Foundational Model of Robotic Economics_
 
 Jonathan Clark, Copyright 2025
 
+## Abstract
+
+
+
 ---
 
 ## Table of Contents  
@@ -38,6 +42,10 @@ The RoboTorq is a unit of currency derived from the physical units of energized 
 ---
 
 ## 2. Deriving the RoboTorq
+
+I propose a new currency to value robotic labor: The RoboTorq.
+
+The RoboTorq is expressed in organically derived units and is defined as the amount of work done by an ideal robot performing its ideal task in one hour.
 
 Imagine a thermodynamically perfect 1 kW humanoid robot.  
 It doesn’t exist (and never will), but assume you have one.
@@ -129,6 +137,8 @@ Definitions of Torq:
 
 ## 6. The Equation of AI-Value Exchange
 
+Because Torq can be found from using three different ratios, we can draw some interesting conclusions.
+
 | Symbol     | Definition            | Meaning                                  |
 |------------|------------------------|------------------------------------------|
 | equilibrium  | RoboTorq_out / RoboTorq_in = TokenTorq_out / TokenTorq_in   | Functions similarly to MV = PQ |
@@ -165,11 +175,11 @@ The “torq_gamble” is the Enterprise’s wager on how much Torq will be gener
 
 MintingNeeded = RoboTorq_in × (torq_gamble − 1)  
 Alternatively:  
-MintingNeeded = (1/3.6) × Robot.TTP × (torq_gamble − 1)
+MintingNeeded = 3.6 × Robot.TTP × (torq_gamble − 1)
 
 Both the Enterprise and Isaac (the minting AI) [co-wager on productivity.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md#skins-in-the-game)
 
-The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI robotic labor auctionhouse), at the time of paying the retainer fee from a Bonded Robotic Labor Agreement (BRLA).
+The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI robotic labor auctionhouse), at the time of paying the retainer fee for a Bonded Robotic Labor Agreement (BRLA).
 
 ---
 
@@ -218,24 +228,37 @@ torq_mining_curve ≈ ln( AIntropy × (1 + e^(t × AIntropy)))
 
 When production ends, the total Torq is submitted to Isaac as a MintRequest for RoboTorq issuance.
 
+Thankfully, we don't need all this math to run through a simple example. We can use the Equation of AI-Value Exchange to do that!
+
 ---
 
 ## 11. Sample Calculation
 
+Let's say I want to mass-produce some items. I can afford 100 hours of robotic labor, and I've got a BRLA. So I spin up my line of bots, and they work for 100 ticks of the Asimov robonomics simulator.
+
 Given:  
-- TTP = 5  
+- TTP = 5 (this bot can process a max of 5 TokenTorq per hour, and I'll be charged for all) 
 - torq_gamble = 3  
 - AIntropy = 0.5 × TTP = 2.5  
 - Duration = 100 ticks
 
 Then:  
-RoboTorq_in = 5 / 3.6 ≈ 1.389 per tick  
-MintingNeeded = 1.389 × 100 × (3 − 1) = 277.778 RoboTorq  
+RoboTorq_in = 3.6 ≈ 18 RT per tick  
+MintingNeeded = 18 × 100 × (3 − 1) = 3600 RoboTorq  
 
-Total projected sale value = 138.889 + 277.778 = 416.667 RoboTorq  
+Total projected sale value = 1800 + 3600 = 5400 RoboTorq
 
-Isaac mints 277.778 RoboTorq (profit/markup) and redistributes to bondholders.  
+The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the profit my business needs to stay alive.
+
+Isaac mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the product is expected to hit the market, who will engage in spending, investing, or saving, allowing the newly minted currency to accumulate for purchase.
+
 Operating costs recycle into circulation — the money supply remains balanced.
+
+A few notes on why minting is not (RoboTorq_in + other production costs) (torq - 1):
+- With relatively few humans involved, most of the production costs are paid to other Enterprises for raw materials.
+- If they are also relying on robotic labor to a large degree, very little of their revenue will be going to Bondholders (citizens own a portion of every robot via RoboBonds).
+- If the Enterprise plans to sell the item to Bondholders, the money is already available, and economic activity (competition) is required to move it.
+- If the Enterprise plans to build a large commercial asset, the buyer is likely already arranging financing through a BuyerFunnel the Bond Network's investment house, The RoboFund Exchange.
 
 ---
 
@@ -243,10 +266,10 @@ Operating costs recycle into circulation — the money supply remains balanced.
 
 Could Enterprises game the system by mis-bidding the torq_gamble or manipulating timelines? Yes. But the system is self-correcting:
 
-- **Under-bidding** → not enough RoboTorq in circulation → liquidity dries up.  
-- **Over-bidding** → visible in BidNet’s analytics → future BRLA terms tighten.
+- **Under-bidding** → not enough RoboTorq in circulation → liquidity dries up → business left with extra stock and losses.  
+- **Over-bidding** → visible in BidNet’s market analytics → future BRLA terms tighten → go back to human labor or agree to stricter terms.
 
-Persistent manipulators are downgraded to **TorqVault financing**, which is more expensive.  
+Persistent manipulators are downgraded to **TorqVault financing**, which is more expensive.
 Thus, Enterprises compete *against* and *cooperate with* AI financial overseers — producing a self-optimizing economy.
 
 ---
@@ -266,9 +289,10 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*.  
 
-It formalizes the economic cost of compute and robotic labor into a **physically defined monetary unit**, where each minted token is tied to real productive work.
+Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made.
 
-Rooted in physics, expanded by AI, governed by sharp equations —  
-**Torq Theory** turns economics into an exact science of energy-value exchange.
+Torq Theory formalizes the economic cost of compute and robotic labor into a **physically anchored monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
 
-[Project Asimov on Github is designing a simulator](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md) to provide an economic research sandbox. Project Asimov is open source and contributors are welcome.
+Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
+
+[Project Asimov on Github is designing a simulator](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md) to provide an economic research sandbox. Project Asimov is open source, and contributors are welcome.
