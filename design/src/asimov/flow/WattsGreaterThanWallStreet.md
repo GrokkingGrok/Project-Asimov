@@ -1,4 +1,4 @@
-# Watts > Wall Street: Money Minted from Robotic Labor to Your Wallet
+# Watts > Wall Street: Money minted from robotic labor to your wallet
 _The RoboTorq: A Physics-Backed Universal Dividend for the AI-Robotic Age_
 
 Jonathan Clark, Copyright 2025
@@ -22,8 +22,20 @@ Robonomics could represent a paradigm shift in economic theory — and, if we ch
 
 "Watts > Wall Street" is rhetorically powerful, yet scientifically grounded. 
 
-The RoboTorq turns energy and computation into money as directly as photosynthesis turns sunlight into sugar.
+The RoboTorq turns energy and computation into money as directly as photosynthesis turns sunlight into sugar. 
 
+**Here's how it works.**
+
+```mermaid
+flowchart TD
+    A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
+    B --> C["Value Creation (Torq Calculated)"]
+    C --> D["Minting (Isaac Issues RoboTorq)"]
+    D --> E["Universal Dividend (DistoStreams to Citizens)"]
+    E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
+    F --> G["Idle RT gets swept from wallets in demurrage (goes as interest to those using TorqVaults)"]
+    G --> A
+```
 ---
 
 ## Table of Contents  
@@ -138,7 +150,8 @@ It unites:
 
 This forms the mathematical bridge between AI token flows and minted value—the essence of Torq Theory.
 
-Here's How it all works. 
+**Here's How it all works.**
+
 ```mermaid
 flowchart TD
     A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
@@ -295,14 +308,14 @@ Given:
 - RoboTorq_in = TTP × 3.6 × 100
 - RoboTorq_in = 5 × 3.6 × 100 = 1,800 RT
 
-3. MintingNeeded:
+2. MintingNeeded:
 - MintingNeeded = RoboTorq_in (Torq_gamble - 1)
 - MintingNeeded = 1,800 × (3 − 1) = 3,600 RT
 
-4. Total Value Out:
+3. Total Value Out:
 - RoboTorq_in + MintingNeeded = 1,800 + 3,600 = 5,400 RT
 
-5. Items: 400 → Sell at 13.5 RT each
+4. Items: 400 → Sell at 13.5 RT each → $0 inflation, $0 debt, 100% citizen ownership.
 
 I would pay the robot 4.5 RT per item, so as long as I keep my overhead below 7 RT per item, I'm in the black. Seems like a good deal for everyone.
 
@@ -310,9 +323,9 @@ So I go to *RoboFund*, the network's robotic labor investment house, and submit 
 
 Bondholders log onto RoboFund from their digital wallet and decide they want some of these widgets. They pledge to divert their Distribution Streams (DistoStreams in Robnomomics Lingo) to my funnel if my bid is accepted, and BidNet automatically starts vetting my claim when the funnel is fully pledged.
 
-It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and ensure I can't get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. It's Daneel's (the AI fleet manager;s) responsibility to check the fleet bot reserves and ensure my BRLA won't strain the cost of robotic labor as a whole.
+It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and ensure I can't get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. It's Daneel's (the AI fleet manager's) responsibility to check the fleet bot reserves and ensure my BRLA won't strain the cost of robotic labor as a whole.
 
-It accepts my proposal. I check the math and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement). 
+It accepts my proposal. I check the math and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
 
 The MakerFunnel at RoboFund opens up and the "disto" flows, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
 
@@ -332,7 +345,8 @@ A few notes on why minting is not (RoboTorq_in + other production costs) (torq -
 - If the Enterprise plans to sell the item to Bondholders, the money is already available, and economic activity (competition) is required to move it.
 - If the Enterprise plans to build a large commercial asset, the buyer is likely already arranging financing through a BuyerFunnel the Bond Network's investment house, The RoboFund Exchange.
 
-Here's How it all works again. 
+**Here's how it all works again.**
+
 ```mermaid
 flowchart TD
     A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
