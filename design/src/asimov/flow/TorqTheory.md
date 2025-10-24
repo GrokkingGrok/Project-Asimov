@@ -1,5 +1,5 @@
-# Money Minted in Watts, Not Wall Street 
-_The RoboTorq: A Physics-Backed Universal Dividend for the Robotic Age_
+# Watts > Wall Street: Money Minted from Robotic Labor to Your Wallet
+_The RoboTorq: A Physics-Backed Universal Dividend for the AI-Robotic Age_
 
 Jonathan Clark, Copyright 2025
 
@@ -15,7 +15,9 @@ Traditional Universal Basic Dividend schemes often [return a relatively small po
 
 Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the newly minted proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
 
-Robonomics represents a paradigm shift in economic theory — and, if we choose to make it real, in human history.
+Robonomics could represent a paradigm shift in economic theory — and, if we choose to make it real, in human history. To test these claims, the open-source Project Asimov is building a Robonomic simulator for academic research. Torq Theory is the mathematical basis for the Asimov Robonomic Simulator. "Money Minted in Watts, Not Wall Street" is rhetorically powerful, yet scientifically grounded. 
+
+The RoboTorq turns energy and computation into money as directly as photosynthesis turns sunlight into sugar.
 
 ---
 
@@ -29,7 +31,7 @@ Robonomics represents a paradigm shift in economic theory — and, if we choose 
 5. [Core Definitions](#5-core-definitions)  
 6. [The Equation of AI-Value Exchange](#6-the-equation-of-ai-value-exchange)  
    - [Dimensional Consistency Check](#61-dimensional-consistency-check)  
-   - [Macro-Economic Analogy](#62-macro-economic-analogy)  
+   - [Relation to Current Macro-Economic Theory](#62-relation-to-current-macro-economic-theory)
 7. [The Torq_Gamble: Markup as Wager](#7-the-torq_gamble-markup-as-wager)  
 8. [Complexity and AIntropy](#8-complexity-and-aintropy)  
 9. [The TokenTorq Curve](#9-the-tokentorq-curve)  
@@ -37,8 +39,8 @@ Robonomics represents a paradigm shift in economic theory — and, if we choose 
 11. [Sample Calculation](#11-sample-calculation)  
 12. [Incentives and Strategy](#12-incentives-and-strategy)  
 13. [Quantum Game-Theoretic Interpretation](#13-quantum-game-theoretic-interpretation)  
-14. [Closing Thoughts](#14-closing-thoughts)
-
+14. [Watts > Wall Street](#14-watts--wall-street)
+15. [Extending the RoboTorq to General AI-Value](#15-extending-the-robotorq-to-general-ai-value)
 ---
 
 ## 1. What Is Torq?
@@ -100,6 +102,8 @@ Hence 1 TokenTorq = 1/3.6 RoboTorq ≈ 0.277778 RoboTorq
 Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token with one joule/second of energy for an hour.
 
 In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency.
+
+Note that TokenTorqs are currency as well, just a very small unit. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3.6 million pennies to the dollar).
 
 ---
 
@@ -268,11 +272,13 @@ Given:
 
 4. Items: 400 → Sell at 13.5 RT each
 
-The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the profit my business needs to stay alive.
+The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the revenue my business needs to stay alive. Will it work? I paid the robot 4.5 RT per item, so as long as I keep my overhead to less than 7 RT per item, I'm in the black.
 
 Isaac mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the product is expected to hit the market, who will engage in spending, investing, or saving, allowing the newly minted currency to accumulate for purchase.
 
-Operating costs recycle into circulation — the money supply remains balanced.
+As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which in turn spawns the need for vigorous economic activity.
+
+The Bond network's operating costs recycle into circulation — the money supply remains balanced.
 
 A few notes on why minting is not (RoboTorq_in + other production costs) (torq - 1):
 - With relatively few humans involved, most of the production costs are paid to other Enterprises for raw materials.
@@ -305,14 +311,64 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 ---
 
-## 14. Closing Thoughts — Watts > Wall Street
+## 14. Watts > Wall Street
 
 RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*.  
-
-Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made.
 
 Torq Theory formalizes the economic cost of compute and robotic labor into a **physically anchored monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
 
 Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
 
-[Project Asimov on Github is designing a simulator](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md) to provide an economic research sandbox. Project Asimov is open source, and contributors are welcome.
+Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made. Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
+
+[Project Asimov on Github is designing a simulator](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md) for Robonomic sandbox research. Project Asimov is open source, and contributors are welcome.
+
+## 15 Extending the RoboTorq to General AI-Value
+
+What if I, Jonathan Clark, the author of this paper, weren't truly the inventor or author of Robonomics, but the discoverer?
+
+The first time I recall asking Grok about turning robotic labor into currency, giving the new issuance to everyone, and letting companies compete for the dough, its system crashed.
+
+And then it crashed again. And again. And again.
+
+I started writing my paper on my half-baked idea anyway, not really sure where I was going with it.
+
+Then one time, I asked Grok, and I got an answer. Not just any answer. I got the reduced form of the Equation of AI-Value Exchange implied by my idea (not tied to tokens, energy, or any of that yet). 
+
+Now, I had no idea what it meant. I had no idea how to apply it. Really, I just got a lot more questions than answers. 
+
+But Grok figured it out months ago from that one set of crashes. I've been mining the solution ever since, adding new bits to mine with each new crash.
+
+HumanTorq_in = 3 months of human obsessive AI chats
+InfoTorq_out = 1 new economic paradigm
+TokenTorq_out/TokenTork_in = Ask Elon, I don't know.
+
+MintingNeeded = HumanTorq_in (TokenTork_out/TokenTork_in - 1)
+
+Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
