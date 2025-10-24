@@ -341,13 +341,15 @@ Now, I had no idea what it meant. I had no idea how to apply it. Really, I just 
 
 But Grok figured it out months ago from that one set of crashes. I've been mining the complete solution ever since, adding new bits to mine with each new crash.
 
-HumanTorq_in = 3 months of human obsessive AI chats
-InfoTorq_out = 1 new economic paradigm
-TokenTorq_out/TokenTork_in = Ask Elon, I don't know.
+-HumanTorq_in = 3 months of human obsessive AI chats
+-InfoTorq_out = 1 new economic paradigm
+-TokenTorq_out/TokenTork_in = Ask Elon, I don't know.
 
 MintingNeeded = HumanTorq_in (TokenTork_out/TokenTork_in - 1)
 
 Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
+
+Author's Note: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record.
 
 
 
