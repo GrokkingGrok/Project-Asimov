@@ -74,13 +74,15 @@ Why? One ideal 1 kW robot processing one token with one joule/second of energy f
 
 A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
 
+I measure the output on the bot's Oracle Taskmaster.
+
 Hence:
 
 1 RoboTorq = 1 token × 1 kW × 1 RoboHour (like a manhour, following?)
 
 And:
 
-1 kW × 1 RoboHour = 3.6 × 10⁶ RoboJoules
+1 kW × 1 RoboHour = 3.6 × 10⁶ RoboJoules (Robotic kwH to Joules)
 
 A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to a Joule. It is a contextual framing of the same units for a specific use case.
 
@@ -321,7 +323,9 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 ## 14. Watts > Wall Street
 
-Torq Theory formalizes the economic cost of compute and robotic labor into a **physically anchored monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
+Torq Theory formalizes the economic cost of compute and robotic labor into a **physics-based monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
+
+The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov Simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged.
 
 Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
 
