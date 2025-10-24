@@ -292,7 +292,7 @@ A few notes on why minting is not (RoboTorq_in + other production costs) (torq -
 
 ## 12. Incentives and Strategy
 
-Could Enterprises game the system by mis-bidding the torq_gamble or manipulating timelines? Yes. But the system is self-correcting:
+Could Enterprises game the system by mis-bidding the torq_gamble or manipulating timelines when they make their bid for a Bonded Robotic Labor Agreement (BRLA) with BidNet? Yes. But the system is self-correcting:
 
 - **Under-bidding** → not enough RoboTorq in circulation → liquidity dries up → business left with extra stock and losses.  
 - **Over-bidding** → visible in BidNet’s market analytics → future BRLA terms tighten → go back to human labor or agree to stricter terms.
@@ -322,6 +322,8 @@ Torq Theory formalizes the economic cost of compute and robotic labor into a **p
 Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
 
 Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made. Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
+
+Project Asimov will evolve into the actual AI Bond Network's actual logic over time.
 
 [Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also direly needed.
 
