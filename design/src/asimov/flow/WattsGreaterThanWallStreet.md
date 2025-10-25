@@ -169,12 +169,12 @@ flowchart TD
 
 ### TokenTorqPotential (TTP)
 
-A robot’s “TokenTorqPotential” is its rated TokenTorq throughput per hour.  
+A robot’s “TokenTorqPotential” is its *Asimovian* ideal TokenTorq throughput per hour rating. TTP is to Robonomics what Carnot efficiency is to thermodynamics
 Example: “This is a 2 TTP bot.”
 
-Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kWH rating x maximum neural network token throughput.
+Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kWh rating x maximum neural network token throughput. So a 2 kWh bot should have a TTP rating well above 2.
 
-Robotic Labor should always be sold by the TokenTorq, for 3.6 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. So a 2 kWh bot should have a TTP rating well above 2.
+Robotic Labor should always be sold by the TokenTorq, for 3.6 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. 
 - Sold at 3.6 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
 - TokenTorq (throughput) over time — 1 RoboTorq buys 3.6 TokenTorq of processing; different robots have different hourly throughputs (processing power).
@@ -224,6 +224,11 @@ In Robonomics:
 - TokenTorq_in is the rate at which society invests in robotic labor.  
 - No central bank is required — circulation is maintained via production/minting cycles.  
 - If idle RoboTorq accumulates, [**demurrage** sweeps value into **TorqVaults**, prompting reinvestment.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md#systemic-actors-and-their-interactions-in-detail-ideal-simulation-behavior)
+- Demurrage operates as an honest, yet 100% optional inflation tax. Don't want to pay it?
+    - Spend the dough,
+    - invest it in RoboFund,
+    - or put it in a TorqVault to get the demurrage taken from the people who aren't managing their finances.
+- The Bond Network giveth, but the Bond Network also taketh away.
 
 ---
 
@@ -250,7 +255,7 @@ Real robots are imperfect; production efficiency varies with task complexity and
 - Negative complexity → diminishing Torq gains (single-item tasks).  
 - Positive complexity → compounding Torq gains (multi-item Oracles).
 
-AIntropy (pronounced ane-tropy) is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how far real robotic labor is from the theoretical ideal. It is task specific.
+TTP is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how a given robot would perform it was the theoretical ideal *Asimovian Robot*. *AIntropy* (pronounced ane-tropy), is how far away that bot is from its *Asimovian* rating. AIntropy is task-specific. I can hire the exact same robot for a different job at it will have a completely different AIntropy.
 
 ### AIntropy (Artificial Intropy)  
 AIntropy = complexity × TTP × Robot.util × supply_efficiency × equipment_utilization × …
