@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Watts > Wall Street: Dividend Projector</title>
+<title>Are Watts > Wall Street? Use the RoboTorq Dividend Projector and judge for yourself.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {
@@ -167,8 +167,8 @@
     </a>
   </p>
   <div class="instructions">
-    <strong>See what your dividends would be as the dollar and RoboTorq go head to head in the marketplace.</strong><br>
-    Follow steps to create a robotic worker economy → Hit Calculate → See your daily income grow as the RT gains market, and the exchange rate changes over time.
+    <strong>This tool calculates your individual dividend on a per day basis. Extremely conservative default values by design to avoid hyperbole.</strong><br>
+    Follow steps to create a robotic worker economy → Hit Calculate → See your daily income grow as the RoboTorq economy grows, and the USD exchange rate is depegged over time.
   </div>
   <!-- Starting Exchange Rate -->
   <div class="exchange-box">
@@ -196,7 +196,7 @@
     <div style="display:flex;gap:0.5rem;align-items:center;">
       <input id="brlas" type="number" min="1" value="2000" step="1" style="flex:1;">
     </div>
-    <small>How many Robotic Labor contracts (each contract = a bundle of robots)</small>
+    <small>How many Robotic Labor contracts (each contract = a bundle of robots) to start?</small>
   </div>
   <!-- Robots per Contract -->
   <div class="exchange-box">
@@ -377,7 +377,7 @@
         mintedPerYear.push(currentMinted);
       }
     }
-    const rows = [["Year", "RT Price (USD)", "Daily Dividend (USD)"]];
+    const rows = [["Year", "USD per 1 RoboTorq", "Your Daily Dividend (in today's USD value)"]];
     for (let year = 1; year <= runYears; year++) {
       let rate;
       if (runYears === 1) {
