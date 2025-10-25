@@ -6,7 +6,7 @@ Jonathan Clark, Copyright 2025
 *Tags*: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
 
 **Executive TL;DR:**
-Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. By tying currency creation to measurable energy and information throughput, Robonomics aims to stabilize value while ensuring every human benefits from AI-driven productivity. This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it.
+Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. By tying currency creation to measurable energy and information throughput, Robonomics aims to stabilize value while ensuring every human benefits from AI-driven productivity. This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. [A basic Robonomic dvividend estimator, with conversion to USD is available here to see how it all works](https://projectasimovmvp.vercel.app/).
 
 ## Abstract
 
@@ -75,6 +75,8 @@ Torq, by definition, is a dimensionless coefficient of productive transformation
 It links **information processing**, **energy expenditure**, and **economic output**.
 
 Torq Theory is the mathematical method for deriving the value of the energized AI token throughput used by a robot while performing labor.
+
+If you want to see the numbers in action first, [check out the Robonomics calculator here to estimate GDP and your dividend based](https://projectasimovmvp.vercel.app/) on fleet size and other parameters.
 
 ---
 
@@ -307,7 +309,7 @@ Thankfully, we don't need all this math to run through a simple example. We can 
 
 Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 RT.
 
-Do you think it will work out? Let's try some Robonomic math and see.
+Do you think it will work out? [Follow along using the Robonomics calculator](https://projectasimovmvp.vercel.app/) if you don't like math.
 
 Given:
 - TTP = 5 TokenTorq/hr
@@ -413,7 +415,7 @@ Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange ra
 
 The Bond Network operates as a decentralized, algorithmically balanced, fully functional monetary system that scales to nearly any conceivable size — neither state-controlled nor privately owned, but collectively managed by all participants through open, auditable smart contracts. Governments can borrow from the seed reserve when needed.
 
-Project Asimov will evolve into the actual AI Bond Network's logic over time.
+You can already [see Robonomics in action with the online calculator](https://projectasimovmvp.vercel.app/), but Project Asimov will evolve into the actual AI Bond Network's logic over time.
 
 [Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also desperately needed.
 
