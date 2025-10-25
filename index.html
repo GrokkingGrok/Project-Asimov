@@ -67,6 +67,23 @@
     font-size: 1rem;
     line-height: 1.6;
   }
+  .whitepaper-btn {
+    display: inline-block;
+    background: var(--live-bg);
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .whitepaper-btn:hover {
+    background: var(--primary-hover);
+    color: #000;
+  }
   label { display: block; margin-top: 1.2rem; font-weight: 600; }
   input, select {
     width: 100%;
@@ -169,6 +186,13 @@
 <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Light/Dark Mode">Moon/Sun</div>
 <div class="card">
   <h1>Watts > Wall Street: Robonomics made easy ⚡<span class="tag">v6.3</span></h1>
+  <p style="margin-top:0.5rem; font-size:0.9rem;">
+    <a href="https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/asimov/flow/WattsGreaterThanWallStreet.md" 
+      target="_blank" 
+      class="whitepaper-btn">
+      📄 White Paper
+    </a>
+  </p>
   <div class="instructions">
     <strong>How to use:</strong><br>
     Fill in your robotic economy → Click a preset or "Calculate" → See your dividend by the day, second and year in both RT and USD.<br>
