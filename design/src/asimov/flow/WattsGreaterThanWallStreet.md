@@ -29,7 +29,7 @@ The RoboTorq turns energy and computation into money as directly as photosynthes
 ```mermaid
 flowchart TD
     A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
-    B --> C["Value Creation (Torq Calculated)"]
+    B --> C["Oracle tracks Torq accumulation"]
     C --> D["Minting (Isaac Issues RoboTorq)"]
     D --> E["Universal Dividend (DistoStreams to Citizens)"]
     E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
@@ -155,7 +155,7 @@ This forms the mathematical bridge between AI token flows and minted value—the
 ```mermaid
 flowchart TD
     A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
-    B --> C["Value Creation (Torq Calculated)"]
+    B --> C["Oracle tracks Torq accumulation"]
     C --> D["Minting (Isaac Issues RoboTorq)"]
     D --> E["Universal Dividend (DistoStreams to Citizens)"]
     E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
