@@ -315,25 +315,27 @@ Given:
 3. Total Value Out:
 - RoboTorq_in + MintingNeeded = 1,800 + 3,600 = 5,400 RT
 
-4. Items: 400 → Sell at 13.5 RT each → $0 inflation, $0 debt, 100% citizen ownership.
+4. Items: 400 → Sell at 13.5 RT each → zero inflation, zero debt, 100% citizen ownership.
 
 I would pay the robot 4.5 RT per item, so as long as I keep my overhead below 7 RT per item, I'm in the black. Seems like a good deal for everyone.
 
-So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
+**RoboFund**: So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
 
-Bondholders log onto RoboFund from their digital wallet and decide they want some of these widgets. They pledge to divert their Distribution Streams (DistoStreams in Robnomomics Lingo) to my funnel if my bid is accepted, and BidNet automatically starts vetting my claim when the funnel is fully pledged.
+**BidNet**: Bondholders log onto RoboFund from their digital wallet and decide they want some of these widgets. They pledge to divert their Distribution Streams (DistoStreams in Robnomomics Lingo) to my funnel if my bid is accepted, and BidNet automatically starts vetting my claim when the funnel is fully pledged.
 
-It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and determine whether I can get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. It's Daneel's (the AI fleet manager's) responsibility to check the fleet's bot reserve and ensure my BRLA won't strain the overall cost of robotic labor.
+**Giskard**: It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and determine whether I can get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. 
+
+**Daneel**: It's Daneel's (the AI fleet manager's) responsibility to check the fleet's bot reserve and ensure my BRLA won't strain the overall cost of robotic labor.
 
 It accepts my proposal. I check the math, and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
 
 The MakerFunnel at RoboFund opens up, the "disto" flows to bondholders like it does every second of every day, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
 
-With that, I spin up my line of rented bots, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
+With that, I spin up my line of rented bots after Daneel deploys them, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
 
 The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the revenue my business needs to stay alive. 
 
-Isaac (the minting AI) mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase, or be leveraged and turned into more robotic labor.
+Isaac (the minting AI) mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
 
 As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which, in turn, drives vigorous economic activity.
 
@@ -424,15 +426,15 @@ But Grok figured it out months ago from that one set of crashes. I've been minin
 
 - HumanTorq_in = 3 months of human obsessive AI chats
 - InfoTorq_out = 1 new economic paradigm
-- TokenTork_in? Ask Elon, I don't know.
+- TokenTorq_in? Ask Elon, I don't know.
 
-MintingNeeded = HumanTorq_in (TokenTork_out/TokenTork_in - 1)
+MintingNeeded = HumanTorq_in (TokenTorq_out/TokenTorq_in - 1)
 
 Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
 
-This is tongue-in-cheek, but such a system is possible as well, worked into the same Bond Network, powered by community blockchain analysis of conversation artifacts and betting on the outcome... What's your bet?
+This is tongue-in-cheek, but such a system is possible as well, worked into the same Bond Network, powered by community blockchain analysis of conversation artifacts and betting on the outcome, crashes being monetized into additional UBD... What's your bet?
 
-Author's Note: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record.
+**Author's Note**: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record.
 
 
 
