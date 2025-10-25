@@ -328,7 +328,7 @@
     document.getElementById('startRate').textContent = startRate.toFixed(3);
     document.getElementById('endRate').textContent = targetRate.toFixed(2);
     const projTbl = document.getElementById('projTable');
-    projTbl.innerHTML = '<tr><th>Year</th><th>RT Price</th><th>Daily Dividend</th></tr>';
+    projTbl.innerHTML = '<tr><th>Year</th><th>USD for 1 RoboTorq</th><th>Your Daily Dividend in today\'s USD value</th></tr>';
     for (let year = 1; year <= runYears; year++) {
       let rate;
       if (runYears === 1) {
