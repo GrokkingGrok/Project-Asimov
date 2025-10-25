@@ -6,7 +6,7 @@ Jonathan Clark, Copyright 2025
 *Tags*: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
 
 **Executive TL;DR:**
-Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. By tying currency creation to measurable energy and information throughput, Robonomics aims to stabilize value while ensuring every human benefits from AI-driven productivity. This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. [A basic Robonomic dvividend estimator, with conversion to USD is available here to see how it all works](https://projectasimovmvp.vercel.app/).
+Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. By tying currency creation to measurable energy and information throughput, Robonomics aims to stabilize value while ensuring every human benefits from AI-driven productivity. This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. [A basic Robonomic dividend estimator, with conversion to USD is available here to see how it all works](https://projectasimovmvp.vercel.app/).
 
 ## Abstract
 
