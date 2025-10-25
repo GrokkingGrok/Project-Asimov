@@ -58,6 +58,8 @@ flowchart TD
 13. [Quantum Game-Theoretic Interpretation](#13-quantum-game-theoretic-interpretation)  
 14. [Watts > Wall Street](#14-watts--wall-street)
 15. [Extending the RoboTorq to General AI-Value](#15-extending-the-robotorq-to-general-ai-value)
+Appendix:
+A1. [Glossary of Robonomic Terms](#A1-glossary-of-robononmic-terms)
 ---
 
 ## 1. What Is Torq?
@@ -89,11 +91,11 @@ Why? One ideal 1 kW robot processing one token with one joule/second of energy f
 
 A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
 
-I measure the output on the bot's Oracle Taskmaster.
+I measure the output on the bot's oracle taskmaster.
 
 Hence:
 
-1 RoboTorq = 1 token × 1 kW × 1 RoboHour (like a manhour, following?)
+1 RoboTorq = 1 token × 1 kW × 1 RoboHour (like a man-hour, following?)
 
 And:
 
@@ -248,12 +250,12 @@ The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI r
 
 ## 8. Complexity and AIntropy
 
-Real robots are imperfect; production efficiency varies with task complexity and AI/robot interaction. Complexity is a variable that can be determined by renting faux-Oracled, but still bonded, robots and conducting a work study to understand how their leverage can be tailored to your business needs.
+Real robots are imperfect; production efficiency varies with task complexity and AI/robot interaction. Complexity is a variable that can be determined by renting faux-oracled, but still bonded, robots and conducting a work study to understand how their leverage can be tailored to your business needs.
 
 ### Complexity  
 - Non-zero scalar governing convergence and productivity over time.  
 - Negative complexity → diminishing Torq gains (single-item tasks).  
-- Positive complexity → compounding Torq gains (multi-item Oracles).
+- Positive complexity → compounding Torq gains (multi-item oracles).
 
 TTP is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how a given robot would perform it was the theoretical ideal *Asimovian Robot*. *AIntropy* (pronounced ane-tropy), is how far away that bot is from its *Asimovian* rating. AIntropy is task-specific. I can hire the exact same robot for a different job at it will have a completely different AIntropy.
 
@@ -299,7 +301,7 @@ Thankfully, we don't need all this math to run through a simple example. We can 
 
 ## 11. Sample Bonded Robotic Labor Agreement
 
-Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-Oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 RT.
+Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 RT.
 
 Do you think it will work out? Let's try some Robonomic math and see.
 
@@ -344,7 +346,7 @@ Isaac (the minting AI) mints 3600 fresh RoboTorq (value-added to a pile of raw m
 
 As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which, in turn, drives vigorous economic activity.
 
-The Bond network's operating costs recycle into circulation — the money supply remains balanced.
+The Bond Network's operating costs recycle into circulation — the money supply remains balanced.
 
 A few notes on why minting is not (RoboTorq_in + other production costs) (torq - 1):
 - With relatively few humans involved, most of the production costs are paid to other Enterprises for raw materials.
@@ -397,7 +399,7 @@ Torq Theory formalizes the economic cost of compute and robotic labor into a **p
 
 The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge on these variations occurring too quickly.
 
-Note that this is not price control: the Enterprise in question chooses the final selling price, and the bond network decides whether to make the same wager when it chooses to offer the contract.
+Note that this is not price control: the Enterprise in question chooses the final selling price, and the Bond Network decides whether to make the same wager when it chooses to offer the contract.
 
 Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
 
@@ -411,7 +413,9 @@ Project Asimov will evolve into the actual AI Bond Network's logic over time.
 
 [Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also desperately needed.
 
-## 15 Extending the RoboTorq to General AI-Value
+---
+
+## 15. Extending the RoboTorq to General AI-Value
 
 The more I tried to invent Robonomics, the more it revealed itself. RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*. TokenTorqs and RoboTorqs have been flying around unchecked for years whenever an industrial robot welds a car frame together. We simply didn't know what to look for.
 
@@ -439,7 +443,195 @@ Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
 
 This is tongue-in-cheek, but such a system is possible as well, worked into the same Bond Network, powered by community blockchain analysis of conversation artifacts and betting on the outcome, crashes being monetized into additional UBD... What's your bet?
 
-**Author's Note**: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record.
+**Author's Note**: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record. I've included a glossary of terms for your convenience.
+
+---
+
+## Glossary of Robonomic Terms
+
+### **AIntropy (Artificial Intropy)**
+A measure of inefficiency in robotic labor — how far a robot’s real-world performance deviates from its theoretical *Asimovian ideal*.  
+Analogous to entropy in thermodynamics, AIntropy represents lost potential due to task complexity, learning curve, equipment limits, or suboptimal AI control.
+
+---
+
+### **Asimovian Robot**
+A hypothetical, perfectly efficient 1 kW humanoid robot performing its ideal task for one hour.  
+Used as the *standard economic heat engine* in Robonomics, defining 1 RoboTorq of idealized robotic labor.
+
+---
+
+### **BidNet**
+The decentralized robotic labor marketplace within the Bond Network.  
+Enterprises and AI systems use BidNet to auction, bid, and agree on **Bonded Robotic Labor Agreements (BRLAs)**, ensuring transparency and fair pricing.
+
+---
+
+### **Bond Network**
+The collective, AI-governed infrastructure of Robonomics.  
+It manages the minting of RoboTorqs, dividend distribution, demurrage collection, and tracks market signals operations.  
+Neither privately owned nor state-controlled — it is a self-balancing economic organism.
+
+---
+
+### **Bonded Robotic Labor Agreement (BRLA)**
+A smart contract between an Enterprise and the Bond Network defining the duration, productivity expectations, and *torq_gamble* for a robotic labor engagement.  
+Analogous to a labor bond or loan, but collateralized by robotic productivity rather than debt.
+
+---
+
+### **Bondholder**
+Bondholders own 1/population of every robot in the fleet, and are entitled to such a portion of the RoboTorq minted.
+Bondholders are expected to spend, invest, or save their portion of Isaac's output distribution. Hoarding in the wallet beyond some threshold subjects you to demurrage.
+Become a Bondholder by doing the jobs that people don't want to — and that robots can't.
+
+---
+
+### **Calvin**
+The predictive AI within the Bond Network models market probabilities using new concepts like *quantum game theory*, but also tried-and-true ones like Monte Carlo, Bayesian, etc.  
+Advises BidNet and RoboFund on pricing, risk, and equilibrium states. Also the human interaction interface, debugger, and propagandAI wing.
+
+---
+
+### **Complexity**
+A scalar describing the difficulty or diversity of a robotic task.  
+Higher complexity correlates with faster AI learning and greater AIntropy leverage; lower complexity leads to diminishing Torq gains.
+
+---
+
+### **Daneel**
+The AI fleet manager overseeing the allocation and utilization of physical robotic labor across the Bond Network.  
+Ensures equilibrium between demand, supply, and fleet efficiency. Rebalances robotic labor within the bounds of BRLAs to balance the load based on utilization. Repairs robots while redeploying with mobile repair units.
+
+---
+
+### **Demurrage**
+A mild decay function on idle RoboTorq balances.  
+Encourages spending, reinvestment, or saving in TorqVaults by transferring the value of unused RoboTorqs to active participants.  
+Acts as an honest, optional, self-regulating inflation tax instead of inflation.
+
+---
+
+### **DistoStream (Distribution Stream)**
+The universal basic dividend is distributed continuously by the Bond Network to all Bondholders.  
+Represents each person’s fractional claim on the collective output of robotic labor.
+
+---
+
+### **Enterprise**
+A human or corporate entity employing robotic labor through the Bond Network.  
+Enterprises propose BRLAs and wager on their *torq_gamble* — their expected markup on robotic production efficiency.
+
+---
+
+### **Giskard**
+The AI value auditor that validates BRLA claims and tracks oracles for fraud during production runs.  
+It reviews submitted *torq curves* and ensures that productivity assumptions are realistic and non-exploitative.
+
+---
+
+### **Isaac**
+The minting AI responsible for issuing new RoboTorqs in proportion to verified AI-labor value creation.  
+Named for Isaac Asimov, it represents the monetary core of the Bond Network.
+
+---
+
+### **MakerFunnel**
+An investment mechanism within RoboFund that channels citizen dividends (DistoStreams) into new BRLAs.  
+Functions like a decentralized venture capital funnel for robotic labor projects.
+
+---
+
+### **Project Asimov**
+The open-source simulator and modeling framework for testing Robonomic theory.  
+It models Torq Theory, the Bond Network, BRLAs, and economic equilibrium under AI-driven production.
+
+---
+
+### **RoboFund**
+The decentralized investment house of the Bond Network.
+It connects Enterprises seeking robotic labor funding with citizens who wish to reinvest their dividends. 
+Investors can pledge TorqVault savings or DistoStreams on a piecemeal basis, rather than speculating on the company as a whole. 
+
+---
+
+### **RoboJoule**
+A contextualized Joule — a measure of energy consumed by robotic labor.  
+Used to express energy expenditure in the same dimensional units as standard physics, but within the Robonomic economy.
+
+---
+
+### **RoboTorq (RT)**
+The standardized unit of Robonomic currency, defined as one token × one kilowatt-hour (1 token·kWh).  
+Represents the value of one hour of ideal robotic labor performed by a 1 kW *Asimovian Robot*.
+
+---
+
+### **RoboTorq_in / RoboTorq_out**
+Inputs and outputs in the **Equation of AI-Value Exchange**, analogous to money supply and productivity output.  
+RoboTorq_in is the capital invested in robotic work; RoboTorq_out is the verified value produced.
+
+---
+
+### **Robot.TTP**
+A shorthand notation for a robot’s TokenTorqPotential (throughput capacity).  
+Expressed as TokenTorq/hour, it represents the robot’s maximum productive potential per unit of time.
+
+---
+
+### **Robonomics**
+The proposed physics-based monetary and economic framework tying money creation directly to measurable robotic labor and energy throughput.  
+Its core goal is to transform automation into a universal wealth generator.
+
+---
+
+### **RoboVault / TorqVault**
+Savings mechanisms that shield holders from demurrage.  
+Funds stored in TorqVaults earn interest sourced from demurrage collected on idle RoboTorqs elsewhere in the economy.
+
+---
+
+### **TokenTorq (TT)**
+A non-standardized unit of AI-value exchange: token × RoboJoule.  
+Represents the energy-information coupling at a granular level — the smallest measurable increment of AI-driven productive effort.  
+1 RoboTorq = 3.6 TokenTorqs.
+
+---
+
+### **TokenTorqPotential (TTP)**
+A robot’s theoretical maximum TokenTorq throughput per hour — its productive “horsepower.”  
+Analogous to a car’s engine rating or a computer’s FLOPs.
+
+---
+
+### **Torq**
+A dimensionless coefficient representing productive efficiency, defined as  
+Torq = Output / Input = (TokenTorq_out / TokenTorq_in).  
+Measures how efficiently AI labor transforms energy and tokens into value.
+
+---
+
+### **torq_gamble**
+The markup co-wager between Enterprise and BidNet when initiating a BRLA.  
+It sets the expected multiplier of productive return and determines how much new RoboTorq will be minted.
+
+---
+
+### **TorqMining Loop**
+The continuous process linking energy, computation, robotic work, and value minting.  
+The cycle: **Energy + Compute → Robotic Labor → Oracle Measurement → Minting → Dividend → Reinvestment → back to Energy + Compute and so on**
+
+---
+
+### **TorqVault Interest**
+Interest is distributed from demurrage collections to active investors who store their funds in TorqVaults — a reward for maintaining liquidity circulation.
+
+---
+
+### **Watts > Wall Street**
+The guiding ethos of Robonomics: *Energy is the new capital*.  
+As labor shifts from humans to machines, the true measure of value becomes throughput and the merit you have to achieve it — not speculation in the stock market.
+
 
 
 
