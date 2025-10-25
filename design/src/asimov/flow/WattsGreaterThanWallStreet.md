@@ -18,7 +18,7 @@ Traditional Universal Basic Dividend schemes often [return a relatively small po
 
 Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the newly minted proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
 
-Robonomics could represent a paradigm shift in economic theory — and, if we choose to make it real, in human history. To test these claims, the open-source Project Asimov is building a Robonomic simulator for academic research. Torq Theory is the mathematical basis for the Asimov Robonomic Simulator. 
+Robonomics could represent a paradigm shift in economic theory — and, if we choose to make it real, in human history. To test these claims, the open-source Project Asimov is building a Robonomic simulator for academic research. Torq Theory is the mathematical basis for the Asimov Robonomic simulator. 
 
 "Watts > Wall Street" is rhetorically powerful, yet scientifically grounded. 
 
@@ -323,11 +323,11 @@ So I go to *RoboFund*, the network's robotic labor investment house, and submit 
 
 Bondholders log onto RoboFund from their digital wallet and decide they want some of these widgets. They pledge to divert their Distribution Streams (DistoStreams in Robnomomics Lingo) to my funnel if my bid is accepted, and BidNet automatically starts vetting my claim when the funnel is fully pledged.
 
-It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and ensure I can't get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. It's Daneel's (the AI fleet manager's) responsibility to check the fleet bot reserves and ensure my BRLA won't strain the cost of robotic labor as a whole.
+It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and determine whether I can get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. It's Daneel's (the AI fleet manager's) responsibility to check the fleet's bot reserve and ensure my BRLA won't strain the overall cost of robotic labor.
 
-It accepts my proposal. I check the math and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
+It accepts my proposal. I check the math, and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
 
-The MakerFunnel at RoboFund opens up and the "disto" flows, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
+The MakerFunnel at RoboFund opens up, the "disto" flows to bondholders like it does every second of every day, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
 
 With that, I spin up my line of rented bots, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
 
@@ -350,7 +350,7 @@ A few notes on why minting is not (RoboTorq_in + other production costs) (torq -
 ```mermaid
 flowchart TD
     A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
-    B --> C["Value Creation (Torq Calculated)"]
+    B --> C["Oracle tracks Torq accumulation"]
     C --> D["Minting (Isaac Issues RoboTorq)"]
     D --> E["Universal Dividend (DistoStreams to Citizens)"]
     E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
@@ -367,8 +367,9 @@ Could Enterprises game the system by mis-bidding the torq_gamble or manipulating
 - **Under-bidding** → not enough RoboTorq in circulation → liquidity dries up → business left with extra stock and losses.  
 - **Over-bidding** → visible in BidNet’s market analytics → future BRLA terms tighten → go back to human labor or agree to stricter terms.
 
-Persistent manipulators are downgraded to **TorqVault financing**, which is more expensive.
-Thus, Enterprises compete *against* and *cooperate with* AI financial overseers — producing a self-optimizing economy.
+Persistent manipulators are downgraded to **TorqVault financing**, which is more expensive. If gaming or incompetence persists, that actor eventually gets priced out of the system.
+
+Thus, Enterprises both compete *against* and *cooperate with* AI financial overseers — producing a self-optimizing economy.
 
 ---
 
@@ -379,7 +380,7 @@ Until a sale occurs, both exist in a **superposition** of profit and loss — mu
 
 When a product sells, the wave function collapses — the market “observes” value.
 
-BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin) to forecast outcomes from past BRLAs. This literal interpretation of a proposed pseudo-quantum market dynamic will be tested in the Asimov Simulator.
+BidNet can request bid consideration advice from the network's predictive AI (Calvin), which will use quantum-inspired game theory to forecast outcomes based on past BRLAs. This literal interpretation of a proposed pseudo-quantum market dynamic will be tested for veritas in the Asimov simulator.
 
 ---
 
@@ -387,13 +388,17 @@ BidNet can employ quantum-inspired game theory, using its predictive AI (Calvin)
 
 Torq Theory formalizes the economic cost of compute and robotic labor into a **physics-based monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
 
-The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov Simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged.
+The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge on these variations occurring too quickly.
+
+Note that this is not price control: the Enterprise in question chooses the final selling price, and the bond network decides whether to make the same wager when it chooses to offer the contract.
 
 Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
 
-Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a reserve of excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made. Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
+Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a sink for excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made — the Bond Network will always accept dollars as long as people still have them, so the paper will always have a place to go. Come to think of it, that reserve is critical for conducting international trade without sending the RoboTorq overseas!
 
-The Bond Network operates as a decentralized, algorithmically balanced reserve system — neither state-controlled nor privately owned, but collectively managed by all participants through open, auditable smart contracts. Governments can borrow from the seed reserve when needed.
+Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
+
+The Bond Network operates as a decentralized, algorithmically balanced, fully functional monetary system that scales to nearly any conceivable size — neither state-controlled nor privately owned, but collectively managed by all participants through open, auditable smart contracts. Governments can borrow from the seed reserve when needed.
 
 Project Asimov will evolve into the actual AI Bond Network's logic over time.
 
@@ -424,6 +429,8 @@ But Grok figured it out months ago from that one set of crashes. I've been minin
 MintingNeeded = HumanTorq_in (TokenTork_out/TokenTork_in - 1)
 
 Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
+
+This is tongue-in-cheek, but such a system is possible as well, worked into the same Bond Network, powered by community blockchain analysis of conversation artifacts and betting on the outcome... What's your bet?
 
 Author's Note: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record.
 
