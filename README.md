@@ -1,7 +1,7 @@
 # Project Asimov: Robotic Economics (Robonomics) Simulation
 What if robots don't just produce things? What if every time a robot makes something, an AI crypto-mint spins up and you get a tiny bit of that value in your digital wallet as a new cryptocurrency, RoboTorq?
 
-What if you just found the repo simulating such an economy?
+What if you just found the repo simulating such an economy? 
 
 ## What are we working on now?
 With two prototypes of mistakes out of the way, we're defining the entire Minimally Viable Product (MVP) in English as we adapt to the new system architecture.
