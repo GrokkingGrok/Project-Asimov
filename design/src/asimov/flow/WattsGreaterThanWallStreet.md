@@ -58,8 +58,12 @@ flowchart TD
 13. [Quantum Game-Theoretic Interpretation](#13-quantum-game-theoretic-interpretation)  
 14. [Watts > Wall Street](#14-watts--wall-street)
 15. [Extending the RoboTorq to General AI-Value](#15-extending-the-robotorq-to-general-ai-value)
-Appendix:
-A1. [Glossary of Robonomic Terms](#A1-glossary-of-robononmic-terms)
+
+---
+
+## Appendix TOC
+A1. [Glossary of Robonomic Terms](#a1-glossary-of-robonomic-terms)
+
 ---
 
 ## 1. What Is Torq?
@@ -447,7 +451,7 @@ This is tongue-in-cheek, but such a system is possible as well, worked into the 
 
 ---
 
-## Glossary of Robonomic Terms
+## A1. Glossary of Robonomic Terms
 
 ### **AIntropy (Artificial Intropy)**
 A measure of inefficiency in robotic labor — how far a robot’s real-world performance deviates from its theoretical *Asimovian ideal*.  
