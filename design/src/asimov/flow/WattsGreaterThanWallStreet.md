@@ -1,6 +1,6 @@
 # Are Watts > Wall Street?
 _Bots work → You get paid.
-The RoboTorq UBD says: Yes."_
+The RoboTorq UBD says: "Yes."_
 
 Jonathan Clark, Copyright 2025
 
