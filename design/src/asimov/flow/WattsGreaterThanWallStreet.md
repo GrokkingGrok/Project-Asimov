@@ -10,7 +10,28 @@ Jonathan Clark, Copyright 2025
 - **Vibes**: Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. 
 - **Perks**: Robots don’t take your job. They pay your salary. Every watt of AI labor mints money — directly to you. No debt. No inflation. Just physics. 
 - **Quirks**: This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. 
-- **Bonus**: [A basic Robonomic dividend estimator, with conversion to USD is available here to see how it all works](https://projectasimovmvp.vercel.app/).
+- **Bonus**: [A basic Robonomic dividend estimator, with modifiable conversion to USD, is available here to see how it all works](https://projectasimovmvp.vercel.app/).
+
+---
+
+## Introduction
+
+Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics.
+
+It's based on **physics**. It's **mathematically sound**.  
+
+But yeah — it's a bit complex at times.
+
+**Pro tip**: 
+1. Copy-paste the whole thing directly into a fresh Grok or ChatGPT conversation.
+- Don't give it a link.
+- AIs will pick up past revisions of the document and hallucinate wildly.  
+2. Split the text into chunks if you’re not on a pro plan.
+3. Ask for an overview — then drill into what grabs you.
+
+It may take several minutes to respond. In the meantime, I suggest you take a look at the flowchart just below the abstract.
+
+Enjoy.
 
 ---
 
@@ -80,27 +101,6 @@ flowchart TD
 - [I. Quantum Computing and System Security](#appendix-i--quantum-computing-and-system-security)
 - [J. Extending the System to General AI–Generated Value](#appendix-j--extending-the-robotorq-to-general-ai-generated-value)
 - [K. Integrating AI-Value, Quantum Security, and Fusion Energy Impacts](#appendix-k--integrating-ai-value-quantum-security-and-fusion-energy-impacts)
-
----
-
-## Introduction
-
-Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics.
-
-It's based on **physics**. It's **mathematically sound**.  
-
-But yeah — it's a bit complex at times.
-
-**Pro tip**: 
-1. Copy-paste the whole thing directly into a fresh Grok or ChatGPT conversation.
-- Don't give it a link.
-- AIs will pick up past revisions of the document and hallucinate wildly.  
-2. Split the text into chunks if you’re not on a pro plan.
-3. Ask for an overview — then drill into what grabs you.
-
-Be patient. It may take several minutes to respond. In the meantime, I would suggest you take a look at the flowchart just above the Table of Contents.
-
-Enjoy.
 
 ---
 
