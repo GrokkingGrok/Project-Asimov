@@ -87,32 +87,46 @@ If you want to see the numbers in action first, [check out the Robonomics calcul
 
 ## 2. Deriving the RoboTorq
 
-I propose a new currency to value robotic labor: The RoboTorq.
+This paper proposes a new currency to value robotic labor: The RoboTorq.
 
 The RoboTorq is expressed in organically derived units and is defined as the amount of work an ideal robot performing its ideal task would do in one hour.
+
+And, as it turns out, I'll need to define an intermediary unit, the TokenTorq, to define the RoboTorq properly and make it economically useful.
 
 Imagine a thermodynamically perfect 1 kW humanoid robot.  
 It doesn’t exist (and never will), but assume you have one.
 
 What is the physical value of this *Asimovian Robot's* ideal task for one hour?
 
-1 RoboTorq / 1 RoboHour = 1 token × 1 kWh
+After you run the bot for one hour, you check its oracle taskmaster, and the readout says:
 
-Why? One ideal 1 kW robot processing one token with one joule/second of energy for 3600 seconds.
+- 1 RoboTorq = 1 token / second × 1 kWh
 
-A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
+Why? One ideal robot processing one token per second for one hour. A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
 
-I measure the output on the bot's oracle taskmaster.
+So, a RoboTorq is a measure of energized token throughput. One *Asimovian Robot's* energized token throughput in one hour.
 
-Hence:
+But we'll also need a way to describe the rate at which energize tokens are used to calculate RoboTorq effectively: The TokenTorq.
 
-1 RoboTorq = 1 token × 1 kW × 1 RoboHour (like a man-hour, following?)
+So, looking only at the units, the bot is doing this in every second:
 
-And:
+- 1 second of *Asimovian* robotic labar = 1 token / second x 1 joule
+- = 1 token / second x 1 joule / second
+- = 1 token / second x 1 Watt
+- For ease of calculation, we'll anchor 1 TokenTorq to the kilowatt, like the RoboTorq.
+- 1 TokenTorq = 1 token / second x 1000 Watts
+- 1 TokenTorq = 1 token / second x  1 kW
 
-1 kW × 1 RoboHour = 3.6 × 10⁶ RoboJoules (Robotic kwH to Joules)
+TokenTorq is also a measure of energized token throughput, like the RoboTorq, but measured per second. 2 kW at 200 tokens per second equals 400 TokenTorq. 
 
-A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to a Joule. It is a contextual framing of the same units for a specific use case.
+But a TokenTorq isn't a full hour's labor. TokenTorq is the *rate at which compute x energy is being used* per second.
+
+So, how many TokenTorqs to the RoboTorq?
+
+1 RoboTorq = 1 TokenTorq x 1 hr
+1 RoboTorq = 1 TokenTorq x 3600 seconds
+1 RoboTorq = 3600 TokenTorq
+
 
 ---
 
@@ -121,23 +135,18 @@ A RoboJoule is to a Joule as a Newton Meter (a measure of physical torque) is to
 | Symbol     | Definition            | Meaning                                  |
 |------------|------------------------|------------------------------------------|
 | RoboTorq   | token × kWh            | Base physical unit of robotic labor value |
-| TokenTorq  | token × RoboJoule      | Energy-information coupling at micro scale |
-| RoboJoule  | Joule (contextualized) | Energy used by robotic labor             |
-| TokenTorqPotential        | TokenTorq/hour         | Robot’s capacity to process tokens       |
+| TokenTorq  | token × kW      | Energy-information coupling at micro scale |
+| TokenTorqPotential        | TokenTorq        | A given Robot’s per second capacity to process tokens x energy  |
 
 ---
 
 ### 2.2 Relationship Between Units
 
-1 RoboTorq = 1 token × 3.6 × 10⁶ RoboJoules 
-1 RoboTorq = 3.6 TokenTorq = 3.6 (token × kWh) = 3.6 (token·kg·m²)/(s²·h)
-Hence 1 TokenTorq = 1/3.6 RoboTorq ≈ 0.277778 RoboTorq
+Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token/second with one joule/second of energy for an hour, and it is equal to 3600 TokenTorqs.
 
-Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token with one joule/second of energy for an hour, and it is equal to 3.6 TokenTorqs.
+In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because we determine a robotic laborer's market value.
 
-In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine.
-
-Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3.6 pennies to the dollar).
+Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3600 pennies to the dollar).
 
 ---
 
@@ -185,15 +194,15 @@ flowchart TD
 A robot’s “TokenTorqPotential” is its *Asimovian* ideal TokenTorq throughput per hour rating. TTP is to Robonomics what Carnot efficiency is to thermodynamics
 Example: “This is a 2 TTP bot.”
 
-Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kWh rating x maximum neural network token throughput. So a 2 kWh bot should have a TTP rating well above 2.
+Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kW rating x maximum neural network token throughput. So a 2 kW bot should have a TTP rating well above 2.
 
-Robotic Labor should always be sold by the TokenTorq, for 3.6 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. 
-- Sold at 3.6 TokenTorq / RoboTorq / hour, everywhere and always.
+Robotic Labor should always be sold by the TokenTorq, for 3600 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. 
+- Sold at 3600 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
-- TokenTorq (throughput) over time — 1 RoboTorq buys 3.6 TokenTorq of processing; different robots have different hourly throughputs (processing power).
+- TokenTorq (throughput) over time — 1 RoboTorq buys 3600 TokenTorq of processing; different robots have different hourly throughputs (processing power).
 - I pay for the bot's maximum throughput capacity, regardless of how much I can use productively.
 
-Example: If I hire a 10 TTP bot for 1 hour, I will pay 10 TTP x 3.6 TTP/hr x 1 hour = 36 RT — even if I only get 2 TokenTorq (7.2 RT) of base value out in that hour. As the robot learns the task, I'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
+Example: If I hire a 10 TTP bot for 1 hour, I will pay 10 TTP x 3600 TTP/hr x 1 hour = 36,000 RT — even if I only get 2 TokenTorq (7200 RT) of base value out in that hour. As the robot learns the task, I'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
 
 And this brings us to the mathematical definitions of Torq.
 
@@ -251,7 +260,7 @@ The “torq_gamble” is the Enterprise’s wager on how much Torq will be gener
 
 MintingNeeded = RoboTorq_in × (torq_gamble − 1)  
 Alternatively:  
-MintingNeeded = 3.6 × Robot.TTP × (torq_gamble − 1)
+MintingNeeded = 3600 × Robot.TTP × (torq_gamble − 1)
 
 Both the Enterprise and Isaac (the minting AI) [co-wager on productivity.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md#skins-in-the-game)
 
@@ -322,20 +331,20 @@ Given:
 - torq_gamble = 3
 
 1. RoboTorq Input Value (RoboTorq_in):
-- RoboTorq_in = TTP x 3.6 x time
-- RoboTorq_in = TTP × 3.6 × 100
-- RoboTorq_in = 5 × 3.6 × 100 = 1,800 RT
+- RoboTorq_in = TTP x 3600 x time
+- RoboTorq_in = TTP × 3600 × 100
+- RoboTorq_in = 5 × 3600 × 100 = 1,800,000 RT = 1.8 MRT (MRT = Million RoboTorq)
 
 2. MintingNeeded:
 - MintingNeeded = RoboTorq_in (Torq_gamble - 1)
-- MintingNeeded = 1,800 × (3 − 1) = 3,600 RT
+- MintingNeeded = 1.8 MRT × (3 − 1) = 3.6 MRT
 
 3. Total Value Out:
-- RoboTorq_in + MintingNeeded = 1,800 + 3,600 = 5,400 RT
+- RoboTorq_in + MintingNeeded = 1.8 + 3.6 = 5.4 MRT
 
 4. Items: 400 → Sell at 13.5 RT each → zero inflation, zero debt, 100% citizen ownership.
 
-I would pay the robot 4.5 RT per item, so as long as I keep my overhead below 7 RT per item, I'm in the black. Seems like a good deal for everyone.
+I would pay the robot 4.5 MRT per item, so as long as I keep my overhead below 7 MRT per item, I'm in the black. Seems like a good deal for everyone.
 
 **RoboFund**: So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
 
@@ -351,9 +360,9 @@ The MakerFunnel at RoboFund opens up, the "disto" flows to bondholders like it d
 
 With that, I spin up my line of rented bots after Daneel deploys them, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
 
-The robots managed to produce 400 items for me, and I can sell them for 13.5 RT per to make the revenue my business needs to stay alive. 
+The robots managed to produce 400 items for me, and I can sell them for 13.5 MRT per to make the revenue my business needs to stay alive. 
 
-Isaac (the minting AI) mints 3600 fresh RoboTorq (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes it to bondholders in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
+Isaac (the minting AI) mints 3.6 MRT fresh (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes the full RoboTorq_out to bondholders in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
 
 As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which, in turn, drives vigorous economic activity.
 
@@ -607,7 +616,7 @@ Funds stored in TorqVaults earn interest sourced from demurrage collected on idl
 ### **TokenTorq (TT)**
 A non-standardized unit of AI-value exchange: token × RoboJoule.  
 Represents the energy-information coupling at a granular level — the smallest measurable increment of AI-driven productive effort.  
-1 RoboTorq = 3.6 TokenTorqs.
+1 RoboTorq = 3600 TokenTorqs.
 
 ---
 
