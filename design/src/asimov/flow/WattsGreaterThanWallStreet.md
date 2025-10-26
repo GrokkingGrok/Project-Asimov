@@ -28,7 +28,7 @@ Robonomics could represent a paradigm shift in economic theory — and, if we ch
 
 "Watts > Wall Street" is rhetorically powerful, yet scientifically grounded. 
 
-The RoboTorq turns energy and computation into money as directly as photosynthesis turns sunlight into sugar. 
+The RoboTorq turns energy, time, and computation into money as directly as photosynthesis turns sunlight into sugar. 
 
 **Here's how it works.**
 
@@ -87,11 +87,16 @@ flowchart TD
 
 Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics.
 
-It's based on physics. It's mathematically sound. But that means it's also a bit complex at times.
+It's based on **physics**. It's **mathematically sound**.  
 
-As the author, I strongly suggest you copy-paste the whole thing into an LLM like ChatGPT or Grok, or split it into chunks if you don't have a pro subscription.
+But yeah — it's a bit complex at times.
 
-Ask for a general overview of the piece, and then ask more questions about the parts that interest you the most. It's a far more digestible way to consume this massive document.
+**Pro tip**: 
+1. Copy-paste this directly into a fresh Grok or ChatGPT conversation.
+- Don't give it a link.
+- AIs will pick up past revisions of the document and hallucinate wildly.  
+3. Split the text into chunks if you’re not on a pro plan.
+4. Ask for an overview — then drill into what grabs you.
 
 ---
 
@@ -183,14 +188,13 @@ The following chart contrasts gold, Bitcoin, Fiat, and RoboTorq as currencies.
 | **Fiat**   | Debt              | Infinite                             | Central bank                               |
 | **RoboTorq**| **Energy × Time** | **Token-Adaptive (via efficiency gains)**  | **Bounded by physics + BRLA contracts**    |
 
-Unlike the gold standard, the RoboTorq is not strictly commodity-backed. Yet it can still be treated similarly.  
-It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
+Unlike the gold standard, the RoboTorq is not strictly commodity-backed. Yet it can still be treated similarly.  It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
 
 But it's also based on tokens. There is no standard definition of a token's size.
 
-It's also not yet 100% clear whether there should be any imperative to define one, either.
+It's also not yet clear whether there should be any imperative to define one, either.
 
-The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge against these variations occurring too quickly.
+The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the Ronded Robotic Labor Agreements (BRLAs) granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge against these variations occurring too quickly.
 
 This isn't necessarily a bad thing, as you can see from the plans for depegging the dollar in the appendices, we will need a currency that can handle some sway.
 
