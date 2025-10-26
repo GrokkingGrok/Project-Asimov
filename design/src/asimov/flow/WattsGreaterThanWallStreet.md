@@ -389,9 +389,9 @@ Thankfully, we don't need all this math to run through a simple example. We can 
 
 ## 11. Sample Bonded Robotic Labor Agreement
 
-Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 RT.
+Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 MRT (MRT = 1 Million RoboTorq).
 
-Do you think it will work out? [Follow along using the Robonomics calculator](https://projectasimovmvp.vercel.app/) if you don't like math.
+Do you think it will work out?
 
 Given:
 - TTP = 5 TokenTorq/hr
