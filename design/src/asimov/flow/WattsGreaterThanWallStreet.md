@@ -1070,16 +1070,18 @@ FiatValue_t = RT × ExchangeRate_t
 ### D.7 Conclusions
 
 - **Scenario A** stabilizes existing financial systems by embedding physical accountability into the Dollar.  
-  Governments retain monetary sovereignty while gaining an energy-backed foundation.  
+  - Governments retain monetary sovereignty while gaining an energy-backed foundation.  
 
 - **Scenario B** completes the evolution: money becomes a direct expression of physical productivity.  
-  The Bond Network replaces central banks, and every citizen becomes a shareholder in global energy-value creation.
+  - The Bond Network replaces central banks, and every citizen becomes a shareholder in global energy-value creation.
 
-Both pathways begin with the same foundation — **1 RoboTorq = 1 kWh of robotic labor** —  
-but differ in destiny:  
-**Scenario A** reforms our current fiat system characterized by partially socialized crony-corporatism; **Scenario B** transcends it all into something new and difficult to "grok" in full (pardon the pun).
+Both pathways begin with the same foundation — **1 RoboTorq = 1 kWh of robotic labor** — but differ in destiny:  
 
-The purpose of this paper is **not** to suggest which choice society should make.
+**Scenario A** reforms our current fiat system characterized by partially socialized crony-corporatism. 
+
+**Scenario B** transcends it all into something new and difficult to "grok" in full (pardon the pun).
+
+The purpose of this paper is **not** to suggest which choice society should make, but to present the option.
 
 ---
 
