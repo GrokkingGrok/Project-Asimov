@@ -100,22 +100,19 @@ What is the physical value of this *Asimovian Robot's* ideal task for one hour?
 
 After you run the bot for one hour, you check its oracle taskmaster, and the readout says:
 
-- 1 RoboTorq = 1 token / second × 1 kWh
+- `1 RoboTorq = 1 token / second × 1 kWh`
 
 Why? One ideal robot processing one token per second for one hour. A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
 
 So, a RoboTorq is a measure of energized token throughput. One *Asimovian Robot's* energized token throughput in one hour.
 
-But we'll also need a way to describe the rate at which energize tokens are used to calculate RoboTorq effectively: The TokenTorq.
+But we'll also need a way to describe the rate at which energized tokens are used to calculate RoboTorq effectively: The TokenTorq.
 
-So, looking only at the units, the bot is doing this in every second:
+So, looking only at the units, the bot is doing this every second:
+- 1 second of *Asimovian* robotic labor = 1 token / second x 1 kW
 
-- 1 second of *Asimovian* robotic labar = 1 token / second x 1 joule
-- = 1 token / second x 1 joule / second
-- = 1 token / second x 1 Watt
-- For ease of calculation, we'll anchor 1 TokenTorq to the kilowatt, like the RoboTorq.
-- 1 TokenTorq = 1 token / second x 1000 Watts
-- 1 TokenTorq = 1 token / second x  1 kW
+For ease of calculation, we'll anchor 1 TokenTorq to the kilowatt, like the RoboTorq.
+- `1 TokenTorq = 1 token / second x  1 kW`
 
 TokenTorq is also a measure of energized token throughput, like the RoboTorq, but measured per second. 2 kW at 200 tokens per second equals 400 TokenTorq. 
 
@@ -123,10 +120,11 @@ But a TokenTorq isn't a full hour's labor. TokenTorq is the *rate at which compu
 
 So, how many TokenTorqs to the RoboTorq?
 
-1 RoboTorq = 1 TokenTorq x 1 hr
-1 RoboTorq = 1 TokenTorq x 3600 seconds
-1 RoboTorq = 3600 TokenTorq
+- 1 RoboTorq = 1 TokenTorq x 1 hr
+- 1 RoboTorq = 1 TokenTorq x 3600 seconds
+- `1 RoboTorq = 3600 TokenTorq`
 
+In physics, impact is known as energy x time. TokenTorqs and RoboTorqs are a measure of the **economic impact** of energy x compute.
 
 ---
 
@@ -144,7 +142,7 @@ So, how many TokenTorqs to the RoboTorq?
 
 Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token/second with one joule/second of energy for an hour, and it is equal to 3600 TokenTorqs.
 
-In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because we determine a robotic laborer's market value.
+In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because it helps us determine a robotic laborer's market value.
 
 Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3600 pennies to the dollar).
 
