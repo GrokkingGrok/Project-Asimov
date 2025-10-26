@@ -647,14 +647,343 @@ Interest is distributed from demurrage collections to active investors who store
 The guiding ethos of Robonomics: *Energy is the new capital*.  
 As labor shifts from humans to machines, the true measure of value becomes throughput and the merit you have to achieve it — not speculation in the stock market.
 
+---
+
+## Appendix B — Dimensional Consistency of the RoboTorq System
+
+### B.1 Motivation
+
+The RoboTorq framework treats **economic productivity** as a form of measurable energy throughput — the transfer of useful work by robotic labor over time.  
+To remain scientifically and economically coherent, all quantities are expressed in consistent base dimensions: energy, time, and value.
+
+---
+
+### B.2 Base Dimensional Definitions
+
+| Symbol | Quantity | Physical Analogue | Base Units (SI) | Economic Interpretation |
+|:-------|:----------|:------------------|:----------------|:------------------------|
+| P | Power | Rate of work | W = J/s | Rate of robotic effort |
+| E | Energy | Work done | J = W·s | Total work over time |
+| τ | Time | Duration | s or h | Operating time horizon |
+| T | Token | Unit of account | — | Abstract economic value |
+| TT | TokenTorq | Token × Power | T·W | Tokenized instantaneous work capacity |
+| RT | RoboTorq | TokenTorq × Time | T·W·h (or T·kWh) | Tokenized energy throughput — economic work delivered |
+
+---
+
+### B.3 Derivation of the RoboTorq
+
+1. **TokenTorq (TT)**  
+   Represents a robot’s work capacity rate — like tokenized horsepower.
+
+   TT = T × P
+
+2. **RoboTorq (RT)**  
+   Represents the total work performed by robotic systems over a period of time.
+
+   RT = TT × τ = T × P × τ = T × E
+
+Therefore:
+
+   1 RT = 1 Token × 1 kWh
+
+One RoboTorq is the energy-equivalent of one token exerted through one kilowatt-hour of robotic labor.
+
+---
+
+### B.4 Connection to Economic Value
+
+In classical economics:
+
+   M × V = P × Q
+
+where M = money supply, V = velocity, P = price, Q = quantity.
+
+In Robonomics, the physical side (PQ) becomes RT — the tokenized power throughput:
+
+   M_robo × V_robo = RT
+
+This creates a direct mapping:
+
+| Domain | Variable | Unit | Concept |
+|:--------|:---------|:------|:--------|
+| Physics | Energy throughput | kWh | Work performed |
+| Economics | PQ (price × quantity) | USD | Market throughput |
+| Robonomics | RT (T·kWh) | Tokenized energy value | Synthetic labor |
+
+Each side of the equation represents a flow of productive capacity over time — maintaining dimensional closure.
+
+---
+
+### B.5 Verification Example
+
+Assume the following:
+
+- Power per robot = 150 kW  
+- Robots per contract = 200  
+- Contracts = 2000  
+- Time = 8760 h (1 year)
+
+FleetTTP = 150 × 200 × 2000 = 60,000,000 kW
+
+Base RoboTorq_in = (FleetTTP × 8760 h) / 1000 = 525,600,000 RT
+
+Each RT corresponds to 1 kWh of robotic work tokenized into economic value.
+
+---
+
+### B.6 Policy Implications
+
+Because RoboTorq issuance is physically constrained by energy throughput:
+
+- Inflation is limited by real productivity growth.  
+- Deflation only occurs when robots idle (no throughput).  
+- Improvements in energy efficiency directly increase the real value density of RT.
+
+This anchors monetary expansion to measurable work rather than arbitrary credit issuance.
+
+---
+
+### B.7 Summary Equation Chain
+
+TT = T × P  
+RT = TT × τ = T × P × τ  
+Value Flow = RT × ExchangeRate  
+Therefore, 1 RT = 1 Token × 1 kWh
+
+**In plain English:**  
+If Bitcoin is "money mined by computation," then RoboTorq is "money minted by work."
+
+---
+
+## Appendix C — Example: Translating a BRLA into Economic Flow
+
+### C.1 Setup Parameters
+
+| Variable | Description | Value |
+|:----------|:-------------|:-------|
+| Power per robot | Average continuous draw | 150 kW |
+| Robots per contract | Size of one BRLA unit | 200 |
+| Number of contracts | Deployed BRLAs | 2000 |
+| Operating hours | 8760 hours/year | 1 year |
+| Markup (gamble factor) | Sale price multiplier over energy input | 50× |
+| Population | Recipients of dividend | 350 million |
+
+---
+
+### C.2 Step 1 — Compute Energy Throughput
+
+Fleet power = 150 × 200 × 2000 = 60,000,000 kW  
+Annual energy throughput = 60,000,000 × 8760 = 525,600,000,000 kWh  
+Convert to RoboTorq (1 RT = 1 kWh):
+
+   Total RT_in = 525,600,000,000 RT
+
+---
+
+### C.3 Step 2 — Apply Economic Markup
+
+Minted RT_out = RT_in × (markup - 1)  
+Minted RT_out = 525.6e9 × (50 - 1) = 25,754,400,000,000 RT
+
+So roughly **25.75 trillion RT** are created by this fleet over the year.
+
+---
+
+### C.4 Step 3 — Per-Citizen Dividend
+
+Annual RT per person = 25.75e12 / 350e6 = 73,584 RT/year  
+Daily RT per person = 73,584 / 365 = 201.6 RT/day
+
+If the exchange rate is 1 RT = 0.18 USD:
+
+   Daily dividend = 201.6 × 0.18 = 36.29 USD/day
+
+At a mature exchange rate (1 RT = 10 USD):
+
+   Daily dividend = 201.6 × 10 = 2,016 USD/day
+
+This shows the potential real-income scaling as the RoboTorq economy appreciates relative to fiat.
+
+---
+
+### C.5 Step 4 — Economic Feedback Loop
+
+1. Robots generate RT through productive energy use.  
+2. RT circulates as a tokenized representation of that work.  
+3. Holders (citizens, stakeholders) receive dividends proportional to RT minted.  
+4. As efficiency and adoption grow, the exchange rate rises, amplifying real income.  
+
+Thus, robotic productivity feeds human prosperity directly — without intermediaries.
+
+---
+
+### C.6 Interpretation
+
+- **Energy through robots → Tokenized as RT → Distributed as income.**  
+- Every link in the chain is auditable in both **physical** (kWh) and **financial** (USD/token) space.  
+- Monetary value is now an *emergent property of work performed*, not a speculative abstraction.
+
+---
+
+### C.7 Summary
+
+| Concept | Formula | Meaning |
+|:---------|:----------|:---------|
+| TokenTorq | T × kW | Robot capacity rate |
+| RoboTorq | T × kWh | Robot work over time |
+| Fleet RT_in | Power × Hours | Total energy converted |
+| Minted RT_out | RT_in × (markup - 1) | Economic yield |
+| Per citizen dividend | RT_out / Population | Fair distribution of robotic productivity |
+
+---
+
+**Conclusion:**  
+A BRLA transforms measurable robotic power into a transparent, physically grounded dividend.  
+Each RoboTorq minted represents one kilowatt-hour of work performed — a new, verifiable basis for value creation in the post-labor economy.
+
+---
+
+## Appendix D — Energy-to-Fiat Calibration: Two Scenarios for the Transition from Fiat to Torq
+
+### D.1 Purpose
+
+This appendix describes how the RoboTorq (RT) can be calibrated against the U.S. Dollar (USD) or any fiat currency as the world transitions toward a physics-based monetary system.  
+Two long-term outcomes are modeled:
+
+1. **Coexistence Scenario** — The Dollar remains, pegged 1 USD = 1 RT, serving as the reserve asset for international trade and public borrowing.  
+2. **Full Transition Scenario** — The global economy adopts the RoboTorq as its universal unit of account, and fiat currencies gradually dissolve.
+
+Both begin with an **energy-anchored baseline**, where 1 RT equals the cost of 1 kWh of robotic labor.
+
+---
+
+### D.2 Baseline Physical Peg
+
+| Region | 2025 Avg. Retail Power Cost | Initial Peg |
+|:--------|:----------------------------|:-------------|
+| United States | 0.18 USD / kWh | 1 RT = 0.18 USD |
+| EU Average | 0.25 USD / kWh | 1 RT = 0.25 USD |
+| Global Median | 0.20 USD / kWh | 1 RT ≈ 0.20 USD |
+
+At this stage, **each RoboTorq represents the same value as one kilowatt-hour of productive robotic work**.  
+The Bond Network uses this physical equivalence as the base minting reference.
+
+---
+
+### D.3 Scenario A — Coexistence with Fiat (Energy Reserve Model)
+
+#### Overview
+
+The goal is to stabilize RT and USD at a 1 : 1 parity while maintaining the Dollar as an international reserve and government borrowing medium.
+
+#### Policy Mechanics
+
+- **Gradual Re-Peg:** RT appreciates from 0.18 USD to 1 USD over roughly 10 years.  
+- **Energy-Backed Dollar:** Governments and banks hold RT reserves to collateralize fiat issuance.  
+- **Dual-Currency Circulation:**  
+  - Domestic citizens receive dividends in RT.  
+  - Governments continue tax and debt operations in USD.  
+- **Foreign Trade:** Un-Torqed economies trade using USD → RT reserves held by the Bond Network.  
+- **Borrowing Facility:** States borrow RT from the Bond Network using USD as collateral.
+
+#### Transition Table
+
+| Year | 1 RT (USD) | Description |
+|:----:|:-----------:|:-------------|
+| 1 | 0.18 | Energy-cost baseline |
+| 3 | 0.45 | Early adoption |
+| 5 | 0.75 | Partial peg |
+| 10 | 1.00 | Full 1 USD = 1 RT equilibrium |
+
+At Year 10, the two systems become **mutually convertible**:
+
+1 RT = 1 USD = 1 kWh of verified robotic labor
 
 
+#### Result
 
+- USD becomes **energy-denominated** via RT reserves.  
+- Governments preserve legacy accounting and foreign trade frameworks.  
+- The Bond Network acts as a *synthetic central bank*—transparent, physics-backed, and non-inflationary.  
+- RT supply expands only through real robotic work, preventing fiat dilution.
 
+**End State:** “Watts support Wall Street.”  The Dollar persists, but it’s now backed by measurable robotic productivity.
 
+---
 
+### D.4 Scenario B — Full Transition to a Torq-Only Economy
 
+#### Overview
 
+In this pathway, fiat gradually loses relevance.  Every nation becomes Torq-integrated (“Torqed”), and energy throughput replaces money as the universal accounting basis.
+
+#### Policy Mechanics
+
+- **Free-Float Exchange:** RT allowed to appreciate beyond 1 USD, reflecting global productivity surplus.  
+- **Fiat Phase-Out:** Taxes, trade, and payrolls shift entirely to RT-denominated smart contracts.  
+- **International Settlement:** Cross-border trade uses RT directly through the Bond Network ledger.  
+- **Reserve Conversion:** Central banks exchange remaining fiat reserves for RT, then retire fiat notes.  
+- **Public Credit:** Governments borrow RT directly from the Bond Network against future robotic GDP.
+
+#### Transition Table
+
+| Year | 1 RT (USD) | Description |
+|:----:|:-----------:|:-------------|
+| 1 | 0.18 | Energy-cost baseline |
+| 3 | 1.00 | Near-parity achieved |
+| 5 | 4.00 | Broad adoption |
+| 8 | 10.00 | Global RT valuation dominates |
+| 12 | — | USD discontinued as pricing unit |
+
+After Year 8, USD is used only as a historical reference.  
+The **global economy prices all goods and contracts in RT**—a direct measure of energy-backed productivity.
+
+#### Result
+
+- Inflation and debt creation vanish; currency issuance equals real robotic labor output.  
+- Exchange rates between nations become functions of average energy efficiency and AI capacity.  
+- Governments and citizens hold the same base asset—RoboTorq—ending the separation between “money issuer” and “money user.”
+
+**End State:** “Watts replace Wall Street.”  The economy becomes self-referential to physical work, not paper promises.
+
+---
+
+### D.5 Comparative Overview
+
+| Aspect | Scenario A — Coexistence | Scenario B — Full Transition |
+|:--------|:-------------------------|:------------------------------|
+| Target Peg | 1 USD = 1 RT | None (RT free-floats) |
+| Dollar Role | Reserve & borrowing asset | Phased out |
+| Bond Network | Issues RT; backs USD | Sole monetary system |
+| Inflation Source | Limited by RT reserves | None (RT = physical work) |
+| Trade Settlement | USD + RT | RT only |
+| Government Borrowing | USD collateral → RT loan | Direct RT loan |
+| Public Dividends | Paid in RT, spent in either | Paid and spent in RT |
+| Endgame Vision | Dual-currency equilibrium | Post-fiat energy economy |
+
+---
+
+### D.6 Summary Equation Chain (Plain Text)
+
+Initial Peg: 1 RT = EnergyCost (USD/kWh)
+Scenario A: 1 RT → 1 USD by Year 10 (dual system)
+Scenario B: 1 RT → free float; USD → 0 usage
+FiatValue_t = RT × ExchangeRate_t
+
+---
+
+### D.7 Conclusions
+
+- **Scenario A** stabilizes existing financial systems by embedding physical accountability into the Dollar.  
+  Governments retain monetary sovereignty while gaining an energy-backed foundation.  
+
+- **Scenario B** completes the evolution: money becomes a direct expression of physical productivity.  
+  The Bond Network replaces central banks, and every citizen becomes a shareholder in global energy-value creation.
+
+Both pathways begin with the same foundation — **1 RoboTorq = 1 kWh of robotic labor** —  
+but differ in destiny:  
+**Scenario A** reforms capitalism; **Scenario B** transcends it.
 
 
 
