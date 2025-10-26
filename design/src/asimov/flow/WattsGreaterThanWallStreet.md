@@ -6,10 +6,10 @@ Jonathan Clark, Copyright 2025
 *Tags*: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
 
 ### Executive TL;DR
-- *Vibes*: Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. 
-- *Perks*: By tying currency creation to measurable energy and information throughput, Robonomics aims to stabilize value while ensuring human benefit from AI-driven productivity. 
-- *Quirks*:This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. 
-- *Bonus*: [A basic Robonomic dividend estimator, with conversion to USD is available here to see how it all works](https://projectasimovmvp.vercel.app/).
+- **Vibes**: Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. 
+- **Perks**: Robots don’t take your job. They pay your salary. Every watt of AI labor mints money — directly to you. No debt. No inflation. Just physics. 
+- **Quirks**: This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. 
+- **Bonus**: [A basic Robonomic dividend estimator, with conversion to USD is available here to see how it all works](https://projectasimovmvp.vercel.app/).
 
 ---
 
@@ -228,9 +228,9 @@ Because Torq can be found from using three different ratios, we can draw some in
 
 | Quantity   | Units               |
 |------------|---------------------|
-| RoboTorq_in   | token × kWh      |
+| RoboTorq_in   | token/s × kWh      |
 | Torq       | dimensionless       |
-| RoboTorq_out   | token × kWh |
+| RoboTorq_out   | token/s × kWh |
 
 ---
 
