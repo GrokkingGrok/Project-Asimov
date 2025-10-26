@@ -166,7 +166,9 @@ Unlike the gold standard, the RoboTorq is not strictly commodity-backed. Yet it 
 It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
 
 The subjective market value that humans place on it may change with time, but the *physical definition* of the RoboTorq may not.  
-The RoboTorq is the first **physics-based unit of economic value**.
+The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
+
+In fact, they already exist; it's just that nobody has started tracking them yet because they hadn't been discovered until recently.
 
 ---
 
@@ -210,9 +212,9 @@ Robotic Labor should always be sold by the TokenTorq, for 3600 RT per, and the s
 - Sold at 3600 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
 - TokenTorq (throughput) over time — 1 RoboTorq buys 3600 TokenTorq of processing; different robots have different hourly throughputs (processing power).
-- I pay for the bot's maximum throughput capacity, regardless of how much I can use productively.
+- You pay for the bot's maximum throughput capacity, regardless of how much I can use productively.
 
-Example: If I hire a 10 TTP bot for 1 hour, I will pay 10 TTP x 3600 TTP/hr x 1 hour = 36,000 RT — even if I only get 2 TokenTorq (7200 RT) of base value out in that hour. As the robot learns the task, I'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
+Example: If you hire a 10 TTP bot for 1 hour, you will pay 10 TTP x 3600 TTP/hr x 1 hour = 36,000 RT — even if you only get 2 TokenTorq (7200 RT) of base value out in that hour. As the robot learns the task, you'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
 
 And this brings us to the mathematical definitions of Torq.
 
@@ -286,13 +288,14 @@ Real robots are imperfect; production efficiency varies with task complexity and
 - Negative complexity → diminishing Torq gains (single-item tasks).  
 - Positive complexity → compounding Torq gains (multi-item oracles).
 
-TTP is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how a given robot would perform it was the theoretical ideal *Asimovian Robot*. *AIntropy* (pronounced ane-tropy), is how far away that bot is from its *Asimovian* rating. AIntropy is task-specific. I can hire the exact same robot for a different job at it will have a completely different AIntropy.
+TTP is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how a given robot would perform if it were the theoretical ideal *Asimovian Robot*. *AIntropy* (pronounced ane-tropy), is how far away that bot is from its *Asimovian* rating. AIntropy is task-specific. I can hire the exact same robot for a different job, and it will have a completely different AIntropy.
 
 ### AIntropy (Artificial Intropy)  
 AIntropy = complexity × TTP × Robot.util × supply_efficiency × equipment_utilization × …
 
 - Lower AIntropy → slower learning, lower token efficiency.  
 - Higher AIntropy → faster convergence, higher Torq output.
+- Inherits its units from TokenTorqPotential.
 
 This models how inefficiencies push operations away from the thermodynamic ideal and require more RoboTorq per unit value created.
 
