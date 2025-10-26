@@ -350,7 +350,7 @@ Given:
 3. Total Value Out:
 - RoboTorq_in + MintingNeeded = 1.8 + 3.6 = 5.4 MRT
 
-4. Items: 400 → Sell at 13.5 RT each → zero inflation, zero debt, 100% citizen ownership.
+4. Items: 400 → Sell at 13.5 MRT each → zero inflation, zero debt, 100% citizen ownership.
 
 I would pay the robot 4.5 MRT per item, so as long as I keep my overhead below 7 MRT per item, I'm in the black. Seems like a good deal for everyone.
 
@@ -364,7 +364,7 @@ I would pay the robot 4.5 MRT per item, so as long as I keep my overhead below 7
 
 It accepts my proposal. I check the math, and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
 
-The MakerFunnel at RoboFund opens up, the "disto" flows to bondholders like it does every second of every day, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
+The MakerFunnel at RoboFund opens up, and the "disto" flows to bondholders, as it does every second of every day, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
 
 With that, I spin up my line of rented bots after Daneel deploys them, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
 
