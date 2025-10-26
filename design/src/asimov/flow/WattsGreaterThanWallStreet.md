@@ -1178,8 +1178,10 @@ All governance actions are on-chain, timestamped, and cryptographically verifiab
 
 ### E.8 Ethical and Human Safeguards
 
+Ethical considerations for the future bondholders (us) to consider:
 - **Universal Dividend:** Ensures robotic productivity benefits all citizens.  
-- **Non-Ownership Rule:** No entity may control > 2 % of circulating RT.  
+- **No-Whaling Rule:** No entity (except the Bond Network may control > x % of liquid RT.
+    - Leveraged (saved) and invested RT are not liquid.
 - **Open-Source Mandate:** All protocols and oracle code remain public.  
 - **Decentralized Custody:** Treasury reserves distributed across multiple jurisdictions.  
 - **Right to Energy:** Governance decisions cannot reduce energy access below living-standard thresholds.
@@ -1247,7 +1249,7 @@ The architecture is deliberately modular:
 2. **Validation Stage:**  
    Audit Nodes aggregate proofs; invalid or duplicate data is slashed.  
 3. **Consensus Stage:**  
-   Validators run a modified BFT consensus to commit the verified energy batch to chain.  
+   Validators run a modified BFT consensus to commit the verified energy batch to the chain.  
 4. **Reward Stage:**  
    Mint Algorithm issues new RT proportional to verified work.
 
@@ -1345,6 +1347,13 @@ Treasury Reports ← DAO Governance ← Dividend Engine
 | **Phase II** | 1 M robots | Sharded consensus + L2 roll-ups |
 | **Phase III** | 100 M robots | Hierarchical federation of regional sub-nets |
 | **Phase IV** | Planet-scale | Autonomous global energy settlement fabric |
+
+Between Phases I and late II to early III, the author suggests the following physical infrastructure be considered:
+- Deep Underground Military Bunkers to house primary data centers, powered by geothermal until fusion comes online, if it does.
+- Blockchain backups stored in redundant starship orbital data centers.
+- Connect the two with Starlink.
+
+Ambitious? Yes, but also resilient.
 
 ---
 
