@@ -95,8 +95,12 @@ But yeah — it's a bit complex at times.
 1. Copy-paste the whole thing directly into a fresh Grok or ChatGPT conversation.
 - Don't give it a link.
 - AIs will pick up past revisions of the document and hallucinate wildly.  
-3. Split the text into chunks if you’re not on a pro plan.
-4. Ask for an overview — then drill into what grabs you.
+2. Split the text into chunks if you’re not on a pro plan.
+3. Ask for an overview — then drill into what grabs you.
+
+Be patient. It may take several minutes to respond. In the meantime, I would suggest you take a look at the flowchart just above the Table of Contents.
+
+Enjoy.
 
 ---
 
