@@ -130,17 +130,17 @@ In physics, impact is known as energy x time. TokenTorqs and RoboTorqs are a mea
 
 ### 2.1 The Novel Units
 
-| Symbol     | Definition            | Meaning                                  |
-|------------|------------------------|------------------------------------------|
-| RoboTorq   | token × kWh            | Base physical unit of robotic labor value |
-| TokenTorq  | token × kW      | Energy-information coupling at micro scale |
-| TokenTorqPotential        | TokenTorq        | A given Robot’s per second capacity to process tokens x energy  |
+| Symbol | Definition | Meaning |
+|--------|------------|---------|
+| RoboTorq | (token/s) × kWh | Base physical unit of robotic labor value |
+| TokenTorq | (token/s) × kW | Energy-information coupling at micro scale |
+| TokenTorqPotential (TTP) | TokenTorq/hour | A robot’s max idealized throughput per hour |
 
 ---
 
 ### 2.2 Relationship Between Units
 
-Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token/second with one joule/second of energy for an hour, and it is equal to 3600 TokenTorqs.
+Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token/second with one kW of power for an hour, and it is equal to 3600 TokenTorqs.
 
 In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because it helps us determine a robotic laborer's market value.
 
@@ -575,15 +575,10 @@ Investors can pledge TorqVault savings or DistoStreams on a piecemeal basis, rat
 
 ---
 
-### **RoboJoule**
-A contextualized Joule — a measure of energy consumed by robotic labor.  
-Used to express energy expenditure in the same dimensional units as standard physics, but within the Robonomic economy.
-
----
-
 ### **RoboTorq (RT)**
-The standardized unit of Robonomic currency, defined as one token × one kilowatt-hour (1 token·kWh).  
-Represents the value of one hour of ideal robotic labor performed by a 1 kW *Asimovian Robot*.
+The standardized unit of Robonomic currency, defined as **one token per second × one kilowatt-hour** (`1 token/s × kWh`).  
+Represents the value of **one hour** of ideal robotic labor by a 1 kW *Asimovian Robot*.  
+`1 RoboTorq = 3600 TokenTorq`
 
 ---
 
@@ -612,7 +607,7 @@ Funds stored in TorqVaults earn interest sourced from demurrage collected on idl
 ---
 
 ### **TokenTorq (TT)**
-A non-standardized unit of AI-value exchange: token × RoboJoule.  
+A non-standardized unit of AI-value exchange: token/s x kW
 Represents the energy-information coupling at a granular level — the smallest measurable increment of AI-driven productive effort.  
 1 RoboTorq = 3600 TokenTorqs.
 
