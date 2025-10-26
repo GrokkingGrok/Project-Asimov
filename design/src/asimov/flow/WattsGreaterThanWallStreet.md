@@ -73,7 +73,7 @@ A1. [Glossary of Robonomic Terms](#a1-glossary-of-robonomic-terms)
 
 ## 1. What Is Torq?
 
-Torq is the unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems. 
+Torq is a unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems. 
 
 Torq, by definition, is a dimensionless coefficient of productive transformation. It tracks a combination of energy, compute, and value to measure economic efficiency, rather than thermodynamic efficiency.
 
