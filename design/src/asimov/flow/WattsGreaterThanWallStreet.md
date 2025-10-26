@@ -83,6 +83,18 @@ flowchart TD
 
 ---
 
+## Introduction
+
+Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics.
+
+It's based on physics. It's mathematically sound. But that means it's also a bit complex at times.
+
+As the author, I strongly suggest you copy-paste the whole thing into an LLM like ChatGPT or Grok, or split it into chunks if you don't have a pro subscription.
+
+Ask for a general overview of the piece, and then ask more questions about the parts that interest you the most. It's a far more digestible way to consume this massive document.
+
+---
+
 ## 1. What Is Torq?
 
 Torq is a unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems. 
@@ -162,13 +174,32 @@ Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can
 
 ## 3. Physical Backing and Stability
 
+The following chart contrasts gold, Bitcoin, Fiat, and RoboTorq as currencies.
+
+| Currency   | Backing           | Flexibility                          | Inflation Control                          |
+|------------|-------------------|--------------------------------------|--------------------------------------------|
+| **Gold**   | Fixed supply      | Rigid → deflation                    | None                                       |
+| **Bitcoin**| Fixed supply      | Rigid → volatility                   | Halving                                    |
+| **Fiat**   | Debt              | Infinite                             | Central bank                               |
+| **RoboTorq**| **Energy × Time** | **Token-Adaptive (via efficiency gains)**  | **Bounded by physics + BRLA contracts**    |
+
 Unlike the gold standard, the RoboTorq is not strictly commodity-backed. Yet it can still be treated similarly.  
 It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
+
+But it's also based on tokens. There is no standard definition of a token's size.
+
+It's also not yet 100% clear whether there should be any imperative to define one, either.
+
+The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge against these variations occurring too quickly.
+
+This isn't necessarily a bad thing, as you can see from the plans for depegging the dollar in the appendices, we will need a currency that can handle some sway.
+
+And one of the biggest problems with currencies like the Gold Standard was the strict backing, which didn't allow for changes in market efficiency quickly enough to prevent the deflationary pressures that led to bank runs. But 1 RoboTorq will always equal 3600 TokenTorq, which will always equal 1 token x 1 kW.
 
 The subjective market value that humans place on it may change with time, but the *physical definition* of the RoboTorq may not.  
 The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
 
-In fact, they already exist; it's just that nobody has started tracking them yet because they hadn't been discovered until recently.
+In fact, these currencies already exist. It's just that nobody has started tracking them yet because they hadn't been discovered until recently.
 
 ---
 
@@ -184,7 +215,7 @@ It unites:
 
 This forms the mathematical bridge between AI token flows and minted value—the essence of Torq Theory.
 
-**Here's How it all works.**
+**Here's How it all works (again).**
 
 ```mermaid
 flowchart TD
@@ -262,6 +293,31 @@ In Robonomics:
     - invest it in RoboFund,
     - or put it in a TorqVault to get the demurrage taken from the people who aren't managing their finances.
 - The Bond Network giveth, but the Bond Network also taketh away.
+
+Demurrage may be a hard sell for some, but again, manage your finances, and you have nothing to worry about.
+
+The Bond Network isn't paying you to do nothing. This is where Robonomics is so different from UBI and UBD.
+- The Bond Network expects you to provide the service it can't (and shouldn't) do: decide what you want and need as a human.
+- You do that by spending, saving, or investing your RoboTorq at a responsible rate.
+- You can have as much money as you want, so long as it's available for others to use when you're not using it.
+- When you need to make a large purchase, arrange the transfer from your TorqVault.
+- Don't worry about runs on your TorqVault.
+- Everybody else is subject to demurrage, too.
+- Everybody else is getting disto, too.
+
+Demurrage is one of the most reality-based aspects of Robonomics: Anything that sounds too good to be true usually is. 
+
+Demurrage is the other shoe dropping. It's a huge reason this whole scheme *can actually work*.
+
+Without it, you'd get:
+- Hoarding → liquidity collapse
+- Rich get richer → inequality
+- Robonomics becomes UBD-for-billionaires
+
+**With demurrage**:
+- Money flows
+- Everyone gets disto
+- **You profit from others' inaction**
 
 ---
 
@@ -416,20 +472,22 @@ Thus, Enterprises both compete *against* and *cooperate with* AI financial overs
 
 ## 13. Quantum Game-Theoretic Interpretation
 
+This situation can be modeled for some interesting mathematical tests that Project Asimov plans to carry out — even if only for fun.
+
 Each torq_gamble *entangles* the Enterprise and BidNet in a shared probabilistic state.  
 Until a sale occurs, both exist in a **superposition** of profit and loss — much like a qubit before measurement.
 
 When a product sells, the wave function collapses — the market “observes” value.
 
-BidNet can request bid consideration advice from the network's predictive AI (Calvin), which will use quantum-inspired game theory to forecast outcomes based on past BRLAs. This literal interpretation of a proposed pseudo-quantum market dynamic will be tested for veritas in the Asimov simulator.
+BidNet can request bid consideration advice from the network's predictive AI (Calvin), which will use quantum-inspired game theory to forecast outcomes based on past BRLAs. This metaphorical interpretation of a proposed "pseudo-quantum" market dynamic will be tested for veritas in the Asimov simulator.
+
+Maybe this is another breakthrough waiting to be had.
 
 ---
 
 ## 14. Watts > Wall Street
 
 Torq Theory formalizes the economic cost of compute and robotic labor into a **physics-based monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
-
-The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the BRLAs granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge on these variations occurring too quickly.
 
 Note that this is not price control: the Enterprise in question chooses the final selling price, and the Bond Network decides whether to make the same wager when it chooses to offer the contract.
 
