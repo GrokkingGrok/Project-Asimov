@@ -293,109 +293,127 @@
     document.getElementById('divPerDayUSD').textContent = '$0.00';
     document.getElementById('projTable').innerHTML = '';
   }
-  function calc() {
-    resetResults();
-    const brlas = parseFloat(document.getElementById('brlas').value) || 1;
-    const robots = parseFloat(document.getElementById('robots').value) || 1;
-    const ttp = parseFloat(document.getElementById('ttp').value) || 0;
-    const runYears = parseFloat(document.getElementById('runYears').value) || 1;
-    const gamble = parseFloat(document.getElementById('gamble').value) || 1;
-    const itemsPerRobot = parseFloat(document.getElementById('itemsPerRobot').value) || 0;
-    const popValue = parseFloat(document.getElementById('populationValue').value) || 0;
-    const popUnit = parseFloat(document.getElementById('populationUnit').value) || 1;
-    const population = popValue * popUnit;
-    const startRate = parseFloat(document.getElementById('usdPerRT').value) || DEFAULT_USD_PER_KWH;
-    const targetRate = parseFloat(document.getElementById('targetUsdPerRT').value) || startRate;
-    const initialGrowth = parseFloat(document.getElementById('initialGrowth').value) || 0;
-    if (brlas <= 0 || robots <= 0 || ttp <= 0 || runYears <= 0 || gamble <= 0 || itemsPerRobot <= 0 || population <= 0 || startRate <= 0 || targetRate <= 0) {
-      alert("All values must be positive.");
-      return;
+function calc() {
+  resetResults();
+
+  const brlas = parseFloat(document.getElementById('brlas').value) || 1;
+  const robots = parseFloat(document.getElementById('robots').value) || 1;
+  const ttp = parseFloat(document.getElementById('ttp').value) || 0;
+  const runYears = parseFloat(document.getElementById('runYears').value) || 1;
+  const gamble = parseFloat(document.getElementById('gamble').value) || 1;
+  const popValue = parseFloat(document.getElementById('populationValue').value) || 0;
+  const popUnit = parseFloat(document.getElementById('populationUnit').value) || 1;
+  const population = popValue * popUnit;
+  const startRate = parseFloat(document.getElementById('usdPerRT').value) || DEFAULT_USD_PER_KWH;
+  const targetRate = parseFloat(document.getElementById('targetUsdPerRT').value) || startRate;
+  const initialGrowth = parseFloat(document.getElementById('initialGrowth').value) || 0;
+
+  // --- CORE MATH ---
+  const fleetTTP = ttp * brlas * robots;
+  const RoboTorq_in = fleetTTP * 3600 * HOURS_PER_YEAR;
+  const extraMintedYear1 = RoboTorq_in * (gamble - 1);
+  const totalDistributedYear1 = RoboTorq_in + extraMintedYear1;
+
+  // Array of **total** distributed RT per year
+  const totalDistributedPerYear = [totalDistributedYear1];
+
+  if (runYears > 1) {
+    const numPeriods = runYears - 1;
+    let currentExtra = extraMintedYear1;
+    for (let p = 1; p <= numPeriods; p++) {
+      const growth = initialGrowth - (initialGrowth - 5) * (p - 1) / (numPeriods - 1 || 1);
+      currentExtra *= (1 + growth / 100);
+      totalDistributedPerYear.push(RoboTorq_in + currentExtra);
     }
-    const fleetTTP = ttp * brlas * robots;
-    const baseRoboTorq_in = (fleetTTP * HOURS_PER_YEAR) / 1000;
-    let currentMinted = baseRoboTorq_in * (gamble - 1);
-    const mintedPerYear = [currentMinted]; // Year 1 base
-    if (runYears > 1) {
-      const numPeriods = runYears - 1;
-      for (let period = 1; period <= numPeriods; period++) {
-        const growth = initialGrowth - (initialGrowth - 5) * (period - 1) / (numPeriods - 1 || 1); // Ramp to 5%
-        currentMinted *= (1 + growth / 100);
-        mintedPerYear.push(currentMinted);
-      }
-    }
-    document.getElementById('projYearsLabel').textContent = runYears;
-    document.getElementById('yearsLabel').textContent = runYears;
-    document.getElementById('startRate').textContent = startRate.toFixed(3);
-    document.getElementById('endRate').textContent = targetRate.toFixed(2);
-    const projTbl = document.getElementById('projTable');
-    projTbl.innerHTML = '<tr><th>Year</th><th>USD for 1 RoboTorq</th><th>Your Daily Dividend in today\'s USD value</th></tr>';
-    for (let year = 1; year <= runYears; year++) {
-      let rate;
-      if (runYears === 1) {
-        rate = targetRate;
-      } else {
-        const cagr = Math.pow(targetRate / startRate, 1 / (runYears - 1)) - 1;
-        rate = year === runYears ? targetRate : startRate * Math.pow(1 + cagr, year - 1);
-      }
-      const annualRT = mintedPerYear[year - 1] / population;
-      const dailyRT = annualRT / 365;
-      const dailyUSD = dailyRT * rate;
-      const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${year}</td><td>$${rate.toFixed(3)}</td><td>$${dailyUSD.toFixed(4)}</td>`;
-      projTbl.appendChild(tr);
-      if (year === 1) {
-        document.getElementById('divPerDayRT').textContent = dailyRT.toFixed(8);
-        document.getElementById('divPerDayUSD').textContent = `$${dailyUSD.toFixed(4)}`;
-      }
-    }
-    document.getElementById('results').style.display = 'block';
-    document.getElementById('exportBtn').style.display = 'inline-block';
-    document.querySelector('button[onclick="calc()"]').textContent = "Recalculate";
   }
-  function exportCSV() {
-    const runYears = parseInt(document.getElementById('runYears').value);
-    const startRate = parseFloat(document.getElementById('usdPerRT').value);
-    const targetRate = parseFloat(document.getElementById('targetUsdPerRT').value);
-    // Recompute mintedPerYear as in calc() to avoid state issues
-    const brlas = parseFloat(document.getElementById('brlas').value) || 1;
-    const robots = parseFloat(document.getElementById('robots').value) || 1;
-    const ttp = parseFloat(document.getElementById('ttp').value) || 0;
-    const gamble = parseFloat(document.getElementById('gamble').value) || 1;
-    const popValue = parseFloat(document.getElementById('populationValue').value) || 0;
-    const popUnit = parseFloat(document.getElementById('populationUnit').value) || 1;
-    const population = popValue * popUnit;
-    const initialGrowth = parseFloat(document.getElementById('initialGrowth').value) || 0;
-    const fleetTTP = ttp * brlas * robots;
-    const baseRoboTorq_in = (fleetTTP * HOURS_PER_YEAR) / 1000;
-    let currentMinted = baseRoboTorq_in * (gamble - 1);
-    const mintedPerYear = [currentMinted];
-    if (runYears > 1) {
-      const numPeriods = runYears - 1;
-      for (let period = 1; period <= numPeriods; period++) {
-        const growth = initialGrowth - (initialGrowth - 5) * (period - 1) / (numPeriods - 1 || 1);
-        currentMinted *= (1 + growth / 100);
-        mintedPerYear.push(currentMinted);
-      }
+
+  // --- DISPLAY ---
+  document.getElementById('projYearsLabel').textContent = runYears;
+  document.getElementById('yearsLabel').textContent = runYears;
+  document.getElementById('startRate').textContent = startRate.toFixed(3);
+  document.getElementById('endRate').textContent = targetRate.toFixed(2);
+
+  const projTbl = document.getElementById('projTable');
+  projTbl.innerHTML = '<tr><th>Year</th><th>USD for 1 RoboTorq</th><th>Your Daily Dividend in today\'s USD value</th></tr>';
+
+  for (let year = 1; year <= runYears; year++) {
+    // Exchange rate CAGR
+    let rate;
+    if (runYears === 1) {
+      rate = targetRate;
+    } else {
+      const cagr = Math.pow(targetRate / startRate, 1 / (runYears - 1)) - 1;
+      rate = year === runYears ? targetRate : startRate * Math.pow(1 + cagr, year - 1);
     }
-    const rows = [["Year", "USD per 1 RoboTorq", "Your Daily Dividend (in today's USD value)"]];
-    for (let year = 1; year <= runYears; year++) {
-      let rate;
-      if (runYears === 1) {
-        rate = targetRate;
-      } else {
-        const cagr = Math.pow(targetRate / startRate, 1 / (runYears - 1)) - 1;
-        rate = year === runYears ? targetRate : startRate * Math.pow(1 + cagr, year - 1);
-      }
-      const annualRT = mintedPerYear[year - 1] / population;
-      const dailyRT = annualRT / 365;
-      const dailyUSD = dailyRT * rate;
-      rows.push([year, rate.toFixed(3), dailyUSD.toFixed(4)]);
+
+    const annualRT = totalDistributedPerYear[year - 1] / population;
+    const dailyRT = annualRT / 365;
+    const dailyUSD = dailyRT * rate;
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${year}</td><td>$${rate.toFixed(3)}</td><td>$${dailyUSD.toFixed(4)}</td>`;
+    projTbl.appendChild(tr);
+
+    if (year === 1) {
+      document.getElementById('divPerDayRT').textContent = dailyRT.toFixed(8);
+      document.getElementById('divPerDayUSD').textContent = `$${dailyUSD.toFixed(4)}`;
     }
-    const csv = rows.map(r => r.join(",")).join("\n");
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = `dividend-${runYears}yrs-to$${targetRate}.csv`; a.click();
+  }
+
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('exportBtn').style.display = 'inline-block';
+  document.querySelector('button[onclick="calc()"]').textContent = "Recalculate";
+}
+
+function exportCSV() {
+  const runYears = parseInt(document.getElementById('runYears').value);
+  const startRate = parseFloat(document.getElementById('usdPerRT').value);
+  const targetRate = parseFloat(document.getElementById('targetUsdPerRT').value);
+
+  const brlas = parseFloat(document.getElementById('brlas').value) || 1;
+  const robots = parseFloat(document.getElementById('robots').value) || 1;
+  const ttp = parseFloat(document.getElementById('ttp').value) || 0;
+  const gamble = parseFloat(document.getElementById('gamble').value) || 1;
+  const popValue = parseFloat(document.getElementById('populationValue').value) || 0;
+  const popUnit = parseFloat(document.getElementById('populationUnit').value) || 1;
+  const population = popValue * popUnit;
+  const initialGrowth = parseFloat(document.getElementById('initialGrowth').value) || 0;
+
+  const fleetTTP = ttp * brlas * robots;
+  const RoboTorq_in = fleetTTP * 3600 * HOURS_PER_YEAR;
+  const extraMintedYear1 = RoboTorq_in * (gamble - 1);
+  const totalDistributedPerYear = [RoboTorq_in + extraMintedYear1];
+
+  if (runYears > 1) {
+    const numPeriods = runYears - 1;
+    let currentExtra = extraMintedYear1;
+    for (let p = 1; p <= numPeriods; p++) {
+      const growth = initialGrowth - (initialGrowth - 5) * (p - 1) / (numPeriods - 1 || 1);
+      currentExtra *= (1 + growth / 100);
+      totalDistributedPerYear.push(RoboTorq_in + currentExtra);
+    }
+  }
+
+  const rows = [["Year", "USD per typeof RoboTorq", "Your Daily Dividend (in today's USD value)"]];
+  for (let year = 1; year <= runYears; year++) {
+    let rate;
+    if (runYears === 1) {
+      rate = targetRate;
+    } else {
+      const cagr = Math.pow(targetRate / startRate, 1 / (runYears - 1)) - 1;
+      rate = year === runYears ? targetRate : startRate * Math.pow(1 + cagr, year - 1);
+    }
+    const annualRT = totalDistributedPerYear[year - 1] / population;
+    const dailyRT = annualRT / 365;
+    const dailyUSD = dailyRT * rate;
+    rows.push([year, rate.toFixed(3), dailyUSD.toFixed(4)]);
+  }
+
+  const csv = rows.map(r => r.join(",")).join("\n");
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = `dividend-${runYears}yrs-to$${targetRate}.csv`; a.click();
   }
   // Live update on every keystroke
   document.querySelectorAll('input, select').forEach(el => {
