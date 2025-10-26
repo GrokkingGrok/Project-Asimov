@@ -215,10 +215,9 @@ Example: If I hire a 10 TTP bot for 1 hour, I will pay 10 TTP x 3600 TTP/hr x 1 
 
 And this brings us to the mathematical definitions of Torq.
 
-Three definitions of Torq:
+Two definitions of Torq:
 - Torq = TokenTorq_out / TokenTorq_in  
 - Torq = RoboTorq_out / RoboTorq_in  
-- Torq = Tokens_out / Tokens_in
 
 ---
 
