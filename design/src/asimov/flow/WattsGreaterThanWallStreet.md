@@ -1,9 +1,10 @@
-# Watts > Wall Street? Money minted from robotic labor to your wallet
-_The RoboTorq: A Physics-Based Universal Dividend for the AI-Robotic Age_
+# Are Watts > Wall Street?
+_Bots work → You get paid.
+The RoboTorq UBD says: Yes."_
 
 Jonathan Clark, Copyright 2025
 
-*Tags*: robotic labor replacement, universal basic income, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
+*Tags*: job replacement, universal basic income, universal basic dividend, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
 
 ### Executive TL;DR
 - **Vibes**: Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. 
