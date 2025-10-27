@@ -282,7 +282,7 @@ Two definitions of Torq:
 
 ## 6. The Equation of AI-Value Exchange
 
-Because Torq can be found from using three different ratios, we can draw some interesting conclusions.
+Because Torq can be found by using two different ratios, we can draw some interesting conclusions.
 
 | Symbol     | Definition            | Meaning                                  |
 |------------|------------------------|------------------------------------------|
@@ -317,7 +317,8 @@ In Robonomics:
     - Spend the dough,
     - invest it in RoboFund,
     - or put it in a TorqVault to get the demurrage taken from the people who aren't managing their finances.
-- The Bond Network giveth, but the Bond Network also taketh away.
+
+**The Bond Network giveth, but the Bond Network also taketh away**.
 
 Demurrage may be a hard sell for some, but again, manage your finances, and you have nothing to worry about.
 
@@ -343,6 +344,15 @@ Without it, you'd get:
 - Money flows
 - Everyone gets disto
 - **You profit from others' inaction**
+
+**Demurrage isn’t punishment. It’s physics.**  
+- Idle energy doesn’t create value — **moving energy does**.  
+- From stagnation to circulation.  
+- From irrational currency hoarding to shared prosperity.
+
+Hoard all the goods you want by spending: there'll be plenty to go around.
+
+**This is how a robot economy stays human.**
 
 ---
 
