@@ -200,14 +200,27 @@ It's also not yet clear whether there should be any imperative to define one, ei
 
 The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the Ronded Robotic Labor Agreements (BRLAs) granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge against these variations occurring too quickly.
 
-This isn't necessarily a bad thing, as you can see from the plans for depegging the dollar in the appendices, we will need a currency that can handle some sway.
+This isn't necessarily a bad thing, as you can see from the plans for interacting with  the dollar in the appendices, we will need a currency that can handle some sway.
 
-And one of the biggest problems with currencies like the Gold Standard was the strict backing, which didn't allow for changes in market efficiency quickly enough to prevent the deflationary pressures that led to bank runs. But 1 RoboTorq will always equal 3600 TokenTorq, which will always equal 1 token x 1 kW.
+If token size or content does become an issue, it will be necessary to define a standard Bonded Token, and Bonded Robots will only accept Bonded Tokens. 
 
-The subjective market value that humans place on it may change with time, but the *physical definition* of the RoboTorq may not.  
-The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
+Such a Bonded Token would need to be inherited from abstract base programming classes (ABCs) managed by the bond network, enabling standardized functionality or rate limits across use cases. ABCs are like a contract for programming languages, in case you're not familiar. The Asimov simulator is a prime testing ground for getting an early start on what such a token ABC might look like.
+
+In any such case, the Bond Network's strategic fleet reserve would act as a natural hedge against wild efficiency gains: higher-performing models can't saturate the robotic workforce all at once. For example, if average token throughput deviates >30% from baseline across the fleet for 90 days, the Bond Network triggers a Bonded Token ABC vote.
+
+And one of the biggest problems with currencies like the Gold Standard was the strict backing, which didn't allow for changes in market efficiency quickly enough to prevent the deflationary pressures that led to bank runs. But 1 RoboTorq will always equal 3600 TokenTorq, which will always equal 1 token x 1 kW. How society can leverage a token to create value is the real question, and that's the root of what a TokenTorq is.
+
+We're humans. The way we value things changes. Designing an economy for robots would be easy; they don't require a profit incentive. We do.
+
+If someone can get the same job done for fewer tokens, good for them; it sounds like they're a sharp planner. Why not let them profit from their innovation?
+
+Good for the Bond Network too: get the robot to the next job site faster.
+
+The subjective market value that humans place on the RoboTorq will change with time, but the *meaningful physical definition* of the RoboTorq may not. The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
 
 In fact, these currencies already exist. It's just that nobody has started tracking them yet because they hadn't been discovered until recently.
+
+The RoboTorq definition doesn’t standardize the token by default. It standardizes the physics — and lets humans do what they do best: adapt.
 
 ---
 
