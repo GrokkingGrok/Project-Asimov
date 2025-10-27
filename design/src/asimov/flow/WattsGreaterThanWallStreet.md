@@ -212,11 +212,11 @@ And one of the biggest problems with currencies like the Gold Standard was the s
 
 We're humans. The way we value things changes. Designing an economy for robots would be easy; they don't require a profit incentive. We do.
 
-If someone can get the same job done for fewer tokens, good for them; it sounds like they're a sharp planner. Why not let them profit from their innovation?
+If someone can get the same job done for fewer tokens, good for them; it sounds like they're a sharp planner. Why not let them profit from their one-time innovation? Their next Bonded Robotic Labor Agreement will factor their breakthrough into pricing that contract, and the enterprise gets a one-time win.
 
-Good for the Bond Network too: get the robot to the next job site faster.
+Good for the Bond Network too: get the robot to the next job site faster. If that same enterprise makes "breakthroughs" every time they win a BRLA? Then maybe there's gaming, and the system can investigate — more on gaming the system in other ways (and the consequences of getting caught) later.
 
-The subjective market value that humans place on the RoboTorq will change with time, but the *meaningful physical definition* of the RoboTorq may not. The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
+For now, the point is this: The subjective market value that humans place on the RoboTorq will change with time, but the *meaningful physical definition* of the RoboTorq may not. The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
 
 In fact, these currencies already exist. It's just that nobody has started tracking them yet because they hadn't been discovered until recently.
 
