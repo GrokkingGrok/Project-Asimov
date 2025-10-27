@@ -67,31 +67,32 @@ flowchart TD
 ```
 ---
 
-## Table of Contents  
+## Table of Contents 
+
 1. [What Is Torq?](#1-what-is-torq)  
 2. [Deriving the RoboTorq](#2-deriving-the-robotorq)  
    - [Novel Units](#21-the-novel-units)  
    - [Relationship Between Units](#22-relationship-between-units)  
 3. [Physical Backing and Stability](#3-physical-backing-and-stability)  
-4. [The TorqMining Loop](#4-the-torqmining-loop)  
-5. [TokenTorqPotential is just Capacity](#5-tokentorqpotential-is-just-capacity)  
-6. [The Equation of AI-Value Exchange](#6-the-equation-of-ai-value-exchange)  
-   - [Dimensional Consistency Check](#61-dimensional-consistency-check)  
-   - [Relation to Current Macro-Economic Theory](#62-relation-to-current-macro-economic-theory)
-7. [The Torq_Gamble: Markup as Wager](#7-the-torq_gamble-markup-as-wager)  
-8. [Complexity and AIntropy](#8-complexity-and-aintropy)  
-9. [The TokenTorq Curve](#9-the-tokentorq-curve)  
-10. [Mining TokenTorq into Torq](#10-mining-tokentorq-into-torq)  
-11. [Sample Calculation](#11-sample-bonded-robotic-labor-agreement)  
-12. [Incentives and Strategy](#12-incentives-and-strategy)  
-13. [Quantum Game-Theoretic Interpretation](#13-quantum-game-theoretic-interpretation)  
-14. [Watts > Wall Street](#14-watts--wall-street)
-15. [Extending the RoboTorq to General AI-Value](#15-extending-the-robotorq-to-general-ai-value)
-16. [Appendix](#16-appendix)
+4. [TokenTorqPotential is just Capacity](#4-tokentorqpotential-is-just-capacity)  
+5. [The Equation of AI-Value Exchange](#5-the-equation-of-ai-value-exchange)  
+   - [Dimensional Consistency Check](#51-dimensional-consistency-check)  
+   - [Relation to Current Macro-Economic Theory](#52-relation-to-current-macro-economic-theory)
+6. [The Torq_Gamble: Markup as Wager](#6-the-torq_gamble-markup-as-wager)  
+7. [Complexity and AIntropy](#7-complexity-and-aintropy)  
+8. [The TokenTorq Curve](#8-the-tokentorq-curve)  
+9. [Mining TokenTorq into Torq](#9-mining-tokentorq-into-torq)  
+10. [Sample Calculation](#10-sample-bonded-robotic-labor-agreement)  
+11. [Incentives and Strategy](#11-incentives-and-strategy)  
+12. [Quantum Game-Theoretic Interpretation](#12-quantum-game-theoretic-interpretation)  
+13. [Watts > Wall Street](#13-watts--wall-street)
+14. [Extending the RoboTorq to General AI-Value](#14-extending-the-robotorq-to-general-ai-value)
+15. [Appendix](#15-appendix)
 
 ---
 
 ## Appendix Table of Contents
+
 - [A. Glossary of Robonomic Terms](#appendix-a--glossary-of-robonomic-terms)
 - [B. Dimensional Consistency of the RoboTorq System](#appendix-b--dimensional-consistency-of-the-robotorq-system)
 - [C. Example: Translating a BRLA into Economic Flow](#appendix-c--example-translating-a-brla-into-economic-flow)
@@ -120,6 +121,11 @@ Torq measures how much brainpower and electricity the robot used to make your st
 
 Torq Theory is just the math that turns robot sweat into your paycheck. 
 
+**The Quirk**: Torq is *markup* — but *only* on **robotic labor cost**, not total production.  
+That’s what makes it **physics-based**, not arbitrary.
+
+Why Torq? It is how a business *leverages* (or *torques*) any specific input to produce value. Torq is economic torque.
+
 The math must work, and it does, and it's all in the appendices for the academics to check. 
 
 → [See it in action: Estimate your dividend from a robot fleet.](https://projectasimovmvp.vercel.app/).
@@ -129,6 +135,10 @@ The math must work, and it does, and it's all in the appendices for the academic
 - You pay robots,
 - You choose your selling price,
 - You choose your Torq.
+
+If Torq is economic leverage, what do you suppose a `RoboTorq` is? 
+
+If you guessed "A way to measure `robotic economic leverage`", you're spot on.
 
 ---
 
@@ -180,9 +190,10 @@ Thus:
 
 | Symbol | Definition | Meaning |
 |--------|------------|---------|
+| Torq | no units | Economic leverage to produce value |
 | RoboTorq | (token/s) × kWh | Physical unit of economic value |
 | TokenTorq | (token/s) × kW | Smaller Physical unit of economic value |
-| TokenTorqPotential (TTP) | TokenTorq/hour | A robot’s max idealized throughput per hour |
+
 
 ---
 
@@ -196,8 +207,7 @@ Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be
 
 ## 3. Physical Backing and Stability
 
-The following chart contrasts gold, Bitcoin, Fiat, and RoboTorq as currencies.
-
+**Visual TL;DR**: The following chart contrasts gold, Bitcoin, Fiat, and RoboTorq as currencies.
 | Currency   | Backing           | Flexibility                          | Inflation Control                          |
 |------------|-------------------|--------------------------------------|--------------------------------------------|
 | **Gold**   | Fixed supply      | Rigid → deflation                    | None                                       |
@@ -237,19 +247,25 @@ That’s *progress*, not a bug.
 
 One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the Bonded Robotic Labor Agreements (BRLAs) granting access to robotic labor, hedging this market efficiency gain.
 
-This ability sway isn't necessarily a bad thing, as you can see from the plans for interacting with the dollar in the appendices, we will need a currency that can handle some sway.
+This ability to sway isn't necessarily a bad thing: As you can see from the plans for interacting with the dollar in the appendices, we will need a currency that can handle some sway.
 
 But the Bond Network keeps it honest:
-- **BRLA prices** reflect real efficiency  
+- **BRLA prices** reflect expected efficiency  
 - **Fleet reserves** smooth shocks  
-- If token throughput jumps *>30% for 90 days* → **Bonded Token vote**
+- **Policy possibilities**: If relative token throughput falls *>15% in 90 days* → **Bonded Token vote**
 
-In any such case, the Bond Network's strategic fleet reserve would act as a natural hedge against wild efficiency gains: higher-performing models can't saturate the robotic workforce all at once if they're mixed in the pool over time. A BRLA's contractual sales price of items produced also places a natural hedge against these variations occurring too quickly.
+Bonded Tokens could work, but would have unforeseen consequences.
+
+And maybe overkill, anyway:
+- the Bond Network's strategic fleet reserve → natural hedge on efficiency gains.
+- A BRLA's contractual selling price → natural hedge on efficiency gains.
 
 This prevents:
 - **Deflation** (like gold)  
 - **Gaming** (fake breakthroughs)  
 - **Runaway inflation**
+
+Project Asimov can test it.
 
 **Gold failed** because it couldn’t adapt.  
 **Fiat is failing** because it adapts on a whim.
@@ -277,40 +293,21 @@ It doesn’t standardize the token.
 - Stable by design — no central bank required
 - You own a slice of every kWh of robot labor
 
----
+Now that you understand Torq, the RoboTorq, the TokenTorq, Tokens, and how they relate to each other, let's add TokenTorqPotential into the mix.
 
-## 4. The TorqMining Loop
-
-The Torq Mining Loop is where production happens and value is created.  
-It unites:
-
-- AI energy consumption  
-- Token throughput (capacity)  
-- Robotic utilization  
-- Minting of RoboTorq  
-
-This forms the mathematical bridge between AI token flows and minted value—the essence of Torq Theory.
-
-**Here's How it all works (again).**
-
-```mermaid
-flowchart TD
-    A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
-    B --> C["Oracle tracks Torq accumulation"]
-    C --> D["Minting (Isaac Issues RoboTorq)"]
-    D --> E["Universal Dividend (DistoStreams to Citizens)"]
-    E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
-    F --> G["Idle RT gets swept from wallets in demurrage (goes as interest to those using TorqVaults)"]
-    G --> A
-```
+TokenTorqPotential is just a given real-life, **not ideal** robot's *ideal potential* to produce TokenTorq in one hour.
 
 ---
 
-## 5. TokenTorqPotential is just Capacity
+## 4. TokenTorqPotential is just Capacity
 
-A robot’s “TokenTorqPotential” is its *Asimovian* ideal TokenTorq throughput per hour rating. TTP is to Robonomics what Carnot efficiency is to thermodynamics. Example: “This is a 2 TTP bot.”
+A robot’s “TokenTorqPotential”, or TTP, is its ideal TokenTorq throughput per hour rating. TTP is to a robot what horsepower is to a car. Example: “This is a 100 TTP bot.”
 
-Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kW rating x maximum neural network token throughput. So a 2 kW bot should have a TTP rating well above 2.
+A real TTP rating would be calculated: TTP = kW rating x maximum neural network token throughput. 
+
+So a 2 kW bot should have a TTP rating well above 2: TTP = 2 kW x 100 tokens/second = 200 TTP.
+
+Premium bots as of late October 2025 are pushing about 2 kW at ~60 tokens/second: TTP_2025 = 2 x 60 = 120 TTP.
 
 Robotic Labor should always be sold by the TokenTorq, for 3600 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. 
 - Sold at 3600 TokenTorq / RoboTorq / hour, everywhere and always.
@@ -328,7 +325,7 @@ Two definitions of Torq:
 
 ---
 
-## 6. The Equation of AI-Value Exchange
+## 5. The Equation of AI-Value Exchange
 
 Because Torq can be found by using two different ratios, we can draw some interesting conclusions.
 
@@ -341,7 +338,7 @@ Because Torq can be found by using two different ratios, we can draw some intere
 
 ---
 
-### 6.1 Dimensional Consistency Check
+### 5.1 Dimensional Consistency Check
 
 | Quantity   | Units               |
 |------------|---------------------|
@@ -351,7 +348,7 @@ Because Torq can be found by using two different ratios, we can draw some intere
 
 ---
 
-### 6.2 Relation to Current Macro-Economic Theory
+### 5.2 Relation to Current Macro-Economic Theory
 
 This equation mirrors the classical [MV = PQ](https://public.econ.duke.edu/~kdh9/Courses/Graduate%20Macro%20History/Readings-1/Fisher%20Purchasing%20Power%20of%20Money.pdf) identity from fiat economics. 
 
@@ -404,7 +401,7 @@ Hoard all the goods you want by spending: there'll be plenty to go around.
 
 ---
 
-## 7. The Torq_Gamble: Markup as Wager
+## 6. The Torq_Gamble: Markup as Wager
 
 The “torq_gamble” is the Enterprise’s wager on how much Torq will be generated — effectively their markup expectation.
 
@@ -418,7 +415,7 @@ The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI r
 
 ---
 
-## 8. Complexity and AIntropy
+## 7. Complexity and AIntropy
 
 Real robots are imperfect; production efficiency varies with task complexity and AI/robot interaction. Complexity is a variable that can be determined by renting faux-oracled, but still bonded, robots and conducting a work study to understand how their leverage can be tailored to your business needs.
 
@@ -440,7 +437,7 @@ This models how inefficiencies push operations away from the thermodynamic ideal
 
 ---
 
-## 9. The TokenTorq Curve
+## 8. The TokenTorq Curve
 
 The token_torq_curve models robotic learning efficiency over time:
 
@@ -454,7 +451,7 @@ This function is a [standard Sigmoid Neural Net Activation time-function.](https
 
 ---
 
-## 10. Mining TokenTorq into Torq
+## 9. Mining TokenTorq into Torq
 
 Integrating the token_torq_curve yields the Torq Mining Curve, expressing cumulative value generation:
 
@@ -470,7 +467,7 @@ Thankfully, we don't need all this math to run through a simple example. We can 
 
 ---
 
-## 11. Sample Bonded Robotic Labor Agreement
+## 10. Sample Bonded Robotic Labor Agreement
 
 Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 MRT (MRT = 1 Million RoboTorq).
 
@@ -540,7 +537,7 @@ flowchart TD
 
 ---
 
-## 12. Incentives and Strategy
+## 11. Incentives and Strategy
 
 Could Enterprises game the system by mis-bidding the torq_gamble or manipulating timelines when they make their bid for a Bonded Robotic Labor Agreement (BRLA) with BidNet? Yes. But the system is self-correcting:
 
@@ -553,7 +550,7 @@ Thus, Enterprises both compete *against* and *cooperate with* AI financial overs
 
 ---
 
-## 13. Quantum Game-Theoretic Interpretation
+## 12. Quantum Game-Theoretic Interpretation
 
 This situation can be modeled for some interesting mathematical tests that Project Asimov plans to carry out — even if only for fun.
 
@@ -568,7 +565,7 @@ Maybe this is another breakthrough waiting to be had.
 
 ---
 
-## 14. Watts > Wall Street
+## 13. Watts > Wall Street
 
 Torq Theory formalizes the economic cost of compute and robotic labor into a **physics-based monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
 
@@ -588,7 +585,7 @@ You can already [see Robonomics in action with the online calculator](https://pr
 
 ---
 
-## 15. Extending the RoboTorq to General AI-Value
+## 14. Extending the RoboTorq to General AI-Value
 
 The more I tried to invent Robonomics, the more it revealed itself. RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*. TokenTorqs and RoboTorqs have been flying around unchecked for years whenever an industrial robot welds a car frame together. We simply didn't know what to look for.
 
@@ -618,11 +615,11 @@ Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
 
 This is tongue-in-cheek, but such a system is possible as well, worked into the same Bond Network, powered by community blockchain analysis of conversation artifacts and betting on the outcome, crashes being monetized into additional UBD... What's your bet?
 
-**Author's Note**: This is a living White Paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record. I've included a glossary of terms for your convenience.
-
 ---
 
-## 16. Appendix
+## 15. Appendix
+
+**Author's Note**: This is a living white paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record. I've included an appendix with a glossary of terms for your convenience.
 
 ---
 
