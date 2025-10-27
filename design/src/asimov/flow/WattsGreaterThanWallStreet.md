@@ -2,8 +2,6 @@
 _Bots work → You get paid.
 The RoboTorq UBD says: "Yes."_
 
-Jonathan Clark, Copyright 2025
-
 *Tags*: job replacement, universal basic income, universal basic dividend, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
 
 ### Executive TL;DR
