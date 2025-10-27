@@ -57,12 +57,12 @@ The RoboTorq turns energy, time, and computation into money as directly as photo
 
 ```mermaid
 flowchart TD
-    A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
-    B --> C["Oracle tracks Torq accumulation"]
-    C --> D["Minting (Isaac Issues RoboTorq)"]
-    D --> E["Universal Dividend (DistoStreams to Citizens)"]
-    E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
-    F --> G["Idle RT gets swept from wallets in demurrage (goes as interest to those using TorqVaults)"]
+    A["Energy produced → robot batteries"] --> B["Robots do work"]
+    B --> C["Computers track time robots work"]
+    C --> D["AI mint makes new money"]
+    D --> E["All citizens get a drip 24/7/365"]
+    E --> F["Spending, Investing, & Saving happen"]
+    F --> G["New Robot Labor Contracts signed"]
     G --> A
 ```
 ---
@@ -108,15 +108,25 @@ flowchart TD
 
 ## 1. What Is Torq?
 
-Torq is a unit of markup in Robonomic Lingo — and the scalar of value creation in AI-driven production systems. 
+**Torq TL;DR**: Because you can't understand a RoboTorq unless you understand Torq.
+- How much did you pay the robot to make your item?
+- What did you sell it for?
+- Divide the selling price by what you paid the robot,
+- result = Torq
 
-Torq, by definition, is a dimensionless coefficient of productive transformation. It tracks a combination of energy, compute, and value to measure economic efficiency, rather than thermodynamic efficiency.
+Torq measures how much brainpower and electricity the robot used to make your stuff — and how much you sold it for. It's also so much more. 
 
-It links **information processing**, **energy expenditure**, and **economic output**.
+Torq Theory is just the math that turns robot sweat into your paycheck. 
 
-Torq Theory is the mathematical method for deriving the value of the energized AI token throughput used by a robot while performing labor.
+The math must work, and it does, and it's all in the appendices for the academics to check. 
 
-If you want to see the numbers in action first, [check out the Robonomics calculator here to estimate GDP and your dividend based](https://projectasimovmvp.vercel.app/) on fleet size and other parameters.
+→ [See it in action: Estimate your dividend from a robot fleet.](https://projectasimovmvp.vercel.app/).
+
+**Quick Recap**: 
+- Not physical torque
+- You pay robots,
+- You choose your selling price,
+- You choose your Torq.
 
 ---
 
