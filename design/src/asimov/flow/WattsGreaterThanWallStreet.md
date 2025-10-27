@@ -268,7 +268,7 @@ Robotic Labor should always be sold by the TokenTorq, for 3600 RT per, and the s
 - Sold at 3600 TokenTorq / RoboTorq / hour, everywhere and always.
 - Defines the exchange basis for energized tokens transforming into physical value  
 - TokenTorq (throughput) over time — 1 RoboTorq buys 3600 TokenTorq of processing; different robots have different hourly throughputs (processing power).
-- You pay for the bot's maximum throughput capacity, regardless of how much I can use productively.
+- You pay for the bot's maximum throughput capacity, regardless of how much you can use productively.
 
 Example: If you hire a 10 TTP bot for 1 hour, you will pay 10 TTP x 3600 TTP/hr x 1 hour = 36,000 RT — even if you only get 2 TokenTorq (7200 RT) of base value out in that hour. As the robot learns the task, you'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
 
