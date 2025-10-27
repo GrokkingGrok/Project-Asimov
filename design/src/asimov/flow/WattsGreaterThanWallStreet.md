@@ -18,16 +18,20 @@ Jonathan Clark, Copyright 2025
 
 Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics: Robonomics.
 
-It's based on **physics**. It's **mathematically sound**. It's a whole **monetary system**. 
+It's based on **physics**. It's **mathematically sound**. 
 
-So yeah — it's a bit complex at times.
+It's a whole **monetary system** — so yeah, it's a bit complex at times.
 
 **Pro tip**: 
 1. Copy-paste the whole thing into a fresh Grok or ChatGPT conversation.  
    - Don’t link it. AIs hallucinate old versions.  
 2. Split into chunks if on free tier.  
    - Say: `"Don't respond until I say 'last paste'"`  
-3. Ask for overview → then drill in.
+3. **Ask for an overview by section** → then drill in.
+
+I don't claim Robonomics to be a complete theorem — I hope it never will be, for my own curiosity's sake. What I've learned so far is documented extensively here.
+
+Still, vast gaps remain. Running this quick sanity check will help you focus on what's most important to you.
 
 It may take several minutes to respond. In the meantime, take a look at the Torq Mining Loop flowchart, just below the Abstract (maybe read that, too).
 
