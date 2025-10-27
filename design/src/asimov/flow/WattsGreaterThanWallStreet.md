@@ -114,6 +114,8 @@ flowchart TD
 - Divide the selling price by what you paid the robot,
 - result = Torq
 
+**That was the skim. Here’s the fat**:
+
 Torq measures how much brainpower and electricity the robot used to make your stuff — and how much you sold it for. It's also so much more. 
 
 Torq Theory is just the math that turns robot sweat into your paycheck. 
@@ -136,21 +138,20 @@ The math must work, and it does, and it's all in the appendices for the academic
 - `1 RoboTorq = 1 hour of ideal robot work`  
 - Based on: **energy × compute x time**  
 - Need a per-second unit? → **TokenTorq**
-- **3600 TokenTorqs = 1 RoboTorq**  
-  *(1 hour = 3600 seconds)*
+- **3600 TokenTorqs = 1 RoboTorq** because *(1 hour = 3600 seconds)*
 
 The RoboTorq turns **energy × compute × time** → **money everyone shares**.
 → [See how many RoboTorqs your robot fleet mints](https://projectasimovmvp.vercel.app/)
 
-**Note to Academics: see Appendix B for a rigorous derivation from SI units**
+**That was the skim. Here’s the fat**:
 
 This paper proposes a new currency to value robotic labor: **The RoboTorq**.
 
 It is defined as the work of an *ideal* 1 kW robot in **one hour** — what is now defined as an *Asimovian Robot*.
 
-An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because it helps us determine a robotic laborer's market value.
+An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because it helps us determine a real robot's market value, as you'll see in later sections.
 
-After one hour, its oracle (task tracker app) reads:  
+After one hour, your robot's oracle (task tracker app) reads:  
 `1 RoboTorq = 1 token/second × 1 kWh`
 
 **Why?**  
