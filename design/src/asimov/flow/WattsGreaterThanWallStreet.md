@@ -31,7 +31,7 @@ I don't claim Robonomics to be a complete theorem — I hope it never will be, f
 
 Still, vast gaps remain. Running this quick sanity check will help you focus on what's most important to you.
 
-It may take several minutes to respond. In the meantime, take a look at the Torq Mining Loop flowchart, just below the Abstract (maybe read that, too).
+It may take several minutes to respond. In the meantime, take a look at the Robonomic flowchart, just below the Abstract. It shows you how money moves in a loop in the RoboTorq economy.
 
 Enjoy.
 
@@ -132,44 +132,46 @@ The math must work, and it does, and it's all in the appendices for the academic
 
 ## 2. Deriving the RoboTorq
 
-This paper proposes a new currency to value robotic labor: The RoboTorq.
+**RoboTorq TL;DR**: How much should a perfect robot earn in one hour?  → **1 RoboTorq**
+- `1 RoboTorq = 1 hour of ideal robot work`  
+- Based on: **energy × compute x time**  
+- Need a per-second unit? → **TokenTorq**
+- **3600 TokenTorqs = 1 RoboTorq**  
+  *(1 hour = 3600 seconds)*
 
-The RoboTorq is expressed in organically derived units and is defined as the amount of work an ideal robot performing its ideal task would do in one hour.
+The RoboTorq turns **energy × compute × time** → **money everyone shares**.
+→ [See how many RoboTorqs your robot fleet mints](https://projectasimovmvp.vercel.app/)
 
-And, as it turns out, I'll need to define an intermediary unit, the TokenTorq, to define the RoboTorq properly and make it economically useful.
+**Note to Academics: see Appendix B for a rigorous derivation from SI units**
 
-Imagine a thermodynamically perfect 1 kW humanoid robot.  
-It doesn’t exist (and never will), but assume you have one.
+This paper proposes a new currency to value robotic labor: **The RoboTorq**.
 
-What is the physical value of this *Asimovian Robot's* ideal task for one hour?
+It is defined as the work of an *ideal* 1 kW robot in **one hour** — what is now defined as an *Asimovian Robot*.
 
-After you run the bot for one hour, you check its oracle taskmaster, and the readout says:
+An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because it helps us determine a robotic laborer's market value.
 
-- `1 RoboTorq = 1 token / second × 1 kWh`
+After one hour, its oracle (task tracker app) reads:  
+`1 RoboTorq = 1 token/second × 1 kWh`
 
-Why? One ideal robot processing one token per second for one hour. A token is a small, contextual piece of digital information that can be processed by a robot's or an AI's neural network.
+**Why?**  
+1 token/sec × 1 kW × 3600 sec = **1 RoboTorq**
 
-So, a RoboTorq is a measure of energized token throughput. One *Asimovian Robot's* energized token throughput in one hour.
+To make this useful, we define **TokenTorq** — the *rate* of energized throughput:  
+`1 TokenTorq = 1 token/sec × 1 kW`
 
-But we'll also need a way to describe the rate at which energized tokens are used to calculate RoboTorq effectively: The TokenTorq.
+Thus:  
+**1 RoboTorq = 3600 TokenTorqs**
 
-So, looking only at the units, the bot is doing this every second:
-- 1 second of *Asimovian* robotic labor = 1 token / second x 1 kW
+- **In physics**: impact = energy × time  
+- **In Robonomics**: value = **compute** × energy × time
 
-For ease of calculation, we'll anchor 1 TokenTorq to the kilowatt, like the RoboTorq.
-- `1 TokenTorq = 1 token / second x  1 kW`
+**RoboTorq** is that value — tokenized, measurable, and **shared**.
 
-TokenTorq is also a measure of energized token throughput, like the RoboTorq, but measured per second. 2 kW at 200 tokens per second equals 400 TokenTorq. 
-
-But a TokenTorq isn't a full hour's labor. TokenTorq is the *rate at which compute x energy is being used* per second.
-
-So, how many TokenTorqs to the RoboTorq?
-
-- 1 RoboTorq = 1 TokenTorq x 1 hr
-- 1 RoboTorq = 1 TokenTorq x 3600 seconds
-- `1 RoboTorq = 3600 TokenTorq`
-
-In physics, impact is known as energy x time. TokenTorqs and RoboTorqs are a measure of the **economic impact** of energy x compute.
+**Quick Recap**:
+- Not a traditional cryptocurrency, but it is digital. 
+- 1 RoboTorq = 1 kWh of ideal robot brain + muscle
+- 3600 TokenTorqs = 1 full hour of work = 1 RoboTorq
+- You own a tiny slice of every RoboTorq minted during your lifetime... until you spend it.
 
 ---
 
@@ -177,19 +179,17 @@ In physics, impact is known as energy x time. TokenTorqs and RoboTorqs are a mea
 
 | Symbol | Definition | Meaning |
 |--------|------------|---------|
-| RoboTorq | (token/s) × kWh | Base physical unit of robotic labor value |
-| TokenTorq | (token/s) × kW | Energy-information coupling at micro scale |
+| RoboTorq | (token/s) × kWh | Physical unit of economic value |
+| TokenTorq | (token/s) × kW | Smaller Physical unit of economic value |
 | TokenTorqPotential (TTP) | TokenTorq/hour | A robot’s max idealized throughput per hour |
 
 ---
 
 ### 2.2 Relationship Between Units
 
-Thus, one RoboTorq means the value created by an ideal 1 kW robot processing one token/second with one kW of power for an hour, and it is equal to 3600 TokenTorqs.
+Note that TokenTorqs are currency as well, just a tiny unit of it. 
 
-In practice, no bot will achieve this ideal — and that’s fine. We still measure temperature in Kelvin even though absolute zero is impossible, and the same goes for Carnot Efficiency. An *Asimovian Robot* is just a 21st-century ideal economic heat engine, and it's useful because it helps us determine a robotic laborer's market value.
-
-Note that TokenTorqs are currency as well, just a tiny unit of it. Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3600 pennies to the dollar).
+Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be measured in pennies or dollars (if there were 3600 pennies to the dollar).
 
 ---
 
@@ -204,35 +204,77 @@ The following chart contrasts gold, Bitcoin, Fiat, and RoboTorq as currencies.
 | **Fiat**   | Debt              | Infinite                             | Central bank                               |
 | **RoboTorq**| **Energy × Time** | **Token-Adaptive (via efficiency gains)**  | **Bounded by physics + BRLA contracts**    |
 
-Unlike the gold standard, the RoboTorq is not strictly commodity-backed. Yet it can still be treated similarly.  It is **physically defined**, rooted in thermodynamics, and tied directly to robotic labor.
+**TL;DR**: Unlike gold, RoboTorq isn’t rigid — it breathes with market efficiencies, but only so much.
+- Token size can vary (humans adapt),
+- but 1 RoboTorq = 3600 TokenTorq, always.
 
-But it's also based on tokens. There is no standard definition of a token's size.
+The Bond Network hedges swings in token efficiency using:
+- BRLA pricing
+- Fleet reserves
+- Optional Bonded Token standards (if needed)
 
-It's also not yet clear whether there should be any imperative to define one, either.
+Result:
+- No deflationary spirals
+- No runaway inflation
+- Value tied to real work, not promises
 
-The variation in token size, interpretation, usage, and ultimately throughput in relation to the constant energy consumption allows for a less strict backing than strictly hard currencies — as we learn how to use robots more efficiently, the value of the currency can sway slightly in relation to the value created. One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the Ronded Robotic Labor Agreements (BRLAs) granting access to robotic labor, such that this inflationary pressure is hedged. A BRLA's contractual sales price also places a natural hedge against these variations occurring too quickly.
+**That was the skim. Here's the fat**:
 
-This isn't necessarily a bad thing, as you can see from the plans for interacting with  the dollar in the appendices, we will need a currency that can handle some sway.
+The RoboTorq is based on physics. It’s physics in real life, not the textbook, frictionless surface.
 
-If token size or content does become an issue, it will be necessary to define a standard Bonded Token, and Bonded Robots will only accept Bonded Tokens. 
+Because it’s based on **tokens**, but **1 RoboTorq = 1 kWh x 1 token = 3600 TokenTorq** is **non-negotiable**.
 
-Such a Bonded Token would need to be inherited from abstract base programming classes (ABCs) managed by the bond network, enabling standardized functionality or rate limits across use cases. ABCs are like a contract for programming languages, in case you're not familiar. The Asimov simulator is a prime testing ground for getting an early start on what such a token ABC might look like.
+**Token size?**  
+It can change. A token is just *contextual info* a robot processes.  
+No standard size — and that’s *by design*.
 
-In any such case, the Bond Network's strategic fleet reserve would act as a natural hedge against wild efficiency gains: higher-performing models can't saturate the robotic workforce all at once. For example, if average token throughput deviates >30% from baseline across the fleet for 90 days, the Bond Network triggers a Bonded Token ABC vote.
+It's not yet clear whether there should be any imperative to define a standard.
 
-And one of the biggest problems with currencies like the Gold Standard was the strict backing, which didn't allow for changes in market efficiency quickly enough to prevent the deflationary pressures that led to bank runs. But 1 RoboTorq will always equal 3600 TokenTorq, which will always equal 1 token x 1 kW. How society can leverage a token to create value is the real question, and that's the root of what a TokenTorq is.
+Why?  
+As we get smarter, robots do more with less in some cases.
+That’s *progress*, not a bug.
+
+One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the Bonded Robotic Labor Agreements (BRLAs) granting access to robotic labor, hedging this market efficiency gain.
+
+This ability sway isn't necessarily a bad thing, as you can see from the plans for interacting with the dollar in the appendices, we will need a currency that can handle some sway.
+
+But the Bond Network keeps it honest:
+- **BRLA prices** reflect real efficiency  
+- **Fleet reserves** smooth shocks  
+- If token throughput jumps *>30% for 90 days* → **Bonded Token vote**
+
+In any such case, the Bond Network's strategic fleet reserve would act as a natural hedge against wild efficiency gains: higher-performing models can't saturate the robotic workforce all at once if they're mixed in the pool over time. A BRLA's contractual sales price of items produced also places a natural hedge against these variations occurring too quickly.
+
+This prevents:
+- **Deflation** (like gold)  
+- **Gaming** (fake breakthroughs)  
+- **Runaway inflation**
+
+**Gold failed** because it couldn’t adapt.  
+**Fiat is failing** because it adapts on a whim.
 
 We're humans. The way we value things changes. Designing an economy for robots would be easy; they don't require a profit incentive. We do.
 
-If someone can get the same job done for fewer tokens, good for them; it sounds like they're a sharp planner. Why not let them profit from their one-time innovation? Their next Bonded Robotic Labor Agreement will factor their breakthrough into pricing that contract, and the enterprise gets a one-time win.
+The RoboTorq lets us — while keeping **1 RoboTorq = 3600 TokenTorq**.
 
-Good for the Bond Network too: get the robot to the next job site faster. If that same enterprise makes "breakthroughs" every time they win a BRLA? Then maybe there's gaming, and the system can investigate — more on gaming the system in other ways (and the consequences of getting caught) later.
+It adapts *just enough* — because **humans do**.
 
-For now, the point is this: The subjective market value that humans place on the RoboTorq will change with time, but the *meaningful physical definition* of the RoboTorq may not. The RoboTorq is the first functionally defined **physics-based unit of economic value**. 
+If someone does the job with **fewer tokens**?  
+- Good. They win once.  
+- Next contract? Market adjusts.  
+- Robot moves on to make more money for you at the next job site.
 
-In fact, these currencies already exist. It's just that nobody has started tracking them yet because they hadn't been discovered until recently.
+*The RoboTorq is the first physics-based unit of economic value.*
 
-The RoboTorq definition doesn’t standardize the token by default. It standardizes the physics — and lets humans do what they do best: adapt.
+It doesn’t standardize the token. 
+- It standardizes the **physics**.
+- Let's humans do what we do best: adapt.
+
+**Quick Recap**:
+- Backed by watts and seconds, not gold or debt
+- Adapts to smarter robots
+- Stable by design — no central bank required
+- You own a slice of every kWh of robot labor
 
 ---
 
