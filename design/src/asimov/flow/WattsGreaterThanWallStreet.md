@@ -9,27 +9,27 @@ Jonathan Clark, Copyright 2025
 ### Executive TL;DR
 - **Vibes**: Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. 
 - **Perks**: Robots don’t take your job. They pay your salary. Every watt of AI labor mints money — directly to you. No debt. No inflation. Just physics. 
-- **Quirks**: This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to model it. 
-- **Bonus**: [A basic Robonomic dividend estimator, with modifiable conversion to USD, is available here to see how it all works](https://projectasimovmvp.vercel.app/).
+- **Quirks**: This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to test, refine, or disprove the model entirely. 
+- **Bonus**: [Robonomic dividend estimator — tweak fleet size, robot "horsepower", USD peg → see your UBD](https://projectasimovmvp.vercel.app/).
 
 ---
 
 ## Introduction
 
-Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics.
+Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics: Robonomics.
 
-It's based on **physics**. It's **mathematically sound**.  
+It's based on **physics**. It's **mathematically sound**. It's a whole **monetary system**. 
 
-But yeah — it's a bit complex at times.
+So yeah — it's a bit complex at times.
 
 **Pro tip**: 
-1. Copy-paste the whole thing directly into a fresh Grok or ChatGPT conversation.
-- Don't give it a link.
-- AIs will pick up past revisions of the document and hallucinate wildly.  
-2. Split the text into chunks if you’re not on a pro plan.
-3. Ask for an overview — then drill into what grabs you.
+1. Copy-paste the whole thing into a fresh Grok or ChatGPT conversation.  
+   - Don’t link it. AIs hallucinate old versions.  
+2. Split into chunks if on free tier.  
+   - Say: `"Don't respond until I say 'last paste'"`  
+3. Ask for overview → then drill in.
 
-It may take several minutes to respond. In the meantime, I suggest you take a look at the flowchart just below the abstract.
+It may take several minutes to respond. In the meantime, take a look at the Torq Mining Loop flowchart, just below the Abstract (maybe read that, too).
 
 Enjoy.
 
@@ -1802,7 +1802,9 @@ Appendix K unifies these dimensions to understand **systemic stability and adapt
 - **Quantum threats are a hard cap**: if not addressed, they can undermine both physical and AI-derived reserves.  
 - **Unified modeling is essential**: considering all three factors together provides a **predictive lens** for policy, investment, and allocation in RoboTorq.  
 
-This appendix closes the loop, showing how **RoboTorq can manage physical, computational, and informational resources while preemptively addressing technological shocks**, ensuring the system remains stable and beneficial under multiple futuristic scenarios.
+---
+
+This closes the loop, showing how **RoboTorq can manage physical, computational, and informational resources while preemptively addressing technological shocks**, ensuring the system remains stable and beneficial under multiple futuristic scenarios.
 
 
 
