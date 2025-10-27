@@ -76,7 +76,7 @@ flowchart TD
    - [Relationship Between Units](#22-relationship-between-units)  
 3. [Physical Backing and Stability](#3-physical-backing-and-stability)  
 4. [The TorqMining Loop](#4-the-torqmining-loop)  
-5. [Core Definitions](#5-core-definitions)  
+5. [TokenTorqPotential is just Capacity](#5-tokentorqpotential-is-just-capacity)  
 6. [The Equation of AI-Value Exchange](#6-the-equation-of-ai-value-exchange)  
    - [Dimensional Consistency Check](#61-dimensional-consistency-check)  
    - [Relation to Current Macro-Economic Theory](#62-relation-to-current-macro-economic-theory)
@@ -255,12 +255,9 @@ flowchart TD
 
 ---
 
-## 5. Core Definitions
+## 5. TokenTorqPotential is just Capacity
 
-### TokenTorqPotential (TTP)
-
-A robot’s “TokenTorqPotential” is its *Asimovian* ideal TokenTorq throughput per hour rating. TTP is to Robonomics what Carnot efficiency is to thermodynamics
-Example: “This is a 2 TTP bot.”
+A robot’s “TokenTorqPotential” is its *Asimovian* ideal TokenTorq throughput per hour rating. TTP is to Robonomics what Carnot efficiency is to thermodynamics. Example: “This is a 2 TTP bot.”
 
 Real numbers should be much higher, but examples in the paper will stay low, prioritizing ease of reading over realistic perfection. A real TTP rating might be something like TTP = kW rating x maximum neural network token throughput. So a 2 kW bot should have a TTP rating well above 2.
 
