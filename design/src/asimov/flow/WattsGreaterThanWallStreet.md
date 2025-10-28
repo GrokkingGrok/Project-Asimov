@@ -167,7 +167,7 @@ Why Torq? It is how a business *leverages* (or *torques*) any specific input to 
 
 **⬆️fat/skim⬇️**:
 
-Torq Theory math must work for Robonomics to be even possible, before even considering whether it's practical.
+Torq Theory math must work for Robonomics to be possible, before even considering whether it's practical.
 
 The math does work, and it's all in the appendices for the academics to check.
 
