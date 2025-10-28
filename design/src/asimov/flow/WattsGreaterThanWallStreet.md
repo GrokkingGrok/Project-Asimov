@@ -57,8 +57,6 @@
 
 ---
 
----https://bit.ly/3WsFUkQ
-
 ## Robonomics: 21st Century Economics
 
 There’s a whole new way to think about economics: **Robonomics**.
