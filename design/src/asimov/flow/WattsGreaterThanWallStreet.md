@@ -25,6 +25,40 @@
 
 ---
 
+---
+
+## License
+
+**Copyright © 2025 Jonathan Clark**
+
+**Code & Software**: [GNU General Public License v3.0 or later (GPL-3.0-or-later)](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+**Whitepaper & Text**: [Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+[![CC BY-SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+---
+
+### You are free to:
+- **Share** — copy and redistribute the material in any medium or format  
+- **Adapt** — remix, transform, and build upon the material  
+
+### Under the following terms:
+- **Attribution** — You must give appropriate credit:
+  - **Title**: *"Are Watts > Wall Street?"* (or *"Watts > Wall Street"* in short form)
+  - **Author**: Jonathan Clark
+  - **Source**: [Link to original (e.g., GitHub or website) if possible](https://bit.ly/3WsFUkQ)
+  - Example:  
+    `Jonathan Clark, "Are Watts > Wall Street?" (2025), CC-BY-SA 4.0, https://bit.ly/3WsFUkQ`
+- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the **same license**: **CC-BY-SA 4.0**
+
+---
+
+*No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.*
+
+---
+
+---https://bit.ly/3WsFUkQ
+
 ## Robonomics: 21st Century Economics
 
 There’s a whole new way to think about economics: **Robonomics**.
@@ -3208,3 +3242,16 @@ Leaving the Bond Network doesn’t mean leaving the economy — it means enterin
 
 
 
+# Are Watts > Wall Street?
+
+**Copyright © 2025 Jonathan Clark**
+
+**Code & Software**: Licensed under the GNU General Public License v3.0 or later (GPL-3.0-or-later)  
+→ https://www.gnu.org/licenses/gpl-3.0.en.html
+
+**Text, Whitepaper, & Documentation**: Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)  
+→ https://creativecommons.org/licenses/by-sa/4.0/
+
+---
+
+*You are free to share and adapt this work, provided you give appropriate credit and distribute contributions under the same license.*
