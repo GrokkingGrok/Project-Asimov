@@ -31,11 +31,11 @@ There’s a whole new way to think about economics: **Robonomics**.
 
 It’s based on **physics**.
 
-It’s **mathematically sound**.
-
 It’s **tangible** — turning bot sweat into paychecks, and trash into cash.
 
 It’s a whole **monetary system** anchored not in red tape and debt, but in measurable work — the watt.
+
+This paper represents the mathematical unification of economics and physics — it can get complex at times.
 
 **Pro tip**:
 1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
@@ -45,9 +45,11 @@ It’s a whole **monetary system** anchored not in red tape and debt, but in mea
 3. Ask for an *overview by section* → drill down.
 
 Robonomics isn’t a complete theorem — and it shouldn’t be.  
+
 Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model.  
 
 While you wait for the AI to parse it, check out the **Robonomic Flowchart** below the Abstract.  
+
 It visualizes how energy, data, and money circulate in a closed-loop RoboTorq economy.
 
 When you get overwhelmed and think, "How can I use this money if I don't understand it?"
@@ -66,13 +68,13 @@ Traditional **Universal Basic Income (UBI)** schemes, managed by politicians and
 
 Conventional **Universal Basic Dividend (UBD)** models, meanwhile, often [return only a fraction](https://ffesp.org/1702-pfd-stimulus-check/#:~:text=Alaska%20residents%20received%20a%20$1%2C702,dropped%20to%20$1%2C000%20for%202025.) of societal wealth, limited by a single industry or resource pool.  
 
-**Robonomics** proposes a private yet collectively owned **Bond Network** that entitles every citizen to a share of the proceeds from the labor of every humanoid robot, across every sector. Under such a system, every job lost to robots becomes a dividend to society — and private, individual robot ownership becomes tantamount to counterfeiting.  
+**Robonomics** proposes a private yet collectively owned **Bond Network** that entitles every citizen to a share of the proceeds from the labor of every humanoid robot, across every sector. Under such a system, every job lost to robots becomes a dividend to society — specifically because private, individual robot ownership becomes tantamount to counterfeiting and is enforced as such.  
 
 But Robonomics goes further. With the introduction of the **RoboTorq**, both *energy* and *matter* become currency.  
 Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or stainless steel.  
 
 This “**trash → cash**” loop turns pollution into paychecks, linking ecology and economy through physics.  
-Robotic work creates wealth; human recycling redeems it. Waste becomes a monetary substrate.  
+Robotic work creates digital wealth; recycling redeems it as physical wealth. Waste becomes a monetary substrate.  
 
 The result is a **physics-based, closed-loop economy** where value is minted by measurable work — robotic or human — and distributed universally via algorithmic dividends.  
 
@@ -80,7 +82,7 @@ The result is a **physics-based, closed-loop economy** where value is minted by 
 
 **“Watts > Wall Street”** is both rhetorically powerful and scientifically grounded.  
 
-Just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, and computation into money.**
+Just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, computation, and even trash, into money.**
 
 **Here's how the robot part works.**
 
