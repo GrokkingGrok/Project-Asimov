@@ -82,17 +82,16 @@ The result is a **physics-based, closed-loop economy** where value is minted by 
 
 Just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, and computation into money.**
 
-**Here's how it works.**
+**Here's how the robot part works.**
 
 ```mermaid
-flowchart TD
-    A["Energy produced → robot batteries"] --> B["Robots do work"]
-    B --> C["Computers track time robots work"]
-    C --> D["AI mint makes new money"]
-    D --> E["All citizens get a drip 24/7/365"]
-    E --> F["Spending, Investing, & Saving happen"]
-    F --> G["New Robot Labor Contracts signed"]
-    G --> A
+graph TD
+    A[Watts In] --> B[Robots Work]
+    B --> C[Mint RoboTorq]
+    C --> D[Your Wallet]
+    D --> A[Reinvest]
+    style A fill:#10B981, color:white
+    style D fill:#10B981, color:white
 ```
 ---
 
@@ -2410,5 +2409,339 @@ The Social Charter is the **ethical and societal compass** for Robonomics.
 Code without the Charter risks misalignment; Charter without operational systems remains aspirational.  
 
 The focus should always remain on **human guidance, equitable benefit-sharing, and adaptive oversight**.
+
+---
+
+## Appendix N — Digital RoboTorq Transactions & On-Chain Flow
+
+### N.1 Purpose  
+This appendix defines the **canonical digital transaction model** for the RoboTorq Bond Network. All digital payments are expressed as **RoboTorq (RT)**, the intuitive unit representing **1 robot-hour**. For auditing or advanced calculation, RT can be converted to **TokenTorqPotential hours (TTP-h)** — see footnotes.  
+
+The model ensures:
+
+- **Physical grounding**: Every RT = 1 hour of ideal 1 kW robot work.  
+- **User intuition**: Wallet balance = “How many robot-hours can I command?”  
+- **Network efficiency**: Transactions are **streams**, not atomic transfers.  
+- **Flexibility**: Duration and shape modifiers (`short`, `long`, custom) fit real-world use cases.  
+
+> **Footnote**: 1 RT = 1 TTP-h = 3600 TokenTorq (internal accounting unit).
+
+---
+
+### N.2 Core Definitions
+
+| Symbol | Definition | User Meaning |
+|--------|------------|--------------|
+| **RT** | RoboTorq = 1 robot-hour | "I can run a 1 kW robot for 1 hour" |
+| **TTP-h** | TokenTorqPotential-hour | Internal unit for exact flows; 1 RT = 1 TTP-h |
+
+> Users mainly interact in **RT**. TTP-h is for auditing or advanced users.
+
+---
+
+### N.3 Transaction Model: Flow-Based Payments  
+Every transaction is a **time-shaped flow**:
+
+- **Amount** (A in RT)  
+- **Duration** (τ in hours)  
+- **Shape** (uniform or Weibull burstiness, e.g., short, default, long)
+
+#### N.3.1 Default Transaction
+Send **10 RT** over 1 hour (canonical default):
+
+- **Peak power**: 10 RT / 1 h = 10 TTP  
+- **Flow area**: Total = 10 RT  
+
+> Advanced: 10 RT = 10 TTP-h = 36,000 TokenTorq  
+
+**Example:** Wallet A (1,337 RT) sends 10 RT to Wallet B over 1 hour.
+
+---
+
+#### N.3.2 Duration Modifiers
+
+| Syntax | Duration (τ) | Peak RT/h | Use Case |
+|--------|--------------|-----------|----------|
+| `10 RT` | 1 h | 10 RT/h | Standard |
+| `10 short` | 10 min (0.167 h) | 60 RT/h | Coffee, toll |
+| `10 long` | 6 h | 1.67 RT/h | Rent, subscription |
+| `10 over 3h` | 3 h | 3.33 RT/h | Custom |
+
+> Formulas: τ = A / P_peak, P_peak = A / τ
+
+---
+
+#### N.3.3 Flow Shape: Weibull Distribution  
+Weibull models real-world **robot acceleration/deceleration** or human-like payment habits.
+
+| Preset | k | Profile | Example |
+|--------|---|--------|--------|
+| `short` | 1 | Exponential decay | 90% in first 2 min |
+| `default` | 2 | Bell-like | Smooth 1-hour flow |
+| `long` | 3.5 | Near-uniform | Slow drip |
+
+> Power function: P(t) = (A/τ) × (k/τ) × (t/τ)^(k-1) × exp(-(t/τ)^k), 0 ≤ t < ∞  
+
+---
+
+### N.4 Transaction Fees
+
+| Component | Paid To |
+|----------|--------|
+| **Base Fee** (0.01% × A) | Bond Network Treasury |
+| **Congestion Fee** f(load) × P_peak | Validators |
+| **Demurrage Credit** -r × idle_balance × Δt | Active users (TorqVaults) |
+
+> Fees are deducted from **RT flows**, TTP-h only used for internal accounting.
+
+---
+
+### N.5 Wallet UX
+Wallet: 1,337 RT (~$241 at 0.18 USD/RT)  
+Can command:  
+- 1× 100 RT robot → 13.4 h  
+- 10× 10 RT robots → 13.4 h each  
+- 1× coffee (0.5 short) → 2,674 times  
+
+> Tooltip/Advanced: 1,337 RT = 1,337 TTP-h = 4.8M TokenTorq
+
+---
+
+
+### N.6 Smart Contract Pseudocode (Simplified)
+
+Smart Contract Logic (Plain Text)
+- **Flow struct**: amountRT, durationSec, shape, recipient, startTime  
+- **sendFlow()**: checks balance, locks RT, emits event  
+- **Oracle**: ticks every 10 sec, drips P(t) × Δt to recipient
+
+---
+
+struct Flow {
+    uint256 amountRT;   // Main unit
+    uint256 durationSec;
+    uint8 shape;        // 0=uniform, 1=weibull_k1, 2=weibull_k2, 3=weibull_k3_5
+    address recipient;
+    uint256 startTime;
+}
+function sendFlow(Flow memory f) public {
+    require(balanceRT[msg.sender] >= f.amountRT, "Insufficient");
+    lockedRT[msg.sender] += f.amountRT;
+    emit FlowStarted(msg.sender, f.recipient, f.amountRT, f.durationSec, f.shape);
+}
+
+Oracle ticks every 10 sec, drips P(t) × Δt to the recipient.
+
+### N.7 Implementation Roadmap
+
+| Phase | Action | Owner | ETA |
+|-------|-------|-------|-----|
+| 1 | Finalize τ₀ = 1 h | Core Team | Done |
+| 2 | Lock Weibull k presets | Math WG | Oct 30 |
+| 3 | Build flow simulator (JS) | Dev | Nov 2 |
+| 4 | Draft EIP-XXXX: RoboTorq Flow Standard | Dev + You | Nov 9 |
+| 5 | Test arbitrage (short ↔ long) | QA | Nov 16 |
+
+### N.8 Conclusion
+
+RoboTorq transactions are **time-shaped streams of robot capacity**, measured in RT, intuitively understood as “how many robot-hours can I buy?”
+- Eliminates atomic transfers (“dust”)  
+- Scales with network load (congestion fees)  
+- Physics-native and intuitive (1 RT = 1 hour)  
+- Advanced precision via TTP-h for auditing or simulations
+
+---
+
+## Appendix O — Data Structures of the RoboTorq Unit: What Is a TTP-h on the Device?
+*"A RoboTorq is not a number. It's a verifiable slice of robot capacity."*
+
+---
+
+### O.1 Purpose
+This appendix defines the **on-device data structure** that represents a single **TokenTorqPotential-hour (TTP-h)** — the atomic unit of value in the RoboTorq system.  
+These records exist across:
+
+- **Robotic hardware** (edge oracles)  
+- **User wallets** (mobile, desktop, or physical RT)  
+- **Bond Network nodes** (validators, minting AI)  
+
+Ensures:
+- **Physical verifiability** — every TTP-h ties to measurable energy and compute  
+- **Tamper resistance** — cryptographic proofs prevent double-spend or forgery  
+- **Flow compatibility** — aligns with Appendix N  
+- **Human auditability** — readable by humans and machines  
+- **Quantum resistance** — post-quantum signatures built-in  
+
+---
+
+### O.2 Canonical Equivalence
+
+1 RT = 1 TTP-h = 3600 TokenTorq
+→ All represent the same physical energy-equivalent of 1 kW × 1 hour.
+
+Each unit is a verifiable claim on robotic work capacity, not just a number in a ledger.
+
+---
+
+### O.3 Core Data Structure — RoboTorqUnit
+
+```solidity
+```solidity
+struct RoboTorqUnit {
+    // === Meta / Versioning ===
+    uint8 version;              // structure revision
+
+    // === Physical Anchor ===
+    uint64 robotID;             // IEEE EUI-64 hardware ID
+    uint32 timestampStart;      // Unix epoch start time
+    uint32 durationSec;         // allocation duration (e.g., 3600 = 1 h)
+    uint16 powerKW;             // power kW × 100  (100 = 1.0 kW)
+    uint16 throughputRate;      // efficiency × 100 (100 = baseline)
+
+    // === Optional Provenance ===
+    uint64 geoTag;              // regional or energy-source code
+
+    // === Proof of Capacity ===
+    bytes32 capacityHash;       // keccak256(all fields)
+    uint8  pqAlgo;              // 0 = Dilithium2, 1 = Dilithium3, etc.
+    bytes  pqSignature;         // post-quantum signature
+
+    // === Flow Metadata (Appendix N) ===
+    uint8  flowShape;           // 0 = uniform, 1 = weibull_k1, etc.
+    bool   isRedeemed;          // double-spend flag
+    uint32 redeemTimestamp;     // completion time
+}
+```
+
+Approx. 200 bytes — compact for NFC or firmware.
+
+### O.4 Field Breakdown
+
+| Field            | Meaning               | Example                           |
+| ---------------- | --------------------- | --------------------------------- |
+| `version`        | Structure revision    | 1                                 |
+| `robotID`        | Unique robot ID       | 0xA1B2C3D4E5F67890                |
+| `timestampStart` | When slice begins     | 1735702800 (Jan 1 2025 09:00 UTC) |
+| `durationSec`    | Capacity length       | 3600 → 1 h                        |
+| `powerKW`        | Power × 100           | 100 → 1.0 kW                      |
+| `throughputRate` | Efficiency × 100      | 100 → baseline                    |
+| `geoTag`         | Optional region       | 84000123 → US-NE                  |
+| `capacityHash`   | Integrity proof       | keccak256( … )                    |
+| `pqAlgo`         | PQ algorithm          | 0 = Dilithium2                    |
+| `pqSignature`    | Quantum-resistant sig | Dilithium                         |
+| `flowShape`      | Payment flow          | 2 → default                       |
+| `isRedeemed`     | Anti-replay           | false → active                    |
+
+
+### O.5 Derived Value Example
+
+powerKW = 100  (1.0 kW)
+throughputRate = 100  (1.0 efficiency)
+durationSec = 3600  (1 hour)
+
+TTP     = 1.0 × 1.0 = 1.0 TTP
+TTP-h   = 1.0 × (3600 / 3600) = 1.0 RT
+TokenTorq = 1.0 × 3600 = 3600 TokenTorq
+
+### O.6 Physical RoboTorq Forms
+
+| Form | Storage Method |
+|------|----------------|
+| **NFC Coin** | `RoboTorqUnit` embedded in chip |
+| **QR Bill** | QR encodes `capacityHash` + link to on-chain record |
+| **Paper Wallet** | Printed JSON + QR code |
+
+Redemption Flow
+
+1. Scan NFC/QR → read RoboTorqUnit  
+2. Verify signature + !isRedeemed  
+3. Trigger digital flow (Appendix N)  
+4. Mark isRedeemed = true  
+
+### O.7 On-Device Storage (Robot Side)
+
+```solidity
+typedef struct {
+    uint8_t  version;
+    uint64_t robot_id;
+    uint32_t start_time;
+    uint32_t duration;
+    uint16_t power_kw_x100;
+    uint16_t throughput_x100;
+    uint64_t geo_tag;
+    uint8_t  flow_shape;
+    uint8_t  pq_algo;
+    uint8_t  _padding[2];
+    uint8_t  capacity_hash[32];
+    uint8_t  pq_signature[242]; // Dilithium2
+} robo_torq_unit_t;
+```
+
+Signed on boot, refreshed for each Bonded Robotic Labor Agreement (BRLA).
+
+### O.8 Verification Flow
+
+1. Wallet receives RoboTorqUnit  
+2. Compute capacityHash locally  
+3. Verify PQsignature via robot’s public key (registry)  
+4. Check isRedeemed = false on Bond Network  
+5. Lock TTP-h in wallet balance  
+
+### O.9 Example JSON Representation
+
+```json
+{
+  "version": 1,
+  "robotID": "0xA1B2C3D4E5F67890",
+  "timestampStart": 1735702800,
+  "durationSec": 3600,
+  "powerKW": 100,
+  "throughputRate": 100,
+  "geoTag": 84000123,
+  "flowShape": 2,
+  "capacityHash": "0x9f7c2e4a1e77eab1a5c4d8e2b9ff75e4b33c9a12e31c4a90d7e123bb48eea321",
+  "pqAlgo": 0,
+  "pqSignature": "0xd4b8c6a90af3e47b2cf7a9e1b75d2f8a4b1e6d2c8f1a3e9b7c...",
+  "isRedeemed": false,
+  "redeemTimestamp": 0
+}
+```
+
+### O.10 Security Model
+
+| Threat             | Protection                           |
+| ------------------ | ------------------------------------ |
+| **Double-spend**   | `isRedeemed` + on-chain check        |
+| **Forgery**        | PQ signature + robot key registry    |
+| **Tampering**      | `capacityHash` covers all fields     |
+| **Quantum attack** | Dilithium / Kyber (PQC suite)        |
+| **Offline misuse** | Network sync required for redemption |
+
+### O.11 Implementation Milestones
+
+| Phase | Action                   | ETA    |
+| ----- | ------------------------ | ------ |
+| 1     | Define schema            | Done   |
+| 2     | Add Dilithium signer     | Nov 10 |
+| 3     | Wallet parser + verifier | Nov 15 |
+| 4     | NFC coin prototype       | Nov 25 |
+
+### O.12 Conclusion
+
+A TTP-h is not a float. It’s a cryptographically signed, physically grounded claim on robot capacity — verifiable by anyone, spendable by flow.
+
+This structure:
+- Closes the loop between physics and value
+- Enables Appendix N (flow transactions)
+- Supports physical RoboTorq cash
+- Protects against all known attacks
+- The RoboTorq is now fully defined — from watt to wallet.
+
+
+
+
+
+
+
 
 
