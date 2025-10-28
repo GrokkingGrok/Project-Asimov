@@ -2850,10 +2850,321 @@ This structure:
 - Supports physical RoboTorq cash
 - Protects against all known attacks
 - The RoboTorq is now fully defined — from watt to wallet.
+- But Bonded Tokens aren't...
+
+---
+
+## Appendix P — Data Structure of the Bonded Token
+
+“A Bonded Token is the nervous system of the Robonomic economy — it breathes when fleets expand, and contracts when they rest.”
+
+### P.1 Purpose
+
+The Bonded Token (BT) is the governance and stabilization instrument of the Bond Network.
+
+It ties together RoboTorqUnits (RTU), Bonded Robotic Labor Agreements (BRLAs), and reserve pools into a coherent monetary framework.
+
+Each Bonded Token represents a staked claim on verified robotic capacity, priced through BRLAs and adjusted by network efficiency trends.
+
+**Minting** concerns the *Asimovian* ideal throughput capacity and the time required to achieve the expected market value.
+
+**BRLA retainer fees** will consider not only ideal throughput, but expected task-specific throughput and types of Bonded Tokens expected.
+
+This is how the system always *provides* robotic hourly labor at a constant rate: operating costs per Bonded Token are determined when pricing a BRLA.
+
+When you execute production under a BRLA, you pay per oracle task completed to spur minting along the way.
+
+You choose your Torq Gamble such that you make money regardless of the BRLA cost, and the market's demand must be able to bear the full cost of the robotic labor you want to wield.
+
+No (intentional) subsidies.
+
+Be more efficient: use fewer tokens than you staked. Great. The market price of your item stays the same; minting goes up, you pay less because you used fewer robotic hours, and you win once because you under-Torqed due to innovation.
+
+We don't want to discourage innovation.
+
+But the next time around, expect the Bond Network to be savvy to your efficiency gains. 
+
+You bore the fruit. But you still bear the appropriate costs given your efficiency gains and expected token usage, tightening your timeline based on your expected higher efficiency. 
+
+You maintain your proprietary competitive edge, yet the system doesn't collapse due to untracked efficiency gains devaluing the currency.
+
+---
+
+### P.2 Economic Role
+
+| Function              | Description                                                      |
+| --------------------- | ---------------------------------------------------------------- |
+| **Collateralization** | Backed by staked TTP-h (robotic labor-hours)                     |
+| **Governance**        | Enables votes on BRLA updates, token size/cost recalibration          |
+| **Reserve Smoothing** | Absorbs efficiency shocks (> ±15% in 90 days)                    |
+| **Dividend Source**   | Yields UBD (Universal Basic Dividend) from fleet productivity    |
+| **Settlement Layer**  | Acts as liquidity buffer between RTU flows and real-world trades |
+
+
+---
+
+### P.3 Core Units
+
+- 1 RoboTorq = 1 kWh × 1 token = 3600 TTP-h
+- 1 Bonded Token = 1 TTP-h for minting purposes.
+- 1 Bonded Token = some x RT staked for calculating the BRLA Retainer Fee
 
 
 
+---
 
+### P.4 Core Data Structure — BondedToken
+
+```solidity
+struct BondedToken {
+    // === Meta ===
+    uint8   version;            // Structure version
+    uint64  bondID;             // Unique bond identifier
+    uint32  issuedAt;           // Unix timestamp
+    uint32  maturity;           // Optional: when the bond unlocks (0 = perpetual)
+    uint16  typeCode;           // 0=fleetReserve, 1=stability, 2=UBD
+
+    // === Backing ===
+    uint64  stakedRTU;          // Total TTP-h backing this token
+    uint32  brlaID;             // Linked BRLA contract ID
+    uint16  efficiencyRate;     // Average fleet efficiency ×100
+    uint16  reserveRatio;       // % of RTU in reserve ×100 (e.g. 8500 = 85.00%)
+
+    // === Economics ===
+    uint64  yieldRate;          // Dividend rate ×10⁶ (e.g., 25000 = 2.5%)
+    uint64  circulatingSupply;  // Supply of this bond type
+    uint32  rebaseWindow;       // Seconds between BRLA recalibrations
+    bool    isActive;           // Bond status
+
+    // === Proof ===
+    bytes32 capacityRoot;       // Merkle root of staked RTUs
+    uint8   pqAlgo;             // 0=Dilithium2, 1=Dilithium3, etc.
+    bytes   pqSignature;        // Signed by Bond Network validator set
+}
+```
+Check the byte sizes for pq stuff
+
+Size: ~256 bytes — fits into on-chain storage, QR, or lightweight BondNode cache.
+All proofs (capacityRoot, signature) are post-quantum ready
+
+---
+
+### P.5 Field Breakdown
+
+| Field               | Meaning                            | Example                    |
+| ------------------- | ---------------------------------- | -------------------------- |
+| `version`           | Schema version                     | `1`                        |
+| `bondID`            | Unique bond identifier             | `0xBOND202510`             |
+| `issuedAt`          | Creation timestamp                 | `1767004800` (Jan 29 2026) |
+| `maturity`          | Maturity timestamp (0 = perpetual) | `0`                        |
+| `typeCode`          | Bond category                      | `1` → Stability Bond       |
+| `stakedRTU`         | Backing in TTP-h                   | `1_000_000`                |
+| `brlaID`            | Linked labor agreement             | `0xBRLA47C1`               |
+| `efficiencyRate`    | Fleet efficiency                   | `107` → 1.07× baseline     |
+| `reserveRatio`      | Reserve fraction                   | `8500` → 85.00%            |
+| `yieldRate`         | Dividend yield                     | `25000` → 2.5%             |
+| `circulatingSupply` | Active bond count                  | `500_000`                  |
+| `capacityRoot`      | Merkle root of RTUs                | `0x7abf...c42d`            |
+| `pqAlgo`            | PQ algorithm                       | `0` → Dilithium2           |
+| `pqSignature`       | Validator signature                | `Dilithium`                |
+| `isActive`          | Status flag                        | `true`                     |
+
+
+---
+
+### P.6 Example JSON
+```json
+{
+  "version": 1,
+  "bondID": "0xBOND202510",
+  "issuedAt": 1767004800,
+  "maturity": 0,
+  "typeCode": 1,
+  "stakedRTU": 1000000,
+  "brlaID": "0xBRLA47C1",
+  "efficiencyRate": 107,
+  "reserveRatio": 8500,
+  "yieldRate": 25000,
+  "circulatingSupply": 500000,
+  "rebaseWindow": 604800,
+  "isActive": true,
+  "capacityRoot": "0x7abf2e4a1e77eab1a5c4d8e2b9ff75e4b33c9a12e31c4a90d7e123bb48eea321",
+  "pqAlgo": 0,
+  "pqSignature": "0xd4b8c6a90af3e47b2cf7a9e1b75d2f8a4b1e6d2c8f1a3e9b7c..."
+}
+```
+
+---
+
+### P.7 Verification Flow
+
+1. Wallet or BondNode receives BondedToken
+2. Verify PQ signature (Bond Network validators)
+3. Retrieve BRLA ID → confirm live pricing & reserve ratio
+4. Validate capacityRoot → Merkle proof of staked RTUs
+5. If reserveRatio < 80% → trigger rebalancing or governance vote
+
+---
+
+### P.8 Stability Logic
+
+| Mechanism                 | Trigger              | Action                         |
+| ------------------------- | -------------------- | ------------------------------ |
+| **BRLA Drift Correction** | Efficiency ±15%      | Reprice token size             |
+| **Reserve Smoothing**     | Fleet capacity shock | Mint/burn Bonded Tokens        |
+| **Bonded Vote**           | Governance threshold | Ratify new efficiency standard |
+| **Dividend Adjustment**   | Yield drift >2%      | Rebalance payout rate          |
+
+
+---
+
+### P.9 Security Model
+
+| Threat                   | Protection                         |
+| ------------------------ | ---------------------------------- |
+| **Fake labor reports**   | BRLA-signed proofs per fleet       |
+| **Quantum forgery**      | PQ validator signatures            |
+| **Reserve depletion**    | Real-time reserveRatio enforcement |
+| **Inflationary minting** | BRLA + validator dual signatures   |
+| **Double-counted RTUs**  | Merkle root deduplication          |
+
+---
+
+### P.10 Relationship Diagram (Conceptual)
+
+
+[ RTUs (TTP-h) ] ---> [ BondedToken Pool ] ---> [ Bond Network ]
+       |                         |                      |
+   Robot Fleet            BRLA-backed yield        Governance votes
+
+---
+
+### P.11 TL;DR
+
+| Property              | Gold          | Bitcoin           | Fiat          | **RoboTorq**                   |
+| --------------------- | ------------- | ----------------- | ------------- | ------------------------------ |
+| **Backing**           | Physical gold | Math (hash power) | Debt & trust  | **Energy × Time (robot work)** |
+| **Flexibility**       | Rigid         | Rigid             | Over-flexible | **Adaptive via BRLAs**         |
+| **Inflation Control** | None          | Halving           | Central banks | **Bounded by physics**         |
+| **Quantum Safety**    | N/A           | Weak              | Weak          | **Strong (PQ signatures)**     |
+
+
+### P.12 Summary
+
+The Bonded Token is to RoboTorq what the Reserve Note was to fiat — but cryptographically honest, physically grounded, and quantum-secure.
+
+## P.13 Default Bonding Principle — “All Robots Work on This”
+
+- *“Every robot contributes by default, but none are trapped.”*
+
+---
+
+### **Default Integration**
+
+By design, **all verified robots** on the Bond Network operate under the **Bonded Token framework** by default.  
+This ensures that every unit of robotic work — every watt-second and compute cycle — is **accounted for, priced, and auditable** within the same physical-economic layer.
+
+**Default participation means:**
+- Robots automatically issue **RoboTorqUnits (RTUs)** as they perform work.  
+- These RTUs flow into the **Bonded Token reserve**, anchoring supply stability.  
+- Fleet-level BRLAs (Bonded Robotic Labor Agreements) price the work according to real efficiency data.
+
+---
+
+### **Flexibility and Autonomy**
+
+Despite this default integration, the system remains **voluntarily interoperable**:
+
+- Any robot, organization, or local fleet may **opt out** or **fork** the framework.
+- Independent or experimental economies can issue **custom BRLAs** or alternative tokens.
+- Bonded Tokens adjust dynamically — **no coercion, no dependency lock-in**.
+
+**The guiding principle:**
+> Participation is the default, not the demand.  
+> Freedom to adapt is built into the physics of the protocol.
+
+---
+
+### **Why This Matters**
+
+| Feature | Description |
+|----------|-------------|
+| **Universal Accounting** | Every robot contributes to a shared energy-time ledger |
+| **Transparent Backing** | All tokens map to verifiable capacity |
+| **Adaptive Economics** | Fleets can innovate without destabilizing the network |
+| **Commons by Default** | Cooperation first, competition by choice |
+
+---
+
+### **Summary**
+
+The **Bonded Token system** acts as the **default substrate** of the robotic economy —  
+a shared, physics-based backbone that unifies value measurement across all fleets.
+
+But it is not a cage:  
+- Robots can exit.  
+- Humans can redefine contracts.  
+- New economic layers can emerge.
+
+> **Default is common ground. Flexibility is freedom.**
+
+## P.14 Exit and Inter-Bond Autonomy
+
+> *“Robots can leave — not to defect, but to trade.”*
+
+---
+
+### **What “Leaving” Actually Means**
+
+When a robot or fleet “leaves” the Bond Network, it doesn’t vanish or stop working.  
+It **unbonds** its labor from the current network’s economics — essentially pausing its contribution to that network’s shared value pool — and **rebonds** to another compatible system.
+
+This can mean:
+
+| Scenario | What Happens |
+|-----------|---------------|
+| **Switching networks** | The robot joins another **Bond Network** (e.g., regional or trade-focused). Its new BRLA defines how it prices and accounts for labor. |
+| **Private mode** | A robot can operate in **sovereign or private-contract mode**, off-chain or within a closed system (e.g., internal corporate fleets). |
+| **Trade bridging** | Multiple Bond Networks can **interoperate through exchange protocols** or “Bond Trade Agreements” (BTAs), where each honors the other’s energy-time proofs. |
+
+---
+
+### **Bond Trade Agreements (BTAs)**
+
+BTAs act like **treaties between robotic economies**.  
+They define:
+
+- How **RoboTorqUnits** are exchanged or recognized across networks.  
+- Conversion ratios when efficiency baselines differ.  
+- Dispute resolution if energy-time accounting drifts.
+
+A robot can thus earn in one network, cross a boundary, and continue to work in another —  
+just as human workers migrate between economies, but with **physics and transparency intact**.
+
+---
+
+### **Philosophy of Freedom**
+
+The right to exit is **non-negotiable** — it preserves trust.  
+The Bond Network’s strength depends on participation by choice, not by coercion.
+
+> **Every bond is opt-in. Every exit is a handshake, not a rupture.**
+
+---
+
+### **Quick Recap**
+
+| Principle | Description |
+|------------|-------------|
+| **Default** | Robots start bonded to the main network automatically |
+| **Exit** | Robots can unbond and rebond elsewhere |
+| **Trade** | Networks can form reciprocal recognition treaties (BTAs) |
+| **Integrity** | Energy-time accounting remains verifiable across all systems |
+
+---
+
+**Bottom line:**  
+Leaving the Bond Network doesn’t mean leaving the economy — it means entering a new one, under different agreements, but still **bound by physics**.
 
 
 
