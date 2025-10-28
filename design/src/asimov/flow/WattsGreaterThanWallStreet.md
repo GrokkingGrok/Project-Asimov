@@ -7,7 +7,7 @@
 
 ---
 
-### ⚡ Executive TL;DR
+### Executive TL;DR
 - **Not a Cryptocurrency**: Today’s trash is tomorrow’s cash.  
   - **Digital RoboTorq** = *Robot Work + Raw Materials*  
   - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk*  
@@ -17,11 +17,11 @@
 - **Perks**  
   - Robots don’t take your job — **they pay your salary**.  
   - Every watt of AI labor **mints money directly to you.**  
-  - No debt. No inflation. Just physics.  
+  - No debt. No inflation. Just physics.
 - **Quirks**  
   - This white paper defines the RoboTorq and its economy — a blend of thermodynamics, automation, and economic policy.  
 - **Bonus**  
-  → [Robonomic Dividend Estimator](https://projectasimovmvp.vercel.app/) — tweak fleet size, robot “horsepower,” USD peg, and see your UBD.
+  - → [Robonomic Dividend Estimator](https://projectasimovmvp.vercel.app/) — tweak fleet size, robot “horsepower,” USD peg, and see your UBD.
 
 ---
 
@@ -29,13 +29,15 @@
 
 There’s a whole new way to think about economics: **Robonomics**.
 
-It’s based on **physics**.  
-It’s **mathematically sound**.  
-It’s **tangible** — turning bot sweat into paychecks, and trash into cash.  
+It’s based on **physics**.
 
-It’s a whole **monetary system** anchored not in speculation, but in measurable work — the watt.
+It’s **mathematically sound**.
 
-**Pro tip**:  
+It’s **tangible** — turning bot sweat into paychecks, and trash into cash.
+
+It’s a whole **monetary system** anchored not in red tape and debt, but in measurable work — the watt.
+
+**Pro tip**:
 1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
    - Don’t just link it — AIs may cache old versions.  
 2. If on a free tier, paste section by section.  
@@ -47,6 +49,12 @@ Curiosity thrives in the gaps. What’s documented here is a live exploration, n
 
 While you wait for the AI to parse it, check out the **Robonomic Flowchart** below the Abstract.  
 It visualizes how energy, data, and money circulate in a closed-loop RoboTorq economy.
+
+When you get overwhelmed and think, "How can I use this money if I don't understand it?"
+
+Just remember, you don't really understand everything about how money works now, either.
+
+Doesn't stop you from spending it.
 
 ---
 
@@ -64,16 +72,15 @@ But Robonomics goes further. With the introduction of the **RoboTorq**, both *en
 Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or stainless steel.  
 
 This “**trash → cash**” loop turns pollution into paychecks, linking ecology and economy through physics.  
-Robotic work creates wealth; human recycling redeems it. Waste becomes monetary substrate.  
+Robotic work creates wealth; human recycling redeems it. Waste becomes a monetary substrate.  
 
 The result is a **physics-based, closed-loop economy** where value is minted by measurable work — robotic or human — and distributed universally via algorithmic dividends.  
 
 **Project Asimov** is building this idea into an open-source **Robonomic Simulator** for academic research, grounded in **Torq Theory**, the mathematical framework behind the RoboTorq system.  
 
-**“Watts > Wall Street”** is both rhetorical and real:  
+**“Watts > Wall Street”** is both rhetorically powerful and scientifically grounded.  
 
-just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, and computation into money.**
-
+Just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, and computation into money.**
 
 **Here's how it works.**
 
@@ -273,7 +280,7 @@ Result:
 
 ---
 
-RoboTorq is built on **physics**, not policy — and not the idealized, frictionless physics of textbooks either. Real physics. Real energy. Real time.  
+The RoboTorq is built on **physics**, not policy — and not the idealized, frictionless physics of textbooks either. Real physics. Real energy. Real time.  
 
 The core invariant:  
 > **1 RoboTorq = 1 kWh × 1 token = 3600 TokenTorq.**
@@ -781,7 +788,7 @@ It all goes into a Bonded Robotic Labor Agreement (BRLA).
 **TL;DR**: Here's how you buy robotic labor.
 1. Hire bots, fund through RoboFund, set a Bonded Robotic Labor Agreement.  
 2. Bots work, produce items, Torq is minted for delivered value.  
-3. Bondholders receive Torq; enterprise earns revenue; money supply stays balanced.
+3. Bondholders receive RoboTorq to buy the product; the enterprise earns revenue; the money supply stays balanced.
 
 **⬆️skim/fat⬇️**
 
@@ -1665,7 +1672,6 @@ The architecture is deliberately modular:
 Robots → Energy Sensors → Oracles → Audit Nodes → Validators → Ledger
 ↑ ↓
 Treasury Reports ← DAO Governance ← Dividend Engine
-
 
 ---
 
