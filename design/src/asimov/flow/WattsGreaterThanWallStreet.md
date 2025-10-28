@@ -13,10 +13,10 @@
   - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk*  
   - *Trash into cash*, with cryptographic markings & NFC tags.  
 - **Vibes**  
-  - Robonomics proposes a **physics-based monetary system** — the *RoboTorq* — minted from robotic labor and distributed universally through an **AI-governed Bond Network**.  
+  - Robonomics proposes a *physics-based* monetary system — the **RoboTorq**.
+  - minted from robotic labor and distributed universally through an **AI-governed Bond Network**.  
 - **Perks**  
   - Robots don’t take your job — **they pay your salary**.  
-  - Every watt of AI labor **mints money directly to you.**  
   - No debt. No inflation. Just physics.
 - **Quirks**  
   - This white paper defines the RoboTorq and its economy — a blend of thermodynamics, automation, and economic policy.  
