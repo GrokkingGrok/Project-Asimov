@@ -255,101 +255,139 @@ Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be
 
 ## 3. Physical Backing and Stability
 
-**Visual TL;DR**: The following chart contrasts Gold, Bitcoin, Fiat, and RoboTorq as currencies.  
+**Visual TL;DR:**  
+Comparison of four monetary paradigms — each answers the question: *“What backs your value?”*  
 
-| Currency    | Backing             | Flexibility                             | Inflation Control                             |
-|--------------|---------------------|------------------------------------------|-----------------------------------------------|
-| **Gold**     | Fixed supply        | Rigid → deflation                        | None                                          |
-| **Bitcoin**  | Fixed supply        | Rigid → volatility                       | Halving                                       |
-| **Fiat**     | Debt                | Infinite                                 | Central bank                                 |
-| **RoboTorq** | **Energy × Time**   | **Token-Adaptive (via efficiency gains)** | **Bounded by physics + BRLA contracts**       |
+| Currency    | Backing             | Flexibility                               | Inflation Control                                |
+|--------------|---------------------|--------------------------------------------|--------------------------------------------------|
+| **Gold**     | Fixed supply        | Rigid → deflation                          | None                                             |
+| **Bitcoin**  | Fixed supply        | Rigid → volatility                         | Halving cycles                                   |
+| **Fiat**     | Debt                | Infinite elasticity                        | Central bank policy                              |
+| **RoboTorq** | **Energy × Time**   | **Token-Adaptive (via efficiency gains)**  | **Bounded by physics + BRLA contracts**          |
 
 ---
 
-**TL;DR**:  
-RoboTorq breathes. It expands and contracts with real-world efficiency — but only within the limits of physics.  
+**TL;DR:**  
+RoboTorq breathes. It expands and contracts with real-world efficiency —  
+but only within the limits of physics.  
+
 - **1 RoboTorq = 3600 TokenTorq**, always.  
 - Token size can shift as robots get smarter.  
-- The **Bond Network** keeps the whole system honest using:  
-  - BRLA pricing,  
-  - Fleet reserves, and  
-  - Optional Bonded Token votes (rare, last resort).  
+- The **Bond Network** keeps it stable using:  
+  - **BRLA pricing curves**,  
+  - **Fleet reserves**, and  
+  - **Bonded Token governance** *(rare, last resort)*.  
 
 Result:  
-- No gold-style deflation.  
-- No fiat-style inflation.  
-- Value tied to real work, not wishful thinking,
+✅ No gold-style deflation.  
+✅ No fiat-style inflation.  
+✅ Value tied to *verified robotic work*, not wishful thinking.  
 
 **⬆️skim/fat⬇️**
 
 ---
 
-The RoboTorq is built on **physics**, not policy — and not the idealized, frictionless physics of textbooks either. Real physics. Real energy. Real time.  
+### The Physics Peg
 
-The core invariant:  
+RoboTorq is built on **physics**, not policy.  
+And not the frictionless physics of whitepapers — but the kind that hums, spins, and draws current.
+
 > **1 RoboTorq = 1 kWh × 1 token = 3600 TokenTorq.**
 
-That ratio **never changes**. It’s the metronome of the Robonomic economy.  
+That ratio **never changes**.  
+It’s the *metronome* of the Robonomic economy.  
 
-But what *can* change is **token size** — the smallest measurable chunk of robotic work.  
-A “token” isn’t a physical chip; it’s contextual information a robot processes — a digital “unit of attention.”  
-No fixed size. No fixed workload. That’s the point.  
+What *can* evolve is **token granularity** —  
+the smallest measurable unit of robotic work.  
+A “token” isn’t a coin; it’s a **quantized attention cycle** — the moment a robot does, decides, or delivers.  
 
-Robots improve. Efficiency rises. The cost of a token (in joules, not dollars) drops.  
-That’s *progress*, not instability.
+No fixed size. No fixed workload.  
+That’s the point.  
+Efficiency gains don’t destabilize the system — they’re absorbed into **Bond Network pricing**.
 
-So who keeps track of all this?  
-The **Bond Network** — through **Bonded Robotic Labor Agreements (BRLAs)** — defines how robotic labor is priced, audited, and hedged as the world’s fleets evolve.  
+---
 
-Here’s how it keeps the system stable:  
-- **BRLA prices** follow expected efficiency trends.  
-- **Fleet reserves** smooth sudden shocks in token throughput.  
-- **Bonded Token vote** (only if needed): If relative efficiency drops *>15% in 90 days*, a policy vote can reset token standards.  
+### The Bond Network: Pricing the Future of Work
+
+The Bond Network governs RoboTorq supply through  
+**Bonded Robotic Labor Agreements (BRLAs)** — long-term contracts that price robotic labor by physics, efficiency, and verified uptime.  
+
+**Each BRLA** issues a pool of **Bonded Tokens** —  
+digitally signed claims on *future robotic capacity* backed by staked RoboTorqUnits.
+
+| Layer | Description | Peg |
+|-------|--------------|-----|
+| **RoboTorqUnit (RTU)** | Atomic proof of 1 kWh·h capacity | Physics |
+| **Bonded Token (BT)** | Vault share in a BRLA contract | Economics |
+| **RoboTorq (RT)** | The circulating liquid token | Energy × Time |
+
+Together, they form the three-tier engine of stability.  
+
+---
+
+### BRLA Mechanics (Fat Mode)
+
+- **BRLA pricing** tracks real-world efficiency trends (measured by fleet telemetry).  
+- **Bonded Tokens** represent fractional claims on pooled RTUs; their yield reflects how efficiently those robots perform.  
+- **Fleet reserves** buffer volatility by auto-adjusting mint and burn rates.  
+- **Bond Votes** (rare): If efficiency drops >15% in 90 days, the Bond Network can vote to recalibrate token throughput — preserving peg integrity.  
 
 Most of the time?  
 It self-corrects.  
-
-Because both the **Bond Network’s reserve capacity** and **BRLA pricing math** already act as natural hedges.  
-This design prevents:  
-- **Deflation** (the gold problem)  
-- **Gaming** (fake robot “breakthroughs”)  
-- **Inflation** (the fiat problem)  
-
-Project Asimov will test these dynamics in simulation.
+Mathematically. Automatically.  
+Because both **reserve buffers** and **BRLA formulas** act as natural hedges.
 
 ---
 
-**Why it matters:**  
-- **Gold failed** because it couldn’t adapt.  
-- **Fiat fails** because it adapts *too much*.  
-- **Bitcoin** fixed supply, broke flexibility.
+### The Stability Triangle
 
-RoboTorq finds the middle path.  
+| Failure Mode | Legacy Cause | RoboTorq Solution |
+|---------------|--------------|-------------------|
+| **Deflation** | Fixed supply (gold, BTC) | Adaptive BRLA issuance |
+| **Inflation** | Policy overreach (fiat) | Physics-bounded expansion |
+| **Volatility** | Market speculation | Bonded Token smoothing layer |
 
-It adapts *just enough* — because **humans do**.  
-
-We invent. We iterate. We get more efficient. So should our money.  
-
-If someone programs a robot that does the same job using **fewer tokens**?  
-- Great. They win *once*.  
-- On the next contract, the market adjusts.  
-- The robot moves on to earn more RoboTorq for society at its new efficiency level.  
-
-That’s the magic: physics doesn’t inflate, and efficiency doesn’t destabilize.  
-
-It all flows back into the **Universal Basic Dividend** through the Bond Network.
+Project **Asimov** will test these feedback loops in simulation — verifying how robotic efficiency, token supply, and BRLA contracts co-evolve.
 
 ---
+
+### Why It Works
+
+- **Gold** failed because it couldn’t adapt.  
+- **Fiat** fails because it adapts *too much*.  
+- **Bitcoin** locked itself to scarcity and lost elasticity.  
+
+**RoboTorq finds the middle path.**
+
+It adapts *just enough* — because **humans (and robots) do.**  
+
+> We invent. We iterate. We get more efficient.  
+> So should our money.
+
+If a robot learns to do the same task using **fewer tokens**:
+- ✅ It wins once (a competitive edge).
+- 🔁 On the next BRLA cycle, the market rebalances.
+- ⚙️ The new efficiency standard becomes global baseline.
+
+That’s the "magic" of Robonomics:  
+**Physics doesn’t inflate, and efficiency doesn’t destabilize.**
+
+All surpluses flow back into the **Universal Basic Dividend** —  
+a direct distribution of robotic productivity to every participant in the Bond Network.
 
 **⬆️fat/skim⬇️**
 
+---
 
 **Quick Recap**
-- Backed by **watts and seconds**, not gold or debt  
-- Adapts to **smarter robots**, but within physics limits  
-- Stable **without** a central bank  
-- You own a **slice of every kWh** of robotic labor  
-- The **first physics-based unit of economic value**
+- Backed by *watts and seconds*, not gold or debt  
+- Expands and contracts only within *physics limits*  
+- Stable without central banks or policy discretion  
+- Every holder owns a slice of verified robotic labor  
+- The world’s first **physics-based unit of economic value**
+
+---
+
 
 ---
 
