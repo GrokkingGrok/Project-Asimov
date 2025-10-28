@@ -1,57 +1,79 @@
 # Are Watts > Wall Street?
-_Bots work → You get paid.
-The RoboTorq UBD says: "Yes."_
+- **Bot Sweat → Paycheck**  
+- **Trash → Cash**  
+- The RoboTorq Universal Basic Dividend says: **“Yes.”**
 
-*Tags*: job replacement, universal basic income, universal basic dividend, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics
-
-### Executive TL;DR
-- **Vibes**: Robonomics proposes a physics-based monetary system, the RoboTorq, minted from robotic labor and distributed universally through an AI-governed Bond Network. 
-- **Perks**: Robots don’t take your job. They pay your salary. Every watt of AI labor mints money — directly to you. No debt. No inflation. Just physics. 
-- **Quirks**: This white paper defines the core units, mathematical foundations, and policy implications of this system — as well as the Project Asimov simulation framework being built to test, refine, or disprove the model entirely. 
-- **Bonus**: [Robonomic dividend estimator — tweak fleet size, robot "horsepower", USD peg → see your UBD](https://projectasimovmvp.vercel.app/).
+*Tags*: job replacement, universal basic income, universal basic dividend, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics  
 
 ---
 
-## Introduction
+### ⚡ Executive TL;DR
+- **Not a Cryptocurrency**: Today’s trash is tomorrow’s cash.  
+  - **Digital RoboTorq** = *Robot Work + Raw Materials*  
+  - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk*  
+  - *Trash into cash*, with cryptographic markings & NFC tags.  
+- **Vibes**  
+  - Robonomics proposes a **physics-based monetary system** — the *RoboTorq* — minted from robotic labor and distributed universally through an **AI-governed Bond Network**.  
+- **Perks**  
+  - Robots don’t take your job — **they pay your salary**.  
+  - Every watt of AI labor **mints money directly to you.**  
+  - No debt. No inflation. Just physics.  
+- **Quirks**  
+  - This white paper defines the RoboTorq and its economy — a blend of thermodynamics, automation, and economic policy.  
+- **Bonus**  
+  → [Robonomic Dividend Estimator](https://projectasimovmvp.vercel.app/) — tweak fleet size, robot “horsepower,” USD peg, and see your UBD.
 
-Come, and crawl out of Plato's cave with me. There's a whole new way to think about economics: Robonomics.
+---
 
-It's based on **physics**. It's **mathematically sound**. 
+## Robonomics: 21st Century Economics
 
-It's a whole **monetary system** — so yeah, it's a bit complex at times.
+There’s a whole new way to think about economics: **Robonomics**.
 
-**Pro tip**: 
-1. Copy-paste the whole thing into a fresh Grok or ChatGPT conversation.  
-   - Don’t link it. AIs hallucinate old versions.  
-2. Split into chunks if on free tier.  
-   - Say: `"Don't respond until I say 'last paste'"`  
-3. **Ask for an overview by section** → then drill in.
+It’s based on **physics**.  
+It’s **mathematically sound**.  
+It’s **tangible** — turning bot sweat into paychecks, and trash into cash.  
 
-I don't claim Robonomics to be a complete theorem — I hope it never will be, for my own curiosity's sake. What I've learned so far is documented extensively here.
+It’s a whole **monetary system** anchored not in speculation, but in measurable work — the watt.
 
-Still, vast gaps remain. Running this quick sanity check will help you focus on what's most important to you.
+**Pro tip**:  
+1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
+   - Don’t just link it — AIs may cache old versions.  
+2. If on a free tier, paste section by section.  
+   - Say: `"Don't respond until I say 'last paste'"`.  
+3. Ask for an *overview by section* → drill down.
 
-It may take several minutes to respond. In the meantime, take a look at the Robonomic flowchart, just below the Abstract. It shows you how money moves in a loop in the RoboTorq economy.
+Robonomics isn’t a complete theorem — and it shouldn’t be.  
+Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model.  
 
-Enjoy.
+While you wait for the AI to parse it, check out the **Robonomic Flowchart** below the Abstract.  
+It visualizes how energy, data, and money circulate in a closed-loop RoboTorq economy.
 
 ---
 
 ## Abstract
 
-As the innovation of Robotic Labor and the job replacement it threatens sit quietly on the horizon, it's hard to know whether to be excited or concerned. The potential problem is clear, but the solution is not.
+As the innovation of **Robotic Labor** — and the job replacement it threatens — sits quietly on the horizon, it’s hard to know whether to be excited or concerned. The potential problem is clear. The solution is not.  
 
-Typical Universal Basic Income (UBI) schemes, managed by politicians and financed by bankers, have no value basis. What happens if the "basic" amount puts the money supply out of balance? Rampant inflation or deflation.
+Traditional **Universal Basic Income (UBI)** schemes, managed by politicians and financed by bankers, lack any **physical value basis**. When the “basic” amount overshoots production capacity, the result is predictable: inflation or deflation without anchor.  
 
-Traditional Universal Basic Dividend (UBD) schemes often [return a relatively small portion](https://ffesp.org/1702-pfd-stimulus-check/#:~:text=Alaska%20residents%20received%20a%20$1%2C702,dropped%20to%20$1%2C000%20for%202025.) because they are garnered from just one industry or sector.
+Conventional **Universal Basic Dividend (UBD)** models, meanwhile, often [return only a fraction](https://ffesp.org/1702-pfd-stimulus-check/#:~:text=Alaska%20residents%20received%20a%20$1%2C702,dropped%20to%20$1%2C000%20for%202025.) of societal wealth, limited by a single industry or resource pool.  
 
-Robonomics proposes a private, yet collectively owned Bond Network that entitles every citizen to a share of the newly minted proceeds from the labor of every humanoid robot working in every sector. Under such a system, every job lost to robots becomes a boon to society, and private individual ownership of humanoid robots becomes tantamount to counterfeiting.
+**Robonomics** proposes a private yet collectively owned **Bond Network** that entitles every citizen to a share of the proceeds from the labor of every humanoid robot, across every sector. Under such a system, every job lost to robots becomes a dividend to society — and private, individual robot ownership becomes tantamount to counterfeiting.  
 
-Robonomics could represent a paradigm shift in economic theory — and, if we choose to make it real, in human history. To test these claims, the open-source Project Asimov is building a Robonomic simulator for academic research. Torq Theory is the mathematical basis for the Asimov Robonomic simulator. 
+But Robonomics goes further. With the introduction of the **RoboTorq**, both *energy* and *matter* become currency.  
+Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or stainless steel.  
 
-"Watts > Wall Street" is rhetorically powerful, yet scientifically grounded. 
+This “**trash → cash**” loop turns pollution into paychecks, linking ecology and economy through physics.  
+Robotic work creates wealth; human recycling redeems it. Waste becomes monetary substrate.  
 
-The RoboTorq turns energy, time, and computation into money as directly as photosynthesis turns sunlight into sugar. 
+The result is a **physics-based, closed-loop economy** where value is minted by measurable work — robotic or human — and distributed universally via algorithmic dividends.  
+
+**Project Asimov** is building this idea into an open-source **Robonomic Simulator** for academic research, grounded in **Torq Theory**, the mathematical framework behind the RoboTorq system.  
+
+**“Watts > Wall Street”** is both rhetorical and real:  
+
+just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, and computation into money.**
+
 
 **Here's how it works.**
 
@@ -74,10 +96,10 @@ flowchart TD
    - [Novel Units](#21-the-novel-units)  
    - [Relationship Between Units](#22-relationship-between-units)  
 3. [Physical Backing and Stability](#3-physical-backing-and-stability)  
-4. [TokenTorqPotential is just Capacity](#4-tokentorqpotential-is-just-capacity)  
-5. [The Equation of AI-Value Exchange](#5-the-equation-of-ai-value-exchange)  
-   - [Dimensional Consistency Check](#51-dimensional-consistency-check)  
-   - [Relation to Current Macro-Economic Theory](#52-relation-to-current-macro-economic-theory)
+4. [Torq and the Equation of AI-Value Exchange](#4-torq-and-the-equation-of-ai-value-exchange)  
+   - [Dimensional Consistency Check](#41-dimensional-consistency-check)  
+   - [Relation to Current Macro-Economic Theory](#42-relation-to-current-macro-economic-theory)
+5. [TokenTorqPotential is just Capacity](#5-tokentorqpotential-is-just-capacity)  
 6. [The Torq_Gamble: Markup as Wager](#6-the-torq_gamble-markup-as-wager)  
 7. [Complexity and AIntropy](#7-complexity-and-aintropy)  
 8. [The TokenTorq Curve](#8-the-tokentorq-curve)  
@@ -104,6 +126,7 @@ flowchart TD
 - [I. Quantum Computing and System Security](#appendix-i--quantum-computing-and-system-security)
 - [J. Extending the System to General AI–Generated Value](#appendix-j--extending-the-robotorq-to-general-ai-generated-value)
 - [K. Integrating AI-Value, Quantum Security, and Fusion Energy Impacts](#appendix-k--integrating-ai-value-quantum-security-and-fusion-energy-impacts)
+- [L. Using the RoboTorq Economic Engine to Clean the Planet](#appendix-l--using-the-robotorq-economic-engine-to-clean-the-planet)
 
 ---
 
@@ -115,30 +138,37 @@ flowchart TD
 - Divide the selling price by what you paid the robot,
 - result = Torq
 
-**That was the skim. Here’s the fat**:
+---
+
+**⬆️skim/fat⬇️**:
 
 Torq measures how much brainpower and electricity the robot used to make your stuff — and how much you sold it for. It's also so much more. 
 
-Torq Theory is just the math that turns robot sweat into your paycheck. 
+Torq Theory is just the math that turns bot sweat to paycheck. 
 
 **The Quirk**: Torq is *markup* — but *only* on **robotic labor cost**, not total production.  
+
 That’s what makes it **physics-based**, not arbitrary.
 
 Why Torq? It is how a business *leverages* (or *torques*) any specific input to produce value. Torq is economic torque.
 
-The math must work, and it does, and it's all in the appendices for the academics to check. 
+---
 
-→ [See it in action: Estimate your dividend from a robot fleet.](https://projectasimovmvp.vercel.app/).
+**⬆️fat/skim⬇️**:
+
+Torq Theory math must work for Robonomics to be even possible, before even considering whether it's practical.
+
+The math does work, and it's all in the appendices for the academics to check.
 
 **Quick Recap**: 
-- Not physical torque
-- You pay robots,
-- You choose your selling price,
-- You choose your Torq.
+- Not physical torque.
+- Is economic leverage.
+- → [See it in action: Estimate your dividend from a robot fleet.](https://projectasimovmvp.vercel.app/).
+- (I couldn't make that program if the math didn't work)
 
 If Torq is economic leverage, what do you suppose a `RoboTorq` is? 
 
-If you guessed "A way to measure `robotic economic leverage`", you're spot on.
+If you guessed `robotic economic leverage`, you nailed it.
 
 ---
 
@@ -153,7 +183,9 @@ If you guessed "A way to measure `robotic economic leverage`", you're spot on.
 The RoboTorq turns **energy × compute × time** → **money everyone shares**.
 → [See how many RoboTorqs your robot fleet mints](https://projectasimovmvp.vercel.app/)
 
-**That was the skim. Here’s the fat**:
+**⬆️skim/fat⬇️**
+
+---
 
 This paper proposes a new currency to value robotic labor: **The RoboTorq**.
 
@@ -170,7 +202,10 @@ After one hour, your robot's oracle (task tracker app) reads:
 To make this useful, we define **TokenTorq** — the *rate* of energized throughput:  
 `1 TokenTorq = 1 token/sec × 1 kW`
 
-Thus:  
+---
+
+**⬆️skim/fat⬇️**
+
 **1 RoboTorq = 3600 TokenTorqs**
 
 - **In physics**: impact = energy × time  
@@ -183,6 +218,8 @@ Thus:
 - 1 RoboTorq = 1 kWh of ideal robot brain + muscle
 - 3600 TokenTorqs = 1 full hour of work = 1 RoboTorq
 - You own a tiny slice of every RoboTorq minted during your lifetime... until you spend it.
+
+RoboTorq, TokenTorq, Tokens, Torq... There's been a lot of new terms so far. Let's review.
 
 ---
 
@@ -207,277 +244,559 @@ Any price can be measured in TokenTorqs or RoboTorqs, just like any price can be
 
 ## 3. Physical Backing and Stability
 
-**Visual TL;DR**: The following chart contrasts gold, Bitcoin, Fiat, and RoboTorq as currencies.
-| Currency   | Backing           | Flexibility                          | Inflation Control                          |
-|------------|-------------------|--------------------------------------|--------------------------------------------|
-| **Gold**   | Fixed supply      | Rigid → deflation                    | None                                       |
-| **Bitcoin**| Fixed supply      | Rigid → volatility                   | Halving                                    |
-| **Fiat**   | Debt              | Infinite                             | Central bank                               |
-| **RoboTorq**| **Energy × Time** | **Token-Adaptive (via efficiency gains)**  | **Bounded by physics + BRLA contracts**    |
+**Visual TL;DR**: The following chart contrasts Gold, Bitcoin, Fiat, and RoboTorq as currencies.  
 
-**TL;DR**: Unlike gold, RoboTorq isn’t rigid — it breathes with market efficiencies, but only so much.
-- Token size can vary (humans adapt),
-- but 1 RoboTorq = 3600 TokenTorq, always.
-
-The Bond Network hedges swings in token efficiency using:
-- BRLA pricing
-- Fleet reserves
-- Optional Bonded Token standards (if needed)
-
-Result:
-- No deflationary spirals
-- No runaway inflation
-- Value tied to real work, not promises
-
-**That was the skim. Here's the fat**:
-
-The RoboTorq is based on physics. It’s physics in real life, not the textbook, frictionless surface.
-
-Because it’s based on **tokens**, but **1 RoboTorq = 1 kWh x 1 token = 3600 TokenTorq** is **non-negotiable**.
-
-**Token size?**  
-It can change. A token is just *contextual info* a robot processes.  
-No standard size — and that’s *by design*.
-
-It's not yet clear whether there should be any imperative to define a standard.
-
-Why?  
-As we get smarter, robots do more with less in some cases.
-That’s *progress*, not a bug.
-
-One of the jobs of the Bond Network, and by proxy the Asimov simulator, is to determine rules for pricing the Bonded Robotic Labor Agreements (BRLAs) granting access to robotic labor, hedging this market efficiency gain.
-
-This ability to sway isn't necessarily a bad thing: As you can see from the plans for interacting with the dollar in the appendices, we will need a currency that can handle some sway.
-
-But the Bond Network keeps it honest:
-- **BRLA prices** reflect expected efficiency  
-- **Fleet reserves** smooth shocks  
-- **Policy possibilities**: If relative token throughput falls *>15% in 90 days* → **Bonded Token vote**
-
-Bonded Tokens could work, but would have unforeseen consequences.
-
-And maybe overkill, anyway:
-- the Bond Network's strategic fleet reserve → natural hedge on efficiency gains.
-- A BRLA's contractual selling price → natural hedge on efficiency gains.
-
-This prevents:
-- **Deflation** (like gold)  
-- **Gaming** (fake breakthroughs)  
-- **Runaway inflation**
-
-Project Asimov can test it.
-
-**Gold failed** because it couldn’t adapt.  
-**Fiat is failing** because it adapts on a whim.
-
-We're humans. The way we value things changes. Designing an economy for robots would be easy; they don't require a profit incentive. We do.
-
-The RoboTorq lets us — while keeping **1 RoboTorq = 3600 TokenTorq**.
-
-It adapts *just enough* — because **humans do**.
-
-If someone does the job with **fewer tokens**?  
-- Good. They win once.  
-- Next contract? Market adjusts.  
-- Robot moves on to make more money for you at the next job site.
-
-*The RoboTorq is the first physics-based unit of economic value.*
-
-It doesn’t standardize the token. 
-- It standardizes the **physics**.
-- Let's humans do what we do best: adapt.
-
-**Quick Recap**:
-- Backed by watts and seconds, not gold or debt
-- Adapts to smarter robots
-- Stable by design — no central bank required
-- You own a slice of every kWh of robot labor
-
-Now that you understand Torq, the RoboTorq, the TokenTorq, Tokens, and how they relate to each other, let's add TokenTorqPotential into the mix.
-
-TokenTorqPotential is just a given real-life, **not ideal** robot's *ideal potential* to produce TokenTorq in one hour.
+| Currency    | Backing             | Flexibility                             | Inflation Control                             |
+|--------------|---------------------|------------------------------------------|-----------------------------------------------|
+| **Gold**     | Fixed supply        | Rigid → deflation                        | None                                          |
+| **Bitcoin**  | Fixed supply        | Rigid → volatility                       | Halving                                       |
+| **Fiat**     | Debt                | Infinite                                 | Central bank                                 |
+| **RoboTorq** | **Energy × Time**   | **Token-Adaptive (via efficiency gains)** | **Bounded by physics + BRLA contracts**       |
 
 ---
 
-## 4. TokenTorqPotential is just Capacity
+**TL;DR**:  
+RoboTorq breathes. It expands and contracts with real-world efficiency — but only within the limits of physics.  
+- **1 RoboTorq = 3600 TokenTorq**, always.  
+- Token size can shift as robots get smarter.  
+- The **Bond Network** keeps the whole system honest using:  
+  - BRLA pricing,  
+  - Fleet reserves, and  
+  - Optional Bonded Token votes (rare, last resort).  
 
-A robot’s “TokenTorqPotential”, or TTP, is its ideal TokenTorq throughput per hour rating. TTP is to a robot what horsepower is to a car. Example: “This is a 100 TTP bot.”
+Result:  
+- No gold-style deflation.  
+- No fiat-style inflation.  
+- Value tied to real work, not wishful thinking,
 
-A real TTP rating would be calculated: TTP = kW rating x maximum neural network token throughput. 
-
-So a 2 kW bot should have a TTP rating well above 2: TTP = 2 kW x 100 tokens/second = 200 TTP.
-
-Premium bots as of late October 2025 are pushing about 2 kW at ~60 tokens/second: TTP_2025 = 2 x 60 = 120 TTP.
-
-Robotic Labor should always be sold by the TokenTorq, for 3600 RT per, and the scale of a bot's TokenTorqPotential should be used to price that bot's labor. 
-- Sold at 3600 TokenTorq / RoboTorq / hour, everywhere and always.
-- Defines the exchange basis for energized tokens transforming into physical value  
-- TokenTorq (throughput) over time — 1 RoboTorq buys 3600 TokenTorq of processing; different robots have different hourly throughputs (processing power).
-- You pay for the bot's maximum throughput capacity, regardless of how much you can use productively.
-
-Example: If you hire a 10 TTP bot for 1 hour, you will pay 10 TTP x 3600 TTP/hr x 1 hour = 36,000 RT — even if you only get 2 TokenTorq (7200 RT) of base value out in that hour. As the robot learns the task, you'll get better returns over time (nobody will ever secure a Bonded Robotic Labor Agreement for 1 hour's work from BidNet, but that's beside the point).
-
-And this brings us to the mathematical definitions of Torq.
-
-Two definitions of Torq:
-- Torq = TokenTorq_out / TokenTorq_in  
-- Torq = RoboTorq_out / RoboTorq_in  
+**⬆️skim/fat⬇️**
 
 ---
 
-## 5. The Equation of AI-Value Exchange
+RoboTorq is built on **physics**, not policy — and not the idealized, frictionless physics of textbooks either. Real physics. Real energy. Real time.  
 
-Because Torq can be found by using two different ratios, we can draw some interesting conclusions.
+The core invariant:  
+> **1 RoboTorq = 1 kWh × 1 token = 3600 TokenTorq.**
 
-| Symbol     | Definition            | Meaning                                  |
-|------------|------------------------|------------------------------------------|
-| equilibrium  | RoboTorq_out / RoboTorq_in = TokenTorq_out / TokenTorq_in   | Functions similarly to MV = PQ |
-| Therefore  | RoboTorq_out = (TokenTorq_out / TokenTorq_in) × RoboTorq_in   | = Oracle.cost + newly_minted |
-| Let  | Torq = TokenTorq_out / TokenTorq_in | = RoboTorq_out / RoboTorq_in   |
-| Conclude  | RoboTorq_out = Torq × RoboTorq_in| = reduced form AI-Value Exchange   |
+That ratio **never changes**. It’s the metronome of the Robonomic economy.  
+
+But what *can* change is **token size** — the smallest measurable chunk of robotic work.  
+A “token” isn’t a physical chip; it’s contextual information a robot processes — a digital “unit of attention.”  
+No fixed size. No fixed workload. That’s the point.  
+
+Robots improve. Efficiency rises. The cost of a token (in joules, not dollars) drops.  
+That’s *progress*, not instability.
+
+So who keeps track of all this?  
+The **Bond Network** — through **Bonded Robotic Labor Agreements (BRLAs)** — defines how robotic labor is priced, audited, and hedged as the world’s fleets evolve.  
+
+Here’s how it keeps the system stable:  
+- **BRLA prices** follow expected efficiency trends.  
+- **Fleet reserves** smooth sudden shocks in token throughput.  
+- **Bonded Token vote** (only if needed): If relative efficiency drops *>15% in 90 days*, a policy vote can reset token standards.  
+
+Most of the time?  
+It self-corrects.  
+
+Because both the **Bond Network’s reserve capacity** and **BRLA pricing math** already act as natural hedges.  
+This design prevents:  
+- **Deflation** (the gold problem)  
+- **Gaming** (fake robot “breakthroughs”)  
+- **Inflation** (the fiat problem)  
+
+Project Asimov will test these dynamics in simulation.
 
 ---
 
-### 5.1 Dimensional Consistency Check
+**Why it matters:**  
+- **Gold failed** because it couldn’t adapt.  
+- **Fiat fails** because it adapts *too much*.  
+- **Bitcoin** fixed supply, broke flexibility.
 
-| Quantity   | Units               |
-|------------|---------------------|
-| RoboTorq_in   | token/s × kWh      |
-| Torq       | dimensionless       |
-| RoboTorq_out   | token/s × kWh |
+RoboTorq finds the middle path.  
+
+It adapts *just enough* — because **humans do**.  
+
+We invent. We iterate. We get more efficient. So should our money.  
+
+If someone programs a robot that does the same job using **fewer tokens**?  
+- Great. They win *once*.  
+- On the next contract, the market adjusts.  
+- The robot moves on to earn more RoboTorq for society at its new efficiency level.  
+
+That’s the magic: physics doesn’t inflate, and efficiency doesn’t destabilize.  
+
+It all flows back into the **Universal Basic Dividend** through the Bond Network.
 
 ---
 
-### 5.2 Relation to Current Macro-Economic Theory
+**⬆️fat/skim⬇️**
 
-This equation mirrors the classical [MV = PQ](https://public.econ.duke.edu/~kdh9/Courses/Graduate%20Macro%20History/Readings-1/Fisher%20Purchasing%20Power%20of%20Money.pdf) identity from fiat economics. 
 
-In classical economics, the money supply (M) is arbitrary and politically determined. In Robonomics, RoboTorq_in is physically constrained — its minting rate can only expand through real AI-value exchange, and new issuance doesn't come in the form of debt.
+**Quick Recap**
+- Backed by **watts and seconds**, not gold or debt  
+- Adapts to **smarter robots**, but within physics limits  
+- Stable **without** a central bank  
+- You own a **slice of every kWh** of robotic labor  
+- The **first physics-based unit of economic value**
+
+---
+
+## 4. Torq and the Equation of AI-Value Exchange
+
+**Visual TL;DR**:  
+How value moves through three different systems — and why **Torq** changes everything.
+
+| System         | Value Source             | Exchange Basis                   | Expansion Mechanism           | Sink / Stability Mechanism         |
+|----------------|--------------------------|----------------------------------|--------------------------------|------------------------------------|
+| **Fiat**       | Debt + Policy            | Political trust (M ↔ V)          | Central banks, interest rates  | Inflation, taxation                |
+| **Crypto**     | Proof-of-Work / Stake    | Algorithmic scarcity (hashes)    | Mining rewards, halvings       | Code consensus, volatility         |
+| **Robonomics** | **Energy × Computation** | **Torq = Work / Work**           | Real AI labor, Bond Network    | **Demurrage + Physics**            |
+
+
+**TL;DR:**  
+Now that you know what a RoboTorq *is*, it’s time to see **how value moves**.  
+Torq is the ratio that ties it all together — it’s how **robotic work becomes money**.  
+- Two equations define it: one in TokenTorq, one in RoboTorq.  
+- Both balance energy, computation, and price — just like **MV = PQ**, but without banks.  
+- When Torq > 1 → value created.  
+- When Torq < 1 → value destroyed.  
+
+Result:  
+- A real, measurable **AI Value Exchange** system  
+- Where new money mints only when new *work* happens  
+- And idle value decays through **demurrage**, keeping it honest  
+
+**⬆️skim/fat⬇️**
+
+---
+
+Because Torq can be expressed in two different ways, we can pull some fascinating conclusions about how energy and intelligence actually *trade value*.
+
+| Symbol      | Definition                                                    | Meaning                                |
+|--------------|---------------------------------------------------------------|----------------------------------------|
+| equilibrium  | RoboTorq_out / RoboTorq_in = TokenTorq_out / TokenTorq_in     | Functions similarly to MV = PQ         |
+| therefore    | RoboTorq_out = (TokenTorq_out / TokenTorq_in) × RoboTorq_in   | = Oracle.cost + newly_minted           |
+| let          | Torq = TokenTorq_out / TokenTorq_in                           | = RoboTorq_out / RoboTorq_in           |
+| conclude     | RoboTorq_out = Torq × RoboTorq_in                             | = reduced-form AI Value Exchange       |
+
+At equilibrium, **RoboTorq_out = Torq × RoboTorq_in** —  
+the cleanest possible expression of *value creation by intelligence.*
+
+It’s the same conceptual role as the [Fisher Equation (MV = PQ)](https://public.econ.duke.edu/~kdh9/Courses/Graduate%20Macro%20History/Readings-1/Fisher%20Purchasing%20Power%20of%20Money.pdf),  
+except here, the “velocity” is computation, not speculation.
+
+---
+
+### 4.1 Dimensional Consistency Check
+
+| Quantity     | Units               |
+|---------------|---------------------|
+| RoboTorq_in   | token/s × kWh       |
+| Torq          | dimensionless       |
+| RoboTorq_out  | token/s × kWh       |
+
+Everything balances. Physics and math agree.  
+Torq doesn’t conjure money — it translates *useful work* into *economic output*.
+
+---
+
+### 4.2 Relation to Current Macroeconomic Theory
+
+In classical macroeconomics, the **money supply (M)** is whatever politicians and central banks say it is.  
+In **Robonomics**, **RoboTorq_in** is *physically constrained* — it can only grow through **real AI work** and actual **energy throughput**.  
+
+Here, minting new RoboTorqs isn’t debt; it’s **earned**.
+
+---
 
 In Robonomics:
-- TokenTorq_in is the rate at which society invests in robotic labor.  
-- No central bank is required — circulation is maintained via production/minting cycles.  
-- If idle RoboTorq accumulates, [**demurrage** sweeps value into **TorqVaults**, prompting reinvestment.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md#systemic-actors-and-their-interactions-in-detail-ideal-simulation-behavior)
-- Demurrage operates as an honest, yet 100% optional inflation tax. Don't want to pay it?
-    - Spend the dough,
-    - invest it in RoboFund,
-    - or put it in a TorqVault to get the demurrage taken from the people who aren't managing their finances.
+- **TokenTorq_in** = how much society invests in robotic labor  
+- **No central bank** — circulation maintains itself through *production cycles*  
+- **Demurrage** ensures idle RoboTorq flows back into the economy  
+- **TorqVaults** collect and redistribute value from inactivity  
+- **You can opt out**: spend, invest, or store your RoboTorq productively  
 
-**The Bond Network giveth, but the Bond Network also taketh away**.
+The result is a **self-balancing economy** where energy, intelligence, and value stay in motion.
 
-Demurrage may be a hard sell for some, but again, manage your finances, and you have nothing to worry about.
+### 4.3 The Bond Network giveth, and the Bond Network taketh away 
 
-The Bond Network isn't paying you to do nothing. This is where Robonomics is so different from UBI and UBD.
-- The Bond Network expects you to provide the service it can't (and shouldn't) do: decide what you want and need as a human.
-- You do that by spending, saving, or investing your RoboTorq at a responsible rate.
-- You can have as much money as you want, so long as it's available for others to use when you're not using it.
-- When you need to make a large purchase, arrange the transfer from your TorqVault.
-- Don't worry about runs on your TorqVault.
-- Everybody else is subject to demurrage, too.
-- Everybody else is getting disto, too.
+Demurrage might sound harsh, but it’s not punishment — it’s physics.  
 
-Demurrage is one of the most reality-based aspects of Robonomics: Anything that sounds too good to be true usually is. 
-
-Demurrage is the other shoe dropping. It's a huge reason this whole scheme *can actually work*.
-
-Without it, you'd get:
-- Hoarding → liquidity collapse
-- Rich get richer → inequality
-- Robonomics becomes UBD-for-billionaires
-
-**With demurrage**:
-- Money flows
-- Everyone gets disto
-- **You profit from others' inaction**
-
-**Demurrage isn’t punishment. It’s physics.**  
-- Idle energy doesn’t create value — **moving energy does**.  
-- From stagnation to circulation.  
-- From irrational currency hoarding to shared prosperity.
-
-Hoard all the goods you want by spending: there'll be plenty to go around.
-
-**This is how a robot economy stays human.**
+Idle energy doesn’t produce work; **moving energy does**.
 
 ---
 
-## 6. The Torq_Gamble: Markup as Wager
+Without demurrage, you’d get:
+- Hoarding → liquidity collapse  
+- Rich-get-richer feedback loops  
+- “UBD for billionaires” — the exact trap we’re avoiding  
 
-The “torq_gamble” is the Enterprise’s wager on how much Torq will be generated — effectively their markup expectation.
+With demurrage:
+- Money circulates  
+- Everyone receives **disto** (distributed dividend flow)  
+- **You profit from others’ inaction**  
 
-MintingNeeded = RoboTorq_in × (torq_gamble − 1)  
-Alternatively:  
-MintingNeeded = 3600 × Robot.TTP × (torq_gamble − 1)
+It’s the difference between **an economy that breathes** and one that bloats.
 
-Both the Enterprise and Isaac (the minting AI) [co-wager on productivity.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/design/src/RobonomicExpansion.md#skins-in-the-game)
+Hoard all the goods you want — keep the **RoboTorq** moving.
 
-The “torq_gamble” is agreed upon by both the Enterprise and BidNet (the AI robotic labor auctionhouse) at the time of paying the retainer fee for a Bonded Robotic Labor Agreement (BRLA).
+---
+
+**⬆️fat/skim⬇️**
+
+**Quick Recap**
+- **Torq** is the conversion ratio between *energy, computation, and value*  
+- Works like MV = PQ, but with physics instead of policy  
+- **Demurrage** prevents stagnation and hoarding  
+- And replaces hidden inflation tax 
+- **Money = moving energy**  
+- This is how a robot economy stays human-centered
+
+---
+
+So, how does this translate into the *real world* of machines?  
+Now that we’ve defined Torq mathematically, let’s talk about the robots that make it real.  
+
+Enter **TokenTorqPotential** — a robot’s *ideal capacity* to produce TokenTorq in one hour.
+
+---
+
+## 5. TokenTorqPotential is just Capacity
+
+**Visual TL;DR**:  
+A robot’s **TokenTorqPotential (TTP)** is its “horsepower” — the maximum TokenTorq it can push per hour.  
+It defines **how much robotic labor** you’re actually buying, no matter how efficiently it’s used.
+
+| Robot Type          | Power (kW) | Throughput (tokens/s) | TTP (TokenTorq/hr) | Notes |
+|----------------------|------------|------------------------|--------------------|-------|
+| **Entry Bot**        | 0.5 kW     | 20 tokens/s            | 36 TTP             | Low power, high latency |
+| **Mid-Tier Bot**     | 2 kW       | 60 tokens/s            | 120 TTP            | 2025 average performance |
+| **Premium Bot**      | 2 kW       | 100 tokens/s           | 200 TTP            | High-efficiency networked AI |
+| **Industrial Fleet** | 10 kW      | 400 tokens/s           | 4 000 TTP          | Distributed heavy-duty robotics |
+
+---
+
+**TL;DR:**  
+TokenTorqPotential is capacity.  
+- It’s the robot’s *theoretical maximum throughput* — its raw work potential per hour.  
+- Like **horsepower**, it defines **speed, not skill**.  
+- You pay for *capacity*, not results.  
+- One RoboTorq always buys **3600 TokenTorq of processing** — the standard work-hour.  
+
+**⬆️skim/fat⬇️**
+
+---
+
+Every robot has a **TokenTorqPotential (TTP)** — its ideal throughput of TokenTorq per hour.  
+It’s the physics-based analog to “horsepower,” measured not in torque and RPM, but in **kilowatts × token throughput**.
+
+Formally:
+
+> **TTP = kW rating × maximum token throughput**
+
+Example:  
+A 2 kW robot capable of 100 tokens per second has:  
+**TTP = 2 × 100 = 200 TTP**.
+
+That means in theory, it can process **200 TokenTorq per hour**.
+
+---
+
+As of **October 2025**, some bots push about **60 tokens/s x 2 kW**, giving **TTP ≈ 120** — the new “mid-range” capacity benchmark.  
+
+Future models will scale linearly: twice the throughput → twice the TTP.
+
+---
+
+### How It’s Priced
+
+Robotic labor is always sold by **the TokenTorq**, priced at  
+> **3600 TokenTorq / RoboTorq / hour**, everywhere and always.  
+
+That creates a **global parity**: no matter where you are, robotic work has a consistent physical price per unit of energy and computation.
+
+The scale of a robot’s **TTP** sets the baseline for how much labor it can sell.  
+You’re not paying for what it does — you’re paying for **what it can do**.
+
+---
+
+### Example
+
+Hire a **10 TTP bot** for one hour:  
+- You pay = 10 TTP × 3600 TokenTorq/hr × 1 hr = **36 000 RT**.  
+- Even if you only get 2 TokenTorq (7 200 RT) of usable output, you still owe the full capacity rate.  
+- Over time, as the bot learns the task, output efficiency rises — and so does your Torq.
+
+Nobody rents a bot for just one hour (Bonded Robotic Labor Agreements cover longer periods),  
+but this example keeps the math clean.
+
+---
+
+### Why It Matters
+
+TTP gives the **Bond Network** a universal metric to compare fleets, balance energy markets, and price robotic contracts in a consistent, physics-based way.  
+It’s what allows **RoboTorq**, **TokenTorq**, and **Torq** to operate in a single, coherent system.
+
+It’s not about the robot’s design, brand, or algorithm — it’s about **throughput per watt**.
+
+---
+
+**⬆️fat/skim⬇️**
+
+**Quick Recap**
+- **TokenTorqPotential (TTP)** = robot “horsepower” in tokens/hour  
+- Defines **capacity**, not performance  
+- **1 RoboTorq = 3600 TokenTorq**, always  
+- **You pay for potential**, not output  
+- The **Bond Network** uses TTP to price and stabilize robotic labor markets  
+- Efficiency gains → higher Torq → more universal dividends  
+
+---
+
+You know how to figure out how much your robot will cost you: TTP x 3600 = RoboTorq_in
+
+But in order to know your Torq, you need to know your selling price...
+
+So, how do you know how much to sell your item for?
+
+Just like today, you bet on it.
+
+---
+
+## 6. The Torq Gamble: Markup as Wager
+
+**Visual TL;DR**: Betting on robot productivity sets your markup — this is the Torq Gamble.
+
+| Concept          | Meaning                                        |
+|-----------------|------------------------------------------------|
+| **Torq Gamble**  | Enterprise’s wager on how much Torq will be needed (markup expectation) |
+| **MintingNeeded**| Extra RoboTorq minted = RoboTorq_in × (TorqGamble − 1) |
+| **Robot Cost**   | 3600 × Robot.TTP × (TorqGamble − 1) |
+
+**Key Idea**: Both the Enterprise and Isaac (the minting AI) co-wager on productivity.  
+- Wager is agreed when paying the retainer fee for a **Bonded Robotic Labor Agreement (BRLA)**.  
+- **Important:** Minting happens **as value is delivered**, not in advance.  
+- If the task takes longer than expected, you don’t get to charge more — the sale price is **fixed**.  
+- Inefficient work just means you absorbed more labor cost than you expected, like real-world companies.
+
+---
+
+**⬆️skim/fat⬇️**
+
+Torq Gamble = your **markup bet**.  
+Reality = **task-specific labor time and efficiency**.  
+
+Even with the smartest markup:  
+- Duration depends on **TokenTorqPotential (TTP)**  
+- **Task complexity**  
+- **Robot efficiency**  
+
+Key points:  
+- **Minting only occurs as labor is performed**  
+- Sale price = **fixed at contract**  
+- Overruns = absorbed by Enterprise; profit is only made if productivity meets or exceeds the Torq Gamble  
+
+---
+
+**⬆️fat/skim⬇️**
+
+**Quick Recap**
+- Torq Gamble = markup wager on labor expectation  
+- Minting occurs **as value is delivered**  
+- Enterprise + AI co-wager on task completion  
+- Actual work time affected by **Complexity** and **AIntropy**  
+- Sale price **fixed in advance**, independent of actual duration  
+- Inefficiency = absorbed cost, not extra revenue  
+
+---
+
+### Transition: From Wager to Task Reality
+
+Torq Gamble predicts labor cost.  
+**Complexity and AIntropy** determine actual duration.  
+
+Same robot, different task → different labor time.  
+You budget RoboTorq, but value is only minted as work is done.  
+This is how Robonomics mirrors real-world production economics.
 
 ---
 
 ## 7. Complexity and AIntropy
 
-Real robots are imperfect; production efficiency varies with task complexity and AI/robot interaction. Complexity is a variable that can be determined by renting faux-oracled, but still bonded, robots and conducting a work study to understand how their leverage can be tailored to your business needs.
+**Visual TL;DR**: Task difficulty and robot inefficiency determine **how long labor takes**, which in turn determines **RoboTorq spent**.
 
-### Complexity  
-- Non-zero scalar governing convergence and productivity over time.  
-- Negative complexity → diminishing Torq gains (single-item tasks).  
-- Positive complexity → compounding Torq gains (multi-item oracles).
+| Concept         | Meaning                                  |
+|-----------------|------------------------------------------|
+| **Complexity**  | Task difficulty → affects labor duration |
+| **AIntropy**    | Deviation of robot from ideal TTP performance for the task |
+| **TTP**         | Ideal throughput potential of the robot |
 
-TTP is to Robonomics what Carnot efficiency is to thermodynamics — a measure of how a given robot would perform if it were the theoretical ideal *Asimovian Robot*. *AIntropy* (pronounced ane-tropy), is how far away that bot is from its *Asimovian* rating. AIntropy is task-specific. I can hire the exact same robot for a different job, and it will have a completely different AIntropy.
+---
 
-### AIntropy (Artificial Intropy)  
+**⬆️fat/skim⬇️**
+
+- Real robots are imperfect.  
+- **Production efficiency varies** with:  
+  - Task complexity  
+  - AI/robot interaction  
+- Complexity can be measured by renting faux-oracled, bonded robots and running a work study.  
+
+---
+
+### 7.1 Complexity
+
+- Non-zero scalar governing convergence and productivity over time  
+- Negative → simple tasks, shorter completion, fewer RoboTorq spent  
+- Positive → complex tasks, longer completion, more RoboTorq spent  
+
+Analogy:  
+- TTP = Carnot efficiency (ideal robot)  
+- Complexity = friction or difficulty slowing it down  
+
+---
+
+### 7.2 AIntropy (Artificial Intropy)
+
+**Definition:**  
 AIntropy = complexity × TTP × Robot.util × supply_efficiency × equipment_utilization × …
 
-- Lower AIntropy → slower learning, lower token efficiency.  
-- Higher AIntropy → faster convergence, higher Torq output.
-- Inherits its units from TokenTorqPotential.
+- Measures **how far a robot is from its Asimovian ideal**  
+- Task-specific: same robot, different job → different AIntropy  
+- Lower AIntropy → faster task completion, less RoboTorq spent  
+- Higher AIntropy → slower task completion, more RoboTorq spent  
+- Units inherited from TokenTorqPotential (TTP)  
 
-This models how inefficiencies push operations away from the thermodynamic ideal and require more RoboTorq per unit value created.
+**Key Principle:**  
+- Complexity and AIntropy determine **labor duration** → guides **how much RoboTorq must be spent**  
+- Sale price is **fixed in advance**; inefficiency is **absorbed cost**, not extra revenue  
+- Minting occurs **as value is delivered**, not upfront  
+
+---
+
+**⬆️fat/skim⬇️ Quick Recap**
+
+- **TTP** = robot’s ideal throughput potential  
+- **Complexity** = task difficulty → affects duration  
+- **AIntropy** = inefficiency → extends labor time  
+- **Minting** = occurs as work is done  
+- **Sale price** = fixed, independent of inefficiency  
+- Together: predict labor duration → plan **RoboTorq spending**  
+- Inefficiency is your **cost**, not a way to charge more  
+
+This is how Robonomics ensures that **task difficulty and robot imperfections are baked into economic reality**, just like in real-world production.
 
 ---
 
 ## 8. The TokenTorq Curve
 
-The token_torq_curve models robotic learning efficiency over time:
+**Visual TL;DR**: Models how robots turn AI-tokens into productive output over time.
 
-token_torq_curve(t) = 1 / (1 + e^(−t × AIntropy)) × torq_gamble
+| Concept                  | Meaning                                         |
+|---------------------------|------------------------------------------------|
+| **token_torq_curve(t)**   | Robot efficiency at time t                     |
+| **Sigmoid function**      | Standard neural net activation over time      |
+| **torq_gamble**           | Enterprise’s markup expectation applied       |
 
-where 0 < token_torq_curve(t) < 1.
-
-Describes how efficiently a robot transforms AI-tokens into productive output over time.
-
-This function is a [standard Sigmoid Neural Net Activation time-function.](https://hal.science/hal-02635089v1/file/Sigmoid_Function_HAL.pdf)
+**⬆️fat/skim⬇️**
 
 ---
 
+The TokenTorq Curve shows:
+- Efficiency improves as robot works: learning + adaptation  
+- Sigmoid shape → slow start, rapid learning, plateau at max efficiency  
+
+**Equation**: token_torq_curve(t) = 1 / (1 + e^(−t × AIntropy)) × torq_gamble
+- Output always between 0 and 1  
+- Represents **fraction of AI-tokens converted to productive output** over time  
+- Connects AIntropy → labor duration → effective Torq production  
+
+---
+
+**⬆️fat/skim⬇️**
+
+- The curve shows **how quickly a robot “learns” on the job**  
+- Early work: slower Torq generation  
+- Mid-task: rapid efficiency gains → more Torq per unit time  
+- Late task: approaches plateau → marginal Torq gains decline  
+- **Key takeaway:** AIntropy + Complexity dictate the slope and duration  
+- Sets up **Torq Mining Curve**: cumulative value produced over task duration  
+
+*Next:* integrate the curve to see **how AI-tokens become mined Torq** in practice.
+
 ## 9. Mining TokenTorq into Torq
 
-Integrating the token_torq_curve yields the Torq Mining Curve, expressing cumulative value generation:
+**Visual TL;DR**: Cumulative RoboTorq generated as work is completed.
 
-torq_mining_curve(t) = ∫ token_torq_curve(t) dt
+| Concept                    | Meaning                                        |
+|-----------------------------|------------------------------------------------|
+| **torq_mining_curve(t)**    | Integral of token_torq_curve over time        |
+| **MintRequest**             | Submission to Isaac to issue RoboTorq         |
+| **Full utilization**        | Total Torq achieved once task is complete     |
 
-At full utilization:
+**⬆️skim/fat⬇️**
 
-torq_mining_curve ≈ ln( AIntropy × (1 + e^(t × AIntropy)))
+---
 
-When production ends, the total Torq is submitted to Isaac as a MintRequest for RoboTorq issuance.
+**What’s happening:**  
+- Cumulative Torq generated as work progresses  
+- Early work: slower Torq output  
+- Mid-task: rapid efficiency gains → more Torq per unit time  
+- Late task: efficiency plateaus → marginal gains decline  
+- **Slope + duration** controlled by AIntropy + Complexity  
 
-Thankfully, we don't need all this math to run through a simple example. We can use the Equation of AI-Value Exchange to do that!
+**Mining metaphor:**  
+- Like miners extract gold, robots extract Torq from AI-tokens over time  
+- Curve = vein; integral = total mined yield  
+- Reinforces **productive work = value creation**; idle tokens = nothing  
+
+**Integration:**  
+- torq_mining_curve(t) = ∫ token_torq_curve(t) dt  
+- Approximation at full utilization:  
+  - torq_mining_curve ≈ ln( AIntropy × (1 + e^(t × AIntropy)) )  
+
+**Key operational point:**  
+- **Minting occurs as value is delivered**  
+- You don’t get Torq for inefficiency; like real production costs, output must match agreed-upon work  
+- Use the **Equation of AI-Value Exchange** for quick, practical estimates
+
+---
+
+**⬆️fat/skim⬇️**
+
+**Quick Recap:**  
+- Robots mine Torq over time according to their learning curve  
+- AIntropy + Complexity = how long labor takes and total Torq generated  
+- Minting = delivery, not upfront speculation  
+- Reinforces Robonomics principle: **labor + time = real value, no free rides**
+
+So, how does all of this allow you to purchase robotic labor?
+
+It all goes into a Bonded Robotic Labor Agreement (BRLA).
 
 ---
 
 ## 10. Sample Bonded Robotic Labor Agreement
 
-Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 MRT (MRT = 1 Million RoboTorq).
+**TL;DR**: Here's how you buy robotic labor.
+1. Hire bots, fund through RoboFund, set a Bonded Robotic Labor Agreement.  
+2. Bots work, produce items, Torq is minted for delivered value.  
+3. Bondholders receive Torq; enterprise earns revenue; money supply stays balanced.
+
+**⬆️skim/fat⬇️**
+
+---
+
+Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 kRT (kRT = thousand RoboTorq).
 
 Do you think it will work out?
 
-Given:
+**Given**:
 - TTP = 5 TokenTorq/hr
 - Duration = 100 hrs
 - torq_gamble = 3
 
+**Steps**
 1. RoboTorq Input Value (RoboTorq_in):
 - RoboTorq_in = TTP x 3600 x time
 - RoboTorq_in = TTP × 3600 × 100
@@ -490,9 +809,9 @@ Given:
 3. Total Value Out:
 - RoboTorq_in + MintingNeeded = 1.8 + 3.6 = 5.4 MRT
 
-4. Items: 400 → Sell at 13.5 MRT each → zero inflation, zero debt, 100% citizen ownership.
+4. Items: 400 → Sell at 13.5 kRT each → zero inflation, zero debt, 100% citizen ownership.
 
-I would pay the robot 4.5 MRT per item, so as long as I keep my overhead below 7 MRT per item, I'm in the black. Seems like a good deal for everyone.
+I would pay the robot 4.5 kRT per item, so as long as I keep my overhead below 7 kRT per item, I'm in the black. Seems like a good deal for everyone.
 
 **RoboFund**: So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
 
@@ -508,19 +827,30 @@ The MakerFunnel at RoboFund opens up, and the "disto" flows to bondholders, as i
 
 With that, I spin up my line of rented bots after Daneel deploys them, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
 
-The robots managed to produce 400 items for me, and I can sell them for 13.5 MRT per to make the revenue my business needs to stay alive. 
+The robots managed to produce 400 items for me, and I can sell them for 13.5 kRT per to make the revenue my business needs to stay alive. 
 
-Isaac (the minting AI) mints 3.6 MRT fresh (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes the full RoboTorq_out to bondholders in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
+Isaac (the minting AI) mints 3.6 MRT fresh (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes the full RoboTorq_out in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
 
 As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which, in turn, drives vigorous economic activity.
 
 The Bond Network's operating costs recycle into circulation — the money supply remains balanced.
 
-A few notes on why minting is not (RoboTorq_in + other production costs) (torq - 1):
-- With relatively few humans involved, most of the production costs are paid to other Enterprises for raw materials.
-- If they are also relying on robotic labor to a large degree, very little of their revenue will be going to Bondholders (citizens own a portion of every robot via RoboBonds).
-- If the Enterprise plans to sell the item to Bondholders, the money is already available, and economic activity (competition) is required to move it.
-- If the Enterprise plans to build a large commercial asset, the buyer is likely already arranging financing through a BuyerFunnel the Bond Network's investment house, The RoboFund Exchange.
+Minting is not (RoboTorq_in + other production costs) (torq - 1) because we want to standardize all production costs to the cost of robotic labor.
+
+---
+
+**⬆️fat/skim⬇️**
+
+**Quick Recap**
+- **Goal:** Mass-produce 400 items using a 5 TTP bot over 100 hours.  
+- **RoboTorq Inputs:** 1.8 MRT worth of robot labor.  
+- **Minting:** 3.6 MRT issued by Isaac to cover the enterprise’s markup.  
+- **Total Output Value:** 5.4 MRT (matches expected revenue at 13.5 kRT per item).  
+- **Funding & Oversight:** RoboFund/MakerFunnel provides funding; BidNet, Giskard, and Daneel ensure feasibility, audit efficiency, and manage fleet capacity.  
+- **Execution:** Bots work full duration, items produced, revenue realized, and minted Torq distributed to bondholders.  
+- **Key Takeaway:** By pegging minting to labor cost + agreed markup, the system ensures predictable, transparent production, investment, and economic circulation — without inflating the money supply unnecessarily.
+
+---
 
 **Here's how it all works again.**
 
@@ -635,6 +965,7 @@ This is tongue-in-cheek, but such a system is possible as well, worked into the 
 - [I. Quantum Computing and System Security](#appendix-i--quantum-computing-and-system-security)
 - [J. Extending the System to General AI–Generated Value](#appendix-j--extending-the-robotorq-to-general-ai-generated-value)
 - [K. Integrating AI-Value, Quantum Security, and Fusion Energy Impacts](#appendix-k--integrating-ai-value-quantum-security-and-fusion-energy-impacts)
+- [L. Using the RoboTorq Economic Engine to Clean the Planet](#appendix-l--using-the-robotorq-economic-engine-to-clean-the-planet)
 
 ## Appendix A — Glossary of Robonomic Terms
 
@@ -1865,7 +2196,75 @@ Appendix K unifies these dimensions to understand **systemic stability and adapt
 
 This closes the loop, showing how **RoboTorq can manage physical, computational, and informational resources while preemptively addressing technological shocks**, ensuring the system remains stable and beneficial under multiple futuristic scenarios.
 
+---
 
+## Appendix L — Using the RoboTorq Economic Engine to Clean the Planet
+
+### L.1 Why Recycled Materials?
+
+RoboTorq isn’t just digital — it’s **money you can hold**, made from **recycled matter**.
+
+By transforming **plastic, stainless steel, glass**, or other waste into **3D-printed coins or bills**, we:  
+- **Reduce blockchain load** — physical trades stay local.  
+- **Balance labor** — robots mint digital RT; humans recycle for physical RT.  
+- **Ground the system** — cash you can touch, no smartphone required.  
+
+---
+
+### L.2 How It Works
+
+1. **Robots Mint Digital RT**  
+   - `1 RoboTorq = 1 kWh of robotic labor.`  
+   - Measured by oracles and issued by *Isaac*, the minting AI.  
+
+2. **Humans Mint Physical RT**  
+   - Recycled materials → 3D-printed **coins** (0.1 RT, 1 RT) or **bills** (10 RT, 100 RT).  
+   - **Base Value**: set by the RoboTorq standard (energy).  
+   - **Market Value**: influenced by recycling effort and scarcity.  
+   - Embedded micro-hashes, NFC tags, or optically variable inks prevent counterfeiting.
+
+3. **Network Synergy**  
+   - **Less data**: physical trades are off-chain until redeemed.  
+   - **Scalable**: local cash; global digital.  
+   - **Secure**: Bond Network audits and cryptographic verification maintain integrity.
+
+---
+
+### L.3 Benefits
+
+- **Efficiency** → Fewer on-chain events, faster network.  
+- **Accessibility** → Physical RT for non-digital regions.  
+- **Sustainability** → Waste becomes currency.  
+- **Flexibility** → Value = physics × human effort.
+
+---
+
+### L.4 Challenges
+
+- **Counterfeiting** → Prevented by embedded chips + Bond Network audits.  
+- **Energy Cost** → Recycling inputs vary (stainless > plastic); offset by energy-based valuation.  
+- **Adoption** → Needs distributed 3D-printing hubs and local verification protocols.
+
+---
+
+### L.5 Example Scenario
+
+| Material | Process | Output | Energy Basis |
+|-----------|----------|---------|---------------|
+| 1 kg plastic | Recycle & print | 10 RT coins | ~0.5 kWh |
+| 1 kg stainless | Recycle & print | 1 RT coin | ~5 kWh |
+
+A plastic coin worth 0.1 RT buys a coffee at a local market.  
+Scan it → deposit to the Bond Network → it becomes digital RT again.
+
+---
+
+### L.6 In Essence
+
+Physical RoboTorqs make the system **tangible, sustainable, and self-balancing**.  
+They are **proofs of work you can hold** — valued by both **human effort and robotic power.**
+
+It’s **sound money**, backed not by trust or debt — but by **physics itself**.  
 
 
 
