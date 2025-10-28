@@ -25,16 +25,7 @@
 
 ---
 
-## Licencse
-
----
-
-# Are Watts > Wall Street?
-aka
-**Robonomics Whitepaper**  
-**Jonathan Clark**  
-*October 2025*
-Full licensing in the footer
+*Jonathan Clark*, *October 2025*, *Full licensing in the footer*
 
 ---
 
