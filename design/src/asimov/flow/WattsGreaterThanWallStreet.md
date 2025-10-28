@@ -336,7 +336,7 @@ Together, they form the three-tier engine of stability.
 
 ---
 
-### BRLA Mechanics (Fat Mode)
+### BRLA Mechanics
 
 - **BRLA pricing** tracks real-world efficiency trends (measured by fleet telemetry).  
 - **Bonded Tokens** represent fractional claims on pooled RTUs; their yield reflects how efficiently those robots perform.  
@@ -376,9 +376,15 @@ It adapts *just enough* — because **humans (and robots) do.**
 > So should our money.
 
 If a robot learns to do the same task using **fewer tokens**:
-- ✅ It wins once (a competitive edge).
-- 🔁 On the next BRLA cycle, the market rebalances.
-- ⚙️ The new efficiency standard becomes global baseline.
+- ✅ The enterprise wins — *once* — because its labor costs were lower.
+- 🔁 On the next BRLA cycle, that business pays a lower BRLA fee — for a shorter production timeline.
+- ⚙️ The new efficiency standard becomes global baseline...
+
+But not immediately. Other robots have to learn how to do that task more efficiently too — from *the other robots or humans that learned how to do it faster*.
+
+Even if instantaneous skill-copying between robots were technically possible (it's not now), its activation would remain under Controlled Diffusion Protocols (CDP) — reserved for verified humanitarian or critical-infrastructure events.
+
+That company will maintain its competitive edge while that knowledge proliferates amongst the global fleet, but the currency won't be devalued in the meantime.
 
 That’s the "magic" of Robonomics:  
 **Physics doesn’t inflate, and efficiency doesn’t destabilize.**
@@ -396,9 +402,6 @@ a direct distribution of robotic productivity to every participant in the Bond N
 - Stable without central banks or policy discretion  
 - Every holder owns a slice of verified robotic labor  
 - The world’s first **physics-based unit of economic value**
-
----
-
 
 ---
 
