@@ -1224,184 +1224,257 @@ BCLAs could tie context and intention to cognitive labor.
 
 ## Appendix A — Glossary of Robonomic Terms
 
-### **AIntropy (Artificial Intropy)**
-A measure of inefficiency in robotic labor — how far a robot’s real-world performance deviates from its theoretical *Asimovian ideal*.  
-Analogous to entropy in thermodynamics, AIntropy represents lost potential due to task complexity, learning curve, equipment limits, or suboptimal AI control.
+*“A language for the physics of value.”*  
+*Version: 1.0 — October 2025 | Jonathan Clark*
 
 ---
 
-### **Asimovian Robot**
-A hypothetical, perfectly efficient 1 kW humanoid robot performing its ideal task for one hour.  
-Used as the *standard economic heat engine* in Robonomics, defining 1 RoboTorq of idealized robotic labor.
+### **A**
+#### **AIntropy (Artificial Intropy)**  
+> *n.* The measure of **inefficiency** in robotic or AI labor — the deviation from ideal performance due to task complexity, learning curves, mechanical limits, or suboptimal control.  
+> Analogous to entropy in thermodynamics: **lost potential**.  
+> **Formula**: `AIntropy = Complexity × TTP × utilization × supply_efficiency × …`  
+> **Lower AIntropy → faster task completion, higher Torq.**
+
+#### **Asimovian Robot**  
+> *n.* A **theoretical ideal robot**: 1 kW power, 1 token/s throughput, 100% efficiency.  
+> Used as the **standard economic heat engine** in Robonomics.  
+> **1 hour of work by an Asimovian Robot = 1 RoboTorq.**
 
 ---
 
-### **BidNet**
-The decentralized robotic labor marketplace within the Bond Network.  
-Enterprises and AI systems use BidNet to auction, bid, and agree on **Bonded Robotic Labor Agreements (BRLAs)**, ensuring transparency and fair pricing.
+### **B**
+#### **BidNet**  
+> *n.* The **decentralized robotic labor marketplace** within the Bond Network.  
+> Enterprises and AI agents use BidNet to auction, bid on, and finalize **BRLAs**.
+
+#### **Bond Network**  
+> *n.* The **collectively owned, AI-governed infrastructure** of Robonomics.  
+> Manages:  
+> - Minting of **RoboTorq**  
+> - **Universal Basic Dividend (UBD)** distribution  
+> - **Demurrage** collection  
+> - **BRLA** pricing and execution  
+> - **Bonded Token** governance  
+> **Neither state nor private — a self-balancing economic organism.**
+
+#### **Bonded Robotic Labor Agreement (BRLA)**  
+> *n.* A **smart contract** between an Enterprise and the Bond Network.  
+> Defines:  
+> - Duration of robotic labor  
+> - Expected **Torq Gamble** (markup)  
+> - **TTP** of robots  
+> - Minting schedule via **Isaac**  
+> **Collateralized by verified robotic capacity.**
+
+#### **Bonded Token (BT)**  
+> *n.* A **governance and stabilization instrument** in the Bond Network.  
+> - **Backed by staked TTP-h** (robot labor-hours)  
+> - Used to vote on BRLA updates, efficiency recalibration  
+> - Yields **UBD** from fleet productivity  
+> - Acts as **liquidity buffer** and **reserve smoother**  
+> **1 BT = 1 TTP-h for minting; variable RT value for staking.**
+
+#### **Bond Trade Agreement (BTA)**  
+> *n.* A **treaty between independent Bond Networks** for mutual recognition of **RoboTorqUnits** and **Bonded Tokens**.  
+> Enables **inter-network trade**, **robot migration**, and **cross-economy settlement**.
+
+#### **Bondholder**  
+> *n.* Any participant in the Bond Network who owns a **fractional claim** on all robotic labor.  
+> - Entitled to **DistoStream** (continuous UBD)  
+> - Can vote via **Bonded Tokens**  
+> - Subject to **demurrage** on idle balances  
+> **You become a Bondholder by living — and by keeping value in motion.**
 
 ---
 
-### **Bond Network**
-The collective, AI-governed infrastructure of Robonomics.  
-It manages the minting of RoboTorqs, dividend distribution, demurrage collection, and tracks market signals operations.  
-Neither privately owned nor state-controlled — it is a self-balancing economic organism.
+### **C**
+#### **Complexity**  
+> *n.* A **scalar** representing task difficulty.  
+> - **Negative** → simple, fast convergence  
+> - **Positive** → complex, longer duration, higher AIntropy  
+> Drives **labor time** and **minting volume**.
 
 ---
 
-### **Bonded Robotic Labor Agreement (BRLA)**
-A smart contract between an Enterprise and the Bond Network defining the duration, productivity expectations, and *torq_gamble* for a robotic labor engagement.  
-Analogous to a labor bond or loan, but collateralized by robotic productivity rather than debt.
+### **D**
+#### **Daneel**  
+> *n.* The **AI fleet manager** in the Bond Network.  
+> Responsibilities:  
+> - Allocate robots to BRLAs  
+> - Balance load and utilization  
+> - Deploy mobile repair units  
+> - Prevent fleet strain
+
+#### **Demurrage**  
+> *n.* A **time-based decay** on idle **RoboTorq** balances (0.1–1% per month).  
+> - Encourages circulation  
+> - Funds **TorqVault interest**  
+> - Replaces hidden inflation tax  
+> **"Money in motion, not in mattresses."**
+
+#### **DistoStream (Distribution Stream)**  
+> *n.* The **continuous, per-second flow** of **Universal Basic Dividend** to all Bondholders.  
+> Proportional to verified robotic output.  
+> **No lump sums. Just physics in real time.**
 
 ---
 
-### **Bondholder**
-Bondholders own 1/population of every robot in the fleet, and are entitled to such a portion of the RoboTorq minted.
-Bondholders are expected to spend, invest, or save their portion of Isaac's output distribution. Hoarding in the wallet beyond some threshold subjects you to demurrage.
-Become a Bondholder by doing the jobs that people don't want to — and that robots can't.
+### **E**
+#### **Enterprise**  
+> *n.* A human or corporate entity that **rents robotic labor** via BRLAs.  
+> - Proposes **Torq Gamble**  
+> - Absorbs inefficiency risk  
+> - Profits when **Torq > 1**
 
 ---
 
-### **Calvin**
-The predictive AI within the Bond Network models market probabilities using new concepts like *quantum game theory*, but also tried-and-true ones like Monte Carlo, Bayesian, etc.  
-Advises BidNet and RoboFund on pricing, risk, and equilibrium states. Also the human interaction interface, debugger, and propagandAI wing.
+### **G**
+#### **Giskard**  
+> *n.* The **AI value auditor** in the Bond Network.  
+> - Validates BRLA claims  
+> - Reviews **torq curves**  
+> - Detects fraud or over-optimism  
+> - Ensures **physics honesty**
 
 ---
 
-### **Complexity**
-A scalar describing the difficulty or diversity of a robotic task.  
-Higher complexity correlates with faster AI learning and greater AIntropy leverage; lower complexity leads to diminishing Torq gains.
+### **I**
+#### **Isaac**  
+> *n.* The **minting AI** of the Bond Network.  
+> - Issues new **RoboTorq** as value is delivered  
+> - Named after Isaac Asimov  
+> - Operates under **Equation of AI-Value Exchange**
 
 ---
 
-### **Daneel**
-The AI fleet manager overseeing the allocation and utilization of physical robotic labor across the Bond Network.  
-Ensures equilibrium between demand, supply, and fleet efficiency. Rebalances robotic labor within the bounds of BRLAs to balance the load based on utilization. Repairs robots while redeploying with mobile repair units.
+### **M**
+#### **MakerFunnel**  
+> *n.* A **decentralized investment mechanism** in RoboFund.  
+> Channels citizen **DistoStreams** into new BRLAs.  
+> **Like venture capital — but for robot labor.**
 
 ---
 
-### **Demurrage**
-A mild decay function on idle RoboTorq balances.  
-Encourages spending, reinvestment, or saving in TorqVaults by transferring the value of unused RoboTorqs to active participants.  
-Acts as an honest, optional, self-regulating inflation tax instead of inflation.
+### **P**
+#### **Project Asimov**  
+> *n.* The **open-source Robonomic Simulator**.  
+> - Models **Torq Theory**, **BRLAs**, **Bond Network**  
+> - Used for research, education, and **UBD estimation**  
+> - Evolving into live Bond Network logic  
+> [github.com/GrokkingGrok/Project-Asimov](https://github.com/GrokkingGrok/Project-Asimov)
 
 ---
 
-### **DistoStream (Distribution Stream)**
-The universal basic dividend is distributed continuously by the Bond Network to all Bondholders.  
-Represents each person’s fractional claim on the collective output of robotic labor.
+### **R**
+#### **RoboFund**  
+> *n.* The **decentralized investment house** of the Bond Network.  
+> - Connects Enterprises with citizen capital  
+> - Funds BRLAs via **MakerFunnels**  
+> - Enables **piecemeal investment** in robotic projects
+
+#### **RoboTorq (RT)**  
+> *n.* The **core currency unit** of Robonomics.  
+> **1 RoboTorq = 1 token/s × 1 kWh = 3600 TokenTorq**  
+> Represents **one hour of ideal robotic labor**.  
+> **Digital by default, physical via recycling.**
+
+#### **RoboTorqUnit (RTU)**  
+> *n.* The **atomic proof of robotic work**.  
+> A cryptographically signed data structure containing:  
+> - `robotID`, `powerKW`, `durationSec`, `throughputRate`  
+> - **Post-quantum signature**  
+> - **Merkle-linked** to Bonded Tokens  
+> **The watt-to-wallet bridge.**
+
+#### **RoboTorq_in / RoboTorq_out**  
+> *n.* Inputs and outputs in the **Equation of AI-Value Exchange**.  
+> - `RoboTorq_in` = energy + compute invested  
+> - `RoboTorq_out` = verified value produced  
+> **At equilibrium: `RoboTorq_out = Torq × RoboTorq_in`**
+
+#### **Robonomics**  
+> *n.* The **physics-based economic framework** where:  
+> - Value is minted by **measurable work**  
+> - Automation funds **universal prosperity**  
+> - Money is **energy, time, and trash — tokenized**
+
+#### **RoboVault / TorqVault**  
+> *n.* A **savings mechanism** that shields **RoboTorq** from demurrage.  
+> - Earns interest from demurrage pool  
+> - Encourages productive storage  
+> - Prevents hoarding without punishment
 
 ---
 
-### **Enterprise**
-A human or corporate entity employing robotic labor through the Bond Network.  
-Enterprises propose BRLAs and wager on their *torq_gamble* — their expected markup on robotic production efficiency.
+### **T**
+#### **TokenTorq (TT)**  
+> *n.* The **granular unit** of AI-value exchange.  
+> **1 TokenTorq = 1 token/s × 1 kW**  
+> **3600 TokenTorq = 1 RoboTorq**
+
+#### **TokenTorqPotential (TTP)**  
+> *n.* A robot’s **theoretical maximum throughput** in TokenTorq per hour.  
+> **TTP = power (kW) × throughput (tokens/s)**  
+> **The "horsepower" of robotic labor.**
+
+#### **TTP-h (TokenTorqPotential-hour)**  
+> *n.* The **atomic unit of robotic capacity**.  
+> **1 TTP-h = 1 hour of a robot’s TTP**  
+> **1 TTP-h = 1 RoboTorq = 3600 TokenTorq**
+
+#### **Torq**  
+> *n.* The **dimensionless efficiency ratio**.  
+> **Torq = TokenTorq_out / TokenTorq_in = RoboTorq_out / RoboTorq_in**  
+> - **Torq > 1** → value created  
+> - **Torq < 1** → value destroyed  
+> **Economic leverage. The soul of profit.**
+
+#### **Torq Gamble**  
+> *n.* The **markup wager** in a BRLA.  
+> - Enterprise bets on efficiency  
+> - Bond Network co-signs via **BidNet**  
+> - Fixed sale price → inefficiency is absorbed  
+> **MintingNeeded = RoboTorq_in × (TorqGamble − 1)**
+
+#### **TorqMining Loop**  
+> *n.* The **closed-loop value cycle**:  
+> `Energy + Compute → Work → Oracle → Minting → Dividend → Reinvestment`
+
+#### **TorqVault Interest**  
+> *n.* Interest paid to **TorqVault** holders, sourced from **demurrage** on idle balances.  
+> **A reward for keeping value in motion.**
 
 ---
 
-### **Giskard**
-The AI value auditor that validates BRLA claims and tracks oracles for fraud during production runs.  
-It reviews submitted *torq curves* and ensures that productivity assumptions are realistic and non-exploitative.
+### **U**
+#### **Universal Basic Dividend (UBD)**  
+> *n.* The **per-citizen share** of all robotic productivity.  
+> - Paid via **DistoStream**  
+> - Proportional to **fleet TTP** and **Torq**  
+> - **No means testing. No politics. Just physics.**
 
 ---
 
-### **Isaac**
-The minting AI responsible for issuing new RoboTorqs in proportion to verified AI-labor value creation.  
-Named for Isaac Asimov, it represents the monetary core of the Bond Network.
+### **W**
+#### **Watts > Wall Street**  
+> *n.* The **core ethos** of Robonomics:  
+> **Energy is the new capital. Work is the new wealth. Physics is the new policy.**
 
 ---
 
-### **MakerFunnel**
-An investment mechanism within RoboFund that channels citizen dividends (DistoStreams) into new BRLAs.  
-Functions like a decentralized venture capital funnel for robotic labor projects.
+## **Quick Reference Table**
 
----
-
-### **Project Asimov**
-The open-source simulator and modeling framework for testing Robonomic theory.  
-It models Torq Theory, the Bond Network, BRLAs, and economic equilibrium under AI-driven production.
-
----
-
-### **RoboFund**
-The decentralized investment house of the Bond Network.
-It connects Enterprises seeking robotic labor funding with citizens who wish to reinvest their dividends. 
-Investors can pledge TorqVault savings or DistoStreams on a piecemeal basis, rather than speculating on the company as a whole. 
-
----
-
-### **RoboTorq (RT)**
-The standardized unit of Robonomic currency, defined as **one token per second × one kilowatt-hour** (`1 token/s × kWh`).  
-Represents the value of **one hour** of ideal robotic labor by a 1 kW *Asimovian Robot*.  
-`1 RoboTorq = 3600 TokenTorq`
-
----
-
-### **RoboTorq_in / RoboTorq_out**
-Inputs and outputs in the **Equation of AI-Value Exchange**, analogous to money supply and productivity output.  
-RoboTorq_in is the capital invested in robotic work; RoboTorq_out is the verified value produced.
-
----
-
-### **Robot.TTP**
-A shorthand notation for a robot’s TokenTorqPotential (throughput capacity).  
-Expressed as TokenTorq/hour, it represents the robot’s maximum productive potential per unit of time.
-
----
-
-### **Robonomics**
-The proposed physics-based monetary and economic framework tying money creation directly to measurable robotic labor and energy throughput.  
-Its core goal is to transform automation into a universal wealth generator.
-
----
-
-### **RoboVault / TorqVault**
-Savings mechanisms that shield holders from demurrage.  
-Funds stored in TorqVaults earn interest sourced from demurrage collected on idle RoboTorqs elsewhere in the economy.
-
----
-
-### **TokenTorq (TT)**
-A non-standardized unit of AI-value exchange: token/s x kW
-Represents the energy-information coupling at a granular level — the smallest measurable increment of AI-driven productive effort.  
-1 RoboTorq = 3600 TokenTorqs.
-
----
-
-### **TokenTorqPotential (TTP)**
-A robot’s theoretical maximum TokenTorq throughput per hour — its productive “horsepower.”  
-Analogous to a car’s engine rating or a computer’s FLOPs.
-
----
-
-### **Torq**
-A dimensionless coefficient representing productive efficiency, defined as  
-Torq = Output / Input = (TokenTorq_out / TokenTorq_in).  
-Measures how efficiently AI labor transforms energy and tokens into value.
-
----
-
-### **torq_gamble**
-The markup co-wager between Enterprise and BidNet when initiating a BRLA.  
-It sets the expected multiplier of productive return and determines how much new RoboTorq will be minted.
-
----
-
-### **TorqMining Loop**
-The continuous process linking energy, computation, robotic work, and value minting.  
-The cycle: **Energy + Compute → Robotic Labor → Oracle Measurement → Minting → Dividend → Reinvestment → back to Energy + Compute and so on**
-
----
-
-### **TorqVault Interest**
-Interest is distributed from demurrage collections to active investors who store their funds in TorqVaults — a reward for maintaining liquidity circulation.
-
----
-
-### **Watts > Wall Street**
-The guiding ethos of Robonomics: *Energy is the new capital*.  
-As labor shifts from humans to machines, the true measure of value becomes throughput and the merit you have to achieve it — not speculation in the stock market.
-
+| Term | Unit | Meaning |
+|------|------|---------|
+| **RoboTorq (RT)** | T·kWh | 1 robot-hour |
+| **TokenTorq (TT)** | T·kW | 1 second of robot capacity |
+| **TTP** | TT/hr | Robot "horsepower" |
+| **TTP-h** | RT | Atomic work claim |
+| **Torq** | — | Efficiency ratio |
+| **AIntropy** | — | Inefficiency scalar |
+| **Demurrage** | %/time | Decay on idle RT |
+| **DistoStream** | RT/s | Continuous UBD |
 ---
 
 ## Appendix B — Dimensional Consistency of the RoboTorq System
