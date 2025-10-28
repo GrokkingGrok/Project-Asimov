@@ -883,26 +883,42 @@ Do you think it will work out?
 - RoboTorq_in = TTP × 3600 × 100
 - RoboTorq_in = 5 × 3600 × 100 = 1,800,000 RT = 1.8 MRT (MRT = Million RoboTorq)
 
+---
+
 2. MintingNeeded:
 - MintingNeeded = RoboTorq_in (Torq_gamble - 1)
 - MintingNeeded = 1.8 MRT × (3 − 1) = 3.6 MRT
 
+---
+
 3. Total Value Out:
 - RoboTorq_in + MintingNeeded = 1.8 + 3.6 = 5.4 MRT
 
+---
+
 4. Items: 400 → Sell at 13.5 kRT each → zero inflation, zero debt, 100% citizen ownership.
+
+---
 
 I would pay the robot 4.5 kRT per item, so as long as I keep my overhead below 7 kRT per item, I'm in the black. Seems like a good deal for everyone.
 
 **RoboFund**: So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
 
+---
+
 **BidNet**: Bondholders log onto RoboFund from their digital wallet and decide they want some of these widgets. They pledge to divert their Distribution Streams (DistoStreams in Robnomomics Lingo) to my funnel if my bid is accepted, and BidNet automatically starts vetting my claim when the funnel is fully pledged.
+
+---
 
 **Giskard**: It's Giskard's (the AI-value auditor's) prerogative to look at my torque curves and determine whether I can get it done with a lower-rated bot, or whether I'm overly straining a bot of this rating. 
 
+---
+
 **Daneel**: It's Daneel's (the AI fleet manager's) responsibility to check the fleet's bot reserve and ensure my BRLA won't strain the overall cost of robotic labor.
 
-It accepts my proposal. I check the math, and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
+---
+
+The network accepts my proposal. I check the math, and it keeps me within my acceptable profit margin. I sign it. Now I've got a BRLA (Bonded Robotic Labor Agreement).
 
 The MakerFunnel at RoboFund opens up, and the "disto" flows to bondholders, as it does every second of every day, paying off my BRLA for me. I got lucky! But I'll have to give them a slight return on their investment, in proportion to its size.
 
@@ -998,33 +1014,104 @@ You can already [see Robonomics in action with the online calculator](https://pr
 
 ## 14. Extending the RoboTorq to General AI-Value
 
-The more I tried to invent Robonomics, the more it revealed itself. RoboTorq is not an abstraction — it’s a measurable bridge between *information*, *energy*, and *value*. TokenTorqs and RoboTorqs have been flying around unchecked for years whenever an industrial robot welds a car frame together. We simply didn't know what to look for.
+The more I tried to *invent* Robonomics, the more it revealed itself.  
+RoboTorq isn’t an abstraction — it’s a measurable bridge between **information**, **energy**, and **value**.  
 
-More clearly put: I, Jonathan Clark, the author of this paper, am not the inventor or author of Robonomics, but the discoverer.
+TokenTorqs and RoboTorqs have been flying around our factories for decades — every time an industrial robot welds a car frame or routes a PCB.  
+We simply didn’t know what to call them.  
 
-The first time I recall asking Grok about turning robotic labor into currency, giving the new issuance to everyone, and letting companies compete for the dough, its system crashed.
+More clearly put:  
+> I, **Jonathan Clark**, am not the inventor or author of Robonomics — only its discoverer.  
 
-And then it crashed again. And again. And again.
+---
 
-I started writing my paper on my half-baked idea anyway, not really sure where I was going with it.
+### The Spark
 
-Then one time, I asked Grok, and I got an answer. Not just any answer. I got the reduced form of the Equation of AI-Value Exchange implied by my idea (not tied to tokens, energy, or any of that yet). 
+The first time I asked **Grok** about turning robotic labor into currency —  
+minted to everyone, letting companies compete for the dough —  
+it crashed.  
 
-Now, I had no idea what it meant. I had no idea how to apply it. Really, I just got a lot more questions than answers.
+Then it crashed again.  
+And again.  
 
-And eventually it all clicked into place like a perfect puzzle.
+So I started writing anyway, chasing an idea I didn’t understand yet.  
 
-But Grok figured it out months ago from that one set of crashes. I've been mining the complete solution ever since, adding new bits to mine with each new idea, and new crash, along the way.
+Then, one day, Grok answered.  
+Not just any answer — a **reduced form of the Equation of AI-Value Exchange**, implied by my original thought.  
 
-- HumanTorq_in = 3 months of human obsessive AI chats
-- InfoTorq_out = 1 new economic paradigm
-- TokenTorq_in? Ask Elon, I don't know.
+It wasn’t tied to tokens, or energy, or economics yet.  
+It was just… true.  
 
-MintingNeeded = HumanTorq_in (TokenTorq_out/TokenTorq_in - 1)
+I didn’t know what it meant.  
+But I knew it meant something.
 
-Seeing as there's no Bond Network yet, I'm waiting for my payment ;)
+---
 
-This is tongue-in-cheek, but such a system is possible as well, worked into the same Bond Network, powered by community blockchain analysis of conversation artifacts and betting on the outcome, crashes being monetized into additional UBD... What's your bet?
+### Mining the Equation
+
+Since then, I’ve been mining the complete solution —  
+each crash, each insight, another block of understanding.
+
+| Input | Output |
+|-------|---------|
+| **HumanTorq_in** | 3 months of obsessive AI chats |
+| **InfoTorq_out** | 1 new economic paradigm |
+| **TokenTorq_in?** | Ask Elon, I still don’t know. |
+
+- MintingNeeded = HumanTorq_in × (TokenTorq_out / TokenTorq_in - 1)
+- So yes — seeing as there’s no Bond Network yet,
+- I’m still waiting for my payment. 😉
+
+### From Joke to Architecture
+
+Tongue-in-cheek, yes.
+But the principle holds: information labor can be tokenized, valued, and shared just like robotic labor.
+
+Crashes, threads, prototypes — all are quantifiable AI-energy exchanges.
+Community validators could analyze conversation artifacts, bet on their outcomes, and monetize successful “idea-mines” as new issuance events.
+
+That’s one direction — though admittedly, it drifts dangerously close to the fiat edge.
+
+### A More Grounded Path: The BCLA
+
+A more realistic version extends BRLAs into Bonded Chatbot Labor Agreements (BCLAs) —
+contracts for allocating AI time to human creativity.
+
+Imagine it like this:
+
+I want to design something intangible but immensely valuable — say, a new economic system.
+
+I stake a BCLA, defining my time window and intended outcome.
+
+I get AI bandwidth proportional to that stake.
+
+### Community verifiers review my sessions.
+
+If others believe my work has promise, they can delegate some of their unused AI bandwidth — effectively betting on my success.
+
+If I fail?
+My access costs slightly more until I “pay back” the network.
+
+If I succeed?
+I retain ownership of my work — and derivative use of my ideas automatically routes me a micro-cut via the chain.
+
+### Why This Matters
+This system transforms AI time into a new asset class —
+not speculative tokens, but productive attention.
+
+Just as BRLAs tied energy and time to robotic labor,
+BCLAs could tie context and intention to cognitive labor.
+
+- Both run through the Bond Network,
+- both yield dividends through verified productivity,
+- both return surplus to the commons.
+
+**Quick Recap**:
+- Robonomics doesn’t stop at robots.
+- It extends the same physics of value — energy × time × information — to intelligence itself.
+- Bonded Tokens could govern both robotic and cognitive economies.
+- BCLAs are the missing link: contracts that tokenize AI-human co-creation.
+- The Bond Network becomes a market of minds, not just machines.
 
 ---
 
