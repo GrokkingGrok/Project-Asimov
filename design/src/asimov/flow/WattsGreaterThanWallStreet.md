@@ -2676,6 +2676,7 @@ typedef struct {
     uint8_t  pq_signature[242]; // Dilithium2
 } robo_torq_unit_t;
 ```
+**Footnote**: Dilithium2 signature = 2420 bytes. Packed for NFC via compression or L2 storage.
 
 Signed on boot, refreshed for each Bonded Robotic Labor Agreement (BRLA).
 
