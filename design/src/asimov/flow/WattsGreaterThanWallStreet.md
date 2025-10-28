@@ -2262,9 +2262,147 @@ Scan it → deposit to the Bond Network → it becomes digital RT again.
 ### L.6 In Essence
 
 Physical RoboTorqs make the system **tangible, sustainable, and self-balancing**.  
+
 They are **proofs of work you can hold** — valued by both **human effort and robotic power.**
 
 It’s **sound money**, backed not by trust or debt — but by **physics itself**.  
 
+---
+
+# Appendix M — Considerations for a RoboTorq Social Charter  
+
+## M.1 Purpose of the Social Charter  
+
+The Social Charter is a **pre-technical, human-readable framework** intended to guide the ethical, social, and economic governance of the **Bond Network**. It addresses questions of robot ownership, dividend rights, and exit conditions *before any code is written*.  
+
+It is **not a smart contract**; it is a social and ethical foundation. Smart contracts, AI agents, and governance protocols should **operate in alignment with the Charter**, but the Charter itself remains **human-readable, ratifiable, and auditable**.  
+
+The Charter answers fundamental questions such as:  
+
+- *"Who owns the future of work?"*  
+- *"How should society share the benefits and risks of automation?"*
+
+---
+
+## M.2 Core Principles  
+
+The Charter expresses **guiding principles** rather than rules. They provide context for the design and operation of smart contracts, robots, and economic systems.  
+
+- **Human Primacy** — Humans remain the ultimate decision-makers. AI and robotic agents are tools, not sovereign actors.  
+- **Equitable Access** — Automation and robot labor are shared resources, not exclusively private property.  
+- **Transparency & Accountability** — Decisions made by AI or automated systems should be explainable in human-understandable terms.  
+- **Optional Exit & Voice** — Participants should have mechanisms to voice concerns or exit systems without coercion.  
+- **Adaptive Evolution** — Governance structures, token flows, and economic mechanisms should evolve while respecting human oversight.  
+
+---
+
+## M.3 Conceptual Sections to Consider  
+
+1. **Preamble / Vision**  
+   - Contextualizes the role of robotic labor in society.  
+   - Frames the transition from human work to shared ownership of automation.  
+   - Establishes the Bond Network as a social and economic commons rather than a purely technical system.  
+   - **Community Prompts:**  
+     - How should society define the “value” of robotic labor?  
+     - What principles should guide the transition from human work to automation ownership?  
+     - How can we frame a shared vision that balances economic utility and social equity?  
+
+2. **Bondholder Rights & Economic Participation**  
+   - Participation in economic flows derived from robots, such as dividends or staking yields.  
+   - Auditing or observing AI and robotic activity.  
+   - Conceptual right to opt in or exit collective frameworks.  
+   - **Community Prompts:**  
+     - What types of rights feel essential for participants in a robotic commons?  
+     - How should transparency of AI operations be balanced with privacy and security?  
+     - In what ways should individuals be able to exit or join collective economic frameworks?  
+
+3. **Robot Ownership & Fleet Management**  
+   - Principles for fractional ownership, registration, and fleet transparency.  
+   - Considerations for personal-use robots vs. large-scale industrial fleets.  
+   - Implications for ethical use, liability, and accountability.  
+   - **Community Prompts:**  
+     - Should all robots have some form of communal registration?  
+     - How do we define “personal-use” vs. “industrial-use” ethically?  
+     - Who should be responsible when a robot causes harm or malfunctions?  
+
+4. **Governance Structures**  
+   - Conceptual forms: DAO-like voting, councils, advisory boards.  
+   - Balancing human and AI involvement in oversight.  
+   - Mechanisms to resolve disputes or respond to emergent conditions.  
+   - **Community Prompts:**  
+     - What mix of human and AI oversight feels appropriate for governance?  
+     - How can governance balance efficiency with inclusivity?  
+     - What methods could communities use to resolve disputes fairly?  
+
+5. **Economic Flows & Minting**  
+   - Continuous distribution concepts (DistoStreams, yield pools, etc.)  
+   - Non-prescriptive considerations for demurrage, inflation, or new token issuance.  
+   - Emphasis on aligning economic flows with societal goals rather than specifying exact rates or formulas.  
+   - **Community Prompts:**  
+     - How should economic benefits from robotic labor be shared?  
+     - What mechanisms encourage fair circulation without dictating exact formulas?  
+     - How can we ensure economic flows support societal well-being and innovation?  
+
+6. **Forking & Adaptation**  
+   - Conceptual triggers and procedures for systemic adaptation or exit.  
+   - Emphasizes communication, deliberation, and human-readable reasoning in any transition.  
+   - **Community Prompts:**  
+     - Under what conditions should a community consider forking or adapting the system?  
+     - How can information about potential changes be made accessible and understandable?  
+     - What safeguards could support smooth transitions while protecting stakeholders?  
+
+7. **Inclusion & Participation**  
+   - Frameworks for universal access to robotic dividends and governance.  
+   - Optional participation, age or trust-based mechanisms, and societal inclusivity.  
+   - **Community Prompts:**  
+     - Who should automatically have access, and who might opt out?  
+     - How can participation be made fair across different geographies and demographics?  
+     - How might inclusion evolve as technology or social norms change?  
+
+8. **Dispute Resolution**  
+   - Tiered approaches from community discussion to structured arbitration.  
+   - Emphasizes transparency, fairness, and proportionality rather than rigid enforcement steps.  
+   - **Community Prompts:**  
+     - What levels of escalation make sense for resolving disagreements?  
+     - How can disputes remain transparent without compromising privacy or security?  
+     - What role should community feedback play in shaping outcomes?  
+
+9. **Amendment & Evolution**  
+   - Principles for adaptive, iterative evolution of the Charter itself.  
+   - Emphasizes supermajority or consensus-based approaches, but remains conceptual.  
+   - **Community Prompts:**  
+     - How should amendments be proposed, discussed, and ratified?  
+     - What balance should exist between stability and adaptability?  
+     - How can the community ensure changes reflect collective values rather than narrow interests?  
+
+---
+
+## M.4 Stress-Test Considerations  
+
+The Charter should help humans **anticipate systemic risks** without dictating operational responses:  
+
+- **Concentration of Power** — Nation-states, organizations, or individuals attempting to dominate robotic labor.  
+- **AI Autonomy** — How to ensure AI tools respect human primacy.  
+- **Mass Participation or Exit** — Large-scale joining or leaving of participants.  
+- **Fleet Disruption** — Loss, sabotage, or malfunction of robots and automated infrastructure.  
+- **Economic Shocks** — Token valuation volatility, resource scarcity, or emergent economic crises.  
+
+---
+
+## M.5 Ratification & Evolution  
+
+- Ratification is inherently **human-centered** and social rather than algorithmic.  
+- Versioning should be tracked to reflect amendments, but no version can override human judgment.  
+- Periodic review ensures continued relevance as society, technology, and economy evolve.  
+
+---
+
+## M.6 Final Note  
+
+The Social Charter is the **ethical and societal compass** for Robonomics.  
+
+Code without the Charter risks misalignment; Charter without operational systems remains aspirational.  
+
+The focus should always remain on **human guidance, equitable benefit-sharing, and adaptive oversight**.
 
 
