@@ -195,7 +195,9 @@ Every kilowatt-hour of robotic labor mints new digital value. Every kilogram of 
 
 Waste becomes a monetary substrate, and our money will grow from it like a mushroom after a spring rain. This “**trash → cash**” loop transforms pollution into paychecks, linking ecology and economy through physics.
 
-This isn’t hand-wavy climate optimism or environmental appeasement: the **system literally depends** on this physical substrate to offload digital currency from the grid and prevent catastrophic storage costs (demurrage). Carbon is crucial to making physical currency more durable, and we've conveniently been storing this newly valuable resource in a readily accessible location for quite some time. Sharp thinking, humanity!
+This isn’t hand-wavy climate optimism or environmental appeasement: the **system literally depends** on this physical substrate to offload digital currency from the grid and prevent catastrophic storage costs (demurrage). 
+
+Carbon is crucial to making physical currency more durable, and we've conveniently been storing this newly valuable resource in a readily accessible location for quite some time. *Sharp thinking, humanity.*
 
 Robotic work creates digital wealth. Recycling redeems it as physical wealth.
 
