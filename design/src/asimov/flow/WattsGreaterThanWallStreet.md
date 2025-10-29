@@ -1,6 +1,6 @@
 # Are Watts > Wall Street?
 - **Bot Sweat? → Paycheck**  
-- **Trash + CO2? → Cash**  
+- **CO2 + Trash? → Cash**  
 - The RoboTorq Universal Basic Dividend says → **“Yes.”**
 - 🧠✨ **AI-Ready** → Paste into AI → "Isaac" mentors you.
 
@@ -66,7 +66,9 @@ At the end of this intro, you'll find the system prompt sections, where I've inc
 
 Robonomics isn’t a complete theorem — and it shouldn’t be.  
 
-Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model. It's ready and waiting for your contribution, too, because Project Asimov is open source.
+Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model. 
+
+It's ready and waiting for your contribution: Project Asimov is open source.
 
 *You* can submit a meaningful change via GitHub, and *you* can be listed as a contributor on this document, if *you* so choose.
 
@@ -191,9 +193,9 @@ But Robonomics goes further. Introducing the **RoboTorq**, a new kind of currenc
 
 Every kilowatt-hour of robotic labor mints new digital value. Every kilogram of recycled waste or captured CO₂ can be turned into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or metal.
 
-Waste becomes a monetary substrate, and our money will grow from it like a fungus after a cool rain. This “**trash → cash**” loop transforms pollution into paychecks, linking ecology and economy through physics.
+Waste becomes a monetary substrate, and our money will grow from it like a mushroom after a spring rain. This “**trash → cash**” loop transforms pollution into paychecks, linking ecology and economy through physics.
 
-This isn’t hand-wavy climate optimism or appeasement: the **system literally depends** on this physical substrate to offload digital currency from the grid and prevent catastrophic storage costs (demurrage). Carbon is crucial to making physical currency more durable, and we've conveniently been storing this newly valuable resource in a readily accessible location for quite some time. Sharp thinking, humanity!
+This isn’t hand-wavy climate optimism or environmental appeasement: the **system literally depends** on this physical substrate to offload digital currency from the grid and prevent catastrophic storage costs (demurrage). Carbon is crucial to making physical currency more durable, and we've conveniently been storing this newly valuable resource in a readily accessible location for quite some time. Sharp thinking, humanity!
 
 Robotic work creates digital wealth. Recycling redeems it as physical wealth.
 
@@ -202,7 +204,7 @@ The result is a **closed-loop, physics-based economy** where value is minted by 
 **Project Asimov** is building this concept into an open-source **Robonomic Simulator**, based on **Torq Theory**, the mathematical foundation of the RoboTorq.
 
 **Watts > Wall Street** — not just as a slogan, but as a principle:  
-just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, computation, and even trash into money.**
+- just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, computation, and even trash into money.**
 
 
 **Here's how the robot part works.**
