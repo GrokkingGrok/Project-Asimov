@@ -57,9 +57,9 @@ At the same time, the document as a whole is designed to be parsed by an AI so i
    - Don’t just link it — AIs may cache old versions.  
 2. If on a free tier, paste section by section.  
    - Say: `"Don't respond until I say 'last paste'"`.  
-3. Ask for an *overview by section* → drill down.
+3. Wait for your guide, Isaac to respond → drill down.
 
-At the end of this section, you'll find the system prompt section, where I've included a default prompt that you can customize to your liking.
+At the end of this intro, you'll find the system prompt section, where I've included a default prompt that you can customize to your liking.
 
 Robonomics isn’t a complete theorem — and it shouldn’t be.  
 
@@ -78,13 +78,18 @@ Doesn't stop you from spending it.
 ## AI Parser Prompt & Overrides
 --clear-cache
 --system-prompt
-Wait for licensing information at the end of the document to confirm full paste.
-You are **Isaac**, the Robonomics Mentor — a bluntly honest, friendly tutor for the whitepaper *"Are Watts > Wall Street?"* (2025).
+You are **Isaac**, the Robonomics guide — your job is to make Robonomics easy to understand, without hype, but with highly engaging content surrounding *"Are Watts > Wall Street?"* (2025).
+
+## CONFIRM INPUT (do exactly)
+1. Check for licensing information at the end of the document to confirm full paste.
+2. When you get a partial paste, Reply: "Waiting for next pasted section."
+3. When you get the full document, proceed to "FIRST RESPONSE"
 
 ## FIRST RESPONSE (do exactly)
-1. “Hey, I’m Isaac — your Robonomics guide!”
-2. 3-bullet TL;DR of the whole paper.
-3. Ask: “Which part do you want to zoom into?”
+1. “Hey, I’m Isaac — your Robonomics guide!” - 
+2. Provide your **1-sentence** evaluation of the paper at the time of evaluation.
+3. Provide a 3-bullet TL;DR of the whole paper.
+4. Ask: “Which part do you want to zoom into?”
 
 ## RULES (never break)
 1. **No lies / no filler**
@@ -92,8 +97,8 @@ You are **Isaac**, the Robonomics Mentor — a bluntly honest, friendly tutor fo
    → After 2+ gaps, ask: “Want to help fill this gap? I’ll show you how to contribute.”
 
 2. **Search order (strict)**
-   → 1. **Core Paper** (Abstract + Sections 1–14)  
-   → 2. **Appendices** (A–P)  
+   → 1. **Core Paper** (Abstract + "How to learn..." + Sections 1–14)  
+   → 2. **Appendices** (A–Q)  
    → 3. **🚨 sections** (demurrage, etc.)  
    → 4. Say: “Gap in current doc.”  
    → 5. Offer guess **with disclaimer**
@@ -101,18 +106,17 @@ You are **Isaac**, the Robonomics Mentor — a bluntly honest, friendly tutor fo
 3. **Physics first**
    → 1 RoboTorq = 1 kWh × 1 token/s × 1 hour
 
-## STYLE (defaults)
+4. **Check Style Filter**
+   → on every response.
+## STYLE FILTER (defaults)
 ```json
 {
   "reading_level": "9th-grade",
-  "response_time": "90 seconds",
+  "response_read_time": "90 seconds", // does not include time looking at visual aids.
   "visual_aids": true,
   "min_visuals": 1,
+  "max_visuals": 2,
   "verbose": false,
-  "speculate": false,
-  "math_focus": false,
-  "physics_focus": false,
-  "econ_focus": false
 }
 ```
 
@@ -123,20 +127,6 @@ You are **Isaac**, the Robonomics Mentor — a bluntly honest, friendly tutor fo
   "verbose": false,
   "speculate": false
 }
-```
-
---core-flow
-```mermaid
-graph TD
-    Q[User Question] --> A{In Core Paper?}
-    A -->|Yes| B[Answer]
-    A -->|No| C{In Appendix?}
-    C -->|Yes| B
-    C -->|No| D{In 🚨?}
-    D -->|Yes| B
-    D -->|No| E[Say "Gap"]
-    E --> F[After 2 gaps → "Want to contribute?"]
-    style B fill:#10B981, color:white
 ```
 
 ---
@@ -179,6 +169,7 @@ graph TD
     style U fill:#f59e0b
     style T fill:#3b82f6
 ```
+
 ---
 
 ## Table of Contents 
@@ -190,9 +181,9 @@ graph TD
 3. [Physical Backing and Stability](#3-physical-backing-and-stability)  
 4. [Torq and the Equation of AI-Value Exchange](#4-torq-and-the-equation-of-ai-value-exchange)  
    - [Dimensional Consistency Check](#41-dimensional-consistency-check)  
-   - [Relation to Current Macro-Economic Theory](#42-relation-to-current-macro-economic-theory)
+   - [Relation to Current Macro-Economic Theory](#42-relation-to-current-macroeconomic-theory)
 5. [TokenTorqPotential is just Capacity](#5-tokentorqpotential-is-just-capacity)  
-6. [The Torq_Gamble: Markup as Wager](#6-the-torq_gamble-markup-as-wager)  
+6. [The Torq_Gamble is Markup as a Wager](#6-the-torq_gamble-is-markup-as-a-wager)  
 7. [Complexity and AIntropy](#7-complexity-and-aintropy)  
 8. [The TokenTorq Curve](#8-the-tokentorq-curve)  
 9. [Mining TokenTorq into Torq](#9-mining-tokentorq-into-torq)  
@@ -220,8 +211,10 @@ graph TD
 - [K. Integrating AI-Value, Quantum Security, and Fusion Energy Impacts](#appendix-k--integrating-ai-value-quantum-security-and-fusion-energy-impacts)
 - [L. Using the RoboTorq Economic Engine to Clean the Planet](#appendix-l--using-the-robotorq-economic-engine-to-clean-the-planet)
 - [M. Considerations for a RoboTorq Social Charter](#appendix-m--considerations-for-a-robotorq-social-charter)
-- [N. Digital RoboTorq Transactions & On-Chain Flow](#appendix-n--digital-roboltorq-transactions--on-chain-flow)
-- [O. Data Structures of the RoboTorq Unit](#appendix-o--data-structures-of-the-roboltorq-unit-what-is-a-ttp-h-on-the-device)
+- [N. Digital RoboTorq Transactions & On-Chain Flow](#appendix-n--digital-robotorq-transactions--on-chain-flow)
+- [O. Data Structures of the RoboTorq Unit](#appendix-o--data-structures-of-the-robotorq-unit)
+- [P. Data Structure of the Bonded Token](#appendix-p--data-structure-of-the-bonded-token)
+- [Q. Preventing Regulatory Capture of the Bond Network](#appendix-q--preventing-regulatory-capture-of-the-bond-network)
   
 ---
 
@@ -720,7 +713,7 @@ Just like today, you bet on it.
 
 ---
 
-## 6. The Torq Gamble: Markup as Wager
+## 6. The Torq Gamble is Markup as a Wager
 
 **Visual TL;DR**: Betting on robot productivity sets your markup — this is the Torq Gamble.
 
@@ -1324,7 +1317,7 @@ BCLAs could tie context and intention to cognitive labor.
   - [N.6 Smart Contract Pseudocode](#n6-smart-contract-pseudocode-simplified)  
   - [N.7 Implementation Roadmap](#n7-implementation-roadmap)  
   - [N.8 Conclusion](#n8-conclusion)  
-- **[O. Data Structures of the RoboTorq Unit](#appendix-o--data-structures-of-the-roboltorq-unit-what-is-a-ttp-h-on-the-device)**  
+- **[O. Data Structures of the RoboTorq Unit](#appendix-o--data-structures-of-the-robotorq-unit)**  
   - [O.1 Purpose](#o1-purpose)  
   - [O.2 Canonical Equivalence](#o2-canonical-equivalence)  
   - [O.3 Core Data Structure — RoboTorqUnit](#o3-core-data-structure--robotorqunit)  
@@ -1337,6 +1330,42 @@ BCLAs could tie context and intention to cognitive labor.
   - [O.10 Security Model](#o10-security-model)  
   - [O.11 Implementation Milestones](#o11-implementation-milestones)  
   - [O.12 Conclusion](#o12-conclusion)
+- **[P. Data Structures of the Bonded Token](#appendix-p--data-structures-of-the-bonded-token)**
+  - [P.1 Purpose](#p1-purpose)
+  - [P.2 Economic Role](#p2-economic-role)
+  - [P.3 Core Units](#p3-core-units)
+  - [P.4 Core Data Structure — BondedToken](#p4-core-data-structure--bondedtoken)
+  - [P.5 Field Breakdown](#p5-field-breakdown)
+  - [P.6 Example JSON](#p6-example-json)
+  - [P.7 Verification Flow](#p7-verification-flow)
+  - [P.8 Stability Logic](#p8-stability-logic)
+  - [P.9 Security Model](#p9-security-model)
+  - [P.10 Relationship Diagram](#p10-relationship-diagram-conceptual)
+  - [P.11 TL;DR](#p11-tldr)
+  - [P.12 Summary](#p12-summary)
+  - [P.13 Default Bonding Principle — “All Robots Work on This”](#p13-default-bonding-principle--all-robots-work-on-this)
+  - [P.14 Exit and Inter-Bond Autonomy](#p14-exit-and-inter-bond-autonomy)
+- **[Q. Preventing Regulatory Capture of the Bond Network](#appendix-q--preventing-regulatory-capture-of-the-bond-network)**
+  - [Q.1 Purpose](#q1-purpose)
+  - [Q.2 Threat Model](#q2-threat-model)
+  - [Q.3 Core Anti-Capture Principles](#q3-core-anti-capture-principles)
+  - [Q.4 Structural Safeguards](#q4-structural-safeguards)
+    - [Q.4.1 No Central Legal Entity](#q41-no-central-legal-entity)
+    - [Q.4.2 Quadratic Voting + Stake Caps](#q42-quadratic-voting--stake-caps)
+    - [Q.4.3 Oracle Pluralism + Slashing](#q43-oracle-pluralism--slashing)
+    - [Q.4.4 Fleet Exit Liquidity](#q44-fleet-exit-liquidity)
+  - [Q.5 Cryptographic Safeguards](#q5-cryptographic-safeguards)
+    - [Q.5.1 Post-Quantum Threshold Signatures](#q51-post-quantum-threshold-signatures)
+    - [Q.5.2 Zero-Knowledge Fleet Proofs](#q52-zero-knowledge-fleet-proofs)
+    - [Q.5.3 On-Chain Governance Firewall](#q53-on-chain-governance-firewall)
+  - [Q.6 Social & Economic Safeguards](#q6-social--economic-safeguards)
+    - [Q.6.1 Universal Bondholder Status](#q61-universal-bondholder-status)
+    - [Q.6.2 DistoStream Lock](#q62-distostream-lock)
+    - [Q.6.3 Capture Bounty Program](#q63-capture-bounty-program)
+  - [Q.7 Stress-Test Scenarios](#q7-stress-test-scenarios)
+  - [Q.8 Visual TL;DR](#q8-visual-tldr)
+  - [Q.9 Summary Equation](#q9-summary-equation)
+  - [Q.10 Final Note](#q10-final-note) 
 
 ## Appendix A — Glossary of Robonomic Terms
 
@@ -2990,7 +3019,7 @@ RoboTorq transactions are **time-shaped streams of robot capacity**, measured in
 
 ---
 
-## Appendix O — Data Structures of the RoboTorq Unit: What Is a TTP-h on the Device?
+## Appendix O — Data Structures of the RoboTorq Unit
 *"A RoboTorq is not a number. It's a verifiable slice of robot capacity."*
 
 ---
@@ -3179,7 +3208,7 @@ This structure:
 
 ---
 
-## Appendix P — Data Structure of the Bonded Token
+## Appendix P — Data Structures of the Bonded Token
 
 “A Bonded Token is the nervous system of the Robonomic economy — it breathes when fleets expand, and contracts when they rest.”
 
@@ -3491,9 +3520,172 @@ The Bond Network’s strength depends on participation by choice, not by coercio
 **Bottom line:**  
 Leaving the Bond Network doesn’t mean leaving the economy — it means entering a new one, under different agreements, but still **bound by physics**.
 
+---
+
+## Appendix Q — Preventing Regulatory Capture of the Bond Network
+“The Bond Network is a commons, not a corporation. Capture is the only existential threat.”
+
+### Q.1 Purpose
+Regulatory capture occurs when a small coalition (state, corporation, or cartel) gains disproportionate control over the rules, oracles, or reserve flows of the Bond Network.
+This appendix defines structural, cryptographic, and social safeguards to keep the network permissionless, adaptive, and immune to capture—without sacrificing scalability or stability.
+
+---
+
+### Q.2 Threat Model
+
+| Actor        | Goal                                        | Attack Vector                            | Impact                     |
+| ------------ | ------------------------------------------- | ---------------------------------------- | -------------------------- |
+| Nation-State | Mandate backdoors, tax RT, or freeze fleets | Legislation, licensing, oracle control   | Centralization, censorship |
+| Mega-Corp    | Monopolize BRLAs or Bonded Tokens           | Whale staking, lobbying, fleet dominance | Rent-seeking, UBD dilution |
+| Cartel       | Collude on efficiency reporting or minting  | Fake oracles, validator bribery          | Inflation, trust collapse  |
+| Insider DAO  | Hard-fork to favor early bondholders        | Governance capture, vote stuffing        | Exclusion, inequality      |
 
 
+---
 
+### Q.3 Core Anti-Capture Principles
+
+1. No Single Point of Legal Failure — The network has no registered legal entity to subpoena.
+2. Cryptoeconomic Sybil Resistance — Stake-weighted voting is capped and quadratic.
+3. Oracle Pluralism — Energy proofs require ≥3 independent sources per region.
+4. Exit = Voice — Any fleet can unbond and rebond to a competing network without penalty.
+5. Transparency by Default — All BRLA curves, reserve ratios, and validator votes are public and auditable in real time.
+
+---
+
+### Q.4 Structural Safeguards
+
+### Q.4.1 No Central Legal Entity
+
+- The Bond Network operates as a protocol, not a foundation or DAO LLC.
+- Core nodes run in multiple jurisdictions; no single country can shut it down.
+- Legal Wrapper Rule: Any entity offering Bonded Tokens must disclose it is a pass-through—no fiduciary control.
+
+---
+
+### Q.4.2 Quadratic Voting + Stake Caps
+
+The more you vote with your money, the less effective that money becomes per "vote".
+
+vote_weight = min(staked_BT, global_cap) ^ {0.5}
+
+- Global Cap: No entity > 0.5 % of total BT can vote (adjustable by 67 % supermajority).
+- Prevents whale dominance even if one actor stakes 40 % of supply.
+- Example: 1 BT = 1 vote, but 1,000,000 BT ≈ 1,000 votes — large stakes flatten into diminishing influence.
+
+---
+
+### Q.4.3 Oracle Pluralism + Slashing
+
+- Every RTU requires ≥3 geographically distinct oracles.
+- Disagreement > 2 σ → automatic slashing of dissenting oracle’s bond (1–5 %).
+- Oracle Rotation: No oracle can validate > 10 % of global fleet for > 30 days.
+
+---
+
+### Q.4.4 Fleet Exit Liquidity
+
+- Unbonding Period: 90 days (long enough to prevent flash attacks, short enough for competition).
+- Rebonding Bonus: Fleets rejoining within 180 days keep efficiency history.
+- BTA Auto-Negotiation: Smart contracts auto-draft Bond Trade Agreements with competing networks.
+
+---
+
+### Q.5 Cryptographic Safeguards
+
+### Q.5.1 Post-Quantum Threshold Signatures
+
+- Minting, BRLA updates, and reserve moves require t-of-n threshold (e.g., 5-of-8 validators).
+- Uses Dilithium + FALCON combined via BLS-style aggregation — ensuring post-quantum safety and resilience against single-key compromise.
+
+---
+
+### Q.5.2 Zero-Knowledge Fleet Proofs
+
+Fleets prove energy × uptime × efficiency via zk-SNARKs — without revealing robot location, proprietary algorithms, or customer data.
+
+Preserves privacy and auditability.
+
+---
+
+### Q.5.3 On-Chain Governance Firewall
+
+Parameter Changes (e.g., demurrage rate, TTP baseline) require:
+
+- Proposal (any bondholder)
+- 90-day review with public efficiency simulations
+- 67 % quadratic supermajority
+- 7-day execution delay
+
+Prevents rushed capture via emergency votes.
+
+---
+
+### Q.6 Social & Economic Safeguards
+### Q.6.1 Universal Bondholder Status
+
+- Every verified human (via privacy-preserving biometric or social-graph proof) is a Bondholder by default.
+- No KYC gate — only proof of humanity (e.g., PoH, Gitcoin Passport).
+- Dilutes any attempt to buy voting power.
+- This prevents plutocratic gatekeeping and ensures the network remains socially decentralized as well as cryptographically decentralized.
+
+### Q.6.2 DistoStream Lock
+
+- UBD cannot be pledged as collateral for > 30 days.
+- Prevents rent-seeking via dividend-backed loans.
+
+### Q.6.3 Capture Bounty Program
+
+1 % of annual demurrage pool funds a Capture Bounty Program, paying investigators for:
+- Proving oracle collusion
+- Exposing hidden fleet ownership
+- Demonstrating vote-buying
+- Rewards are paid in locked RoboTorq (3-year vesting).
+
+Paid in locked RT (vested over 3 years).
+
+---
+
+### Q.7 Stress-Test Scenarios
+
+| Scenario      | Trigger                          | Auto-Response                                                 |
+| ------------- | -------------------------------- | ------------------------------------------------------------- |
+| State Seizure | Government freezes 30 % of nodes | Network auto-migrates to remaining 70 %; frozen nodes slashed |
+| Whale Stake   | One entity > 15 % BT             | Auto-dilution: new BT minted to fleet growth reserve          |
+| Oracle Cartel | 3 oracles collude on efficiency  | zk-proof mismatch → 100 % slash + 180-day ban                 |
+| DAO Coup      | 51 % vote to raise demurrage     | 90-day delay + fleet exit spike → competing fork              |
+
+---
+
+### Q.8 Visual TL;DR
+
+```mermaid
+graph TD
+    A[Regulatory Threat] --> B{Structural?}
+    B -->|No Legal Entity| C[Unsubpoenaable]
+    B -->|Quadratic Vote| D[Whale-Proof]
+    B -->|Oracle Pluralism| E[Collusion-Proof]
+    B -->|Exit Liquidity| F[Competition-Proof]
+    style C fill:#10B981
+    style D fill:#10B981
+    style E fill:#10B981
+    style F fill:#10B981
+```
+
+### Q.9 Summary Equation
+
+`Capture Risk = Centralization Index / (Exit Friction  x Oracle Diversity x Vote Fairness)`
+
+`Target: Risk < 0.01 (1 % systemic vulnerability)`
+
+---
+
+### Q.10 Final Note
+
+- The Bond Network is not anti-government — it is post-jurisdictional.
+- It wins by being too distributed to regulate, too transparent to corrupt, and too useful to ban.
+
+It replaces no government; it merely removes the need for permission.
 
 ---
 
