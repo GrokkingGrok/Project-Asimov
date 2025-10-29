@@ -3707,6 +3707,124 @@ It replaces no government; it merely removes the need for permission.
 
 ---
 
+# Appendix R — Carbon-Negative RoboTorq: Locking CO₂ in Every Coin
+
+> _"Turn the sky’s trash into your pocket’s treasure."_
+
+---
+
+### R.1 The Vision
+
+Every **Physical RoboTorq coin** can **remove carbon** from the atmosphere — permanently.  
+No offsets. No credits. Just **black, strong, spendable money** that **eats CO₂**.
+
+---
+
+### R.2 The Recipe (1 Ton CO₂ → 800 RT)
+
+| Ingredient           | Amount   | Source                  |
+|----------------------|----------|-------------------------|
+| **CO₂**              | 1,000 kg | Air, exhaust, oceans    |
+| → **Carbon (biochar)** | **300 kg** | Captured via kiln     |
+| **Recycled Plastic** | **700 kg** | Bottles, bags, waste    |
+| **Total Composite**  | **1,000 kg** | Mixed + melted        |
+
+---
+
+### R.3 The Math (Simple & Correct)
+
+RT per ton CO_2 = Mass of composite (kg) RT per kg (durability standard)
+
+| Input                     | Value      |
+|---------------------------|------------|
+| Composite mass            | **1,000 kg** |
+| RT/kg (carbon-plastic, durable) | **0.8 RT/kg** |
+| **Total RT**              | **800 Physical RT** |
+
+> **No energy subtraction** — robots are **paid in digital RT**, not deducted from the coin.
+
+---
+
+### R.4 Why Energy Doesn’t Reduce Coin Value
+
+| Myth                            | **Truth** |
+|---------------------------------|-----------|
+| “Robot used power → less money!” | Robot gets **digital RT** as salary → **physical coin stays full** |
+| “Energy is burned”              | Energy is **converted** into robot work → **circulates as UBD** |
+
+**Analogy**:  
+> You pay a chef to bake a cake.  
+> The chef gets $10.  
+> You still get the **whole cake**.
+
+---
+
+### R.5 Final Numbers (Per Ton CO₂)
+
+| Year            | RT per Ton | Value ($0.18/RT) | Value ($10/RT) | CO₂ Locked |
+|-----------------|------------|-------------------|-----------------|------------|
+| **2025 Early**  | **800 RT** | **$144**          | **$8,000**      | 1 ton      |
+| **2030 Mature** | **1,200 RT** | **$216**        | **$12,000**     | 1 ton      |
+
+ **1 ton removed = $8,000–$12,000 in carbon-negative cash**
+
+---
+
+### R.6 The Coin (Design Spec)
+
+```mermaid
+graph TD
+    A[Black Carbon-Plastic<br>♻️ 70% Plastic + 30% Biochar] --> B[3D-Printed<br>🪙 1 RT Face]
+    B --> C[Embedded NFC<br>📱 Tap-to-Pay]
+    C --> D[Stamped:<br>🌍 "1 TON CO₂ LOCKED"]
+    style B fill:#000
+    style D fill:#10B981
+```
+
+- Weight: ~2 grams
+- Durability: 50+ years
+- Demurrage: 100% exempt
+
+---
+
+### R.7 How to Make It (DIY Kiln → Coin)
+
+| Step            | Tool                   | Cost               |
+|-----------------|------------------------|--------------------|
+| 1. Capture CO₂  | $300 oil drum kiln     | $300               |
+| 2. Mix + melt   | Robot 3D printer       | Paid in digital RT |
+| 3. Print coins  | Local RoboDepot        | Free drop-off      |
+
+Pilot: 1 kiln → 100 tons CO₂/yr → 80,000 RT ($800k mature)
+
+---
+
+### R.8 Why This Beats Everything
+
+| Carbon Credits           | **Carbon-Negative RoboTorq** |
+|--------------------------|-------------------------------|
+| $100/ton → paper         | **$8,000/ton → cash**         |
+| No one sees it           | **You hold it**               |
+| Fraud risk               | **Robot-verified**            |
+
+### R.9 The 6th-Grade Truth
+
+- You didn’t lose coins because the robot used power.
+- You bought your cake — and ate it too.
+
+---
+
+### R.10 Defusing the Carbon Debate
+
+This part of the system wasn't implemented for feel-good hand-wavy "Robonomics cleans the air" reason.
+- We need carbon to make the physical RoboTorq durable, whether amalgamated with plastic, rubber, glass, or metal.
+- The atmosphere has always been the most readily available source of carbon since the invention of CO2 scrubbers.
+- The supply is always replenishing itself through combustion.
+
+Robonomics turns good ecology into smart business.
+
+---
+
 ## License
 
 **Copyright © 2025 Jonathan Clark**
