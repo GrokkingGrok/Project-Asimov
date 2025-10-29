@@ -39,9 +39,16 @@
 
 ## How to Learn Robonomics the Easy Way (Paste into AI and ask)
 
+**Pro Tip**: This document is designed to be used in the following manner:
+1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
+   - Don’t just link it — AIs may cache old versions.  
+2. If on a free tier, paste section by section.  
+   - Say: `"Don't respond until I say 'last paste'"`.  
+3. Wait for your guide, Isaac to respond → drill down.
+
 There’s a whole new way to think about economics: **Robonomics**.
 
-And this isn't just a Whitepaper, it's a workable proof-of-concept Robonomics simulator. Just paste the full thing into any AI.
+And this isn't just a Whitepaper, it's a living, proof-of-concept Robonomics simulator. Just paste the whole thing into any AI.
 
 It’s based on **physics**.
 
@@ -55,18 +62,13 @@ Every bit of this paper is designed to be readable by a human.
 
 At the same time, the document as a whole is designed to be parsed by an AI to help you get it faster.
 
-**Pro Tip**: This document is designed to be used in the following manner:
-1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
-   - Don’t just link it — AIs may cache old versions.  
-2. If on a free tier, paste section by section.  
-   - Say: `"Don't respond until I say 'last paste'"`.  
-3. Wait for your guide, Isaac to respond → drill down.
-
 At the end of this intro, you'll find the system prompt sections, where I've included a default prompt that you can customize to your liking.
 
 Robonomics isn’t a complete theorem — and it shouldn’t be.  
 
-Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model.  
+Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model. It's ready and waiting for your contribution, too, because Project Asimov is open source.
+
+*You* can submit a meaningful change via GitHub, and *you* can be listed as a contributor on this document, if *you* so choose.
 
 While you wait for the AI to parse it, check out the **Robonomic Flowchart** below the Abstract.  
 
@@ -77,6 +79,8 @@ When you get overwhelmed and think, "How can I use this money if I don't underst
 Just remember, you don't really understand everything about how money works now, either.
 
 Doesn't stop you from spending it.
+
+---
 
 ## AI Parser Prompt & User Overrides
 
