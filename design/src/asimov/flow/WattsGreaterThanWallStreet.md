@@ -897,7 +897,8 @@ The TokenTorq Curve shows:
 **Equation**: token_torq_curve(t) = 1 / (1 + e^(−t × AIntropy)) × torq_gamble
 - Output always between 0 and 1  
 - Represents **fraction of AI-tokens converted to productive output** over time  
-- Connects AIntropy → labor duration → effective Torq production  
+- Connects AIntropy → labor duration → effective Torq production
+- [Precise applications are more complex/messy.](https://grok.com/share/bGVnYWN5LWNvcHk%3D_35b2ab44-9d62-43d1-8ca5-49bfb55adbb5)
 
 ---
 
@@ -941,7 +942,8 @@ The TokenTorq Curve shows:
 **Integration:**  
 - torq_mining_curve(t) = ∫ token_torq_curve(t) dt  
 - Approximation at full utilization:  
-  - torq_mining_curve ≈ ln( AIntropy × (1 + e^(t × AIntropy)) )  
+  - torq_mining_curve ≈ ln(1 + e^(t × AIntropy)) / AIntropy
+  - [Precise applications are more complex/messy.](https://grok.com/share/bGVnYWN5LWNvcHk%3D_35b2ab44-9d62-43d1-8ca5-49bfb55adbb5)
 
 **Key operational point:**  
 - **Minting occurs as value is delivered**  
