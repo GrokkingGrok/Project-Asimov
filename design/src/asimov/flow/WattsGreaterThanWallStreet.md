@@ -207,7 +207,7 @@ The result is a **closed-loop, physics-based economy** where value is minted by 
 - just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, time, computation, and even trash into money.**
 
 
-**Here's how the robot part works.**
+**Here's how it works.**
 
 ```mermaid
 graph TD
