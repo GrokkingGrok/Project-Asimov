@@ -178,15 +178,12 @@ Just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, t
 
 ```mermaid
 graph TD
-    W[Watts In] --> R[Robots Work]
-    R --> M[Mint RoboTorq]
-    M --> U[UBD to Citizens]
-    U --> S[Spend / Reinvest]
-    S --> T[Trash → Physical RT]
-    T --> R
-    style W fill:#10B981
-    style U fill:#f59e0b
-    style T fill:#3b82f6
+    A[Energy In<br>☀️⚡] --> B[Robots Work<br>🤖]
+    B --> C[Mint Money<br>💰]
+    C --> D[Pay Everyone<br>💸🤑 UBD]
+    D --> E[Spend / Reinvest<br>🛒🏭]
+    E --> F[Trash → Cash<br>♻️]
+    F --> B
 ```
 
 ---
@@ -1061,14 +1058,13 @@ Minting is not (RoboTorq_in + other production costs) (torq - 1) because we want
 **Here's how it all works again.**
 
 ```mermaid
-flowchart TD
-    A["Energy + Compute"] --> B["Robotic Labor (AI + Physical Work)"]
-    B --> C["Oracle tracks Torq accumulation"]
-    C --> D["Minting (Isaac Issues RoboTorq)"]
-    D --> E["Universal Dividend (DistoStreams to Citizens)"]
-    E --> F["Spending + Investment + Savings (RoboFund + BidNet + TorqVaults)"]
-    F --> G["Idle RT gets swept from wallets in demurrage (goes as interest to those using TorqVaults)"]
-    G --> A
+graph TD
+    A[Energy In<br>☀️⚡] --> B[Robots Work<br>🤖]
+    B --> C[Mint Money<br>💰]
+    C --> D[Pay Everyone<br>💸🤑 UBD]
+    D --> E[Spend / Reinvest<br>🛒🏭]
+    E --> F[Trash → Cash<br>♻️]
+    F --> B
 ```
 
 ---
