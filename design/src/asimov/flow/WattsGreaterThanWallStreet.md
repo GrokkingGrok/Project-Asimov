@@ -2,7 +2,7 @@
 - **Bot Sweat → Paycheck**  
 - **Trash → Cash**  
 - The RoboTorq Universal Basic Dividend says: **“Yes.”**
-- 🧠✨ **AI-Ready Draft**: Structured, tokenized, and semantically clean — designed to be parsed, audited, and learned from.
+- 🧠✨ **AI-Ready**: Structured, tokenized, and semantically clean — designed to be parsed, audited, and learned from.
 
 *Tags*: job replacement, universal basic income, universal basic dividend, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics  
 
