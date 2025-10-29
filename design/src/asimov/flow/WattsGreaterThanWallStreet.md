@@ -1111,7 +1111,7 @@ Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory
 
 Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a sink for excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made — the Bond Network will always accept dollars as long as people still have them, so the paper will always have a place to go. Come to think of it, that reserve is critical for conducting international trade without sending the RoboTorq overseas!
 
-Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics.
+Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics. A reasonable estimate for now is the cost of electricity. An even better estimate would be the unsubsidized cost of electricity.
 
 The Bond Network operates as a decentralized, algorithmically balanced, fully functional monetary system that scales to nearly any conceivable size — neither state-controlled nor privately owned, but collectively managed by all participants through open, auditable smart contracts. Governments can borrow from the seed reserve when needed.
 
@@ -2763,6 +2763,7 @@ It’s **sound money**, backed not by trust or debt — but by **physics itself*
 ---
 
 # Appendix M — Considerations for a RoboTorq Social Charter  
+*"Coase needed the blockchain. All we need are the bots."*
 
 ## M.1 Purpose of the Social Charter  
 
