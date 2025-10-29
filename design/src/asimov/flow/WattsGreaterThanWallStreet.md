@@ -51,7 +51,7 @@ This paper represents the mathematical unification of economics and physics — 
 
 Every bit of this paper is designed to be readable by a human.
 
-At the same time, the document as a whole is designed to be parsed by an AI so it can answer your questions about the content.
+At the same time, the document as a whole is designed to be parsed by an AI so it can guide you through the huge amount of content.
 
 **Pro Tip**: This document is designed to be used in the following manner:
 1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
