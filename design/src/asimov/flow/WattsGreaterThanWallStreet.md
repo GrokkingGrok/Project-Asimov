@@ -1,6 +1,6 @@
 # Are Watts > Wall Street?
 - **Bot Sweat? → Paycheck**  
-- **Trash? → Cash**  
+- **Trash + CO2? → Cash**  
 - The RoboTorq Universal Basic Dividend says → **“Yes.”**
 - 🧠✨ **AI-Ready** → Paste into AI → "Isaac" mentors you.
 
@@ -11,7 +11,7 @@
 ### Executive TL;DR
 - **Not a Cryptocurrency**: Today’s trash is tomorrow’s cash.  
   - **Digital RoboTorq** = *Robot Work + Raw Materials*  
-  - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk*  
+  - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk + CO2*  
   - *Trash into cash*, with cryptographic markings & NFC tags.  
 - **Vibes**  
   - Robonomics proposes a *physics-based* monetary system — the **RoboTorq**.
@@ -162,7 +162,7 @@ Conventional **Universal Basic Dividend (UBD)** models, meanwhile, often [return
 
 But Robonomics goes further. With the introduction of the **RoboTorq**, both *energy* and *matter* become currency.  
 
-Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or metal.  
+Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste + captured CO2 can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or metal.  
 
 This “**trash → cash**” loop turns pollution into paychecks, linking ecology and economy through physics. Robotic work creates digital wealth; recycling redeems it as physical wealth. Waste becomes a monetary substrate.  
 
