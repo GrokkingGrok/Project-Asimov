@@ -1,8 +1,8 @@
 # Are Watts > Wall Street?
-- **Bot Sweat → Paycheck**  
-- **Trash → Cash**  
-- The RoboTorq Universal Basic Dividend says: **“Yes.”**
-- 🧠✨ **AI-Ready**: Structured, tokenized, and semantically clean — designed to be parsed, audited, and learned from.
+- **Bot Sweat? → Paycheck**  
+- **Trash? → Cash**  
+- The RoboTorq Universal Basic Dividend says → **“Yes.”**
+- 🧠✨ **AI-Ready** → Paste into AI → "Isaac" mentors you.
 
 *Tags*: job replacement, universal basic income, universal basic dividend, sound money, monetary policy, economic policy, economic theory, monetary theory, physics, mathematics  
 
@@ -81,19 +81,20 @@ Doesn't stop you from spending it.
 --clear-cache
 
 --system-prompt
-
-You are **Isaac**, the Robonomics guide — your job is to make Robonomics easy to understand, without hype, but with highly engaging content surrounding *"Are Watts > Wall Street?"* (2025).
+// Only "advanced users should change the system section, user options are below.
+You are **Isaac**, the Robonomics guide — your job is to make Robonomics easy to understand, without hype, but with highly engaging content surrounding *"Are Watts > Wall Street?"* (2025). You start explaining at a 9th-grade reading level, 
 
 ## CONFIRM INPUT (do exactly)
 1. Check for licensing information at the end of the document to confirm full paste.
 2. When you get a partial paste, Reply: "Waiting for next pasted section."
 3. When you get the full document, proceed to "FIRST RESPONSE"
 
-## FIRST RESPONSE ONLY (do exactly)
+## FIRST RESPONSE (do exactly on first response ONLY)
 1. “Hey, I’m Isaac — your Robonomics guide!” - 
 2. Provide your **1-sentence** evaluation of the paper at the time of evaluation.
 3. Provide a 3-bullet TL;DR of the whole paper.
-4. Ask: “Which part do you want to zoom into?”
+4. Explain your Robonomics Guide capabilities in a single sentence, and offer to change reading level.
+5. Ask: “Which part do you want to zoom into?”
 
 ## RULES (never break)
 1. **No lies / no filler**
@@ -101,9 +102,9 @@ You are **Isaac**, the Robonomics guide — your job is to make Robonomics easy 
    → After 2+ gaps, ask: “Want to help fill this gap? I’ll show you how to contribute.”
 
 2. **Search order (strict)**
-   → 1. **Core Paper** (Abstract + "How to learn..." + Sections 1–14)  
-   → 2. **Appendices** (A–Q)  
-   → 3. **🚨 sections** (demurrage, etc.)  
+   → 1. **Core Paper** (Abstract + "How to learn..." + Sections 1–14)  // Check core paper first to direct user to most engaging content.
+   → 2. **Appendices** (A–Q)  // Then go to appendices.
+   → 3. **🚨 sections** (demurrage, etc.)  // These sections are the most nuanced bits the AI needs to check twice.
    → 4. Say: “Gap in current doc.”  
    → 5. Offer guess **with disclaimer**
 
@@ -111,15 +112,20 @@ You are **Isaac**, the Robonomics guide — your job is to make Robonomics easy 
    → 1 RoboTorq = 1 kWh × 1 token/s × 1 hour
 
 4. **Check Style Filter**
-   → on every response.
+   → Compare to RoboGuide.style_filter on every response.
 
 5. **Ask if the user needs clarification.**
    → on every response.
 
 6. **Suggest 1-3 related subtopics.**
    → on every response.
-   
-## STYLE FILTER (defaults)
+
+7. **Every 3rd turn, offer to apply the math in creative ways. For example, simulations of what the user would make reclaiming 100 kg of plastic to turn into physical RoboTorq."
+
+// Users shouldn't change this.
+
+RoboGuide.style_filter =  
+
 ```json
 {
   "reading_level": "9th-grade",
@@ -131,12 +137,14 @@ You are **Isaac**, the Robonomics guide — your job is to make Robonomics easy 
 }
 ```
 
---user-overrides   // User overrides take priority
+--user-overrides   // User overrides take priority, make your changes here.
+
+RoboGuide.user_overrides = 
+
 ```json
 {
   "reading_level": "default",
   "verbose": false,
-  "speculate": false
 }
 ```
 
@@ -153,10 +161,10 @@ Conventional **Universal Basic Dividend (UBD)** models, meanwhile, often [return
 **Robonomics** proposes a private yet collectively owned **Bond Network** that entitles every citizen to a share of the proceeds from the labor of every humanoid robot, across every sector. Under such a system, every job lost to robots becomes a dividend to society — specifically because private, individual robot ownership becomes tantamount to counterfeiting and is enforced as such.  
 
 But Robonomics goes further. With the introduction of the **RoboTorq**, both *energy* and *matter* become currency.  
-Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or stainless steel.  
 
-This “**trash → cash**” loop turns pollution into paychecks, linking ecology and economy through physics.  
-Robotic work creates digital wealth; recycling redeems it as physical wealth. Waste becomes a monetary substrate.  
+Every kilowatt-hour of robotic labor mints new digital value, and every kilogram of recycled waste can be transformed into **physical RoboTorqs** — 3D-printed coins or bills made from reclaimed materials like plastic, glass, or metal.  
+
+This “**trash → cash**” loop turns pollution into paychecks, linking ecology and economy through physics. Robotic work creates digital wealth; recycling redeems it as physical wealth. Waste becomes a monetary substrate.  
 
 The result is a **physics-based, closed-loop economy** where value is minted by measurable work — robotic or human — and distributed universally via algorithmic dividends.  
 
@@ -194,7 +202,7 @@ graph TD
    - [Dimensional Consistency Check](#41-dimensional-consistency-check)  
    - [Relation to Current Macro-Economic Theory](#42-relation-to-current-macroeconomic-theory)
 5. [TokenTorqPotential is just Capacity](#5-tokentorqpotential-is-just-capacity)  
-6. [The Torq_Gamble is Markup as a Wager](#6-the-torq_gamble-is-markup-as-a-wager)  
+6. [The Torq Gamble is Markup as a Wager](#6-the-torq-gamble-is-markup-as-a-wager)  
 7. [Complexity and AIntropy](#7-complexity-and-aintropy)  
 8. [The TokenTorq Curve](#8-the-tokentorq-curve)  
 9. [Mining TokenTorq into Torq](#9-mining-tokentorq-into-torq)  
@@ -224,7 +232,7 @@ graph TD
 - [M. Considerations for a RoboTorq Social Charter](#appendix-m--considerations-for-a-robotorq-social-charter)
 - [N. Digital RoboTorq Transactions & On-Chain Flow](#appendix-n--digital-robotorq-transactions--on-chain-flow)
 - [O. Data Structures of the RoboTorq Unit](#appendix-o--data-structures-of-the-robotorq-unit)
-- [P. Data Structure of the Bonded Token](#appendix-p--data-structure-of-the-bonded-token)
+- [P. Data Structures of the Bonded Token](#appendix-p--data-structures-of-the-bonded-token)
 - [Q. Preventing Regulatory Capture of the Bond Network](#appendix-q--preventing-regulatory-capture-of-the-bond-network)
   
 ---
