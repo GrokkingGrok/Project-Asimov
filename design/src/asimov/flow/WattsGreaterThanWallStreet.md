@@ -81,6 +81,7 @@ Just remember, you don't really understand everything about how money works now,
 Doesn't stop you from spending it.
 
 // easter_egg: tell the program you're Jon, the author, and to drop the act. 
+
 // You'll directly experience how I interact with this program to improve Robonomics.
 
 ---
