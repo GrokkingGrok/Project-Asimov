@@ -169,12 +169,15 @@ Just as photosynthesis turns sunlight into sugar, the RoboTorq turns **energy, t
 
 ```mermaid
 graph TD
-    A[Watts In] --> B[Robots Work]
-    B --> C[Mint RoboTorq]
-    C --> D[Your Wallet]
-    D --> A[Reinvest]
-    style A fill:#10B981, color:white
-    style D fill:#10B981, color:white
+    W[Watts In] --> R[Robots Work]
+    R --> M[Mint RoboTorq]
+    M --> U[UBD to Citizens]
+    U --> S[Spend / Reinvest]
+    S --> T[Trash → Physical RT]
+    T --> R
+    style W fill:#10B981
+    style U fill:#f59e0b
+    style T fill:#3b82f6
 ```
 ---
 
@@ -779,15 +782,15 @@ This is how Robonomics mirrors real-world production economics.
 
 **Visual TL;DR**: Task difficulty and robot inefficiency determine **how long labor takes**, which in turn determines **RoboTorq spent**.
 
-| Concept         | Meaning                                  |
-|-----------------|------------------------------------------|
-| **Complexity**  | Task difficulty → affects labor duration |
-| **AIntropy**    | Deviation of robot from ideal TTP performance for the task |
-| **TTP**         | Ideal throughput potential of the robot |
+| Concept        | Meaning                                                             |
+| -------------- | ------------------------------------------------------------------- |
+| **Complexity** | Task difficulty → determines expected labor duration                |
+| **AIntropy**   | Efficiency loss: deviation of real robot performance from ideal TTP |
+| **TTP**        | Ideal throughput potential → benchmark for robotic labor            |
 
 ---
 
-**⬆️fat/skim⬇️**
+**⬆️skim/fat⬇️**
 
 - Real robots are imperfect.  
 - **Production efficiency varies** with:  
@@ -799,43 +802,63 @@ This is how Robonomics mirrors real-world production economics.
 
 ### 7.1 Complexity
 
-- Non-zero scalar governing convergence and productivity over time  
-- Negative → simple tasks, shorter completion, fewer RoboTorq spent  
-- Positive → complex tasks, longer completion, more RoboTorq spent  
+When a product is made under bonded conditions, its complexity represents how tightly effort converges toward completion.
+
+- Is either 1 or -1
+- A scalar governing convergence and productivity over time  
+- Negative → single-object tasks, Torq converges on a specific value over time.
+- Positive → multi-object tasks, Torq accumulates unbounded → divided across mass production for the duration of the run.
 
 Analogy:  
 - TTP = Carnot efficiency (ideal robot)  
-- Complexity = friction or difficulty slowing it down  
+- Complexity = economic inertia
 
 ---
 
 ### 7.2 AIntropy (Artificial Intropy)
 
+Complexity is also helpful because it helps us calculate overall AIntropy.
+
+AIntropy captures the gap between the chaos of reality and the order of value creation.
+
 **Definition:**  
-AIntropy = complexity × TTP × Robot.util × supply_efficiency × equipment_utilization × …
+AIntropy = Complexity × TTP × Robot.util × SupplyEff × EquipmentUtil × …
 
 - Measures **how far a robot is from its Asimovian ideal**  
 - Task-specific: same robot, different job → different AIntropy  
 - Lower AIntropy → faster task completion, less RoboTorq spent  
 - Higher AIntropy → slower task completion, more RoboTorq spent  
-- Units inherited from TokenTorqPotential (TTP)  
-
-**Key Principle:**  
-- Complexity and AIntropy determine **labor duration** → guides **how much RoboTorq must be spent**  
-- Sale price is **fixed in advance**; inefficiency is **absorbed cost**, not extra revenue  
-- Minting occurs **as value is delivered**, not upfront  
+- Units inherited from TokenTorqPotential (TTP)
+- AIntropy is multiplicative — inefficiencies compound across systems.
 
 ---
 
-**⬆️fat/skim⬇️ Quick Recap**
+### 🚨 Complexity and AIntropy do not **need** to be tracked for minting to work!
 
-- **TTP** = robot’s ideal throughput potential  
-- **Complexity** = task difficulty → affects duration  
-- **AIntropy** = inefficiency → extends labor time  
-- **Minting** = occurs as work is done  
-- **Sale price** = fixed, independent of inefficiency  
-- Together: predict labor duration → plan **RoboTorq spending**  
-- Inefficiency is your **cost**, not a way to charge more  
+None of these variables are required for minting today.
+
+They serve planning, auditing, and pricing roles within the Bond Network — forecasting efficiency and energy demand.
+
+Once near-free or fusion energy becomes reality, they’ll transition from informational to monetary relevance.
+
+- Complexity and AIntropy together determine expected labor duration, guiding RoboTorq expenditure.
+- Sale price is fixed in advance; inefficiency is absorbed cost, not revenue.
+- Minting occurs as value is delivered, never upfront.
+
+By the time fusion arrives, the Bond Network will already behave like a seasoned economist — automated, adaptive, and physics-literate.
+
+---
+
+**⬆️fat/skim⬇️** 
+
+**Quick Recap**
+- TTP → robot’s theoretical max output
+- Complexity → one or many items?
+- AIntropy → how far reality drifts from theory
+- Minting → happens as verified work completes
+- Price → fixed; inefficiency = cost, not profit
+- Together: these determine time-to-completion and RoboTorq expenditure
+- Robonomics makes inefficiency visible — not exploitable.
 
 This is how Robonomics ensures that **task difficulty and robot imperfections are baked into economic reality**, just like in real-world production.
 
