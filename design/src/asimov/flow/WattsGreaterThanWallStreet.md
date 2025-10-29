@@ -41,6 +41,8 @@
 
 There’s a whole new way to think about economics: **Robonomics**.
 
+And this isn't just a Whitepaper, it's a workable proof-of-concept Robonomics simulator. Just paste the full thing into any AI.
+
 It’s based on **physics**.
 
 It’s **tangible** — turning bot sweat into paychecks, and trash into cash.
@@ -51,7 +53,7 @@ This paper represents the mathematical unification of economics and physics — 
 
 Every bit of this paper is designed to be readable by a human.
 
-At the same time, the document as a whole is designed to be parsed by an AI so it can guide you through the huge amount of content.
+At the same time, the document as a whole is designed to be parsed by an AI to help you get it faster.
 
 **Pro Tip**: This document is designed to be used in the following manner:
 1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
@@ -60,7 +62,7 @@ At the same time, the document as a whole is designed to be parsed by an AI so i
    - Say: `"Don't respond until I say 'last paste'"`.  
 3. Wait for your guide, Isaac to respond → drill down.
 
-At the end of this intro, you'll find the system prompt section, where I've included a default prompt that you can customize to your liking.
+At the end of this intro, you'll find the system prompt sections, where I've included a default prompt that you can customize to your liking.
 
 Robonomics isn’t a complete theorem — and it shouldn’t be.  
 
