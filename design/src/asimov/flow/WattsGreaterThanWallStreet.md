@@ -625,25 +625,34 @@ Idle energy doesn’t produce work; **moving energy does**.
 
 ### 🚨 Demurrage Is Not a Tax on Saving
 
-- Demurrage applies only to
-  - *onchain*, idle, unvaulted, RoboTorq;
-  - TorqVaults, BRLA stakes, and active spending are 100 % exempt and earn their **interest** from the demurrage pool.
+Let's be clear: Digital RoboTorq is just files on a device.
+- insanely secure, but files.
+- they need time/money to transfer
+- and space/money to store.
 
-**Physical RoboTorq must be exempt from demurrage in all forms.**  
-- Demurrage applies **only** to **digital, on-chain, un-vaulted balances**.  
-- Upon redemption, standard digital rules take effect.
+Demurrage has to happen due to 
+1. data storage costs
+2. data transfer costs
+3. **and** market dynamics. 
+
+Three birds with one stone in the digital world.
+
+**Physical RoboTorq must always be exempt from demurrage in all forms.**  
+- Demurrage applies **only** to **digital (on-chain), un-collateralized balances**.  
+- Upon redemption from physical back to digital, standard digital rules take effect.
 
 The entire point of physical RoboTorq is to offload stress from the grid.
 
-The best way to avoid demurrage permanently is to go to a RoboTorq Depot, exchanging your digital RoboTorq for physical RoboTorq.
+The best way to permanently avoid demurrage is to visit a RoboTorq Depot and exchange your digital RoboTorq for hard money.
 
-Why does this matter?
+*Why does this matter?*
 
-Robots will literally mine the materials to make physical money from our trash — paying you digital RoboTorq as they do — so your desire to avoid demurrage now directly fuels recycling.
+Robots will literally mine the materials to make physical money from our trash — paying you digital RoboTorq as they do — so your desire to avoid demurrage, both now and later, directly fuels recycling demand.
 
 ---
 
 Without demurrage, you’d get:
+- Hidden data storage costs → just like fiat inflation.
 - Hoarding → liquidity collapse  
 - Rich-get-richer feedback loops  
 - “UBD for billionaires” — the exact trap we’re avoiding  
