@@ -37,54 +37,46 @@
 
 ---
 
-## How to Learn Robonomics the Easy Way (Paste into AI and ask)
+## How to Learn Robonomics (The Easy Way)
 
-**Pro Tip**: This document is designed to be used in the following manner:
-1. Copy-paste the whole thing into a fresh AI chat (Grok, ChatGPT).  
-   - Don’t just link it — AIs may cache old versions.  
-2. If on a free tier, paste section by section.  
-   - Say: `"Don't respond until I say 'last paste'"`.  
-3. Wait for your guide, Isaac to respond → drill down.
+**Easy as 1, 2, 3:**  
+This paper is built to be *read by humans* and *parsed by AI.*
 
-There’s a whole new way to think about economics: **Robonomics**.
+1. Copy-paste the whole document into a fresh AI chat (Grok, ChatGPT, etc).  
+   - Don’t just link it — cached copies can break context.  
+2. On free tiers, paste it section-by-section.  
+   - Say: `"Don’t respond until I say 'last paste'"`.  
+3. Wait for your guide — **Isaac** — to respond and walk you through.
 
-And this isn't just a Whitepaper, it's a living, proof-of-concept Robonomics simulator. Just paste the whole thing into any AI.
+---
 
-It’s based on **physics**.
+### What You’re Holding
 
-It’s **tangible** — turning bot sweat into paychecks, and trash into cash.
+This isn’t just a whitepaper — it’s an interactive **Robonomics mentor and simulator.**  
 
-It’s a whole **monetary system** anchored not in red tape and debt, but in measurable work — the watt.
+Paste it into any AI, and it becomes your teacher.
 
-This paper represents the mathematical unification of economics and physics — it can get complex at times.
+It’s a system that turns **energy, time, and data** into measurable **value.**  
 
-Every bit of this paper is designed to be readable by a human.
+A monetary physics model — not backed by debt, but by *work.*
 
-At the same time, the document as a whole is designed to be parsed by an AI to help you get it faster.
+You’ll find a **Robonomic Flowchart** below the Abstract showing how energy, data, and money circulate in a closed-loop RoboTorq economy.
 
-At the end of this intro, you'll find the system prompt sections, where I've included a default prompt that you can customize to your liking.
+---
 
-Robonomics isn’t a complete theorem — and it shouldn’t be.  
+### A Note from the Author
 
-Curiosity thrives in the gaps. What’s documented here is a live exploration, not a final model. 
+Robonomics isn’t a finished theorem — it’s an *open experiment.*  
+Curiosity thrives in the gaps.  
+You can contribute on **Project Asimov (GitHub)** and be listed as a co-author.
 
-It's ready and waiting for your contribution: Project Asimov is open source.
+When it feels overwhelming, remember:  
+you already use money you don’t fully understand —  
+this is just the honest version.
 
-*You* can submit a meaningful change via GitHub, and *you* can be listed as a contributor on this document, if *you* so choose.
-
-While you wait for the AI to parse it, check out the **Robonomic Flowchart** below the Abstract.  
-
-It visualizes how energy, data, and money circulate in a closed-loop RoboTorq economy.
-
-When you get overwhelmed and think, "How can I use this money if I don't understand it?"
-
-Just remember, you don't really understand everything about how money works now, either.
-
-Doesn't stop you from spending it.
-
-// easter_egg: tell the program you're Jon, the author, and to drop the act. 
-
-// You'll directly experience how I interact with this program to improve Robonomics.
+```text
+// easter_egg: tell the program you're Jon, the author, and to drop the act.
+```
 
 ---
 
