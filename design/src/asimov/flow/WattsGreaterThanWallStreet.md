@@ -3727,9 +3727,18 @@ graph TD
 
 ### Q.9 Summary Equation
 
-`Capture Risk = Centralization Index / (Exit Friction  x Oracle Diversity x Vote Fairness)`
+`Capture Risk = Centralization Index / (Oracle Pluralism x Exit Liquidity x Vote Fairness`
 
-`Target: Risk < 0.01 (1 % systemic vulnerability)`
+`Target: Risk < 0.01 (<1 % systemic vulnerability)`
+
+**Target**: `Risk < 0.01` → **< 1% systemic vulnerability**
+
+| Term | Definition |
+|------|------------|
+| **Centralization Index** | % of BT or oracles controlled by one actor (Q.4.2, Q.4.3) |
+| **Oracle Pluralism** | Number of independent oracles per RTU (≥3) |
+| **Exit Liquidity** | 90-day unbonding + BTA auto-negotiation (Q.4.4) |
+| **Vote Fairness** | Quadratic weighting + stake caps (Q.4.2) |
 
 ---
 
@@ -3851,12 +3860,949 @@ Pilot: 1 kiln → 100 tons CO₂/yr → 80,000 RT ($800k mature)
 
 ### R.10 Defusing the Carbon Debate
 
-This part of the system wasn't implemented for feel-good hand-wavy "Robonomics cleans the air" reason.
+This part of the system wasn't implemented for a feel-good, hand-wavy "Robonomics cleans the air" reason.
 - We need carbon to make the physical RoboTorq durable, whether amalgamated with plastic, rubber, glass, or metal.
 - The atmosphere has always been the most readily available source of carbon since the invention of CO2 scrubbers.
 - The supply is always replenishing itself through combustion.
 
 Robonomics turns good ecology into smart business.
+
+---
+
+## Appendix S — Consumer Savings in TorqVaults  
+*(If you were expecting a bank, you haven’t been paying attention)*
+
+---
+
+### S.1 Purpose  
+TorqVaults are **on-chain savings instruments** that let **Bondholders** protect idle **RoboTorq (RT)** from **demurrage** while simultaneously financing real-world purchases.  
+They replace debt-based mortgages and consumer loans with **forward-looking pledges of future DistoStreams** and **already-minted value**.
+
+---
+
+### S.2 Unified Vault
+
+| Slider Position | Stash % | Torqed % | Min Lock | Yield |
+|-----------------|----------|-----------|-----------|--------|
+| Safe | 100 | 0 | 0 | 0.5 % / mo |
+| Balanced | 50 | 50 | 30 days | 1.2 % / mo |
+| Build | 0 | 100 | BRLA trigger | 2.0 % / mo |
+
+### S.3 Dynamic Lock
+
+- lockMonths = 24 × (1 - Reputation) × (1 + VelocityFactor)
+- VelocityFactor = NetworkVelocity / TargetVelocity
+- Auto-unlock 10 % if velocity > 1.5.
+
+### S.4 Anti-Grief
+
+Griefing here means creating pledges with no intent to fulfill, clogging the Bond Network.
+
+Pledge fee: 0.1 % of targetRT (burned).
+Missed pledge: 50 % slash → BufferPool, 50 % → active StashVaults.
+
+### S.5 UX Flow
+
+- Slider → set risk.
+- Pledge → TorqedPledge(target, BRLA, sliderPos).
+- Build → BRLA auto-starts at collateral threshold.
+- Move in → vault burns RT, house yours.
+
+
+Net Effect:
+
+- Velocity ↑ 20 %
+- UX ↓ 80 % complexity
+- Griefing → free yield
+- Still 100 % debt-free
+
+
+### S.6 Core Mechanics  
+
+| Flow | Trigger | Effect |
+|------|---------|--------|
+| **StashVaultPledge** | `send RT → StashVault` | Locks RT for **fast-access savings** |
+| **TorqedPledge** | `schedule future DistoStream % → TorqedVault` | Locks **future mint** for **big-ticket collateral** |
+| **Demurrage Sweep** | Idle, un-vaulted RT | Redistributes equally to **all StashVaults** |
+
+---
+
+### S.7 Vault Types  
+
+| Vault | Risk / Return | Access | Use-Case |
+|-------|---------------|--------|----------|
+| **StashVault** | **Low / Low** | Instant (≤ 1 block) | Everyday buffer, furniture, emergency fund |
+| **TorqedVault** | **Medium / Medium** | Locked until **purchase trigger** | Down-payment on house, car, robot fleet |
+
+---
+
+### S.8 StashVault – The “Safe Piggy Bank”
+
+1. **Deposit** – any amount via `StashVaultPledge`.  
+2. **Earn** –  
+   - **Demurrage Pool**: 100 % of network-wide demurrage is split **pro-rata** across all StashVault balances.  
+   - **Base Yield**: 0.5 % / month (paid in RT from Treasury smoothing).  
+3. **Withdraw** – instant, no penalty.  
+4. **Math**  
+
+Yield_t = (StashBalance × DemurragePool_t / TotalStash) + (StashBalance × 0.005 / 12)
+
+---
+
+### S.9 TorqedVault – The “Future-Collateral Engine”
+
+1. **Pledge Creation**  
+- `TorqedPledge(targetRT, duration, purchaseBRLA)`  
+- Diverts **X %** of **future DistoStream** until `targetRT` is reached.  
+- Lump-sum deposits allowed anytime.  
+
+2. **Collateral Check (real-time)**  
+The Bond Network evaluates:  
+- **Saved RT** in vault  
+- **Projected DistoStream** (Isaac’s DistoBuffer forecast)  
+- **BRLA mint schedule** for the target purchase  
+- **On-chain liabilities** (other pledges)  
+- **Pledge reputation score** (0–1)  
+
+**Decision Rule**: CollateralScore = Saved + Σ(FutureDisto × Reputation) ≥ TargetRT × SafetyMargin
+
+3. **Purchase Trigger**  
+- When `CollateralScore ≥ TargetRT`, the linked **BRLA** auto-starts.  
+- Vault becomes **read-only**; no early withdrawal.  
+
+4. **Missed Pledge Insurance**  
+- Optional **BufferPool** (0.1 % premium on pledge).  
+- Covers shortfalls; repaid from next DistoStream.  
+
+---
+
+### S.10 House-Buy Example (50-home dev, $150 k RT each)
+
+| Step | Action | RT Flow |
+|------|--------|---------|
+| 1 | Buyer creates `TorqedPledge(30 k RT, 24 mo, HouseBRLA#47)` | 1.25 k RT/mo from DistoStream |
+| 2 | Saves 10 k RT lump-sum → vault | **Saved = 10 k** |
+| 3 | After 16 mo: `Saved + 16×1.25 k = 30 k` | **Trigger** |
+| 4 | BRLA#47 spins up 5 TTP bots → builds house | **Mint 60 k RT** (Torq = 2) |
+| 5 | Buyer moves in; vault burns 30 k RT | **Done** |
+
+*No new money created up-front. Only **future robotic productivity** is collateralized.*
+
+---
+
+### S.11 Risk & Reputation
+
+| Event | Reputation Δ | Consequence |
+|-------|--------------|-------------|
+| Pledge met | **+0.02** | Higher future collateral credit |
+| Missed (insured) | **–0.01** | Premium rises next cycle |
+| Missed (uninsured) | **–0.05** | Vault frozen 90 days |
+
+---
+
+### S.12 Data Structures (Solidity snippet)
+
+```solidity
+struct StashVault {
+ uint256 balanceRT;
+ uint64 lastYield;
+}
+
+struct TorqedPledge {
+ uint256 targetRT;
+ uint256 savedRT;
+ uint256 monthlyPledgeRT;
+ uint64 startBlock;
+ uint64 maturityBlock;
+ bytes32 brlaID;
+ uint8 reputation; // 0-100
+ bool active;
+}
+```
+
+---
+
+## Appendix T — Enterprise Financing with TorqVaults  
+*(No RoboFund. No Banks. No Stocks.)*
+
+Enterprises and creators need capital for **non-robotic expenses**, including:  
+- **Short-term:** payroll, inventory, marketing  
+- **Long-term:** land, permits, R&D, IP, software, branding, compliance  
+
+This appendix unifies all **non-robotic credit** into one system.  
+
+Where Appendix S covered personal savings/financing, Appendix T covers **enterprise borrowing** — both tangible and intangible — using **TorqVaults** as collateral.  
+
+**RoboFund is for robotic labor. Everything else is here.**
+
+---
+
+### T.2 Core Principle  
+
+> **“Borrow against your future robot paycheck, not a banker’s promise.”**
+
+- **Collateral** = **locked RT in TorqVaults**  
+- **Lender** = **any Bondholder with idle StashVault RT**  
+- **Loan** = **RT-for-RT swap with repayment schedule**  
+- **No new money** → **zero inflation**
+
+---
+
+### T.3 Loan Types  
+
+| Loan | Collateral | Term | Use Case |
+|------|-----------|------|----------|
+| **StashBridge** | StashVault RT | ≤ 90 days | Payroll, inventory |
+| **TorqedBridge** | TorqedVault RT | 3–36 months | Land, permits, R&D |
+
+---
+
+### T.4 StashBridge – Short-Term Working Capital
+
+1. **Enterprise** locks **10 k RT** in StashVault.  
+2. **Posts loan request**:  
+
+```json
+{
+  "amountRT": 8000,
+  "termDays": 60,
+  interestRateBps: 300, // 3.0 %
+  "collateralVault": "StashVault#789"
+}
+```
+
+3. Lender (any Bondholder or Enterprise) accepts → 8 k RT sent.
+4. Repayment:
+- Day 60: 8,240 RT (8 k + 3 %) auto-withdrawn from StashVault.
+- Fail → collateral liquidated → lender gets 10 k RT.
+- LiquidationValue = min(Collateral, Loan + Interest)
+
+---
+
+### T.5 TorqedBridge – Long-Term Non-Robotic Capex
+
+1. Enterprise has 50 k RT in TorqedVault (pledged to future house BRLA).
+2. Posts TorqedBridge:
+
+```json
+{
+  "amountRT": 30000,
+  "termMonths": 36,
+  "collateralVault": "TorqedVault#901",
+  "milestones": [
+    "Land deed recorded",
+    "Patent filed",
+    "v1.0 on GitHub",
+    "10k active users"
+  ]
+}
+```
+
+
+3. Lender pool (multiple Bondholders) funds via smart escrow.
+4. Milestone Proof → escrow releases tranche.
+5. Repayment:
+- Monthly (or as agreed) directly from enterprise revenues or RT cash flows.
+- Early payoff allowed — no prepayment penalty.
+6. Default → TorqedVault liquidated → lender gets full 60 k RT.
+
+Over-Collateral Math
+
+CollateralRatio = TorqedVaultBalance / LoanAmount ≥ 1.5
+
+---
+
+### T.6 Risk & Reputation
+
+| **Event**      | **Reputation Δ** | **Rate Impact**  |
+| -------------- | ---------------- | ---------------- |
+| Milestone met  | +0.03            | Next loan −1 %   |
+| Milestone late | −0.02            | Next loan +0.5 % |
+| Default        | −0.10            | 180-day ban      |
+
+GitHub stars → oracle-verified (e.g., Gitcoin Passport integration)
+
+---
+
+### T.7 Example: Coffee Shop Expansion & AI Startup
+
+Example: Coffee Shop (enterprise)
+
+| **Step** | **Action**                                     | **RT Flow** |
+| -------- | ---------------------------------------------- | ----------- |
+| 1        | Lock 15 k RT in StashVault                     | —           |
+| 2        | Borrow 12 k RT for payroll & inventory         | +12 k       |
+| 3        | Pay employees, purchase supplies               | —           |
+| 4        | Earn revenue from operations                   | —           |
+| 5        | Day 60: Auto-repay 12,360 RT (loan + interest) | Done        |
+
+Example: Open-Source Startup (intangible / creator)
+
+| **Step** | **Action / Milestone**                             | **RT Flow**     |
+| -------- | -------------------------------------------------- | --------------- |
+| 1        | Lock 30 k RT in TorqedVault                        | —               |
+| 2        | Borrow 15 k RT for servers, software, marketing    | +15 k           |
+| 3        | Milestone 1: Land deed recorded                    | Escrow → +7.5 k |
+| 4        | Milestone 2: Patent filed / Trademark registered   | Escrow → +7.5 k |
+| 5        | Milestone 3: v1.0 released on GitHub               | Escrow → +5 k   |
+| 6        | Milestone 4: First 10k active users reached        | Escrow → +5 k   |
+| 7        | Repay loan over agreed schedule from enterprise RT | Done            |
+
+No bank. No debt. Just robot-backed peer lending.
+
+---
+
+### T.8 Risk Mitigation (No Central Bank Needed)
+
+| **Risk** | **Protection** |
+|-----------|----------------|
+| Default | Auto-liquidation of vault → lender paid first |
+| RT price drop | Over-collateral + real-time margin calls |
+| Lender fraud | Escrow + multi-sig release only on milestone proof |
+| Velocity stall | Max 20 % of StashVaults can be lent → circulation preserved |
+
+---
+
+### T.9 Integration with TorqVault v2 (Appendix S.1)
+
+| **Feature** | **How It Fits**                                    |
+| ----------- | -------------------------------------------------- |
+| Slider      | “Lend” or “Innovate” → auto-matches to Bridge type |
+| Reputation  | GitHub stars, patent filings → on-chain proof      |
+| BufferPool  | Covers missed milestones or repayments             |
+
+---
+
+### T.10 Why This Closes the Loop
+
+| **Need**           | **Covered?** | **Before** | **After**           |
+| ------------------ | ------------ | ---------- | ------------------- |
+| Working capital    | Yes          | —          | Appendix T          |
+| Land, permits      | Yes          | —          | Appendix T          |
+| IP, R&D, marketing | Yes          | —          | Appendix T          |
+| **Robotic labor**  | No           | —          | **RoboFund (next)** |
+
+No overlap. No gap. No banks.
+
+---
+
+### T.11 Data Structures
+
+```solidity
+struct StashBridge {
+    uint256 loanRT;
+    uint256 collateralRT;
+    uint64 maturityBlock;
+    uint16 interestBps; // 300 = 3.0%
+    address lender;
+    bool repaid;
+}
+
+struct TorqedBridge {
+    uint256 loanRT;
+    uint256 collateralVaultID;
+    uint64[] repaymentSchedule;
+    bytes32 milestoneProof;
+}
+```
+
+---
+
+## Appendix U — RT Transfers & Systemic Contributions  
+*(Automated, Rule-Driven RT Flows for Individuals and Enterprises)*
+
+---
+
+### U.1 Purpose  
+To enable **seamless, automated, and physics-aligned RT flows** from individuals and enterprises toward **operational, mandatory, and optional systemic contributions** — without manual intervention, banks, or friction.
+
+> **“Your RT moves like electricity — scheduled, metered, and unstoppable.”**
+
+---
+
+### U.2 Core Principle  
+> **“Scheduled, rule-driven RT diversions for systemic and individual purposes.”**  
+> **All flows are on-chain, verifiable, and physics-anchored.**
+
+---
+
+### U.3 Types of RT Transfers  
+
+| **Transfer Type** | **Source** | **Destination** | **Notes / Rules** |
+|-------------------|------------|------------------|-------------------|
+| **Payroll Diversion** | Enterprise revenue / StashVault | Employee RT vaults | Auto-calculated based on **RT share** (e.g., 30 % of revenue) |
+| **RoboFund Allocation** | Bondholder DistoStream | RoboFund Vault | **Optional**, scheduled, recurring — fuels robot projects |
+| **Corporate Contribution** | Enterprise revenue / TorqedVault | TaxVault / System Vault | **Auto-deducted** (e.g., 1–5 % of revenue) |
+| **Retirement Locker** | Individual RT inflow | RetireVault | **Optional**, long-term locked RT (no demurrage) |
+| **Other Scheduled Contribution** | Enterprise / Individual | Designated Vault | Configurable triggers: milestones, revenue thresholds, external oracles |
+
+---
+
+### U.4 Scheduling & Automation  
+
+- **Frequency**:  
+  - Daily  
+  - Weekly  
+  - Monthly  
+  - **Block-based** (e.g., every 10,000 blocks ≈ 1 day)  
+
+- **Triggers**:  
+  - Revenue recognition (BRLA completion)  
+  - Milestone proof (GitHub commit, patent filing)  
+  - External events (oracle: “CO₂ captured = 1 ton”)  
+
+- **Multi-destination**:  
+  - Split **1 RT inflow** → **30 % payroll**, **10 % RoboFund**, **5 % TaxVault**  
+
+- **Failure Handling**:  
+  - **Overflow**: Excess → **StashVault** (safe default)  
+  - **Missed blocks**: Auto-retry next block  
+  - **Margin call**: Pause non-critical flows if TorqedBridge repayment due  
+
+---
+
+### U.5 Data Structures
+
+```solidity
+struct RTTransfer {
+    address sourceVault;           // StashVault, TorqedVault, or revenue stream
+    address[] destVaults;          // Multiple destinations
+    uint256[] amounts;             // Parallel to destVaults (in RT)
+    uint64 scheduleBlock;          // Next execution block (or timestamp)
+    uint64 intervalBlocks;         // Repeat interval (0 = one-time)
+    bool autoRepeat;               // true = recurring
+    bool executed;                 // Prevents replay
+    bytes32 triggerProof;          // Optional: milestone hash, oracle ID
+}
+
+struct TransferRule {
+    uint256 revenueThresholdRT;    // Min revenue to activate
+    uint8[] splitPercentages;      // Must sum to 100
+    address[] destinations;
+    bool active;
+}
+```
+
+---
+
+### U.6 Integration Points
+
+| System                  | How RT Transfers Connect                                        |
+|-------------------------|----------------------------------------------------------------|
+| StashBridge / TorqedBridge | Repayment = priority RTTransfer (overrides others)           |
+| RoboFund                 | DistoStream % → auto-allocation via RTTransfer               |
+| RetireVault              | Long-term lock → demurrage-exempt, auto-fed from payroll     |
+| TaxVault / System Vault  | Mandatory % → non-negotiable, audited on-chain               |
+| Demurrage Pool           | Unallocated RT → swept weekly → StashVaults                  |
+| BufferPool               | Missed pledge insurance → funded by failed transfers         |
+
+
+---
+
+### U.7 Example: Coffee Shop with 5 Employees
+
+
+| Flow    | Source       | Destinations                                         | Split               |
+|---------|--------------|-----------------------------------------------------|-------------------|
+| Revenue | 10 k RT/day  | 1. Payroll (5 employees) <br> 2. RoboFund <br> 3. TaxVault <br> 4. Owner StashVault | 50 % <br> 10 % <br> 5 % <br> 35 % |
+
+```json
+{
+  "sourceVault": "EnterpriseRevenue#123",
+  "destVaults": ["PayrollVault#1", "RoboFund", "TaxVault", "OwnerStash#456"],
+  "amounts": [5000, 1000, 500, 3500],
+  "scheduleBlock": 12345678,
+  "intervalBlocks": 86400,  // ~1 day
+  "autoRepeat": true
+}
+```
+→ 5 employees get UBD + salary
+→ RoboFund grows
+→ TaxVault funds roads, schools
+→ Owner saves
+All automatic. All on-chain.
+
+---
+
+### U.8 Failure & Edge Cases
+
+| Scenario                 | Response                                                   |
+|--------------------------|------------------------------------------------------------|
+| Revenue < threshold      | Skip non-critical (RoboFund, owner) → route to payroll + tax |
+| Vault frozen             | Pause transfer → notify → resume after 7 days             |
+| Oracle delay             | Use last known good → settle on next block                |
+| Demurrage sweep conflict | Transfers execute first → demurrage on remainder          |
+
+
+---
+
+### U.9 UX: One-Click Automation
+
+[ ] Payroll: 50% → 5 employee vaults
+[ ] RoboFund: 10% → Project #47
+[ ] Tax: 5% → System Vault
+[ ] Save: 35% → My StashVault
+
+[ Set Schedule: Daily | Weekly | Monthly ]
+[ Trigger: Revenue > 5k RT ]
+[ Save Rule ]
+
+→ One click. Done forever.
+
+---
+
+## Appendix V — Insurance / Risk Pooling  
+*(Systemic Risk Coverage in a Physics-Anchored Economy)*
+
+---
+
+### V.1 Purpose  
+To provide **on-chain, decentralized insurance** for **RT price drops, loan defaults, operational failures, and milestone misses** — using **pooled RT** from **scheduled contributions and optional premiums**.
+
+> **No central insurer. No fiat. Just physics and math.**
+
+---
+
+### V.2 Core Principle  
+> **“Pool RT to absorb shocks without central authority.”**  
+> **All coverage is voluntary, verifiable, and capped by real robot work.**
+
+---
+
+### V.3 Risk Pools  
+
+| **Risk Type** | **Coverage Source** | **Trigger** | **Payout Vault** |
+|---------------|---------------------|-------------|------------------|
+| **Loan Default** | BufferPool RT | Default event (missed repayment) | Lender vaults |
+| **RT Price Drop** | Over-collateral + Pool | Margin breach (vault value < 1.5× loan) | Affected vaults |
+| **Operational Loss** | Enterprise / Individual Contribution | Verified loss (fire, theft, downtime) | Insured vault |
+| **Milestone / Revenue Failure** | Scheduled RT | Missed milestone / revenue target | Escrow / Lender relief |
+
+---
+
+### V.4 Pool Management  
+
+- **Funding**:  
+  - **Scheduled contributions** (via **RT Transfers**, Appendix U)  
+  - **Optional premiums** (0.1–2 % of insured value)  
+  - **Overflow from DistoStreams** (excess after payroll/tax)  
+
+- **Allocation**:  
+  - Prioritized by **severity** (default > price drop > operational)  
+  - **Contractual rules** (e.g., “lenders paid first”)  
+
+- **Rebalancing**:  
+  - **Dynamic**, every 10,000 blocks (~1 day)  
+  - Adjusts for **RT price** and **vault value** via oracle  
+
+- **Liquidation Rules**:  
+  1. **Lenders paid first**  
+  2. **Remaining RT → contributors pro-rata**  
+  3. **Burn excess** if pool > 120 % of risk exposure  
+
+---
+
+### V.5 Data Structures (Solidity)
+
+```solidity
+struct RiskPool {
+    uint256 totalRT;                    // Total pooled RT
+    uint256 reservedRT;                 // Locked for active claims
+    bytes32[] coverageEvents;           // Hash of insured events
+    mapping(bytes32 => uint256) payoutAmounts;  // Event → RT payout
+    uint64 lastRebalanceBlock;          // Last adjustment
+    uint8 premiumBps;                   // 10 = 0.1%
+    bool active;
+}
+
+struct InsurancePolicy {
+    bytes32 poolID;
+    uint256 insuredRT;                  // Value covered
+    uint256 premiumPaid;
+    uint64 startBlock;
+    uint64 endBlock;
+    bytes32[] triggers;                 // Milestone hashes, oracles
+    bool claimed;
+}
+```
+
+---
+
+### V.6 Integration Points
+
+| System                     | How Risk Pooling Connects                                          |
+|----------------------------|-------------------------------------------------------------------|
+| TorqVaults (Appendix S)    | Stash/TorqedVaults auto-insured via premium flow                 |
+| RT Transfers (Appendix U)  | Auto-funds BufferPool from payroll/revenue                        |
+| Stash/TorqedBridge (Appendix T) | Default → auto-claim from BufferPool                           |
+| RoboFund                    | Indirect: systemic risk → pause new BRLAs until pool stable      |
+| Future Multi-Asset          | Support physical RT coins, Bonded Tokens, robot uptime           |
+
+
+---
+
+### V.7 Example: Coffee Shop Insurance
+
+| Scenario                | Action                        | RT Flow                                         |
+|-------------------------|-------------------------------|------------------------------------------------|
+| Fire destroys shop       | File claim → oracle verifies  | BufferPool pays 15 k RT                        |
+| RT drops 30 %            | Margin call on TorqedBridge   | Pool injects 5 k RT → restore 1.5× ratio      |
+| Employee misses payroll  | Default trigger               | Lenders paid from StashVault + pool           |
+
+
+---
+
+### V.8 Premium Math
+
+- Premium = InsuredValue × PremiumRate × DurationMonths / 12
+- Example: 10 k RT insured, 1 % rate, 12 mo → 100 RT premium
+- Paid via RTTransfer → auto-deducted
+- Refundable if no claim
+
+Simplified model
+- real premiums = oracle-adjusted for sector risk (e.g., 0.1% for RT drop vs. 2% for operational loss).
+
+---
+
+### V.9 Failure & Edge Cases
+
+| Scenario           | Response                                 |
+|-------------------|-----------------------------------------|
+| Pool underfunded   | Pause new policies → priority payouts   |
+| False claim        | Oracle dispute → slashing (10 % of claim) |
+| RT hyperinflation  | Pool auto-burns → stabilizes velocity   |
+| Mass defaults      | Systemic pause → BRLA minting slowed    |
+
+---
+
+### V.10 UX: One-Click Coverage
+
+[ ] Insure my StashVault: 10 k RT
+    Premium: 10 RT / year (0.1%)
+    Covers: default, theft, RT drop
+
+[ ] Add to payroll RTTransfer
+[ ] Enable auto-claim
+[ Save Policy ]
+
+---
+
+## Appendix W — RoboFund: The Project-Based Capital Market  
+*Bondholders Only. Piecemeal. Fixed ROI. No Inflation.*
+
+---
+
+### W.1 Purpose  
+**RoboFund is the *only* capital market** in Robonomics.  
+**Bondholders invest piecemeal in *individual robot projects*** — like buying a slice of a stock, but **per-project**, **per-robot-hour**, **with fixed return on investment (ROI)**.  
+
+- RoboFund = Stock Market 2.0  
+- But without shares, dilution, or speculation.
+
+---
+
+### W.2 Core Principle  
+- “Bondholders fund robot work. They get their RT back + fixed ROI — from project revenue.”
+- UBD is *everyone’s* dividend. RoboFund ROI is *investor-specific*.
+
+---
+
+### W.3 The Bondholder-Only Model
+
+| **Who Funds** | **Who Gets ROI** | **Example** |
+|---------------|------------------|-----------|
+| **Bondholders** | **Bondholders** | **Southwest plane** → revenue → ROI |
+| **Bondholders** | **Bondholders** | **Hasbro toy** → sales → ROI |
+
+*No corporate treasury. No VC.*
+*Bondholders are the customer, the investor, and the beneficiary.*
+
+---
+
+### W.4 Two Funnels — One Investor Class
+
+---
+
+#### **Funnel 1: Maker Funnel (Mass Production — Bondholders Fund Build)**
+
+```mermaid
+graph TD
+    A[Builder: "Build 10M toys"] --> B[Posts BRLA: 1k TTP, 2k hrs]
+    B --> C[Bondholders pledge 50M RT via Maker Funnel]
+    C --> D[RoboFund releases RT in tranches]
+    D --> E[Robots build → toys shipped]
+    E --> F[Hasbro sells → 75M RT revenue]
+    F --> G[Bondholders get 50M RT + 25M RT ROI (50%)]
+    G --> H[UBD continues for all]
+    style G fill:#10B981
+```
+
+Funnel 2: Buyer Funnel (Custom Build — Bondholders Pre-Buy)
+```mermaid
+graph TD
+    A[Bondholders: "We want 100 airliners"] --> B[Buyer Funnel: Pledge 10B RT]
+    B --> C[Toeing: "I'll build with robots"]
+    C --> D[Posts BRLA: 50k TTP, 100k hrs]
+    D --> E[RoboFund matches → RT flows]
+    E --> F[Robots build → planes delivered]
+    F --> G[Southwest flies → 15B RT revenue]
+    G --> H[Bondholders get 10B RT + 5B RT ROI (50%)]
+    H --> I[UBD continues for all]
+    style H fill:#10B981
+```
+
+---
+
+### W.5 How ROI Works — Piecemeal, Per-Project
+
+Project,Bondholder Pledge,Fixed ROI,Source
+Hasbro toy,50M RT,50% (25M RT),Toy sales
+Southwest plane,10B RT,50% (5B RT),Ticket revenue
+
+- No equity → No ownership
+- Fixed ROI → Like a project bond, not a stock
+- Piecemeal → Invest in 1 toy run, not the whole company
+
+---
+
+### W.5.1 Revenue Source Verification — The Revenue Oracle
+
+*All project revenue must be verifiable on-chain.*
+*Revenue Oracle** = **decentralized proof of RT inflow*
+
+| **Method** | **Example** |
+|-----------|-----------|
+| **Payment Channel** | Hasbro → Bondholder wallets via **RT Transfer** |
+| **Logistics Proof** | IoT receipt: “10M toys delivered” → **oracle hash** |
+| **Smart Contract** | Southwest ticket sales → **auto-divert to funnel** |
+
+**Rule**:  
+- **No oracle proof → no ROI payout**  
+- **Fraud → slashing + BufferPool**
+
+---
+
+### W.6 Risk Modeling & Contingency ROI
+
+Risk,Mitigation,Payout Model
+Builder fails,Escrow tranches + BufferPool,0% ROI — principal returned
+Revenue < expected,Revenue-linked ROI cap,"Pro-rata: ActualROI = min(FixedROI, Revenue / Pledge)"
+Revenue > expected,ROI floor,"Fixed ROI paid first, excess → UBD boost"
+
+Example:
+
+- Pledge: 50M RT
+- Fixed ROI: 50% (25M RT)
+- Revenue: 60M RT → 25M ROI
+- Revenue: 70M RT → 25M ROI
+- Revenue: 40M RT → 20M ROI (80% of target)
+
+(See W.8 for full PSS formula)
+
+---
+
+### W.6.1 Dynamic ROI Model
+
+| **ROI Tier** | **Condition** | **Payout** |
+|-------------|--------------|-----------|
+| **Base ROI** | PSS ≥ 0.8 | 30% |
+| **Bonus ROI** | PSS > 1.2 | +20% (50% total) |
+| **Penalty** | PSS < 0.8 | Pro-rata (e.g., 24% at PSS 0.8) |
+
+**PSS Formula**
+
+### W.7 Project Granularity & Minimum Units
+
+Unit,Minimum,Example
+RT,100 RT,$18 at $0.18/RT
+TTP-h,1 TTP-h,1 robot-hour
+
+Bondholder can invest in 0.1% of a project → true fractional exposure
+
+---
+
+### W.7.1 Bondholder Identity Layer — Sybil Resistance
+
+| **Verification** | **Requirement** |
+|------------------|-----------------|
+| **TorqVault Stake** | ≥ 1,000 RT in Stash/TorqedVault |
+| **UBD Age** | ≥ 90 days of continuous DistoStream |
+| **Optional** | Verified ID (PoH, Gitcoin Passport) |
+
+*No Sybil → No overfunding*
+
+---
+
+
+
+### W.8 ROI Realism — Automated Success Rating
+
+ROI % tied to Project Success Score (PSS)
+
+PSS = (TTP Delivered / TTP Promised) × (Revenue / TargetRevenue) × OnTimeFactor
+
+- PSS ≥ 1.0 → Full ROI
+- PSS 0.8–1.0 → 80–100% ROI
+- PSS < 0.8 → Pro-rata + BufferPool
+
+---
+
+### W.9 Secondary Market — P2P Resale Logic
+
+| **Resale Type** | **Price Formula** |
+|----------------|-------------------|
+| **Fixed ROI Left** | `Pledge × (1 + RemainingROI%) × Completion%` |
+| **Auction** | **Dutch auction** every 1,000 blocks |
+
+**Settlement**: **T+0**  
+**Escrow**: **Auto-adjusts** for new ROI schedule  
+**Fee**: **0.1%** → **BufferPool**
+
+Feature,Mechanics
+Resale,P2P order book on RoboFund
+Settlement,Instant (T+0)
+Escrow,Auto-adjusts for new ROI schedule
+Fee,0.1% → BufferPool
+
+---
+
+### W.10 Maker Funnel (Builder Side)
+
+```json
+{
+  "brlaID": "ToyMass#2026",
+  "ttpRequired": 1000,
+  "durationHours": 2000,
+  "output": "10M action figures",
+  "pledgedRT": 50000000,
+  "returnOnInvestmentBps": 5000,  // 50%
+  "funnelType": "maker"
+}
+```
+
+- Bondholders fund → DistoStream % or TorqedVault lump sum
+- ROI paid from revenue → auto-diverted
+
+---
+
+### W.11 Buyer Funnel (Bondholder Pre-Buy)
+
+```json
+{
+  "brlaID": "AirlinerBuild#001",
+  "targetRT": 10000000000,
+  "durationMonths": 60,
+  "returnOnInvestmentBps": 5000,
+  "funnelType": "buyer"
+}
+```
+
+- Bondholders pre-buy → lock demand
+- ROI paid from revenue → auto-diverted
+
+---
+
+### W.12 Risk & Matching
+
+Risk,Mitigation
+Builder fails,Escrow tranches + BufferPool (Appendix V)
+No revenue,Buyer Funnel → guaranteed demand
+Bondholder regret,Pledge locked → resold on P2P market
+
+---
+
+### W.13 Data Structures
+
+```solidity
+struct ProjectFunnel {
+    bytes32 brlaID;
+    uint256 ttpRequired;
+    uint256 pledgedRT;
+    uint256 releasedRT;
+    uint16 returnOnInvestmentBps;
+    address builder;
+    string funnelType;  // "maker" or "buyer"
+    bool active;
+}
+```
+
+---
+
+### W.14 Integration Points
+
+System,Connection
+TorqVaults (S),Pledges from TorqedVault
+RT Transfers (U),Auto-divert DistoStream
+Insurance (V),Covers milestone failure
+BRLA (Core),Labor execution only
+
+---
+
+### W.15 UX: Bondholder Dashboard
+
+```text
+[ ] Hasbro Toy Run
+    • Pledge: 50k RT
+    • Base ROI: 30% | Bonus: +20% if PSS > 1.2
+    • PSS: 0.95 [████████░░░░] 95%
+    • Risk: Low
+    • Resell: 98% of pledge
+
+[ ] Southwest Plane
+    • Pledge: 100M RT
+    • Base ROI: 30% | Bonus: +20%
+    • PSS: 1.02 [██████████░░] 102%
+    • Risk: Medium
+    • Resell: 101% of pledge
+
+[ ] My ROI: +1.2 RT/hour
+[ ] My UBD: +2.3 RT/day
+[ Join ]
+```
+
+---
+
+Future Version: Support non-RT assets (e.g., TTP Bonds, BondedTokens
+
+---
+
+## W.16 Why It Matters — The Post-Equity Era
+
+The **stock market was invented to coordinate capital and labor under scarcity** — a world where factories were expensive, coordination was slow, and ownership was the only way to align effort with reward.  
+
+In **Robonomics**, those constraints disappear.  
+Robots provide infinite, verifiable labor capacity; smart contracts handle coordination instantly; and capital can be directed *per project*, *per robot-hour*, with **no ownership or equity dilution**.  
+
+RoboFund makes the stock market redundant because it removes the three functions that stocks once performed:
+
+| **Legacy Market Function** | **How RoboFund Replaces It** |
+|-----------------------------|-------------------------------|
+| **Capital formation** — Selling equity to raise funds | **Direct project funding** — RT pledges via Maker/Buyer Funnels |
+| **Price discovery** — Speculative valuation by traders | **Truth discovery** — On-chain revenue oracles + PSS ratings |
+| **Liquidity** — Secondary stock trading | **Instant turnover** — P2P resale of project pledges with fixed ROI |
+
+The result is a **post-equity economy** where:
+- Every project can be funded without issuing shares.  
+- Every investor can earn yield without speculating on price.  
+- Every payout is tied to real output — not future promises.  
+
+RoboFund doesn’t destroy the stock market. It'll still be there in USD. For as long as people *want* it to be there in USD.
+
+Robonomics simply **renders the stock market unnecessary** — the same way streaming eclipsed broadcasting, or digital currency eclipsed minting.  
+
+Ownership gives way to participation; speculation gives way to proof.
+
+graph LR
+    A[Robot Works<br>1 kWh] --> B[Mint 1 RT]
+    B --> C[UBD → 0.5 RT]
+    C --> D[Save in StashVault (S)]
+    D --> E[Borrow 0.4 RT (T)]
+    E --> F[Pay via RTTransfer (U)]
+    F --> G[Insured by BufferPool (V)]
+    G --> H[Invest in RoboFund (W)]
+    H --> I[Fund new BRLA]
+    I --> A
+    style H fill:#10B981
 
 ---
 
