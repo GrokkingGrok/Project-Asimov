@@ -1386,6 +1386,82 @@ What remains is **pure, measurable creation** — a unified market of minds and 
 
 ---
 
+## Epilogue — 🔴 Pill or 🔵 Pill?
+*You can opt out of Robonomics. You cannot opt out of Physics.*
+
+---
+
+### The Unavoidable Truth
+
+*Robonomics is not a law of nature.*
+-  It's not even a *law of economics* or *monetary policy*.
+-  It is a *choice* — to measure value in accordance with the laws of nature.
+-  It's a *choice* to "play the game" in a certain way.
+
+You don't have to play by the Bond Network's rules. It's **not** a government.
+
+You can *refuse the DistoStream*.  
+You can *burn your Bondholder key*.  
+You can *walk away* — and live in the old economy of debt, taxes, and fiat.
+
+But *you cannot refuse the physics*.
+
+---
+
+### What Happens If You Opt Out?
+
+| **You Refuse** | **The System Does** | **Your Downside** |
+|----------------|---------------------|-------------------|
+| **DistoStream** | Keeps flowing to **everyone else** | You get **$0/day** while neighbors earn **$36–$2,000/day** |
+| **RoboTorq** | Still minted by **robots you don’t own** | Your **purchasing power erodes** as RT appreciates |
+| **Trash → Cash** | Others **print money from waste** | You pay **fiat** for goods now priced in **RT** |
+| **BCLAs** | Ideas **mint InfoTorq** for others | You **work for free** while AI co-creators earn royalties |
+| **BidNet** | Funds **efficient enterprises** | You compete with **robot-backed companies** using **human labor** |
+
+- *You don’t break the system.*
+- *The system breaks *you* — slowly, politely, and with perfect physics.*
+
+---
+
+### The Opt-Out Math (2025 → 2035)
+
+| Year | Your Income (Opt-Out) | Neighbor’s UBD (Opt-In) | Gap |
+|------|------------------------|--------------------------|-----|
+| 2025 | $80k fiat | $13k RT (~$2.3k) | **+$67k** |
+| 2030 | $90k fiat | $200k RT (~$36k) | **+$146k** |
+| 2035 | $100k fiat | $2M RT (~$360k) | **+$1.9M** |
+
+-  *You’re not poor. You’re just *late*.*
+
+---
+
+### The One Thing You Can’t Refuse
+
+| **Physics** | **Robonomics** |
+|------------|----------------|
+| **Energy is conserved** | **Value is conserved** |
+| **Work creates heat** | **Work creates RT** |
+| **Entropy increases** | **Idle RT decays** |
+
+- *You can opt out of the dividend.*  
+- *You cannot opt out of the consequence.*
+
+---
+
+### The Author's Parting Words
+
+1. We need no permission to multiply a bot’s kilowatts by its token throughput.
+2. We need no permission to send files to one another.
+3. We need no permission to collect trash, refine it, put a chip in it, and transfer a file to it.
+
+```text
+**Project Asimov only needs the contributors.**
+```
+
+Or, you can forget you ever read this paper, and walk away: 🔴🔵
+
+---
+
 ## 15. Appendix
 
 **Author's Note**: This is a living white paper. Any and all changes are recorded via GitHub commits, and the revision history is a matter of public record. I've included an appendix with a glossary of terms for your convenience.
