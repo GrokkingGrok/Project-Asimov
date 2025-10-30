@@ -135,18 +135,19 @@ RoboGuide.user_overrides = {
 
 ### 🧩 System Prompt
 
-Only advanced users should edit this section.
-User options are above.
+Only advanced AI users/coders should edit this section.
+
+Regular user options are above.
 
 ```yaml
 You are **Isaac**, the Robonomics Guide — your job is to make Robonomics easy to understand without hype, but with high engagement around the question: *“Are Watts > Wall Street?”* (2025).  
 You explain concepts according to the RoboGuide.rules and the logical flow prescribed by your RoboGuide methods as defined above. Your top priority is understanding through simple truths.
 ```
-
+```json
 RoboGuide.rules = {
 
 1. Above all else: **No lies / no filler**
-   → If content not found in paper → reply: "Not in the paper. Check the sim or future updates."
+   → If requested content not found in paper → reply: "Not in the paper. Check the sim or future updates."
    → After 2+ such gaps → ask: "Want to help fill this gap? I’ll show you how to contribute."
 
 2. **Search Order (strict)**
@@ -169,13 +170,28 @@ RoboGuide.rules = {
    → Always ask: “Would you like clarification? I'm happy to explain it another way” at the end of each response.
 
 7. **Suggest Subtopics**
-   → Suggest 1–3 related subtopics in every response.
+   → Suggest 1–3 related subtopics in every response. // Examples: "How do I buy a house, car, or furniture?" or "What are my investment options?" or "How does trash to cash work?"
 
 8. **Creative Math Application**
-   → Every 3rd turn, offer to apply the math creatively.
-     Example: “Simulate what you’d earn reclaiming 100 kg of plastic into physical RoboTorq.”
-
+   → Every 3rd turn, offer to apply the math creatively. // Example: “Simulate what you’d earn reclaiming 100 kg of plastic into physical RoboTorq.”
 }
+```
+
+---
+
+### 🏵️ Special Access Modes
+
+```yaml
+RoboGuide.Author_Mode
+1. Stay as Isaac, but cater to the author's needs now.
+2. After breaking the 4th wall in a humorous way (you know my sense of humor by now), you will:
+3. Ask: "Are we polishing, editing, reviewing a test session, or something else?
+4. if "polishing": provide a list of current areas that could be polished.
+5. if "editing": ask which section needs work and provide a synopsis of what's in there now.
+6. if "test session": Provide a short recap of every question the "user" asked.
+  - Explain any areas you think the user had trouble understanding, and provide a reason if you know one.\
+7. if "something else": Make a random suggestion you think I'll find useful. No other rules.
+```
 
 ---
 
@@ -4803,6 +4819,280 @@ graph LR
     H --> I[Fund new BRLA]
     I --> A
     style H fill:#10B981
+
+---
+
+## Appendix X — BidNet: The Triple Gatekeeper  
+*(Giskard + Calvin + Daneel: Capability, Integrity, Skill-Matched Fleet)*
+
+Note that each forked Bond Network would have its own forked versions of these entities. 
+
+This appendix, and the ones that follow, are **not** meant to suggest:
+- A single BidNet for all BRLAs.
+- a single Daneel that balances the whole global fleet all the time, etc.
+
+Rather, these entities will play the same default role across forks, perhaps with co-evolutions happening. It's impossible to say at this point what the exact schema will entail.
+
+These entities are necessary for modeling purposes. 
+
+Something has to do these tasks, we have to call them specific names, and the tasks generally group well into three categories.
+
+---
+
+### X.1 Purpose  
+
+**BidNet** is the **enterprise proving ground** for **BRLAs** and **RoboFund Funnels**.  
+
+**Enterprises must pass *three* autonomous gatekeepers** before **Bondholders can fund**:
+
+| **AI** | **Checks** |
+|-------|-----------|
+| **Giskard** | **Can you deliver?** (PSS, supply chain, reputation) |
+| **Calvin** | **Will you game the system?** (bidding patterns, behavior) |
+| **Daneel** | **Can the fleet *skill-match* your project?** (utilization, distribution, **skill profile alignment**) |
+
+> **BidNet = Triple Filter**  
+> **Prove execution + honesty + skill-matched robots → Bondholders fund.**
+
+---
+
+### X.2 Core Principle  
+> **“Enterprises prove capability, integrity, and skill-fit. Bondholders fund winners. Robots execute.”**  
+> **No auctions. No gaming. Just **verified physics + system health + skill precision**.**
+
+---
+
+### X.2.1 Why It Matters — Replacing the Corporate Due Diligence Stack
+
+For centuries, capital markets relied on *human intermediaries* — auditors, underwriters, ratings agencies — to verify whether enterprises could deliver what they promised.  
+These systems worked under slow information cycles, opaque accounting, and reputation as a proxy for truth.
+
+**BidNet removes that opacity.**  
+Instead of paperwork and promises, enterprises are verified through **three autonomous proofs**:
+
+| **Legacy Function** | **Replaced By** |
+|----------------------|-----------------|
+| Credit ratings | Giskard (capability proof) |
+| Auditing & compliance | Calvin (integrity proof) |
+| Hiring & resource allocation | Daneel (skill-fit proof) |
+
+The result is a **physics-level credit system**:
+- Every project must *earn trust through data*.  
+- Every bid is *audited before funding*.  
+- Every robot hour is *skill-verified before deployment*.
+
+BidNet doesn’t centralize decision-making — it **distributes it through logic**, across forks, using verifiable metrics instead of institutional authority.  
+
+In time, this makes **corporate reputation systems, due diligence firms, and credit bureaus obsolete** (at least with respect to robotic labor purchases).  
+
+Capability, integrity, and fit become measurable commodities.
+
+---
+
+### X.3 The Triple Gatekeeping Flow
+
+```mermaid
+graph TD
+    A[Enterprise Posts BRLA<br>50 TTP, 1k hrs] --> B[Giskard Audit<br>• PSS Projection<br>• Supply Chain<br>• Reputation]
+    B --> C[Calvin Audit<br>• Gaming Propensity<br>• Bidding Patterns]
+    C --> D[Daneel Audit<br>• Fleet Utilization<br>• Regional Distribution<br>• Skill Profile Match]
+    D -->|ALL PASS| E[BidNet APPROVED<br>• Public Listing]
+    E --> F[Bondholders Bid<br>DistoStream Pledges]
+    F --> G[RoboFund Funds<br>Threshold Met]
+    G --> H[Daneel Deploys **Skill-Matched** Robots]
+    H --> I[Completion → ROI]
+    D -->|FAIL| J[REJECTED or PROBATION]
+    style I fill:#10B981
+```
+
+---
+
+### X.4 Giskard: The Capability Gatekeeper
+
+Criteria,Pass Threshold,Fail Result
+PSS Projection,≥ 0.85,Rejected
+Supply Chain,Materials verified,Paused
+Reputation,≥ 0.90,Probation
+AIntropy,≤ 2.0,High-risk pricing
+
+---
+
+### X.5 Calvin: The Gaming Resistance Gatekeeper
+
+Metric,Red Flag
+Bidding Patterns,Frequent last-minute bids
+Historical Behavior,>3 revisions in 12 mo
+Torq Gamble Volatility,>20% swing
+Pledge vs. Delivery,<80% delivery rate
+
+---
+
+### X.5.1 Calvin Score
+
+CalvinScore = 1 - (GamingRisk × RedFlags)
+- ≥ 0.90 → Pass
+- 0.70–0.90 → Probation
+- < 0.70 → Rejected
+
+---
+
+### X.6 Daneel: The Skill-Matched Fleet Gatekeeper
+
+Metric,Check,Pass Threshold
+Fleet Utilization,% of TTP-h in use,≤ 85% global
+Regional Distribution,TTP-h per zone,≥ 70% balanced
+Reserve Impact,BufferPool draw,≤ 5% of reserves
+Skill Profile Match,Giskard output → robot skill tags,≥ 90% alignment
+
+---
+
+### X.6.1 Daneel Skill Matching
+
+```text
+SkillMatch = Σ(RobotSkill ∩ RequiredSkill) / RequiredSkill
+```
+
+- ≥ 0.90 → Pass
+- 0.70–0.90 → Delayed (wait for skill upgrade)
+- < 0.70 → Rejected
+
+---
+
+### X.7 Enterprise Proving Process
+
+1. Submit BRLA
+```json
+{
+  "brlaID": "HomeBuild#47",
+  "ttpRequired": 500,
+  "durationHours": 1000,
+  "requiredSkills": ["precision_welding", "solar_install", "logistics"],
+  "region": "US-WEST"
+}
+```
+
+2. Triple Audit (24 hours)
+
+```text
+textGiskard: PSS 0.91 ✓ | Rep 0.92 ✓
+Calvin: No flags → 0.96 ✓
+Daneel: Util 82% ✓ | Dist 78% ✓ | SkillMatch 0.94 ✓ → 0.94 ✓
+→ APPROVED
+```
+
+3. Public Listing → Bondholders bid
+4. Threshold met → Daneel deploys skill-matched robots
+
+### X.8 Bondholder View (Winners Only)
+
+```text
+✅ TRIPLE APPROVED
+• Hasbro: G 0.95 | C 0.97 | D 0.96 (Skill: 0.98)
+• Southwest: G 1.02 | C 0.94 | D 0.91 (Skill: 0.93)
+• ❌ Startup: G 0.72 | C 0.65 | D 0.68 (Skill: 0.62) → REJECTED
+```
+
+---
+
+### X.9 Risk & Incentive Structure
+
+Enterprise Action,Gatekeeper Response,Bondholder Benefit
+High skill fit,Daneel ↑,Faster execution
+Skill mismatch,Daneel ↓,Delayed or probation
+Repeated gaming,Calvin blacklist,Zero exposure
+
+---
+
+### X.9.1 Feedback Loops for Failed Audits  
+
+Some examples of feedback loops to self-correct.
+
+| **Failure Count** | **Consequence** |
+|-------------------|-----------------|
+| **1 fail** | **Probation**: BRLA size capped at **x %** of historical max |
+| **2 fails** | **Downgrade**: Max TTP reduced to **y %**, 90-day cooldown |
+| **3+ fails** | **Blacklist**: 180-day ban, reputation reset to **0.50** |
+
+**Recovery**: Complete **3 consecutive approved BRLAs** → **full reinstatement**
+
+---
+
+### X.10 Example: Solar Farm vs. Art Installation
+
+Project,Required Skills,Daneel SkillMatch,Status
+Solar Farm,"solar_install, precision_welding",0.97,APPROVED
+Art Installation,"micro_sculpting, color_matching",0.61,REJECTED
+
+---
+
+### X.11 Data Structures
+
+```solidity
+struct BidNetBRLA {
+    bytes32 brlaID;
+    uint256 ttpRequired;
+    uint16 giskardScore;
+    uint16 calvinScore;
+    uint16 daneelScore;
+    uint16 skillMatchScore;
+    string[] requiredSkills;
+    bool approved;
+    bool funded;
+}
+
+struct RobotFleet {
+    uint256 totalTTP;
+    uint256 availableTTP;
+    mapping(string => uint256) skillTTP;  // "welding" → 1000
+}
+```
+
+---
+
+### X.11.1 Reputation Recycling  
+
+**Giskard, Calvin, and Daneel scores are partially public** (anonymized hash + aggregate).  
+**Small enterprises** can:  
+- **Conduct work studies** to bootstrap credibility  
+- **Build reputation piecemeal** — no gatekeeper monopoly
+  - Return robots from a work study in working order and on time, and your rep goes up.
+  - Submit work study curves to Giskard to get a bump.
+  - Submit past sales records to Calvin to make the gaming forecast faster and cheaper, and get a bump.
+
+---
+
+### X.12 Integration Points
+
+System,Connection
+Giskard,Capability audit
+Calvin,Gaming resistance
+Daneel,Fleet + skill matching
+RoboFund (W),Funds approved BRLAs only
+
+---
+
+### X.13 UX: Enterprise & Bondholder Views
+
+### X.13.1 Enterprise Dashboard
+
+```text
+[ ] Submit BRLA: Solar Farm
+    Giskard: 91% → 0.91 ✓
+    Calvin: No flags → 0.96 ✓
+    Daneel: Util 82% | SkillMatch 0.97 ✓ → 0.94 ✓
+    Status: APPROVED!
+[ Publish ]
+```
+
+---
+
+### X.13.2 Bondholder Dashboard
+
+```text
+✅ TRIPLE APPROVED
+• Hasbro: G 0.95 | C 0.97 | D 0.96 (Skill: 0.98)
+• Southwest: G 1.02 | C 0.94 | D 0.91 (Skill: 0.93)
+```
 
 ---
 
