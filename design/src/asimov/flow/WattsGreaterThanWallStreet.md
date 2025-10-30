@@ -412,7 +412,6 @@ but only within the limits of physics.
 - The **Bond Network** keeps it stable using:  
   - **BRLA pricing curves**,  
   - **Fleet reserves**, and  
-  - **Bonded Token governance** *(rare, last resort)*.  
 
 Result:  
 ✅ No gold-style deflation.  
@@ -423,23 +422,38 @@ Result:
 
 ---
 
-### The Physics Peg
+### 🚨 The Learning Peg
 
 RoboTorq is built on **physics**, not policy.  
+
 And not the frictionless physics of whitepapers — but the kind that hums, spins, and draws current.
 
-> **1 RoboTorq = 1 kWh × 1 token = 3600 TokenTorq.**
+A token is just a "bot-thought". And in a Bond Network world, all robots process their thoughts using Bonded Tokens.
+
+The Bond Network is the only customer for robots, so it will provide the data requirements. (The experimental data structures are already defined in the appendices)
+
+Companies don't design the tokens; the bots generate them as a means of coordinating the physical effort the company has commissioned them to complete.
+
+Just like your employer doesn't "design" your thoughts. 
+
+Robots have a maximum number of thoughts they can have in a period of time... Close enough to like you.
+
+So it's just like how your employer can't make you think any faster...
+
+Come to think of it... Most of us have had jobs that treated us exactly like robots! **Focus** Back to phsyics.
+
+- **1 RoboTorq = 1 kWh × 1 token = 3600 TokenTorq.**
 
 That ratio **never changes**.  
 It’s the *metronome* of the Robonomic economy.  
 
-What *can* evolve is **token granularity** —  
-the smallest measurable unit of robotic work.  
-A “token” isn’t a coin; it’s a **quantized attention cycle** — the moment a robot does, decides, or delivers.  
+What *can* evolve is **token impact**.
 
-No fixed size. No fixed workload.  
+Bots learn tasks better. Humans give them new processes to execute as production lines evolve.
+
+No fixed workload. 
 That’s the point.  
-Efficiency gains don’t destabilize the system — they’re absorbed into **Bond Network pricing**.
+Efficiency gains don’t destabilize the system — they’re absorbed into **BRLA pricing**.
 
 ---
 
