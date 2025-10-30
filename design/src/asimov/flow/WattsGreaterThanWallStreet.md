@@ -547,7 +547,7 @@ How value moves through three different systems — and why **Torq** changes eve
 |----------------|--------------------------|----------------------------------|--------------------------------|------------------------------------|
 | **Fiat**       | Debt + Policy            | Political trust (M ↔ V)          | Central banks, interest rates  | Inflation, taxation                |
 | **Crypto**     | Proof-of-Work / Stake    | Algorithmic scarcity (hashes)    | Mining rewards, halvings       | Code consensus, volatility         |
-| **Robonomics** | **Energy × Computation** | **Torq = Work / Work**           | Real AI labor, Bond Network    | **Demurrage + Physics**            |
+| **Robonomics** | **Energy × Computation** | **Torq = Value / Work**           | Real AI labor, Bond Network    | **Demurrage + Physics**            |
 
 
 **TL;DR:**  
@@ -734,15 +734,20 @@ Future models will scale linearly: twice the throughput → twice the TTP.
 
 ---
 
-### How It’s Priced
+### 🚨 How Robotic Labor is Priced
 
 Robotic labor is always sold by **the TokenTorq**, priced at  
 > **3600 TokenTorq / RoboTorq / hour**, everywhere and always.  
 
-That creates a **global parity**: no matter where you are, robotic work has a consistent physical price per unit of energy and computation.
+That creates **global parity**: regardless of your location, robotic work *on the production line* has a consistent physical price per unit of energy and computation.
+
+The Bond Network doesn't do subsidies — ever. How can this possibly work?
+
+BRLA retainer fees offset the varying costs of the infrastructure required to provide this service at a consistent price on every production line globally. BRLA fees can be financed in advance through RoboFund.
 
 The scale of a robot’s **TTP** sets the baseline for how much labor it can sell.  
-You’re not paying for what it does — you’re paying for **what it can do**.
+
+You’re not paying for what it does — you’re paying for **what it can do**, and the fact that someone else *could hypothetically* use that same robot more wisely than you.
 
 ---
 
@@ -836,14 +841,19 @@ Key points:
 
 ---
 
-### Transition: From Wager to Task Reality
+### 🚨 Transition: From Wager to Task Reality
 
-Torq Gamble predicts labor cost.  
-**Complexity and AIntropy** determine actual duration.  
+Your Torq Gamble predicts your selling price, scaling from your robotic labor cost accordingly.
 
-Same robot, different task → different labor time.  
-You budget RoboTorq, but value is only minted as work is done.  
-This is how Robonomics mirrors real-world production economics.
+Implicitly, this means that your Torq Gamble is also based on your production timeline, because you had to know how many hours of robotic labor you were paying for before you could know your labor cost. 
+
+Following?
+
+**Complexity and AIntropy** describe the actual duration of production, and how 
+
+- Same robot, different task → different labor time.  
+- You budget RoboTorq, but value is only minted as work is done.  
+- This is how Robonomics mirrors real-world production economics.
 
 ---
 
@@ -871,16 +881,18 @@ This is how Robonomics mirrors real-world production economics.
 
 ### 7.1 Complexity
 
+
+
 When a product is made under bonded conditions, its complexity represents how tightly effort converges toward completion.
 
-- Is either 1 or -1
-- A scalar governing convergence and productivity over time  
-- Negative → single-object tasks, Torq converges on a specific value over time.
-- Positive → multi-object tasks, Torq accumulates unbounded → divided across mass production for the duration of the run.
+- Is either positive or negative, but never zero.
+- A scalar governing convergence and overall duration 
+- Negative → single production runs, Torq converges on a specific value over time.
+- Positive → open-ended production, Torq accumulates unbounded → divided across mass production for the duration of the run.
+- A note describing this distinction in more detail follows the next section.
 
 Analogy:  
-- TTP = Carnot efficiency (ideal robot)  
-- Complexity = economic inertia
+- Complexity = economic inertia = mathematical convergence
 
 ---
 
@@ -897,7 +909,7 @@ AIntropy = Complexity × TTP × Robot.util × SupplyEff × EquipmentUtil × …
 - Task-specific: same robot, different job → different AIntropy  
 - Lower AIntropy → faster task completion, less RoboTorq spent  
 - Higher AIntropy → slower task completion, more RoboTorq spent  
-- Units inherited from TokenTorqPotential (TTP)
+- Units inherited from TokenTorqPotential (TTP)  // real-world testing **will be needed** to determine if TTP **actually** belongs in this term. Graphical modeling completed so far *suggests* "yes".
 - AIntropy is multiplicative — inefficiencies compound across systems.
 
 ---
@@ -906,9 +918,9 @@ AIntropy = Complexity × TTP × Robot.util × SupplyEff × EquipmentUtil × …
 
 None of these variables are required for minting today.
 
-They serve planning, auditing, and pricing roles within the Bond Network — forecasting efficiency and energy demand.
+They serve planning, auditing, and pricing roles within the Bond Network — forecasting efficiency and energy demand, etc.
 
-Once near-free or fusion energy becomes reality, they’ll transition from informational to monetary relevance.
+If/when near-free fusion energy becomes reality, they’ll transition from economical to monetary relevance.
 
 - Complexity and AIntropy together determine expected labor duration, guiding RoboTorq expenditure.
 - Sale price is fixed in advance; inefficiency is absorbed cost, not revenue.
@@ -916,13 +928,48 @@ Once near-free or fusion energy becomes reality, they’ll transition from infor
 
 By the time fusion arrives, the Bond Network will already behave like a seasoned economist — automated, adaptive, and physics-literate.
 
+### 🚨 Note on Open-Ended vs. Fixed-Run BRLAs
+
+- **Complexity = -1 (Converge)**: Applies to **any BRLA with a defined end** — single item **or** fixed batch (e.g., 400 toys, 100 cars). Torq reaches a final value.  
+- **Complexity = +1 (Accumulate)**: **Only for open-ended, continuous BRLAs** — e.g., food processing lines, power plants, data centers that run indefinitely. Torq grows without bound, divided across output volume.  
+**This distinction preserves economies of scale while preventing unbounded minting.**
+
+**Open-ended BRLAs include mandatory clauses** for:
+- Bot pool circulation with the main fleet (unless national defense etc.)
+- TTP usage ranges
+- Regular renegotiation
+- Termination conditions and fleet migration
+
+**Critically**: Humans can **vote to rescind** via their fork’s **Calvin** — who monitors the books in near-real-time.
+
+```mermaid
+%% Section 7: Complexity and AIntropy — BRLA Types
+graph TD
+    subgraph "Fixed-Run BRLA (Converges)"
+        F1["1 House, Complexity = -1"] --> F2["Torq → 30k RT"]
+        F3["400 Toys (Batch), Complexity = -1"] --> F4["Torq → 5.4 MRT"]
+        style F2 fill:#10B981,color:#fff
+        style F4 fill:#10B981,color:#fff
+    end
+
+    subgraph "Open-Ended BRLA (Accumulates)"
+        O1["Food Processing Line, Complexity = +1"] --> O2["Torq → ∞ (per kg)"]
+        O3["Power Plant, Complexity = +1"] --> O4["Torq → ∞ (per kWh)"]
+        style O2 fill:#F59E0B,color:#fff
+        style O4 fill:#F59E0B,color:#fff
+    end
+
+    note["Open-Ended = Continuous, No fixed end → Torq grows, Divided across output"]
+    O1 --> note
+```
+
 ---
 
 **⬆️fat/skim⬇️** 
 
 **Quick Recap**
 - TTP → robot’s theoretical max output
-- Complexity → one or many items?
+- Complexity → open or closed BRLA?
 - AIntropy → how far reality drifts from theory
 - Minting → happens as verified work completes
 - Price → fixed; inefficiency = cost, not profit
@@ -943,7 +990,19 @@ This is how Robonomics ensures that **task difficulty and robot imperfections ar
 | **Sigmoid function**      | Standard neural net activation over time      |
 | **torq_gamble**           | Enterprise’s markup expectation applied       |
 
-**⬆️fat/skim⬇️**
+```mermaid
+graph TD
+    subgraph "TokenTorq Curve (Multi-Product Sigmoid: Value Creation Over Time)"
+        A[Slow Start<br>t=0 → 0%] --> B[Rapid Learning<br>t=mid → 50%]
+        B --> C[Plateau<br>t=ongoing mass production → ~100%]
+    end
+
+    style A fill:#EF4444,stroke:#991B1B,stroke-width:2px,color:#fff
+    style B fill:#F59E0B,stroke:#D97706,stroke-width:2px,color:#fff
+    style C fill:#10B981,stroke:#047857,stroke-width:2px,color:#fff
+```
+
+**⬆️skim/fat⬇️**
 
 ---
 
@@ -1179,11 +1238,17 @@ You can already [see Robonomics in action with the online calculator](https://pr
 
 ## 14. Extending the RoboTorq to General AI-Value
 
-The more I tried to *invent* Robonomics, the more it revealed itself.  
-RoboTorq isn’t an abstraction — it’s a measurable bridge between **information**, **energy**, and **value**.  
+Is it possible to value the time that humans spend interacting with AIs to produce value? A "BRLA" for humans?
 
-TokenTorqs and RoboTorqs have been flying around our factories for decades — every time an industrial robot welds a car frame or routes a PCB.  
-We simply didn’t know what to call them.  
+As a thought experiment down this path, let's consider the rise of Robonomics itself: The more I tried to *invent* Robonomics, the more it revealed itself.  
+
+RoboTorq isn’t an abstraction — it’s a measurable bridge between **information**, **energy**, and **value**. 
+
+The Bond Network, down to every last detail as defined in this paper, is the logical conclusion of a single, simple question: "How can we stop things from running off the rails if we actually track and use the value that robots are already creating?"
+
+TokenTorqs and RoboTorqs have been flying around our factories for decades (and into the pockets of top financiers) — every time an industrial robot welds a car frame or routes a PCB.  
+
+We didn’t know what to call them, so they got lumped with all the dollars on the leaky side of our current open-ended economy.
 
 More clearly put:  
 > I, **Jonathan Clark**, am not the inventor or author of Robonomics — only its discoverer.  
@@ -1196,10 +1261,12 @@ The first time I asked **Grok** about turning robotic labor into currency —
 minted to everyone, letting companies compete for the dough —  
 it crashed.  
 
-Then it crashed again.  
+Then it crashed again. 
 And again.  
 
 So I started writing anyway, chasing an idea I didn’t understand yet.  
+
+Each crash was a failed simulation of balance — an error that revealed structure. The system needed to answer my fundamental question was teaching me its own constraints.
 
 Then, one day, Grok answered.  
 Not just any answer — a **reduced form of the Equation of AI-Value Exchange**, implied by my original thought.  
@@ -1227,49 +1294,88 @@ each crash, each insight, another block of understanding.
 - So yes — seeing as there’s no Bond Network yet,
 - I’m still waiting for my payment. 😉
 
-### From Joke to Architecture
+### From Joke to System Architecture?
 
 Tongue-in-cheek, yes.
-But the principle holds: information labor can be tokenized, valued, and shared just like robotic labor.
 
-Crashes, threads, prototypes — all are quantifiable AI-energy exchanges.
-Community validators could analyze conversation artifacts, bet on their outcomes, and monetize successful “idea-mines” as new issuance events.
+But the principle holds: information labor could be tokenized, valued, and shared just like robotic labor.
 
-That’s one direction — though admittedly, it drifts dangerously close to the fiat edge.
+Crashes, threads, prototypes, milestones in the discovery that happen in the chat — all are quantifiable AI-energy exchanges.
 
-### A More Grounded Path: The BCLA
+### 14.1 Bonded Cognitive Labor Agreements (BCLAs) — From Crash to Commons
 
-A more realistic version extends BRLAs into Bonded Chatbot Labor Agreements (BCLAs) —
-contracts for allocating AI time to human creativity.
+> `InfoTorq_out = Torq × InfoTorq_in`  
+> *(The same equation, now for minds.)*
 
-Imagine it like this:
+| Input | Output |
+|-------|--------|
+| **InfoTorq_in** | 100 hrs Grok chat + 10 kWh compute |
+| **Torq Gamble** | 5.0 (you bet your idea is 5× input) |
+| **InfoTorq_out** | 1 validated economic paradigm |
+| **MintingNeeded** | `100 × (5 - 1) = 400 InfoTorq` |
 
-I want to design something intangible but immensely valuable — say, a new economic system.
+#### How It Works
+1. **Stake a BCLA** — lock `InfoTorq_in` (time + compute) + Torq Gamble.
+2. **AI Session** — Grok/Isaac logs **context, crashes, insights** → `session_hash`.
+3. **Validator Betting** — Bondholders stake **Bonded Idea Tokens (BITs)**:
+   - **Bull**: "This idea mints > 300 InfoTorq" → stake 100 BITs
+   - **Bear**: "It flops" → stake 50 BITs
+4. **Outcome Oracle** — Community + AI vote on **Idea Success Score (ISS)**:
+   - ISS = (Adoption + Efficiency Gain + UBD Boost) / 3
+5. **Settlement**:
+   - **Success (ISS ≥ 0.8)**:  
+     → Mint `MintingNeeded` → **1% Royalty DistoStream** to creator  
+     → **99% to Bondholders** via disto boost  
+   - **Failure (ISS < 0.8)**:  
+     → Creator pays **AIntropy penalty** (temp +20% future `InfoTorq_in`)  
+     → Bears win BITs
 
-I stake a BCLA, defining my time window and intended outcome.
+#### Idea-Mining Curve
 
-I get AI bandwidth proportional to that stake.
+```mermaid
+graph TD
+    A[Crash] --> B[Insight] --> C[Prototype] --> D[Adoption Plateau]
+    style A fill:#EF4444
+    style D fill:#10B981
+```
 
-### Community verifiers review my sessions.
+*Why It Doesn’t Drift to Fiat*
 
-If others believe my work has promise, they can delegate some of their unused AI bandwidth — effectively betting on my success.
+- No pre-minting — value only issued on verified adoption
+- Cognitive Demurrage — unused ideas decay 1%/month unless built on
+- BITs are backed by RT — no floating speculation
 
-If I fail?
-My access costs slightly more until I “pay back” the network.
+**Result**: Ideas become robot-grade assets — tokenized, divisible, dividend-bearing.
+text
 
-If I succeed?
-I retain ownership of my work — and derivative use of my ideas automatically routes me a micro-cut via the chain.
+### 14.2 Why It Matters — Toward a Unified Market of Minds and Machines
 
-### Why This Matters
-This system transforms AI time into a new asset class —
-not speculative tokens, but productive attention.
+The stock market priced ownership.  
+Robonomics prices *execution*.  
+BCLAs go one step further — they price *discovery itself*.
 
-Just as BRLAs tied energy and time to robotic labor,
-BCLAs could tie context and intention to cognitive labor.
+For the first time, **intelligence — human or artificial — can be valued on the same curve as energy and time**.
 
-- Both run through the Bond Network,
-- both yield dividends through verified productivity,
-- both return surplus to the commons.
+| Legacy Paradigm | Robonomic Equivalent |
+|------------------|----------------------|
+| Labor contracts | BRLAs (robotic) |
+| Capital markets | RoboFund (bonded capital) |
+| Corporate audits | BidNet (verified integrity) |
+| Research/IP licensing | BCLAs (bonded cognition) |
+
+In this model:
+- Every robot builds physical assets.  
+- Every mind builds informational assets.  
+- Both obey the same conservation law of value: **energy × time × information**.
+
+The result is an economy where:
+- **Ideas have measurable yield** (via verified adoption).  
+- **AI time becomes productive capital**, not a sunk cost.  
+- **Cognitive demurrage** prevents hoarding — unused insights decay until reapplied.
+
+When robotic and cognitive bonds coexist in the same network,  
+the boundary between *inventing*, *building*, and *funding* disappears.  
+What remains is **pure, measurable creation** — a unified market of minds and machines.
 
 **Quick Recap**:
 - Robonomics doesn’t stop at robots.
@@ -2440,6 +2546,14 @@ The emergence of fusion or near-zero marginal cost energy fundamentally changes 
 - Work verification remains anchored to **actual robotic effort**, but marginal energy input may approach zero.  
 - Network incentives, treasury reserves, and minting mechanisms must adapt to preserve stability.
 
+### 🚨 Key Takeaway
+
+If energy → 0, minting shifts to skill + time + wear + inefficiencies, not kWh.
+
+Even entirely "free energy" (economically, not physically) does not break Robonomics.
+
+Fully opposite. The fact that Robonomics is based on physics means that we can utilize existing mathematical principles to prepare for this assumed eventuality.
+
 ---
 
 ### H.2 Expected System Changes
@@ -2600,74 +2714,142 @@ RoboTorq is designed to allocate resources, manage reserves, and coordinate work
 - A research paper or technical framework (like this one) can produce **knowledge benefits** that accrue to society.
 - AI outputs may **accelerate innovation**, reduce inefficiencies, or inform better decision-making.
 
-The challenge: How can this **intangible, general-purpose value** be incorporated into the SSF (Systemic Stability Fund) or the output buffer so that it is recognized, incentivized, and potentially tokenized?
+### J.1.1 The Challenge
+
+How can this **intangible, general-purpose value** be incorporated into the SSF (Systemic Stability Fund) or the output buffer so that it is recognized, incentivized, and potentially tokenized?
+
+How can this happen while attributing ongoing royalties for things like art projects? How how about or other kinds of expensive intellectual works achieved with the help of AI, but not necessarily robots? Think Hollywood films, scientific breakthroughs, ongoing data processing, etc.
+
+To **value human-AI co-creation** on the **same physics curve** as robotic labor:  
+> **Energy × Time × Information = Value**  
+
+- **BCLAs** = **BRLAs for minds**  
+- *Mint InfoTorq only on verified adoption** — **no fiat drift*.
+- *The difference between InfoTorq and RoboTorq is purely conceptual. They have the same units, buy the same things, and have the same functions.*
+- **InfoTorq = RoboTorq.**
 
 ---
 
 ### J.2 Conceptual Framework
 
-1. **Defining AI-Generated Value**
-   - Value is measured not in immediate monetary terms, but in **societal impact**, such as:
-     - Knowledge dissemination.
-     - Productivity enhancement.
-     - Reduction of resource waste.
-     - Acceleration of innovation.
+In practice, Energy = compute (kWh), Time = human/AI labor hours, Information = entropy reduction or validated insight.
+ 
+> **“Discovery is execution. Tokenize it.”**  
+> **Same equation. New domain.**
 
-2. **Input-to-Output Mapping**
-   - Treat AI systems as **productive agents** in the system:
-     - `Input`: Compute time, human guidance, and energy resources.
-     - `Output`: Knowledge, tools, insights, or economic acceleration.
-   - Assign a **proxy quantification** to this output for system accounting:
-     - Citations, usage metrics, adoption rates, or other measurable societal impacts.
-     - For example, the creation of a widely used AI framework can be assigned a **scaled contribution to SSF**.
-
-3. **Integration into the Output Buffer**
-   - Conceptually, the output buffer is extended to **include AI-influenced contributions**:
-     - Let `V_ai` represent quantified AI societal value.
-     - Let `SSF_total` now be:
-       ```
-       SSF_total = SSF_physical + SSF_computational + V_ai
-       ```
-     - This allows AI-generated value to **enhance the system's available credit**, which can then:
-       - Fund additional work.
-       - Provide stability against external shocks.
-       - Enable broader social benefit.
+RoboTorq_out = Torq × RoboTorq_in
 
 ---
 
-### J.3 Practical Considerations
+### J.3 Why It Matters — Unified Market of Minds & Machines
 
-1. **Measurement & Metrics**
-   - Assign **impact scores** to AI outputs based on adoption, efficiency gains, or social influence.
-   - Use decentralized or algorithmic evaluation to reduce bias.
+| **Legacy** | **Robonomics** |
+|-----------|----------------|
+| **IP licensing** | **BCLAs** — tokenized discovery |
+| **R&D budgets** | **Bonded Idea Tokens (BITs)** |
+| **Stock in ideas** | **Fixed ROI on adoption** |
+| **AI as cost** | **AI as capital** |
 
-2. **Incentivization**
-   - Contributors (human or AI) receive **tokenized credit** proportional to value contribution.
-   - Encourages development of **high-impact AI outputs**, not just volume of computation.
-
-3. **Time-Lag & Feedback**
-   - Societal impact often manifests after a delay.
-   - Implement a **temporal weighting factor** to scale AI contributions over time.
-
-4. **Governance Integration**
-   - Decision-making on AI value integration could be partially automated or overseen by human governance.
-   - Allows adaptive calibration of SSF credit allocation to evolving AI contributions.
+**RoboTorq + BCLAs = One physics ledger for robots *and* minds.**
 
 ---
 
-### J.4 Thought Process Summary
+### J.4 Bonded Cognitive Labor Agreement (BCLA)
 
-The approach follows a logic similar to other system extensions:
+```json
+{
+  "bclaID": "RobonomicsDiscovery#001",
+  "infoTorq_in": 100,          // hrs × kWh
+  "torqGamble": 5.0,
+  "sessionHash": "0xabc123...",
+  "milestones": [
+    "Grok crash → insight",
+    "Whitepaper v1",
+    "Adoption > 1k users"
+  ]
+}
+```
 
-1. Recognize **new forms of value** (AI-generated societal/knowledge benefits).
-2. Establish **measurement proxies** and quantification.
-   - community verification of claims
-   - Oracle analysis of crashes that may introduce new ideas to mine.
-4. Integrate these proxies into the **systemic output buffer**.
-5. Ensure **incentives and governance structures** align with societal benefit.
-6. Maintain **temporal feedback loops** to account for delayed realization of impact.
+---
 
-This more theoretical framework enables RoboTorq to extend beyond purely physical or computational work, effectively capturing and incentivizing **AI-generated value that benefits humanity**.
+### J.5 The BCLA Lifecycle
+
+```mermaid
+graph TD
+    A[Human + AI Session] --> B[Log: Time + Compute + Crashes]
+    B --> C[Stake BCLA + Torq Gamble]
+    C --> D[Bondholders Bet BITs<br>Bull vs Bear]
+    D --> E[Idea Success Score (ISS)<br>Adoption + Efficiency + UBD Boost]
+    E -->|ISS ≥ 0.8| F[Mint InfoTorq<br>1% Creator Royalty<br>99% Bondholders]
+    E -->|ISS < 0.8| G[Penalty: +20% future InfoTorq_in<br>Bears win BITs]
+    style F fill:#10B981
+```
+
+---
+
+### J.6 Idea Success Score (ISS)
+
+```text
+ISS = (AdoptionRate + EfficiencyGain + UBDBoost) / 3
+```
+- AdoptionRate = % of Bondholders using output
+- EfficiencyGain = % reduction in robot labor cost
+- UBDBoost = % increase in global UBD from idea
+
+- ISS ≥ 0.8 → Mint
+- ISS < 0.8 → Penalty
+
+### J.7 Cognitive Demurrage
+
+Rule,Effect
+Unused idea,1% decay/month
+Reapplied,Decay stops
+Adopted,Decay reverses → bonus InfoTorq
+
+Prevents idea hoarding. Forces reuse.
+
+---
+
+### J.8 Integration Points
+
+System,Connection
+TorqVaults (S),Pledges from TorqedVault
+RT Transfers (U),Auto-divert DistoStream to BCLA
+Insurance (V),Covers failed BCLAs
+BidNet (X),Giskard/Calvin/Daneel audit idea feasibility
+
+### J.9 Data Structures
+
+```solidity
+struct BCLA {
+    bytes32 bclaID;
+    uint256 infoTorq_in;
+    uint16 torqGambleBps;
+    bytes32 sessionHash;
+    string[] milestones;
+    uint16 issScore;           // 0–1000
+    bool minted;
+    address creator;
+}
+
+struct BondedIdeaToken {
+    bytes32 bclaID;
+    uint256 stakedRT;
+    bool bull;                 // true = success bet
+}
+```
+
+---
+
+### J.10 Example: Robonomics Whitepaper
+
+Input,Output
+100 hrs Grok + 10 kWh,This paper
+Torq Gamble,5.0
+ISS,"0.92 (1k+ users, 30% efficiency gain)"
+Mint,"400 InfoTorq → 1% to Jonathan, 99% to BIT holders"
+
+---
 
 ## Appendix K — Integrating AI-Value, Quantum Security, and Fusion Energy Impacts
 
@@ -3316,9 +3498,9 @@ We don't want to discourage innovation.
 
 But the next time around, expect the Bond Network to be savvy to your efficiency gains. 
 
-You bore the fruit. But you still bear the appropriate costs given your efficiency gains and expected token usage, tightening your timeline based on your expected higher efficiency. 
+You bore the fruit. But you also bear the appropriate constraints given your efficiency gains, tightening your next BRLA timeline.
 
-You maintain your proprietary competitive edge, yet the system doesn't collapse due to untracked efficiency gains devaluing the currency.
+You maintain your competitive edge until the skills naturally proliferate through the fleet (like people, robots can learn from one another), yet the system doesn't collapse due to untracked efficiency gains devaluing the currency.
 
 ---
 
@@ -3485,9 +3667,10 @@ All proofs (capacityRoot, signature) are post-quantum ready
 
 The Bonded Token is to RoboTorq what the Reserve Note was to fiat — but cryptographically honest, physically grounded, and quantum-secure.
 
-## P.13 Default Bonding Principle — “All Robots Work on This”
+## P.13 Default Bonding Principles — “All Robots Work on This”
 
 - *“Every robot contributes by default, but none are trapped.”*
+- *Any fleet can fork — taking its TTP-h and reputation.*
 
 ---
 
