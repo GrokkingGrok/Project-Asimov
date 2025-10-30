@@ -4501,6 +4501,96 @@ struct TorqedBridge {
 ## Appendix U — RT Transfers & Systemic Contributions  
 *(Automated, Rule-Driven RT Flows for Individuals and Enterprises)*
 
+You'll see "taxes" mentioned in this section
+
+---
+
+### 🚨 Corporate Taxes are a Transitional Smoothing Tactic
+
+The demurrage and AIntropy are the only forms of "tax" in the pure Bond Network, and it's the one physics charges us for storing.
+
+The TaxVault pool will be necessary during smoothing because our current system requires it, not because the Bond Network does.
+- Current governmental structure will request their cut for "protection."
+- The Bond Network wants to prevent societal collapse, not cause it.
+- will be paid in fiat, exchanged out of RT.
+- Governments don't get tax payments in RT until they stop using fiat.
+
+So the corporations pay to get the government off our backs, by default, and that will be baked into the price we pay for products as bondholders are weaned off the fiat teet.
+
+---
+
+### Bondholders don't pay taxes
+
+But with great disto comes great responsibility.
+
+Want new infrastructure? Invest in it at RoboFund, and reap the benefits in financial return on the work performed, rather than paying taxes forever for the "right to use and traverse public space."
+
+I have this idea for an elevated train loop around Albuquerque. Maybe if I pitched it to bondholders via RoboFund, it'd get built.
+
+### U.0.1 Bondholder Responsibilities
+
+To decrease tax burdens, ease the transition, and keep the peace, the Bondholders agree to a few key terms.
+
+### U.0.1 DistoTrusts
+
+DistoTrusts are certain automatic diversions of disto. For example:
+
+Go to prison? Do not collect disto. (At least not all of it)
+
+---
+
+The amount necessary to incarcerate you is automatically diverted from your DistoStream.
+
+If you have outstanding pledges, if you've borrowed from other people's stash vaults, etc., the DistoRem (Remaining Disto after DistoTrust deductions) gets delivered to them.
+
+If there is not enough to pay them all at once, they all get paid in according the proportion of your pledge to them, scaled to the DistoRem.
+
+That's why stream insurance is defined in this document as well.
+
+---
+
+### U.0.2 Not all DistoTrusts are Punitive
+
+Children are a special case. What to do with their disto?
+
+Robonomics will never tolerate "Baby Farming" or disto exploitation of any kind. So we have to prevent that, and we need to fund things like medicine and school.
+
+Luckily, they're now able to pay for them the same as you and me.
+- Most of children's disto is auto-diverted to DistoTrusts in their name, with the DistoRem going to paying off their current expenditures.
+- Minimum child DistoRem goes to the parents for food, clothing, housing etc.
+- The rest goes to a DistoTrust
+
+Parents can allocate funding (to a degree) within each category of a child's DistoTrust coverage.
+
+Project Asimove aims to refine these example ranges.
+
+1. Healthcare top priority (min 5% for healthy kid with insurance, up to 100% temp, i.e., if it can help secure urgent life-saving transport/care in another country, for example)
+- DistoTrusts pays child healthcare
+- Every child will have excellent healthcare because they'll pay for excellent healthcare.
+
+2. Education next (min 40%, up to 92% max temp, i.e., if studying abroad and need to move)
+- Parents choose which school they want to engage with.
+- DistoTrust pays the school for the child's education.
+- Every child will have an excellent education, because they'll pay for an excellent education.
+
+3. Infrastructure Projects (max 3%)
+- DistoTrusts that are smart with investing the infrastructure cut to produce the Bond Network minimum of 3% with an input 1.5% will be popular.
+- Kids are gonna use it too one day.
+
+I have intentionally left a large percentage blank here. While the foundation of the system described is robust, immense studies would be needed to determine meaningful estimates.
+
+What's the right DistoRem? Who knows?
+
+The big takeaway is that parents must preserve autonomy over which vendors their kid's DistoTrust may go to. Still, the parents must not have a choice about the fact that DistoTrust is an investment in the child, not a means to parental comfort.
+
+---
+
+This system is fully designed to stop "Baby Farming" by people who have children (or force women to do so) for the purpose of exploiting DistoStreams.
+
+Have a child, have as many as you want! But you're not getting their full disto. And Calvin will know if their DistoTrust is going unused.
+
+The other big takeaway is that we all need to think about how Calvin's false positives might be handled. (A family goes on vacation for a month, a red flag pops when school funds aren't used).
+
 ---
 
 ### U.1 Purpose  
