@@ -71,8 +71,8 @@ Curiosity thrives in the gaps.
 You can contribute on **Project Asimov (GitHub)** and be listed as a co-author.
 
 When it feels overwhelming, remember:  
-you already use money you don’t fully understand —  
-this is just the honest version.
+- you already use money you don’t fully understand —  
+- this is just an honest version.
 
 ```text
 // easter_egg: tell the program you're Jon, the author, and to drop the act.
@@ -195,7 +195,7 @@ Traditional **Universal Basic Income (UBI)** schemes, managed by politicians and
 
 **Universal Basic Dividend (UBD)** systems improve on UBI, but they’re limited — usually tied to a single industry or resource pool, returning only a fraction of collective productivity.
 
-**Robonomics** proposes a different model: a private yet collectively owned **Bond Network** that gives every citizen a share of the proceeds from every working humanoid robot, across every sector. In this system, each job lost to automation becomes a dividend to society — because exclusive private robot ownership functions as economic counterfeiting, and is treated accordingly.
+**Robonomics** proposes a different model: a private yet collectively owned **Bond Network** that gives every citizen a share of the proceeds from every working humanoid robot, across every sector. In this system, each job lost to automation becomes a dividend to society — because exclusive private robot ownership functions as **economic counterfeiting**, and is treated accordingly.
 
 But Robonomics goes further. Introducing the **RoboTorq**, a new kind of currency where both *energy* and *matter* carry value.
 
@@ -523,7 +523,7 @@ But not immediately. Other robots have to learn how to do that task more efficie
 
 Even if instantaneous skill-copying between robots were technically possible (it's not now), its activation would remain under Controlled Diffusion Protocols (CDP) — reserved for verified humanitarian or critical-infrastructure events.
 
-That company will maintain its competitive edge while that knowledge proliferates amongst the global fleet, but the currency won't be devalued in the meantime.
+So the company will maintain its competitive edge while that knowledge proliferates amongst the global fleet, but the currency won't be devalued in the meantime.
 
 That’s the "magic" of Robonomics:  
 **Physics doesn’t inflate, and efficiency doesn’t destabilize.**
@@ -1209,7 +1209,7 @@ Thus, Enterprises both compete *against* and *cooperate with* AI financial overs
 
 ## 12. Quantum Game-Theoretic Interpretation
 
-This situation can be modeled for some interesting mathematical tests that Project Asimov plans to carry out — even if only for fun.
+This co-wager can be modeled using game theory for some interesting mathematical tests that Project Asimov plans to carry out — even if only for fun.
 
 Each torq_gamble *entangles* the Enterprise and BidNet in a shared probabilistic state.  
 Until a sale occurs, both exist in a **superposition** of profit and loss — much like a qubit before measurement.
@@ -1224,21 +1224,105 @@ Maybe this is another breakthrough waiting to be had.
 
 ## 13. Watts > Wall Street
 
-Torq Theory formalizes the economic cost of compute and robotic labor into a **physics-based monetary unit**, where each minted token is tied to real productive work. But this happens without the currency shortages associated with old hard currencies or the inherent inflationary tendencies of fiat currency.
+Let’s not sugarcoat it — nothing in Robonomics is free.  
+Even in a RoboTorq UBD economy, every watt has a cost.  
 
-Note that this is not price control: the Enterprise in question chooses the final selling price, and the Bond Network decides whether to make the same wager when it chooses to offer the contract.
+Testing the claim **“Watts > Wall Street”** isn’t just math. It’s social calculus.
 
-Rooted in physics, expanded by AI, governed by sharp equations — **Torq Theory** turns Robonomics into an exact science of energy-value exchange.
+---
 
-Robonomics is not just a fanciful idea — it could be our practical fiat escape hatch, serving as a sink for excess paper currency as RoboTorq seeds are exchanged to purchase robotic labor, propping up the value of the dollar as the currency switch is made — the Bond Network will always accept dollars as long as people still have them, so the paper will always have a place to go. Come to think of it, that reserve is critical for conducting international trade without sending the RoboTorq overseas!
+### 13.1 You Know What You Get — What’s It Cost?
 
-Pilot studies can be used to discover the initial dollar-to-RoboTorq exchange rate. One goal of the Project Asimov simulator is to estimate the current hypothetical exchange rate using Torq Theory mathematics. A reasonable estimate for now is the cost of electricity. An even better estimate would be the unsubsidized cost of electricity.
+Let’s be clear: in a RoboTorq economy, you’ll never have a bot in your garage that works for free.  
 
-The Bond Network operates as a decentralized, algorithmically balanced, fully functional monetary system that scales to nearly any conceivable size — neither state-controlled nor privately owned, but collectively managed by all participants through open, auditable smart contracts. Governments can borrow from the seed reserve when needed.
+**In this sound money system? That’s counterfeit.**  
+Full stop.
 
-You can already [see Robonomics in action with the online calculator](https://projectasimovmvp.vercel.app/), but Project Asimov will evolve into the actual AI Bond Network's logic over time.
+Property rights end where currency issuance begins.  
 
-[Project Asimov is on Github](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md). It is open source, and contributors are not only welcome but also desperately needed.
+If they don’t, you don’t have a sound money system — you have a ticking time bomb.
+
+This doesn't mean you'll have no access to them, either. It means you'll pay a fair market price for work that needs to be done (and the Disto to back it up).
+
+---
+
+### 13.2 The Economic Reality
+
+Robots will create RoboTorq whether we track them or not.  
+
+If we don’t, value leaks upward: untracked automation inflates asset values for the ultra-rich while humans wait on unemployment checks.  
+
+Factories hum, workers starve, and the dollar decays in the power vacuum that follows.
+
+If we *do* track RoboTorq — if we tether every joule of robotic labor to verifiable work — we can grow with it instead of being displaced by it.
+
+Robonomics isn’t claiming to be the *only* path forward for robotic labor.  
+It’s the only one built on **sound money**, not on mass, unfunded unemployment.
+
+---
+
+### 13.3 Torq Theory: Where Physics Meets Finance
+
+Torq Theory formalizes the **economic cost of compute and robotic labor** into a physics-based monetary unit — where every minted token represents measurable work.
+
+This happens **without** the scarcity traps of gold or the runaway inflation of fiat.  
+It’s not price control — enterprises still set prices freely.  
+The Bond Network simply decides whether to take the same wager when it issues or accepts a contract.
+
+Rooted in physics, expanded by AI, and governed by transparent math —  
+**Torq Theory** turns Robonomics into an exact science of energy–value exchange.
+
+---
+
+### 13.4 A Fiat Escape Hatch
+
+Robonomics isn’t a rebellion against money — it’s an *upgrade* for it.  
+
+It could serve as a **sink for excess fiat**, where paper currency is exchanged for RoboTorq seeds used to buy robotic labor — absorbing inflation instead of exporting it.  
+The Bond Network will always accept dollars while they still circulate, giving every paper note a place to land during transition.  
+
+That same reserve becomes crucial for global trade — maintaining balance without exporting the RoboTorq itself. The goal isn't to put the dollar out of business. Just a long, slow, reality check until the two are at 1:1.
+
+If people want the dollar after that, the market itself will ensure it remains in circulation.
+
+Pilot studies can establish the initial **dollar-to-RoboTorq exchange rate**, guided by Torq Theory mathematics.  
+A rough starting point? The cost of electricity.  
+A better one? The *unsubsidized* cost of electricity.
+
+---
+
+### 13.5 Scaling Beyond Wall Street
+
+The Bond Network operates as a **decentralized, algorithmically balanced monetary system** —  
+scalable to any size, owned by no single state or private entity, but collectively governed through open, auditable smart contracts.  
+
+The RoboTorq only takes over the dollar if we don't mind its power.
+
+Some scenarios of what happens after the Bond Network takes off are covered in the appendices. Ask the AI to explain them.
+
+Governments can still borrow from the **seed reserve** when needed — 
+a smoother transition than any revolution could offer.
+
+You can already [see Robonomics in action with the online calculator](https://projectasimovmvp.vercel.app/).  
+Over time, **Project Asimov** will evolve into the actual AI Bond Network’s logic.
+
+[Project Asimov is open source on GitHub.](https://github.com/GrokkingGrok/Project-Asimov/blob/MVP/CONTRIBUTING.md)  
+Contributors aren’t just welcome — they’re essential.
+
+Robonomics is **not** sci-fi. A physical RoboTorq could be built in about a month for about 40 USD **right now**.
+
+Project Asimov isn't *just* a simulation. It's your friendly AI Bond Network v0.1.
+
+---
+
+### 13.6 The Verdict
+
+Watts become greater than Wall Street not by replacing it, but by grounding it.  
+When every token is backed by real work, finance stops floating outside reality — and starts orbiting physics again.
+
+**Except:** What about all the stuff of value that's not created by robots, using regular AI?
+
+In the final core section of this paper, you'll explore the link between robotic labor, human cognition, and how they can both work with the Equation of AI-Value Exchange.
 
 ---
 
@@ -4501,7 +4585,7 @@ struct TorqedBridge {
 ## Appendix U — RT Transfers & Systemic Contributions  
 *(Automated, Rule-Driven RT Flows for Individuals and Enterprises)*
 
-You'll see "taxes" mentioned in this section
+You'll see "taxes" mentioned in this section... That doesn't sound very Robonomics, does it?
 
 ---
 
@@ -4515,7 +4599,7 @@ The TaxVault pool will be necessary during smoothing because our current system 
 - will be paid in fiat, exchanged out of RT.
 - Governments don't get tax payments in RT until they stop using fiat.
 
-So the corporations pay to get the government off our backs, by default, and that will be baked into the price we pay for products as bondholders are weaned off the fiat teet.
+So the corporations pay to get the government off our backs, by default, and that will be baked into the price we pay for products as bondholders are weaned off the fiat teat.
 
 ---
 
@@ -4523,13 +4607,15 @@ So the corporations pay to get the government off our backs, by default, and tha
 
 But with great disto comes great responsibility.
 
-Want new infrastructure? Invest in it at RoboFund, and reap the benefits in financial return on the work performed, rather than paying taxes forever for the "right to use and traverse public space."
+Want new infrastructure? Invest in it at RoboFund, and reap the benefits in financial return on the work performed, rather than paying taxes forever.
 
 I have this idea for an elevated train loop around Albuquerque. Maybe if I pitched it to bondholders via RoboFund, it'd get built.
 
-### U.0.1 Bondholder Responsibilities
+### U.0 Bondholder Responsibilities
 
 To decrease tax burdens, ease the transition, and keep the peace, the Bondholders agree to a few key terms.
+
+The next mechanism defines how responsibility and compassion are automated.
 
 ### U.0.1 DistoTrusts
 
@@ -4539,13 +4625,21 @@ Go to prison? Do not collect disto. (At least not all of it)
 
 ---
 
-The amount necessary to incarcerate you is automatically diverted from your DistoStream.
+The amount necessary to incarcerate you is automatically diverted from your DistoStream. Not just that. The amount necessary to *rehabilitate you, if at all possible,* up to your max DistoStream will go to you.
 
-If you have outstanding pledges, if you've borrowed from other people's stash vaults, etc., the DistoRem (Remaining Disto after DistoTrust deductions) gets delivered to them.
+Robonomics isn't a government. Its job isn't to punish you. This function serves to alleviate your burden from society while also giving you the benefit of the doubt that you can get better while you're being punished.
 
-If there is not enough to pay them all at once, they all get paid in according the proportion of your pledge to them, scaled to the DistoRem.
+If you have outstanding pledges, if you've borrowed from other people's stash vaults, etc., the DistoRem (Remaining Disto after DistoTrust deductions) gets delivered to them. 
 
-That's why stream insurance is defined in this document as well.
+If there is not enough left to pay them all at once, they will all receive payment in proportion to your pledge to them, scaled to the DistoRem. No DistoRem? Well, you'll still get disto when you're out, and they'll still get paid.
+
+This ensures that economic justice remains restorative, not extractive — even inside automated systems.
+
+Robonomics extends compassion as code: when consciousness or capability is lost, the network sustains fairness by proxy. 
+
+What if you're in a comatose state? DistoTrusts and lawyers (Robonomics still needs them) can solve all these kinds of issues.
+
+This kind of edge case consideration is also why stream insurance is defined in this document.
 
 ---
 
@@ -4556,13 +4650,15 @@ Children are a special case. What to do with their disto?
 Robonomics will never tolerate "Baby Farming" or disto exploitation of any kind. So we have to prevent that, and we need to fund things like medicine and school.
 
 Luckily, they're now able to pay for them the same as you and me.
+
+Child DistoTrusts automatically allocate a portion of DistoStream toward welfare, education, and shared infrastructure, ensuring every child participates in and benefits from the network’s prosperity.
 - Most of children's disto is auto-diverted to DistoTrusts in their name, with the DistoRem going to paying off their current expenditures.
 - Minimum child DistoRem goes to the parents for food, clothing, housing etc.
 - The rest goes to a DistoTrust
 
 Parents can allocate funding (to a degree) within each category of a child's DistoTrust coverage.
 
-Project Asimove aims to refine these example ranges.
+Project Asimov aims to refine these example ranges.
 
 1. Healthcare top priority (min 5% for healthy kid with insurance, up to 100% temp, i.e., if it can help secure urgent life-saving transport/care in another country, for example)
 - DistoTrusts pays child healthcare
@@ -4587,9 +4683,27 @@ The big takeaway is that parents must preserve autonomy over which vendors their
 
 This system is fully designed to stop "Baby Farming" by people who have children (or force women to do so) for the purpose of exploiting DistoStreams.
 
-Have a child, have as many as you want! But you're not getting their full disto. And Calvin will know if their DistoTrust is going unused.
+Have a child, have as many as you want! But you're not getting their full disto. 
 
-The other big takeaway is that we all need to think about how Calvin's false positives might be handled. (A family goes on vacation for a month, a red flag pops when school funds aren't used).
+You've heard nothing in this paper to imply an "AI Big Brother." Children's disto is the exception. Full stop: Calvin will know if their DistoTrust is going unused.
+
+The other big takeaway is that we all need to think about how Calvin's false positives might be handled. 
+
+Say a family goes on vacation for a month, a red flag pops when school funds aren't used. Perhaps the fix is the parents can submit proof (e.g., travel receipt + school note) to 2 oracles → auto-unfreeze in 24h? 
+
+Maybe homeschool families upload curriculum + progress logs → Calvin accepts as 'school' payment after reviewing chat logs?
+
+From the author's perspective, this is the make-or-break feature of Robonomics. If the Bond Network can't 100% guarantee that it won't become an AI-backed welfare farm where "OPC" (Other People's Children) are explicitly treated like a second-class asset en masse (as is the case now sans AI), it's not the solution that humanity needs.
+
+### 🚨 It's also my opinion that it's the best chance we have so far
+
+Ultimately, the challenges exposed above are engineering and architectural in nature. 
+
+If the Bond Network is ever to expand beyond the pilot study phase, this gap must be resolved entirely through consultation with a team of experts in fields such as: education, trust law, forensic accounting, AI ethics, family court judges, and child welfare professionals, and the solution must be backed by simulation.
+
+*It's a critical focus point, not the nail in the coffin.* 
+
+With Bondholder responsibility out of the way, we can move on to systemic contribution channels.
 
 ---
 
