@@ -1247,11 +1247,30 @@ Let’s be clear: in a RoboTorq economy, you’ll never have a bot in your garag
 **In this sound money system? That’s counterfeit.**  
 Full stop.
 
-Property rights end where currency issuance begins.  
+Property rights end where currency *creation* begins.  
 
 If they don’t, you don’t have a sound money system — you have a ticking time bomb.
 
-This doesn't mean you'll have no access to them, either. It means you'll pay a fair market price for work that needs to be done (and the Disto to back it up).
+This doesn't mean you'll have no access to them, either. It means you'll pay a fair market price for work that needs to be done (and the disto to back it up).
+
+*Physical RoboTorq?* That’s a different issue.
+
+One day, you’ll have a Bonded 3D printer in your home that only activates when you pay it a RoboTorq — converting a digital RT from the grid into a physical token.
+
+The critical difference: printing money isn’t the same as minting money, and it's certainly not the same thing as creating value.
+
+The value was *created* when a robot worked — maybe on the other side of the planet, maybe on Mars.
+The digital currency was *minted* when that work was verified.
+The physical money is *printed* when you recycle material, pay for the process, and the printer transfers that energy into something you can hold.
+
+That’s the RoboTorq — physics, labor, and value in one closed loop.
+
+Now here’s a fun riddle:  
+If you printed a US dollar in your garage… what **value**, specifically, would you be counterfeiting?
+
+Your RoboTorq? You know the ID number of the bot that made it.
+
+Who needs a Gold Standard?
 
 ---
 
