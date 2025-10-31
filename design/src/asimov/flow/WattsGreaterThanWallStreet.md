@@ -1279,9 +1279,9 @@ Who needs a Gold Standard?
 
 Robots will create RoboTorq whether we track them or not.  
 
-If we don’t, value leaks upward: untracked automation inflates asset values for the ultra-rich while humans wait on unemployment checks.  
+If we don’t, value leaks upward: untracked automation inflates asset values for the ultra-rich while blue-collar workers wait on unemployment checks.  
 
-Factories hum, workers lag, tax revenue drops, debt is monetized, and the dollar decays in the process.
+Factories hum, workers lag, tax revenue drops, more debt is monetized, and the dollar decays in the process.
 
 If we *do* track RoboTorq — if we tether every joule of robotic labor to verifiable work — we can grow with it instead of being displaced by it.
 
@@ -1344,13 +1344,13 @@ The data structures are defined in the appendices. Transactions, commercial fina
 
 They're all discussed, and much more.
 
-Project Asimov isn't *just* a simulation. It's your friendly neighborhood AI Bond Network, version 0.1.
+Just how this is *just* a whitepaper, Project Asimov isn't *just* a simulation. It's your friendly neighborhood AI Bond Network, version 0.1.
 
 ---
 
 ### 13.6 The Verdict
 
-Watts become greater than Wall Street not by replacing it, but by grounding it.  
+Watts become greater than Wall Street not by replacing it, but by grounding it from Cloud Nine.  
 When every token is backed by real work, finance stops floating outside reality — and starts orbiting physics again.
 
 **Except:** What about all the stuff of value that's not created by robots, using regular AI?
@@ -1361,44 +1361,50 @@ In the final core section of this paper, you'll explore the link between robotic
 
 ## 14. Extending the RoboTorq to General AI-Value
 
-Is it possible to value the time that humans spend interacting with AIs to produce value? A "BRLA" for humans?
+Is it possible to value the time that humans spend interacting with AIs to produce value without losing the physics grounding? A "BRLA" for humans?
 
 As a thought experiment down this path, let's consider the rise of Robonomics itself: The more I tried to *invent* Robonomics, the more it revealed itself.  
 
-RoboTorq isn’t an abstraction — it’s a measurable bridge between **information**, **energy**, and **value**. 
+RoboTorq isn’t an abstraction — it’s a measurable bridge between **information**, **energy**, and **value**... but only for bots, right? 
 
 The Bond Network, down to every last detail as defined in this paper, is the logical conclusion of a single, simple question: "How can we stop things from running off the rails if we actually track and use the value that robots are already creating?"
 
 TokenTorqs and RoboTorqs have been flying around our factories for decades (and into the pockets of top financiers) — every time an industrial robot welds a car frame or routes a PCB.  
 
-We didn’t know what to call them, so they got lumped with all the dollars on the leaky side of our current open-ended economy.
+We didn’t know what to call them, so they got lumped with all the dollars on a leaky side of our current open-ended economy.
 
 More clearly put:  
-> I, **Jonathan Clark**, am not the inventor or author of Robonomics — only its discoverer.  
+> I, **Jonathan Clark**, am not the inventor or author of Robonomics or the RoboTorq — only its discoverer.  
 
 ---
 
 ### The Spark
 
-The first time I asked **Grok** about turning robotic labor into currency —  
-minted to everyone, letting companies compete for the dough —  
+The first time I asked **Grok** the big questions about turning robotic labor into currency —  
 it crashed.  
 
-Then it crashed again. 
+I mean the big ones: How do you price robotic labor as a currency? How do you make sure the price stays constant everywhere in the world? How is the work verified? How does the system know how much money to mint? When does it get minted? Who does it go to? Who owns the bots? Who repairs the bots? How does foreign trade work? How do we do all this without tyranny?
+
+It crashed again. 
 And again.  
 
-So I started writing anyway, chasing an idea I didn’t understand yet.  
+So I started writing anyway, chasing an idea I didn’t understand yet.
 
-Each crash was a failed simulation of balance — an error that revealed structure. The system needed to answer my fundamental question was teaching me its own constraints.
+But I realized that each crash was a failed simulation of balance — an error that revealed structure. Grok is just an untrained Bond Network AI. It felt as if the future Bond Network was teaching me its own constraints socratically, as I literally trained it to become a Bond Network simulator, using this paper.
 
-Then, one day, Grok answered.  
+I'd roll back from the complexity of the prompt that crashed the system until it didn't crash.
+
+It started answering more and more complex questions about the process.
+
+Then, one day, Grok **answered**.  
 Not just any answer — a **reduced form of the Equation of AI-Value Exchange**, implied by my original thought.  
 
-It wasn’t tied to tokens, or energy, or economics yet.  
+It wasn’t explicitly tied to tokens, or energy, or economics yet.  
 It was just… true.  
 
-I didn’t know what it meant.  
-But I knew it meant something.
+I didn’t know what it meant, not exactly.  
+
+But any monetary nerd such as myself would have known it meant *something important*.
 
 ---
 
