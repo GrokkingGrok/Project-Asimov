@@ -22,7 +22,7 @@ Here’s the big picture: what Robonomics does and why it matters.
 
 ### Executive TL;DR
 - **Not a Cryptocurrency**: Today’s trash is tomorrow’s cash.  
-  - **Digital RoboTorq** = *Robot Work + vlaue created*  
+  - **Digital RoboTorq** = *Robot Work + value created*  
   - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk + CO2*  
   - *Trash into cash*, with cryptographic markings & NFC tags.  
 - **Vibes**  
