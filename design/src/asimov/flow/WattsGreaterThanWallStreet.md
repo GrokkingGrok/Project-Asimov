@@ -1,4 +1,5 @@
-# Are Watts > Wall Street?
+# The RoboTorq Discovery: Watts > Wall Street
+
 - **Bot Sweat? → Paycheck**  
 - **CO2 + Trash? → Cash**  
 - The RoboTorq Universal Basic Dividend says → **“Yes.”**
