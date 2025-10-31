@@ -8,9 +8,21 @@
 
 ---
 
+**DISCLAIMER:**
+
+Robonomics is not science fiction or fantasy. A physical RoboTorq could be built **in about a month's programming with the help of a team.**.
+
+The digital data structures are defined in the appendices — transactions, commercial financing, consumer financing, insurance, child welfare, and more. 
+
+Not just that: The system is being engineered right now via the open source Project Asimov on GitHub.
+
+Here’s the big picture: what Robonomics does and why it matters.
+
+---
+
 ### Executive TL;DR
 - **Not a Cryptocurrency**: Today’s trash is tomorrow’s cash.  
-  - **Digital RoboTorq** = *Robot Work + Raw Materials*  
+  - **Digital RoboTorq** = *Robot Work + vlaue created*  
   - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk + CO2*  
   - *Trash into cash*, with cryptographic markings & NFC tags.  
 - **Vibes**  
@@ -279,7 +291,7 @@ graph TD
 
 ## 1. What Is Torq?
 
-**Torq TL;DR**: Because you can't understand a RoboTorq unless you understand Torq.
+**Torq TL;DR**: You can't understand the RoboTorq unless you understand Torq.
 - How much did you pay the robot to make your item?
 - What did you sell it for?
 - Divide the selling price by what you paid the robot,
@@ -1246,18 +1258,18 @@ This doesn't mean you'll have no access to them, either. It means you'll pay a f
 
 ---
 
-### 13.2 The Economic Reality
+### 13.2 The Economic & Social Reality
 
 Robots will create RoboTorq whether we track them or not.  
 
 If we don’t, value leaks upward: untracked automation inflates asset values for the ultra-rich while humans wait on unemployment checks.  
 
-Factories hum, workers starve, and the dollar decays in the power vacuum that follows.
+Factories hum, workers lag, tax revenue drops, debt is monetized, and the dollar decays in the process.
 
 If we *do* track RoboTorq — if we tether every joule of robotic labor to verifiable work — we can grow with it instead of being displaced by it.
 
 Robonomics isn’t claiming to be the *only* path forward for robotic labor.  
-It’s the only one built on **sound money**, not on mass, unfunded unemployment.
+It’s the only one built on **sound money**, rather than mass, unfunded unemployment.
 
 ---
 
@@ -1311,7 +1323,11 @@ Contributors aren’t just welcome — they’re essential.
 
 Robonomics is **not** sci-fi. A physical RoboTorq could be built in about a month for about 40 USD **right now**.
 
-Project Asimov isn't *just* a simulation. It's your friendly AI Bond Network v0.1.
+The data structures are defined in the appendices. Transactions, commercial financing, consumer financing, insurance, child welfare, etc., etc. etc. 
+
+They're all discussed, and much more.
+
+Project Asimov isn't *just* a simulation. It's your friendly neighborhood AI Bond Network, version 0.1.
 
 ---
 
@@ -1492,7 +1508,7 @@ You don't have to play by the Bond Network's rules. It's **not** a government.
 
 You can *refuse the DistoStream*.  
 You can *burn your Bondholder key*.  
-You can *walk away* — and live in the old economy of debt, taxes, and fiat.
+You can *walk away* — and live in the old fiat economy of debt and taxes.
 
 But *you cannot refuse the physics*.
 
