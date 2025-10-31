@@ -742,13 +742,15 @@ Example:
 A 2 kW robot capable of 100 tokens per second has:  
 **TTP = 2 × 100 = 200 TTP**.
 
-That means in theory, it can process **200 TokenTorq per hour**.
+That means in theory, it costs **200 TokenTorq per second x 1 hour = 200 RoboTorq**.
 
 ---
 
 As of **October 2025**, some bots push about **60 tokens/s x 2 kW**, giving **TTP ≈ 120** — the new “mid-range” capacity benchmark.  
 
 Future models will scale linearly: twice the throughput → twice the TTP.
+
+It would cost about 120 TTP x 2 hours = 240 RoboTorq to hire that bot for two hours.
 
 ---
 
@@ -766,18 +768,6 @@ BRLA retainer fees offset the varying costs of the infrastructure required to pr
 The scale of a robot’s **TTP** sets the baseline for how much labor it can sell.  
 
 You’re not paying for what it does — you’re paying for **what it can do**, and the fact that someone else *could hypothetically* use that same robot more wisely than you.
-
----
-
-### Example
-
-Hire a **10 TTP bot** for one hour:  
-- You pay = 10 TTP × 3600 TokenTorq/hr × 1 hr = **36 000 RT**.  
-- Even if you only get 2 TokenTorq (7 200 RT) of usable output, you still owe the full capacity rate.  
-- Over time, as the bot learns the task, output efficiency rises — and so does your Torq.
-
-Nobody rents a bot for just one hour (Bonded Robotic Labor Agreements cover longer periods),  
-but this example keeps the math clean.
 
 ---
 
@@ -1111,12 +1101,12 @@ It all goes into a Bonded Robotic Labor Agreement (BRLA).
 
 ---
 
-Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 5 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 13.5 kRT (kRT = thousand RoboTorq).
+Let's say I want to mass-produce some items. I already know I can afford 100 hours with a 5 TTP bot. Let's say I know because I've conducted a work study with a 100 TTP bot. My faux-oracle showed my torq curves. I should be able to get 400 items done in 100 hours of nonstop work with this one bot alone, and my market research says I can sell each item for 75 RT.
 
 Do you think it will work out?
 
 **Given**:
-- TTP = 5 TokenTorq/hr
+- TTP = 100 TokenTorq/s
 - Duration = 100 hrs
 - torq_gamble = 3
 
@@ -1124,28 +1114,35 @@ Do you think it will work out?
 1. RoboTorq Input Value (RoboTorq_in):
 - RoboTorq_in = TTP x 3600 x time
 - RoboTorq_in = TTP × 3600 × 100
-- RoboTorq_in = 5 × 3600 × 100 = 1,800,000 RT = 1.8 MRT (MRT = Million RoboTorq)
+- RoboTorq_in = 100 × 3600 × 100 = 36,00,000 TT = 36 MTT (MTT = Million TokenTorq) = 10,000 RoboTorq (3600 TokenTorq = 1 RoboTorq)
+
+
+So... you can see that we can just multiply TTP x time and arrive at RoboTorq_in.
+
+Nice, right?
+
+In USD at an unsubsidized estimated cost of $0.05/kWh, I would pay just $500 for my full production run in 2025 money.
 
 ---
 
 2. MintingNeeded:
 - MintingNeeded = RoboTorq_in (Torq_gamble - 1)
-- MintingNeeded = 1.8 MRT × (3 − 1) = 3.6 MRT
+- MintingNeeded = 10 kRT × (3 − 1) = 20 kRT (Thousand Robotorq = kRT)
 
 ---
 
 3. Total Value Out:
-- RoboTorq_in + MintingNeeded = 1.8 + 3.6 = 5.4 MRT
+- RoboTorq_in + MintingNeeded = 10 + 20 = 30 kRT
 
 ---
 
-4. Items: 400 → Sell at 13.5 kRT each → zero inflation, zero debt, 100% citizen ownership.
+4. Items: 400 → Sell at 75 RT each → zero inflation, zero debt, 100% citizen ownership.
 
 ---
 
-I would pay the robot 4.5 kRT per item, so as long as I keep my overhead below 7 kRT per item, I'm in the black. Seems like a good deal for everyone.
+I would pay the robot 25 RT per item, so as long as I keep my overhead below 50 RT per item, I'm in the black. If I sell them all, I have 20 kRT to absorb my costs. Seems like a good deal for everyone. 
 
-**RoboFund**: So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I get approved for a MakerFunnel to fund the project.
+**RoboFund**: So I go to *RoboFund*, the network's robotic labor investment house, and submit my torq curves. I got approved for a MakerFunnel to fund the project.
 
 ---
 
@@ -1167,9 +1164,9 @@ The MakerFunnel at RoboFund opens up, and the "disto" flows to bondholders, as i
 
 With that, I spin up my line of rented bots after Daneel deploys them, and they work for 100 hours (100 ticks of the Asimov robonomics simulator).
 
-The robots managed to produce 400 items for me, and I can sell them for 13.5 kRT per to make the revenue my business needs to stay alive. 
+The robots managed to produce 400 items for me, and I can sell them for 75 RT per to make the revenue my business needs to stay alive. 
 
-Isaac (the minting AI) mints 3.6 MRT fresh (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes the full RoboTorq_out in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
+Isaac (the minting AI) mints 20 kRT fresh (value-added to a pile of raw materials, scaled from the cost of the robotic labor that added the value) and distributes the full RoboTorq_out in bits as the products are expected to hit the market. The bondholders will spend, invest, or save, allowing the newly minted currency to accumulate for purchase or be leveraged into more robotic labor.
 
 As a business person, I can use my estimated selling price and the constant cost of robotic labor in RoboTorqs to make business decisions. As a Bondholder, you get some of the money that someone else will need to buy my product, which, in turn, drives vigorous economic activity.
 
@@ -1183,9 +1180,9 @@ Minting is not (RoboTorq_in + other production costs) (torq - 1) because we want
 
 **Quick Recap**
 - **Goal:** Mass-produce 400 items using a 5 TTP bot over 100 hours.  
-- **RoboTorq Inputs:** 1.8 MRT worth of robot labor.  
-- **Minting:** 3.6 MRT issued by Isaac to cover the enterprise’s markup.  
-- **Total Output Value:** 5.4 MRT (matches expected revenue at 13.5 kRT per item).  
+- **RoboTorq Inputs:** 10 kRT worth of robot labor.  
+- **Minting:** 20 kRT issued by Isaac to cover the enterprise’s markup.  
+- **Total Output Value:** 30 kRT (matches expected revenue at 75 RT per item).  
 - **Funding & Oversight:** RoboFund/MakerFunnel provides funding; BidNet, Giskard, and Daneel ensure feasibility, audit efficiency, and manage fleet capacity.  
 - **Execution:** Bots work full duration, items produced, revenue realized, and minted Torq distributed to bondholders.  
 - **Key Takeaway:** By pegging minting to labor cost + agreed markup, the system ensures predictable, transparent production, investment, and economic circulation — without inflating the money supply unnecessarily.
