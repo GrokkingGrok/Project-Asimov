@@ -1,4 +1,4 @@
-# The RoboTorq Discovery: Watts > Wall Street
+# The RoboTorq Paper: Watts > Wall Street
 
 - **Bot Sweat? → Paycheck**  
 - **CO2 + Trash? → Cash**  
