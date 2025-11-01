@@ -2604,27 +2604,26 @@ Treasury Reports ← DAO Governance ← Dividend Engine
 
 ### F.12 Scalability Roadmap
 
-| Phase | Goal | Method |
-|:------|:-----|:-------|
-| **Phase I** | 10 k robots | Single-region BFT chain |
-| **Phase II** | 1 M robots | Sharded consensus + L2 roll-ups |
-| **Phase III** | 100 M robots | Hierarchical federation of regional sub-nets |
-| **Phase IV** | Planet-scale | Autonomous global energy settlement fabric |
+Phase | Goal | Method
+------|------|--------
+I     | 10k robots | Local node archives (pruned, <100 MB)
+II    | 1M robots | Sharded mesh + BRLA storage bids
+III   | 100M robots | Fork-level vaults (optional, country-run)
+IV    | Planet-scale | Global energy fabric — no central point
 
-The beauty of the Bond Network is that it can play nice as an official reserve currency. 
+The beauty of the Bond Network is that it can play nice as an **official reserve currency** — *if a fork chooses*.
 
-Truly, that's when the RoboTorq will reach its full potential: when governments decide, one by one, that they really can do their administrative and judicial duties better when the people take care of themselves financially.
+Governments may **opt in** via BRLA:
+- Bid to run **archive nodes** (full ledger).
+- Build **geo-redundant vaults** (underground, orbital).
+- Earn RT for service.
 
-In those cases, why not invest in large infrastructure?
+Think about that... a government that *earns* because it provides services we want!
 
-For governments that do want to explicitly work in tandem a bond network as an official monetary system, they may wish to keep archives.
+**No mandate** — **purely voluntary** (App M: "Optional Participation").
 
-Between Phases I and late II to early III, the author suggests the following physical infrastructure be considered:
-- Deep Underground Military Bunkers to house primary data centers, powered by geothermal until fusion comes online, if it does.
-- Ledger backups stored in redundant starship orbital data centers.
-- Connect the two with Starlink.
-
-Ambitious? Yes, but also resilient.
+Ambitious? Yes.  
+**Resilient? Only if decentralized.**
 
 ---
 
