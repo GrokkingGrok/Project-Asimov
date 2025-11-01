@@ -22,7 +22,7 @@ Here’s the big picture: what Robonomics does and why it matters.
 ---
 
 ### Executive TL;DR
-- **Not a Cryptocurrency**: Today’s trash is tomorrow’s cash.  
+- **Not a Cryptocurrency**: No blockchain → No data bloat. Today’s trash is tomorrow’s cash.  
   - **Digital RoboTorq** = *Robot Work + value created*  
   - **Physical RoboTorq** = *Digital RoboTorq + Recycled Junk + CO2*  
   - *Trash into cash*, with cryptographic markings & NFC tags.  
@@ -2611,9 +2611,17 @@ Treasury Reports ← DAO Governance ← Dividend Engine
 | **Phase III** | 100 M robots | Hierarchical federation of regional sub-nets |
 | **Phase IV** | Planet-scale | Autonomous global energy settlement fabric |
 
+The beauty of the Bond Network is that it can play nice as an official reserve currency. 
+
+Truly, that's when the RoboTorq will reach its full potential: when governments decide, one by one, that they really can do their administrative and judicial duties better when the people take care of themselves financially.
+
+In those cases, why not invest in large infrastructure?
+
+For governments that do want to explicitly work in tandem a bond network as an official monetary system, they may wish to keep archives.
+
 Between Phases I and late II to early III, the author suggests the following physical infrastructure be considered:
 - Deep Underground Military Bunkers to house primary data centers, powered by geothermal until fusion comes online, if it does.
-- Blockchain backups stored in redundant starship orbital data centers.
+- Ledger backups stored in redundant starship orbital data centers.
 - Connect the two with Starlink.
 
 Ambitious? Yes, but also resilient.
