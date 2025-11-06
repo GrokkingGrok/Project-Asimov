@@ -310,7 +310,7 @@ function calc() {
 
   // --- CORE MATH ---
   const fleetTTP = ttp * brlas * robots;
-  const RoboTorq_in = fleetTTP * 3600 * HOURS_PER_YEAR;
+  const RoboTorq_in = fleetTTP * HOURS_PER_YEAR;
   const extraMintedYear1 = RoboTorq_in * (gamble - 1);
   const totalDistributedYear1 = RoboTorq_in + extraMintedYear1;
 
@@ -380,7 +380,7 @@ function exportCSV() {
   const initialGrowth = parseFloat(document.getElementById('initialGrowth').value) || 0;
 
   const fleetTTP = ttp * brlas * robots;
-  const RoboTorq_in = fleetTTP * 3600 * HOURS_PER_YEAR;
+  const RoboTorq_in = fleetTTP * HOURS_PER_YEAR;
   const extraMintedYear1 = RoboTorq_in * (gamble - 1);
   const totalDistributedPerYear = [RoboTorq_in + extraMintedYear1];
 
